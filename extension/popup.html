@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>ESIG’Guard</title>
+    <style>
+      body { font-family: Arial, sans-serif; width: 320px; padding: 12px; margin: 0; }
+      h2 { margin: 0 0 10px; font-size: 16px; }
+      button { width: 100%; padding: 10px; border: none; border-radius: 8px; cursor: pointer; }
+      .primary { background: #111; color: #fff; }
+      .box { margin-top: 10px; border: 1px solid #ddd; border-radius: 8px; padding: 10px; font-size: 13px; }
+      .muted { color: #666; font-size: 12px; margin-top: 6px; }
+    </style>
+  </head>
+
+  <body>
+    <h2>ESIG’Guard</h2>
+
+    <button id="analyzeBtn" class="primary">Analyser l’email ouvert</button>
+
+    <div id="result" class="box">
+      Résultat : <span class="muted">Clique sur “Analyser”</span>
+    </div>
+
+    <p class="muted">
+      Astuce : ouvre d’abord un email dans Gmail, puis clique sur l’extension.
+    </p>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

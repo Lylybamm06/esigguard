@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "ESIG'Guard",
+  "version": "0.1",
+  "description": "Analyse pédagogique du risque de phishing dans Gmail.",
+
+  "permissions": ["activeTab", "tabs"],
+
+  "host_permissions": [
+    "https://mail.google.com/*",
+    "http://127.0.0.1:8000/*"
+  ],
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://mail.google.com/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
