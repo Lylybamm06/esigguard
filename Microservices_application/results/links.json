@@ -1,0 +1,12 @@
+{
+    "email_id": null,
+    "url_count": 6,
+    "urls": [
+        "https://www.microsoft.com/security-check",
+        "http://example.com/login",
+        "https://bit.ly/3AbCdEf",
+        "https://malicious-domain.com/phishing",
+        "http://185.199.110.153/login",
+        "https://micros0ft-secure.com"
+    ]
+}

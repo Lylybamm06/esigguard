@@ -1,0 +1,20 @@
+{
+    "content": {
+        "subject": "",
+        "ai_content_analysis": {
+            "global_verdict": "ok",
+            "phishing_indicators": {
+                "status": "ok",
+                "reason": "Aucun indicateur de phishing détecté"
+            },
+            "language_quality": {
+                "status": "ok",
+                "reason": "Texte vide, aucune évaluation de la qualité de la langue possible"
+            },
+            "context_coherence": {
+                "status": "ok",
+                "reason": "Texte vide, aucune évaluation de la cohérence contextuelle possible"
+            }
+        }
+    }
+}

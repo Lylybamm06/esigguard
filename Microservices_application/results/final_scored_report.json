@@ -1,0 +1,162 @@
+{
+    "parsed": {
+        "headers": {
+            "raw_subject": "Important Security Update Required",
+            "authentication_results": "example.com; spf=pass smtp.mailfrom=microsoft.com; dkim=pass header.d=microsoft.com; dmarc=pass action=none header.from=microsoft.com",
+            "received_count": 2,
+            "message_id": "<links-test-12345@securemail.com>",
+            "list_unsubscribe": "<mailto:unsubscribe@microsoft.com>",
+            "raw_headers": {
+                "From": "Microsoft Support <support@microsoft.com>",
+                "To": "John Doe <john.doe@example.com>",
+                "Subject": "Important Security Update Required",
+                "Date": "Fri, 17 Jan 2025 14:19:58 +0100",
+                "Message-ID": "<links-test-12345@securemail.com>",
+                "Return-Path": "<no-reply@microsoft.com>",
+                "Reply-To": "Security Team <security@microsoft.com>",
+                "List-Unsubscribe": "<mailto:unsubscribe@microsoft.com>",
+                "Authentication-Results": "example.com; spf=pass smtp.mailfrom=microsoft.com; dkim=pass header.d=microsoft.com; dmarc=pass action=none header.from=microsoft.com",
+                "Received": "from internal-relay.microsoft.net (10.10.10.5) by mail-eu1.microsoft.com with SMTP id def456; Fri, 17 Jan 2025 13:19:58 +0000",
+                "Content-Type": "multipart/mixed; boundary=\"BOUNDARY123\""
+            }
+        },
+        "meta": {
+            "from": {
+                "display_name": "Microsoft Support",
+                "address": "support@microsoft.com",
+                "domain": "microsoft.com"
+            },
+            "reply_to": [
+                {
+                    "display_name": "Security Team",
+                    "address": "security@microsoft.com",
+                    "domain": "microsoft.com"
+                }
+            ],
+            "return_path": {
+                "display_name": "",
+                "address": "no-reply@microsoft.com",
+                "domain": "microsoft.com"
+            },
+            "date": {
+                "raw": "Fri, 17 Jan 2025 14:19:58 +0100",
+                "parsed": "2025-01-17T14:19:58+01:00"
+            }
+        },
+        "auth": {
+            "spf": "pass",
+            "dkim": "pass",
+            "dmarc": "pass"
+        },
+        "routing": {
+            "received": [
+                "from mail-eu1.microsoft.com (104.16.132.229) by mx.example.com with ESMTPS id abc123 for <john.doe@example.com>; Fri, 17 Jan 2025 14:19:58 +0100",
+                "from internal-relay.microsoft.net (10.10.10.5) by mail-eu1.microsoft.com with SMTP id def456; Fri, 17 Jan 2025 13:19:58 +0000"
+            ],
+            "hops": 2
+        },
+        "content": "Bonjour John,\n\nNous avons détecté une activité inhabituelle sur votre compte Microsoft.\nPour des raisons de sécurité, veuillez vérifier votre identité en utilisant le lien suivant :\n\nhttps://www.microsoft.com/security-check\nhttp://example.com/login\nhttps://bit.ly/3AbCdEf\nhttps://malicious-domain.com/phishing\nhttp://185.199.110.153/login\nhttps://micros0ft-secure.com\n\nMerci,\nL'équipe Sécurité Microsoft\n",
+        "urls": [
+            "https://www.microsoft.com/security-check",
+            "http://example.com/login",
+            "https://bit.ly/3AbCdEf",
+            "https://malicious-domain.com/phishing",
+            "http://185.199.110.153/login",
+            "https://micros0ft-secure.com"
+        ],
+        "attachments": [
+            {
+                "filename": "facture.pdf",
+                "content_type": "application/pdf",
+                "size": 51
+            }
+        ]
+    },
+    "auth": {
+        "email_id": null,
+        "spf": "pass",
+        "dkim": "pass",
+        "dmarc": "pass",
+        "from_address": "support@microsoft.com",
+        "reply_to_address": "security@microsoft.com",
+        "return_path_domain": "microsoft.com",
+        "from_vs_return_path": "coherent",
+        "from_vs_replyto": "coherent",
+        "display_name_vs_domain": "coherent",
+        "domain_age": {
+            "status": "unknown",
+            "error": "no creation date"
+        },
+        "analysis_timestamp": "2026-01-21T03:51:37.438072+00:00",
+        "score": 25,
+        "pourcentage": 12.5,
+        "_score": 25,
+        "_pourcentage": 12.5
+    },
+    "smtp": {
+        "email_id": null,
+        "source_ip": "104.16.132.229",
+        "virustotal": {
+            "malicious_reports": 0,
+            "status": "clean"
+        },
+        "geolocation": {
+            "country": "United States of America",
+            "region": "California",
+            "city": "San Francisco",
+            "asn": "13335",
+            "isp": "CloudFlare Inc",
+            "status": "ok"
+        },
+        "received_count": 2,
+        "received_headers": [
+            "from mail-eu1.microsoft.com (104.16.132.229) by mx.example.com with ESMTPS id abc123 for <john.doe@example.com>; Fri, 17 Jan 2025 14:19:58 +0100",
+            "from internal-relay.microsoft.net (10.10.10.5) by mail-eu1.microsoft.com with SMTP id def456; Fri, 17 Jan 2025 13:19:58 +0000"
+        ]
+    },
+    "content": {
+        "content": {
+            "subject": "",
+            "ai_content_analysis": {
+                "global_verdict": "ok",
+                "phishing_indicators": {
+                    "status": "ok",
+                    "reason": "Aucun indicateur de phishing détecté"
+                },
+                "language_quality": {
+                    "status": "ok",
+                    "reason": "Qualité de la langue non évaluée en raison du contenu vide"
+                },
+                "context_coherence": {
+                    "status": "ok",
+                    "reason": "Coherence non évaluée en raison du contenu vide"
+                }
+            }
+        }
+    },
+    "links": {
+        "email_id": null,
+        "url_count": 6,
+        "urls": [
+            "https://www.microsoft.com/security-check",
+            "http://example.com/login",
+            "https://bit.ly/3AbCdEf",
+            "https://malicious-domain.com/phishing",
+            "http://185.199.110.153/login",
+            "https://micros0ft-secure.com"
+        ]
+    },
+    "files": {
+        "email_id": null,
+        "attachment_count": 1,
+        "attachments": [
+            {
+                "filename": "facture.pdf",
+                "content_type": "application/pdf",
+                "size_bytes": 51
+            }
+        ]
+    },
+    "score_final": 5.05,
+    "pourcentage_final": 12.5
+}
