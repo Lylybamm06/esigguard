@@ -1,0 +1,11 @@
+{
+    "email_id": null,
+    "attachment_count": 1,
+    "attachments": [
+        {
+            "filename": "facture.pdf",
+            "content_type": "application/pdf",
+            "size_bytes": 51
+        }
+    ]
+}

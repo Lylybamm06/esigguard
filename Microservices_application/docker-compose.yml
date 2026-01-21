@@ -1,0 +1,76 @@
+services:
+
+  auth:
+    build: ./auth
+    environment:
+      EMAIL_FILE: ${EMAIL_FILE}
+      WHOIS_API_KEY: ${WHOIS_API_KEY}
+    volumes:
+      - ./data:/data
+      - ./results:/results
+      - ./common:/app/common
+
+  lien:
+    build: ./lien
+    environment:
+      EMAIL_FILE: ${EMAIL_FILE}
+    volumes:
+      - ./data:/data
+      - ./results:/results
+      - ./common:/app/common
+
+  file:
+    build: ./file
+    environment:
+      EMAIL_FILE: ${EMAIL_FILE}
+    volumes:
+      - ./data:/data
+      - ./results:/results
+      - ./common:/app/common
+
+  content:
+    build: ./content
+    environment:
+      EMAIL_FILE: ${EMAIL_FILE}
+      GROQ_API_KEY: ${GROQ_API_KEY}
+    volumes:
+      - ./data:/data
+      - ./results:/results
+      - ./common:/app/common
+
+  smtp:
+    build: ./smtp
+    environment:
+      EMAIL_FILE: ${EMAIL_FILE}
+      VT_API_KEY: ${VT_API_KEY}
+      IP2LOC_API_KEY: ${IP2LOC_API_KEY}
+    volumes:
+      - ./data:/data
+      - ./results:/results
+      - ./common:/app/common
+
+  # Rapport propre (sans scores)
+  report:
+    build: ./report
+    command: python3 report.py
+    volumes:
+      - ./results:/results
+    depends_on:
+      - auth
+      - lien
+      - file
+      - content
+      - smtp
+
+  # Rapport avec scores
+  report_scored:
+    build: ./report
+    command: python3 report_scored.py
+    volumes:
+      - ./results:/results
+    depends_on:
+      - auth
+      - lien
+      - file
+      - content
+      - smtp
