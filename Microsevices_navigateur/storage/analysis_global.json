@@ -1,0 +1,89 @@
+{
+  "email_info": {
+    "sender": "support@paypal-verify.com",
+    "subject": "URGENT: Verify your account NOW!!!",
+    "timestamp": ""
+  },
+  "analysis": {
+    "lien": {
+      "link_analysis": [],
+      "summary": {
+        "average_score": 0,
+        "global_percentage": 0,
+        "risk_level": "low",
+        "total_links": 0,
+        "total_score": 0
+      }
+    },
+    "file": {
+      "attachment_analysis": [],
+      "moyenne_pourcentage": 0,
+      "nb_attachments": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "Le contexte du mail n'est pas clair, il mentionne des banques sans fournir de détails supplémentaires.",
+          "status": "suspect"
+        },
+        "global_verdict": "suspect",
+        "language_quality": {
+          "reason": "Le langage utilisé dans le mail est clair et concis.",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "Le mail mentionne des banques connues, ce qui peut être un indicateur de phishing.",
+          "status": "suspect"
+        }
+      },
+      "phishing_percentage": 75.0,
+      "phishing_score": 45,
+      "risk_level": "high",
+      "score_details": [
+        {
+          "indicator": "phishing_indicators",
+          "points": 15,
+          "reason": "Le mail mentionne des banques connues, ce qui peut être un indicateur de phishing."
+        },
+        {
+          "indicator": "context_coherence",
+          "points": 30,
+          "reason": "Le contexte du mail n'est pas clair, il mentionne des banques sans fournir de détails supplémentaires."
+        }
+      ]
+    },
+    "auth": {
+      "authentication_analysis": {
+        "analysis_timestamp": "2026-01-23T01:05:51.143101",
+        "details": [],
+        "domain": "paypal-verify.com",
+        "domain_age_days": 733,
+        "pourcentage": 0,
+        "score": 0,
+        "sender_address": "support@paypal-verify.com"
+      },
+      "parsed_data": {
+        "email_data": {
+          "attachments": [],
+          "body_snippet": "",
+          "display_name": "",
+          "domain": "paypal-verify.com",
+          "sender_address": "support@paypal-verify.com",
+          "timestamp": null,
+          "urls": []
+        }
+      }
+    }
+  },
+  "analyzed_at": "2026-01-23T01:05:51.147612",
+  "original_payload": {
+    "sender": {
+      "address": "support@paypal-verify.com"
+    },
+    "subject": "URGENT: Verify your account NOW!!!",
+    "body": "Dear custmer, we detcted unusuual activity. Clik here immediatly or account will be suspended!",
+    "links": [
+      "http://paypal-fake.tk"
+    ]
+  }
+}

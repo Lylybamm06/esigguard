@@ -1,0 +1,65 @@
+services:
+  orchestrator:
+    build:
+      context: ./orchestrator
+    ports:
+      - "5002:5002"
+    environment:
+      - FLASK_ENV=production
+    volumes:
+      - ./storage:/app/storage
+    depends_on:
+      - auth
+      - content
+      - file
+      - lien
+    networks:
+      - phishing-network
+  
+  auth:
+    build:
+      context: ./auth
+    environment:
+      - FLASK_ENV=production
+    volumes:
+      - ./parser_utils.py:/app/parser_utils.py
+    networks:
+      - phishing-network
+  
+  content:
+    build:
+      context: ./content
+    environment:
+      - FLASK_ENV=production
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    volumes:
+      - ./parser_utils.py:/app/parser_utils.py
+    networks:
+      - phishing-network
+  
+  file:
+    build:
+      context: ./file
+    environment:
+      - FLASK_ENV=production
+    volumes:
+      - ./parser_utils.py:/app/parser_utils.py
+    networks:
+      - phishing-network
+  
+  lien:
+    build:
+      context: ./lien
+    environment:
+      - FLASK_ENV=production
+      - GROQ_API_KEY=${GROQ_API_KEY}
+      - VT_API_KEY=${VT_API_KEY}
+      - WHOIS_API_KEY=${WHOIS_API_KEY}
+    volumes:
+      - ./parser_utils.py:/app/parser_utils.py
+    networks:
+      - phishing-network
+
+networks:
+  phishing-network:
+    driver: bridge

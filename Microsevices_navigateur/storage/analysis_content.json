@@ -1,0 +1,41 @@
+{
+  "service": "content",
+  "analyzed_at": "2026-01-23T01:05:51.147612",
+  "result": {
+    "ai_content_analysis": {
+      "context_coherence": {
+        "reason": "Le contexte du mail n'est pas clair, il mentionne des banques sans fournir de détails supplémentaires.",
+        "status": "suspect"
+      },
+      "global_verdict": "suspect",
+      "language_quality": {
+        "reason": "Le langage utilisé dans le mail est clair et concis.",
+        "status": "ok"
+      },
+      "phishing_indicators": {
+        "reason": "Le mail mentionne des banques connues, ce qui peut être un indicateur de phishing.",
+        "status": "suspect"
+      }
+    },
+    "phishing_percentage": 75.0,
+    "phishing_score": 45,
+    "risk_level": "high",
+    "score_details": [
+      {
+        "indicator": "phishing_indicators",
+        "points": 15,
+        "reason": "Le mail mentionne des banques connues, ce qui peut être un indicateur de phishing."
+      },
+      {
+        "indicator": "context_coherence",
+        "points": 30,
+        "reason": "Le contexte du mail n'est pas clair, il mentionne des banques sans fournir de détails supplémentaires."
+      }
+    ]
+  },
+  "email_info": {
+    "sender": "support@paypal-verify.com",
+    "subject": "URGENT: Verify your account NOW!!!",
+    "timestamp": ""
+  }
+}

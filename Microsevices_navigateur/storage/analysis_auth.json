@@ -1,0 +1,31 @@
+{
+  "service": "auth",
+  "analyzed_at": "2026-01-23T01:05:51.147612",
+  "result": {
+    "authentication_analysis": {
+      "analysis_timestamp": "2026-01-23T01:05:51.143101",
+      "details": [],
+      "domain": "paypal-verify.com",
+      "domain_age_days": 733,
+      "pourcentage": 0,
+      "score": 0,
+      "sender_address": "support@paypal-verify.com"
+    },
+    "parsed_data": {
+      "email_data": {
+        "attachments": [],
+        "body_snippet": "",
+        "display_name": "",
+        "domain": "paypal-verify.com",
+        "sender_address": "support@paypal-verify.com",
+        "timestamp": null,
+        "urls": []
+      }
+    }
+  },
+  "email_info": {
+    "sender": "support@paypal-verify.com",
+    "subject": "URGENT: Verify your account NOW!!!",
+    "timestamp": ""
+  }
+}

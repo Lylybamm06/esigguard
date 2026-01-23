@@ -1,0 +1,14 @@
+{
+  "service": "file",
+  "analyzed_at": "2026-01-23T01:05:51.147612",
+  "result": {
+    "attachment_analysis": [],
+    "moyenne_pourcentage": 0,
+    "nb_attachments": 0
+  },
+  "email_info": {
+    "sender": "support@paypal-verify.com",
+    "subject": "URGENT: Verify your account NOW!!!",
+    "timestamp": ""
+  }
+}

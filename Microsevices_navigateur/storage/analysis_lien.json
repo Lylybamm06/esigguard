@@ -1,0 +1,19 @@
+{
+  "service": "lien",
+  "analyzed_at": "2026-01-23T01:05:51.147612",
+  "result": {
+    "link_analysis": [],
+    "summary": {
+      "average_score": 0,
+      "global_percentage": 0,
+      "risk_level": "low",
+      "total_links": 0,
+      "total_score": 0
+    }
+  },
+  "email_info": {
+    "sender": "support@paypal-verify.com",
+    "subject": "URGENT: Verify your account NOW!!!",
+    "timestamp": ""
+  }
+}
