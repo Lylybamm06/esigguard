@@ -1,0 +1,27 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "Manque de contexte",
+      "status": "suspect"
+    },
+    "global_verdict": "suspect",
+    "language_quality": {
+      "reason": "Formulation claire",
+      "status": "ok"
+    },
+    "phishing_indicators": {
+      "reason": "Urgence et menace",
+      "status": "suspect"
+    }
+  },
+  "analysis_id": 2,
+  "explanation": "Content: Phishing: Urgence et menace | Coherence: Manque de contexte",
+  "keywords": {
+    "count": 0,
+    "keyword_score": 0,
+    "keywords_found": []
+  },
+  "score": 45,
+  "service": "content",
+  "subject": "Nous avons détecté une activité inhabituelle. Veuillez vérifier votre identité pour éviter la suspension."
+}

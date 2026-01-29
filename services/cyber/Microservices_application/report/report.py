@@ -1,52 +1,48 @@
 import json
 import os
+import mysql.connector
 
-RESULTS_DIR = "/results"
-
-def load_json(name):
-    path = os.path.join(RESULTS_DIR, name)
-    if not os.path.exists(path):
-        return {}
+def load_json(path):
     try:
-        with open(path, "r", encoding="utf-8") as f:
+        with open(path, "r") as f:
             return json.load(f)
     except:
         return {}
 
+def save_to_mysql(analysis_id, data):
+    conn = mysql.connector.connect(
+        host=os.getenv("MYSQL_HOST"),
+        user=os.getenv("MYSQL_USER"),
+        password=os.getenv("MYSQL_PASSWORD"),
+        database=os.getenv("MYSQL_DATABASE")
+    )
+    cursor = conn.cursor()
+
+    cursor.execute("""
+        INSERT INTO analysis_results (analysis_id, report_json)
+        VALUES (%s, %s)
+        ON DUPLICATE KEY UPDATE report_json = VALUES(report_json)
+    """, (analysis_id, json.dumps(data)))
+
+    conn.commit()
+    cursor.close()
+    conn.close()
+
 if __name__ == "__main__":
-    # Charger les JSON AVANT de les utiliser
-    parsed = load_json("parsed.json")
-    auth = load_json("auth.json")
-    smtp = load_json("smtp.json")
+    analysis_id = os.getenv("ANALYSIS_ID")
 
-    # Nettoyage du subject
-    raw_subject = parsed.get("headers", {}).get("raw_subject", "")
-    clean_subject = raw_subject.replace("\\n", "\n").replace("\\r", "\n")
-
-    # Construction du rapport final
-    final = {
-        "email_id": parsed.get("headers", {}).get("message_id", ""),
-        "parsed": {
-            "headers": parsed.get("headers", {}),
-            "meta": parsed.get("meta", {}),
-            "auth": {
-                "spf": auth.get("spf", ""),
-                "dkim": auth.get("dkim", ""),
-                "dmarc": auth.get("dmarc", "")
-            },
-            "routing": {
-                "received": smtp.get("received", []),
-                "hops": smtp.get("hops", 0)
-            },
-            "content": {
-                "subject": clean_subject,
-                "body": parsed.get("content", "")
-            }
-        }
+    report = {
+        "analysis_id": analysis_id,
+        "files": load_json("/results/file/files.json"),
+        "content": load_json("/results/content/content.json"),
+        "links": load_json("/results/lien/links.json"),
+        "smtp": load_json("/results/smtp/smtp.json")
     }
 
-    # Écriture du rapport final
-    with open(os.path.join(RESULTS_DIR, "final_report.json"), "w", encoding="utf-8") as f:
-        json.dump(final, f, indent=4, ensure_ascii=False)
+    os.makedirs("/results", exist_ok=True)
+    with open("/results/report.json", "w") as f:
+        json.dump(report, f, indent=4)
 
-    print("[REPORT] Rapport final généré dans /results/final_report.json")
+    save_to_mysql(analysis_id, report)
+
+    print("[REPORT] Rapport global généré.")

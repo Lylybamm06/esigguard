@@ -1,76 +1,136 @@
+version: '3.8'
+
 services:
+  parser:
+    build:
+      context: .
+      dockerfile: parser_azure/Dockerfile
+    container_name: esigguard_parser
+    ports:
+      - "5001:5001"
+    environment:
+      - MYSQL_HOST=${MYSQL_HOST}
+      - MYSQL_PORT=${MYSQL_PORT}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    volumes:
+      - ./test_emails:/mnt/emails:ro
+    networks:
+      - esigguard_network
+
+  orchestrator:
+    build:
+      context: .
+      dockerfile: orchestrator/Dockerfile
+    container_name: esigguard_orchestrator
+    ports:
+      - "5002:5002"
+    environment:
+      - MYSQL_HOST=${MYSQL_HOST}
+      - MYSQL_PORT=${MYSQL_PORT}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+    volumes:
+      - ./results:/mnt/results
+    networks:
+      - esigguard_network
+    depends_on:
+      - smtp
+      - auth
+      - lien
+      - file
+      - content
 
   auth:
-    build: ./auth
+    build:
+      context: .
+      dockerfile: auth/Dockerfile
+    container_name: esigguard_auth
+    ports:
+      - "5003:5003"
     environment:
-      EMAIL_FILE: ${EMAIL_FILE}
-      WHOIS_API_KEY: ${WHOIS_API_KEY}
-    volumes:
-      - ./data:/data
-      - ./results:/results
-      - ./common:/app/common
+      - MYSQL_HOST=${MYSQL_HOST}
+      - MYSQL_PORT=${MYSQL_PORT}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - WHOIS_API_KEY=${WHOIS_API_KEY}
+    networks:
+      - esigguard_network
 
   lien:
-    build: ./lien
+    build:
+      context: .
+      dockerfile: lien/Dockerfile
+    container_name: esigguard_lien
+    ports:
+      - "5004:5004"
     environment:
-      EMAIL_FILE: ${EMAIL_FILE}
-    volumes:
-      - ./data:/data
-      - ./results:/results
-      - ./common:/app/common
+      - MYSQL_HOST=${MYSQL_HOST}
+      - MYSQL_PORT=${MYSQL_PORT}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - VT_API_KEY=${VT_API_KEY}
+      - WHOIS_API_KEY=${WHOIS_API_KEY}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    networks:
+      - esigguard_network
 
   file:
-    build: ./file
+    build:
+      context: .
+      dockerfile: file/Dockerfile
+    container_name: esigguard_file
+    ports:
+      - "5005:5005"
     environment:
-      EMAIL_FILE: ${EMAIL_FILE}
-    volumes:
-      - ./data:/data
-      - ./results:/results
-      - ./common:/app/common
+      - MYSQL_HOST=${MYSQL_HOST}
+      - MYSQL_PORT=${MYSQL_PORT}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    networks:
+      - esigguard_network
 
   content:
-    build: ./content
+    build:
+      context: .
+      dockerfile: content/Dockerfile
+    container_name: esigguard_content
+    ports:
+      - "5006:5006"
     environment:
-      EMAIL_FILE: ${EMAIL_FILE}
-      GROQ_API_KEY: ${GROQ_API_KEY}
-    volumes:
-      - ./data:/data
-      - ./results:/results
-      - ./common:/app/common
+      - MYSQL_HOST=${MYSQL_HOST}
+      - MYSQL_PORT=${MYSQL_PORT}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - GROQ_API_KEY=${GROQ_API_KEY}
+    networks:
+      - esigguard_network
 
   smtp:
-    build: ./smtp
+    build:
+      context: .
+      dockerfile: smtp/Dockerfile
+    container_name: esigguard_smtp
+    ports:
+      - "5007:5007"
     environment:
-      EMAIL_FILE: ${EMAIL_FILE}
-      VT_API_KEY: ${VT_API_KEY}
-      IP2LOC_API_KEY: ${IP2LOC_API_KEY}
-    volumes:
-      - ./data:/data
-      - ./results:/results
-      - ./common:/app/common
+      - MYSQL_HOST=${MYSQL_HOST}
+      - MYSQL_PORT=${MYSQL_PORT}
+      - MYSQL_DATABASE=${MYSQL_DATABASE}
+      - MYSQL_USER=${MYSQL_USER}
+      - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+      - VT_API_KEY=${VT_API_KEY}
+      - IP2LOC_API_KEY=${IP2LOC_API_KEY}
+    networks:
+      - esigguard_network
 
-  # Rapport propre (sans scores)
-  report:
-    build: ./report
-    command: python3 report.py
-    volumes:
-      - ./results:/results
-    depends_on:
-      - auth
-      - lien
-      - file
-      - content
-      - smtp
-
-  # Rapport avec scores
-  report_scored:
-    build: ./report
-    command: python3 report_scored.py
-    volumes:
-      - ./results:/results
-    depends_on:
-      - auth
-      - lien
-      - file
-      - content
-      - smtp
+networks:
+  esigguard_network:
+    driver: bridge

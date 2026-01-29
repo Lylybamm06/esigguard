@@ -1,0 +1,27 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "Lien douteux",
+      "status": "suspect"
+    },
+    "global_verdict": "suspect",
+    "language_quality": {
+      "reason": "Formulation correcte",
+      "status": "ok"
+    },
+    "phishing_indicators": {
+      "reason": "Urgence et menace",
+      "status": "suspect"
+    }
+  },
+  "analysis_id": 1,
+  "explanation": "Content: Phishing: Urgence et menace | Coherence: Lien douteux",
+  "keywords": {
+    "count": 0,
+    "keyword_score": 0,
+    "keywords_found": []
+  },
+  "score": 45,
+  "service": "content",
+  "subject": "[ALERTE] Activité suspecte sur votre compte"
+}

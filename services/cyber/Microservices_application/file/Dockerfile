@@ -1,9 +1,9 @@
 FROM python:3.11-slim
-
 WORKDIR /app
-
-COPY . /app
-
+COPY file/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
-
-CMD ["python3", "file.py"]
+COPY database/ /app/database/
+COPY file/file_service.py .
+ENV PYTHONUNBUFFERED=1
+EXPOSE 5005
+CMD ["python", "file_service.py"]
