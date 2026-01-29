@@ -1,0 +1,75 @@
+{
+  "analysis_id": 7,
+  "score_cyber": 16.0,
+  "explanation_cyber": "SMTP : IP source non identifiee | Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu | Lien: Erreur | File : Aucune piece jointe | Content: Mots-cles: sécurité",
+  "details": {
+    "smtp": {
+      "analysis_id": 7,
+      "explanation": "SMTP : IP source non identifiee",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Unknown",
+        "country": "Unknown",
+        "ip": null,
+        "region": "Unknown"
+      },
+      "ip_reputation": {
+        "ip": null,
+        "malicious_reports": 0,
+        "status": "unknown"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": null,
+      "score": 30,
+      "service": "smtp",
+      "timestamp_status": "ok"
+    },
+    "auth": {
+      "score": 40,
+      "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu"
+    },
+    "lien": {
+      "score": 0,
+      "explanation": "Lien: Erreur"
+    },
+    "file": {
+      "analysis_id": 7,
+      "attachment_count": 0,
+      "attachments_analysis": [],
+      "explanation": "File : Aucune piece jointe",
+      "score": 0,
+      "service": "file",
+      "suspicious_count": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "correspond à une vraie candidature",
+          "status": "ok"
+        },
+        "global_verdict": "coherent",
+        "language_quality": {
+          "reason": "grammaire correcte",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "pas d'urgence ni menace",
+          "status": "ok"
+        }
+      },
+      "analysis_id": 7,
+      "explanation": "Content: Mots-cles: sécurité",
+      "keywords": {
+        "count": 1,
+        "keyword_score": 15,
+        "keywords_found": [
+          "sécurité"
+        ]
+      },
+      "score": 10,
+      "service": "content",
+      "subject": "CV pour stage en Cybersécurité "
+    }
+  }
+}
