@@ -1,20 +1,20 @@
 {
   "ai_content_analysis": {
     "context_coherence": {
-      "reason": "corps vide",
+      "reason": "Correspond à une communication interne",
       "status": "ok"
     },
     "global_verdict": "coherent",
     "language_quality": {
-      "reason": "vide, pas d'erreur",
+      "reason": "Grammaire et orthographe correctes",
       "status": "ok"
     },
     "phishing_indicators": {
-      "reason": "aucun indicateur",
+      "reason": "Pas d'urgence ou menace",
       "status": "ok"
     }
   },
-  "analysis_id": 13,
+  "analysis_id": 18,
   "explanation": "Content: Aucun indicateur suspect",
   "keywords": {
     "count": 0,
@@ -23,5 +23,5 @@
   },
   "score": 0,
   "service": "content",
-  "subject": ""
+  "subject": " Poubelle de tri débordante – situation inadmissible"
 }

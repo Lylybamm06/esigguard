@@ -1,10 +1,10 @@
 {
-  "analysis_id": 13,
+  "analysis_id": 25,
   "score_cyber": 6.0,
   "explanation_cyber": "SMTP : IP source non identifiee | Lien : Aucune URL detectee | File : Aucune piece jointe | Content: Aucun indicateur suspect",
   "details": {
     "smtp": {
-      "analysis_id": 13,
+      "analysis_id": 25,
       "explanation": "SMTP : IP source non identifiee",
       "headers_status": "normal",
       "ip_geolocation": {
@@ -30,7 +30,7 @@
       "explanation": "Auth: Erreur HTTP 500"
     },
     "lien": {
-      "analysis_id": 13,
+      "analysis_id": 25,
       "explanation": "Lien : Aucune URL detectee",
       "score": 0,
       "service": "lien",
@@ -38,7 +38,7 @@
       "urls_analyzed": []
     },
     "file": {
-      "analysis_id": 13,
+      "analysis_id": 25,
       "attachment_count": 0,
       "attachments_analysis": [],
       "explanation": "File : Aucune piece jointe",
@@ -49,12 +49,12 @@
     "content": {
       "ai_content_analysis": {
         "context_coherence": {
-          "reason": "corps vide",
+          "reason": "aucun contenu",
           "status": "ok"
         },
         "global_verdict": "coherent",
         "language_quality": {
-          "reason": "vide, pas d'erreur",
+          "reason": "aucun contenu",
           "status": "ok"
         },
         "phishing_indicators": {
@@ -62,7 +62,7 @@
           "status": "ok"
         }
       },
-      "analysis_id": 13,
+      "analysis_id": 25,
       "explanation": "Content: Aucun indicateur suspect",
       "keywords": {
         "count": 0,

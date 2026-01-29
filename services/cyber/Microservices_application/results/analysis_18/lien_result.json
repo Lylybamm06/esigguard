@@ -1,0 +1,50 @@
+{
+  "analysis_id": 18,
+  "explanation": "Lien : 2 URL(s) analysee(s), aucune suspecte",
+  "score": 0.0,
+  "service": "lien",
+  "suspicious_count": 0,
+  "url_count": 2,
+  "urls_analyzed": [
+    {
+      "ai_analysis": {
+        "reason": "le domaine aka.ms est un domaine officiel de Microsoft, et le texte affiché correspond à l'URL réelle",
+        "status": "coherent"
+      },
+      "display_text": "https://aka.ms/AAb9ysg",
+      "domain": "aka.ms",
+      "domain_age": {
+        "age_years": 15.03,
+        "created": "2011-01-20T16:48:05Z",
+        "status": "bon"
+      },
+      "raw_url": "https://aka.ms/AAb9ysg",
+      "reputation": {
+        "domain": "aka.ms",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 0
+    },
+    {
+      "ai_analysis": {
+        "reason": "Le texte affiché correspond au domaine de l'URL",
+        "status": "coherent"
+      },
+      "display_text": "https://www.crous-normandie.fr/",
+      "domain": "www.crous-normandie.fr",
+      "domain_age": {
+        "age_years": 9.65,
+        "created": "2016-06-07T11:43:47Z",
+        "status": "bon"
+      },
+      "raw_url": "https://www.crous-normandie.fr/",
+      "reputation": {
+        "domain": "www.crous-normandie.fr",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 0
+    }
+  ]
+}

@@ -1,10 +1,10 @@
 {
-  "analysis_id": 13,
-  "score_cyber": 6.0,
-  "explanation_cyber": "SMTP : IP source non identifiee | Lien : Aucune URL detectee | File : Aucune piece jointe | Content: Aucun indicateur suspect",
+  "analysis_id": 26,
+  "score_cyber": 18.0,
+  "explanation_cyber": "SMTP : IP source non identifiee | Lien : Aucune URL detectee | File : Aucune piece jointe | Content: Phishing: manque d'info | Langue: vide | Coherence: pas de contexte",
   "details": {
     "smtp": {
-      "analysis_id": 13,
+      "analysis_id": 26,
       "explanation": "SMTP : IP source non identifiee",
       "headers_status": "normal",
       "ip_geolocation": {
@@ -30,7 +30,7 @@
       "explanation": "Auth: Erreur HTTP 500"
     },
     "lien": {
-      "analysis_id": 13,
+      "analysis_id": 26,
       "explanation": "Lien : Aucune URL detectee",
       "score": 0,
       "service": "lien",
@@ -38,7 +38,7 @@
       "urls_analyzed": []
     },
     "file": {
-      "analysis_id": 13,
+      "analysis_id": 26,
       "attachment_count": 0,
       "attachments_analysis": [],
       "explanation": "File : Aucune piece jointe",
@@ -49,27 +49,27 @@
     "content": {
       "ai_content_analysis": {
         "context_coherence": {
-          "reason": "corps vide",
-          "status": "ok"
+          "reason": "pas de contexte",
+          "status": "suspect"
         },
-        "global_verdict": "coherent",
+        "global_verdict": "suspect",
         "language_quality": {
-          "reason": "vide, pas d'erreur",
-          "status": "ok"
+          "reason": "vide",
+          "status": "suspect"
         },
         "phishing_indicators": {
-          "reason": "aucun indicateur",
-          "status": "ok"
+          "reason": "manque d'info",
+          "status": "suspect"
         }
       },
-      "analysis_id": 13,
-      "explanation": "Content: Aucun indicateur suspect",
+      "analysis_id": 26,
+      "explanation": "Content: Phishing: manque d'info | Langue: vide | Coherence: pas de contexte",
       "keywords": {
         "count": 0,
         "keyword_score": 0,
         "keywords_found": []
       },
-      "score": 0,
+      "score": 60,
       "service": "content",
       "subject": ""
     }

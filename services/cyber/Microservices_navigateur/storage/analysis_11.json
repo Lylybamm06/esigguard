@@ -1,0 +1,66 @@
+{
+  "analysis_id": 11,
+  "email_data": {
+    "display_name": "Test Sender",
+    "domain": "example.com",
+    "email_date": "2024-01-26T10:00:00+00:00",
+    "email_sender": "test0@example.com",
+    "email_subject": "Ceci est un test complet pour lancer toutes les analyses.",
+    "sender_address": "test0@example.com",
+    "timestamp": 1706263200000
+  },
+  "analysis": {
+    "file": {
+      "Explanation": {
+        "fichiers_suspects": [],
+        "nbre_fichiers_suspects": 0,
+        "raison": "Extensions dangereuses"
+      },
+      "attachment_analysis": [],
+      "moyenne_pourcentage": 0,
+      "nb_attachments": 0
+    },
+    "lien": {
+      "explanation": "0 lien(s) suspect(s) : aucun",
+      "links_analysis": [],
+      "nb_links": 0
+    },
+    "content": {
+      "content_analysis": {
+        "reason": "Le texte demande une réponse sous forme de JSON, ce qui est une instruction claire et concis.",
+        "status": "cohérent"
+      },
+      "explanation": "Le texte demande une réponse sous forme de JSON, ce qui est une instruction claire et concis.",
+      "percentage": 0.0,
+      "risk_level": "low",
+      "score": 0
+    },
+    "auth": {
+      "auth_result": {
+        "details": [
+          "Domaine cohérent avec l'adresse expéditeur"
+        ],
+        "domain_age_days": 11126,
+        "explanation": "Domaine cohérent avec l'adresse expéditeur",
+        "score": 0,
+        "timestamp": "2026-01-29T05:20:03.704202"
+      },
+      "email_data": {
+        "display_name": "Test Sender",
+        "domain": "example.com",
+        "email_date": "2024-01-26T10:00:00+00:00",
+        "email_sender": "test0@example.com",
+        "email_subject": "Ceci est un test complet pour lancer toutes les analyses.",
+        "sender_address": "test0@example.com",
+        "timestamp": 1706263200000
+      },
+      "urls": [
+        "http://example.com",
+        "http://malicious.test/phish"
+      ]
+    }
+  },
+  "score_cyber": 0.0,
+  "explanation_cyber": "CONTENT: Le texte demande une réponse sous forme de JSON, ce qui est une instruction claire et concis. | LIEN: 0 lien(s) suspect(s) : aucun",
+  "analyzed_at": "2026-01-29T05:20:04.363468"
+}

@@ -1,0 +1,146 @@
+{
+  "analysis_id": 7,
+  "email_data": {
+    "display_name": "PayPal Sécurité",
+    "domain": "paypal.com",
+    "email_date": "2024-03-01T09:15:00+00:00",
+    "email_sender": "alert@paypal.com",
+    "email_subject": "Nous avons détecté une activité inhabituelle sur votre compte.",
+    "sender_address": "alert@paypal.com",
+    "timestamp": 1709284500000
+  },
+  "analysis": {
+    "file": {
+      "attachment_analysis": [
+        {
+          "filename": "facture_2024.pdf",
+          "pourcentage": 0,
+          "risk_type": "normal",
+          "score": 0
+        },
+        {
+          "filename": "update_security.exe",
+          "pourcentage": 70,
+          "risk_type": "suspect",
+          "score": 70
+        }
+      ],
+      "moyenne_pourcentage": 35.0,
+      "nb_attachments": 2
+    },
+    "auth": {
+      "details": [],
+      "domain_age_days": 9694,
+      "explanation": "Aucun problème détecté",
+      "score": 0,
+      "timestamp": "2026-01-29T01:03:43.105467"
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "Le contexte du mail n'est pas clair et pourrait être trompeur, ce qui nécessite une prudence accrue.",
+          "status": "suspect"
+        },
+        "global_verdict": "suspect",
+        "language_quality": {
+          "reason": "Le langage utilisé est clair et sans fautes d'orthographe ou de grammaire apparentes.",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "Le mail mentionne des banques connues, ce qui pourrait être un moyen de crédibiliser une arnaque.",
+          "status": "suspect"
+        }
+      },
+      "phishing_percentage": 75.0,
+      "phishing_score": 45,
+      "risk_level": "high",
+      "score_details": [
+        {
+          "indicator": "phishing_indicators",
+          "points": 15,
+          "reason": "Le mail mentionne des banques connues, ce qui pourrait être un moyen de crédibiliser une arnaque."
+        },
+        {
+          "indicator": "context_coherence",
+          "points": 30,
+          "reason": "Le contexte du mail n'est pas clair et pourrait être trompeur, ce qui nécessite une prudence accrue."
+        }
+      ]
+    },
+    "lien": {
+      "link_analysis": [
+        {
+          "ai_analysis": {
+            "reason": "Le domaine du lien n'est pas celui de l'entreprise officielle PayPal, mais semble être une variante frauduleuse avec une extension supplémentaire '.security-check-verif.net' qui cherche probablement à tromper les utilisateurs pour voler leurs informations d'authentification.",
+            "status": "suspect"
+          },
+          "display_text": "https://paypal.com.security-check-verif.net/login",
+          "domain": "paypal.com.security-check-verif.net",
+          "domain_age": {
+            "error": "No match for \"SECURITY-CHECK-VERIF.NET\".\r\n>>> Last update of whois database: 2026-01-29T01:03:28Z <<<\r\n\r\nNOTICE: The expiration date displayed in this record is the date the\r\nregistrar's sponsorship of the domain name registration in the registry is\r\ncurrently set to expire. This date does not necessarily reflect the expiration\r\ndate of the domain name registrant's agreement with the sponsoring\r\nregistrar.  Users may consult the sponsoring registrar's Whois database to\r\nview the registrar's reported date of expiration for this registration.\r\n\r\nTERMS OF USE: You are not authorized to access or query our Whois\r\ndatabase through the use of electronic processes that are high-volume and\r\nautomated except as reasonably necessary to register domain names or\r\nmodify existing registrations; the Data in VeriSign Global Registry\r\nServices' (\"VeriSign\") Whois database is provided by VeriSign for\r\ninformation purposes only, and to assist persons in obtaining information\r\nabout or related to a domain name registration record. VeriSign does not\r\nguarantee its accuracy. By submitting a Whois query, you agree to abide\r\nby the following terms of use: You agree that you may use this Data only\r\nfor lawful purposes and that under no circumstances will you use this Data\r\nto: (1) allow, enable, or otherwise support the transmission of mass\r\nunsolicited, commercial advertising or solicitations via e-mail, telephone,\r\nor facsimile; or (2) enable high volume, automated, electronic processes\r\nthat apply to VeriSign (or its computer systems). The compilation,\r\nrepackaging, dissemination or other use of this Data is expressly\r\nprohibited without the prior written consent of VeriSign. You agree not to\r\nuse electronic processes that are automated and high-volume to access or\r\nquery the Whois database except as reasonably necessary to register\r\ndomain names or modify existing registrations. VeriSign reserves the right\r\nto restrict your access to the Whois database in its sole discretion to ensure\r\noperational stability.  VeriSign may restrict or terminate your access to the\r\nWhois database for failure to abide by these terms of use. VeriSign\r\nreserves the right to modify these terms at any time.\r\n\r\nThe Registry database contains ONLY .COM, .NET, .EDU domains and\r\nRegistrars.\r\n",
+            "status": "unknown"
+          },
+          "link_percentage": 23.08,
+          "link_score": 30,
+          "raw_url": "https://paypal.com.security-check-verif.net/login",
+          "reputation": {
+            "domain": "paypal.com.security-check-verif.net",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "risk_level": "low",
+          "score_details": [
+            {
+              "indicator": "ai_analysis",
+              "points": 30,
+              "reason": "Le domaine du lien n'est pas celui de l'entreprise officielle PayPal, mais semble être une variante frauduleuse avec une extension supplémentaire '.security-check-verif.net' qui cherche probablement à tromper les utilisateurs pour voler leurs informations d'authentification."
+            }
+          ]
+        },
+        {
+          "ai_analysis": {
+            "reason": "le domaine 'secure-update-paypal.com' n'est pas le domaine officiel de PayPal, qui est 'paypal.com', ce qui suggère une tentative de phishing",
+            "status": "suspect"
+          },
+          "display_text": "https://secure-update-paypal.com/verify",
+          "domain": "secure-update-paypal.com",
+          "domain_age": {
+            "error": "No match for \"SECURE-UPDATE-PAYPAL.COM\".\r\n>>> Last update of whois database: 2026-01-29T01:03:42Z <<<\r\n\r\nNOTICE: The expiration date displayed in this record is the date the\r\nregistrar's sponsorship of the domain name registration in the registry is\r\ncurrently set to expire. This date does not necessarily reflect the expiration\r\ndate of the domain name registrant's agreement with the sponsoring\r\nregistrar.  Users may consult the sponsoring registrar's Whois database to\r\nview the registrar's reported date of expiration for this registration.\r\n\r\nTERMS OF USE: You are not authorized to access or query our Whois\r\ndatabase through the use of electronic processes that are high-volume and\r\nautomated except as reasonably necessary to register domain names or\r\nmodify existing registrations; the Data in VeriSign Global Registry\r\nServices' (\"VeriSign\") Whois database is provided by VeriSign for\r\ninformation purposes only, and to assist persons in obtaining information\r\nabout or related to a domain name registration record. VeriSign does not\r\nguarantee its accuracy. By submitting a Whois query, you agree to abide\r\nby the following terms of use: You agree that you may use this Data only\r\nfor lawful purposes and that under no circumstances will you use this Data\r\nto: (1) allow, enable, or otherwise support the transmission of mass\r\nunsolicited, commercial advertising or solicitations via e-mail, telephone,\r\nor facsimile; or (2) enable high volume, automated, electronic processes\r\nthat apply to VeriSign (or its computer systems). The compilation,\r\nrepackaging, dissemination or other use of this Data is expressly\r\nprohibited without the prior written consent of VeriSign. You agree not to\r\nuse electronic processes that are automated and high-volume to access or\r\nquery the Whois database except as reasonably necessary to register\r\ndomain names or modify existing registrations. VeriSign reserves the right\r\nto restrict your access to the Whois database in its sole discretion to ensure\r\noperational stability.  VeriSign may restrict or terminate your access to the\r\nWhois database for failure to abide by these terms of use. VeriSign\r\nreserves the right to modify these terms at any time.\r\n\r\nThe Registry database contains ONLY .COM, .NET, .EDU domains and\r\nRegistrars.\r\n",
+            "status": "unknown"
+          },
+          "link_percentage": 61.54,
+          "link_score": 80,
+          "raw_url": "https://secure-update-paypal.com/verify",
+          "reputation": {
+            "domain": "secure-update-paypal.com",
+            "malicious_reports": 6,
+            "status": "not reliable"
+          },
+          "risk_level": "medium",
+          "score_details": [
+            {
+              "indicator": "reputation",
+              "points": 50,
+              "reason": "Domaine non fiable (6 rapports malveillants)"
+            },
+            {
+              "indicator": "ai_analysis",
+              "points": 30,
+              "reason": "le domaine 'secure-update-paypal.com' n'est pas le domaine officiel de PayPal, qui est 'paypal.com', ce qui suggère une tentative de phishing"
+            }
+          ]
+        }
+      ],
+      "summary": {
+        "average_score": 55.0,
+        "global_percentage": 42.31,
+        "risk_level": "medium",
+        "total_links": 2,
+        "total_score": 110
+      }
+    }
+  },
+  "score_cyber": 0.0,
+  "explanation_cyber": "Aucun problème détecté",
+  "analyzed_at": "2026-01-29T01:03:56.482535"
+}

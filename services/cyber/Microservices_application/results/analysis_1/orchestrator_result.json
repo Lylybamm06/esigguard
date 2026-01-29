@@ -1,7 +1,7 @@
 {
   "analysis_id": 1,
   "score_cyber": 30.0,
-  "explanation_cyber": "SMTP : IP source non identifiee | Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | AgeDomaine: inconnu | Lien : 2 URL(s) suspecte(s) (https://support-paypal.com.secure-authentication-check.net/login, http://secure-login-verification.com.account-update.security-check.example-login.ru/verify?user=david) | File : Aucune piece jointe | Content: Phishing: Urgence et menace | Coherence: Lien douteux",
+  "explanation_cyber": "SMTP : IP source non identifiee | Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | AgeDomaine: inconnu | Lien : 2 URL(s) suspecte(s) (http://secure-login-verification.com.account-update.security-check.example-login.ru/verify?user=david, https://support-paypal.com.secure-authentication-check.net/login) | File : Aucune piece jointe | Content: Phishing: Urgence et menace | Coherence: Lien douteux",
   "details": {
     "smtp": {
       "analysis_id": 1,
@@ -26,12 +26,52 @@
       "timestamp_status": "ok"
     },
     "auth": {
+      "analysis_id": 1,
+      "display_vs_domain": {
+        "display_name": "",
+        "from_domain": "",
+        "score": 0,
+        "status": "coherent"
+      },
+      "dkim": {
+        "protocol": "DKIM",
+        "score": 10,
+        "status": "unknown"
+      },
+      "dmarc": {
+        "protocol": "DMARC",
+        "score": 10,
+        "status": "unknown"
+      },
+      "domain_age": {
+        "age_years": null,
+        "created_date": null,
+        "domain": "",
+        "status": "unknown"
+      },
+      "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | AgeDomaine: inconnu",
+      "from_vs_reply": {
+        "from_domain": "",
+        "reply_domain": null,
+        "score": 0,
+        "status": "coherent"
+      },
+      "from_vs_return": {
+        "from_domain": "",
+        "return_domain": "",
+        "score": 0,
+        "status": "coherent"
+      },
       "score": 20,
-      "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | AgeDomaine: inconnu"
+      "spf": {
+        "protocol": "SPF",
+        "score": 10,
+        "status": "unknown"
+      }
     },
     "lien": {
       "analysis_id": 1,
-      "explanation": "Lien : 2 URL(s) suspecte(s) (https://support-paypal.com.secure-authentication-check.net/login, http://secure-login-verification.com.account-update.security-check.example-login.ru/verify?user=david)",
+      "explanation": "Lien : 2 URL(s) suspecte(s) (http://secure-login-verification.com.account-update.security-check.example-login.ru/verify?user=david, https://support-paypal.com.secure-authentication-check.net/login)",
       "score": 55.0,
       "service": "lien",
       "suspicious_count": 2,
@@ -39,25 +79,7 @@
       "urls_analyzed": [
         {
           "ai_analysis": {
-            "reason": "le domaine n'est pas officiellement lié à PayPal et contient des mots-clés de sécurité pour tromper les utilisateurs",
-            "status": "suspect"
-          },
-          "display_text": "https://support-paypal.com.secure-authentication-check.net/login",
-          "domain": "support-paypal.com.secure-authentication-check.net",
-          "domain_age": {
-            "status": "unknown"
-          },
-          "raw_url": "https://support-paypal.com.secure-authentication-check.net/login",
-          "reputation": {
-            "domain": "support-paypal.com.secure-authentication-check.net",
-            "malicious_reports": 0,
-            "status": "reliable"
-          },
-          "score": 55
-        },
-        {
-          "ai_analysis": {
-            "reason": "Domaine suspect et non standard, ressemblant à une arnaque de phishing",
+            "reason": "domaine suspect et potentiellement malveillant",
             "status": "suspect"
           },
           "display_text": "http://secure-login-verification.com.account-update.security-check.example-login.ru/verify?user=david",
@@ -68,6 +90,24 @@
           "raw_url": "http://secure-login-verification.com.account-update.security-check.example-login.ru/verify?user=david",
           "reputation": {
             "domain": "secure-login-verification.com.account-update.security-check.example-login.ru",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 55
+        },
+        {
+          "ai_analysis": {
+            "reason": "le domaine n'est pas officiellement lié à paypal et contient des mots génériques comme \"secure-authentication-check\" qui pourraient être utilisés pour une arnaque",
+            "status": "suspect"
+          },
+          "display_text": "https://support-paypal.com.secure-authentication-check.net/login",
+          "domain": "support-paypal.com.secure-authentication-check.net",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://support-paypal.com.secure-authentication-check.net/login",
+          "reputation": {
+            "domain": "support-paypal.com.secure-authentication-check.net",
             "malicious_reports": 0,
             "status": "reliable"
           },

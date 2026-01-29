@@ -1,0 +1,18 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Copier les fichiers nécessaires
+COPY content.py .
+COPY requirements.txt .
+COPY parser_utils.py .
+
+
+# Installer les dépendances
+RUN pip install --no-cache-dir -r requirements.txt
+
+# Exposer le port
+EXPOSE 5103
+
+# Lancer l'application
+CMD ["python", "content.py"]

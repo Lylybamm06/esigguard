@@ -1,0 +1,106 @@
+{
+  "analysis_id": 20,
+  "email_data": {
+    "display_name": "Test Sender",
+    "domain": "example.com",
+    "email_date": "2024-01-26T10:00:00+00:00",
+    "email_sender": "test0@example.com",
+    "email_subject": "Ceci est un test complet pour lancer toutes les analyses.",
+    "sender_address": "test0@example.com",
+    "timestamp": 1706263200000
+  },
+  "Auth": {
+    "auth_result": {
+      "details": [
+        "Domaine cohérent avec l'adresse expéditeur"
+      ],
+      "domain_age_days": 11126,
+      "explanation": "Domaine cohérent avec l'adresse expéditeur",
+      "score": 0,
+      "timestamp": "2026-01-29T09:19:00.173683"
+    },
+    "email_data": {
+      "display_name": "Test Sender",
+      "domain": "example.com",
+      "email_date": "2024-01-26T10:00:00+00:00",
+      "email_sender": "test0@example.com",
+      "email_subject": "Ceci est un test complet pour lancer toutes les analyses.",
+      "sender_address": "test0@example.com",
+      "timestamp": 1706263200000,
+      "urls": [
+        "http://example.com",
+        "http://malicious.test/phish"
+      ]
+    },
+    "urls": []
+  },
+  "Content": {
+    "content_analysis": {
+      "reason": "Le texte demande une réponse spécifique au format JSON, ce qui suggère une instruction claire et une interaction structurée.",
+      "status": "cohérent"
+    },
+    "explanation": "Le texte demande une réponse spécifique au format JSON, ce qui suggère une instruction claire et une interaction structurée.",
+    "percentage": 0.0,
+    "risk_level": "low",
+    "score": 0
+  },
+  "File": {
+    "Explanation": {
+      "fichiers_suspects": [],
+      "nbre_fichiers_suspects": 0,
+      "raison": "Extensions dangereuses"
+    },
+    "attachment_analysis": [],
+    "moyenne_pourcentage": 0,
+    "nb_attachments": 0
+  },
+  "Lien": {
+    "explanation": "2 lien(s) suspect(s) : http://example.com, http://malicious.test/phish",
+    "links_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "Le texte affiché et l'URL réelle sont identiques, ce qui suggère que le lien n'est pas trompeur.",
+          "status": "coherent"
+        },
+        "domain": "example.com",
+        "domain_age": {
+          "age_years": 30.48,
+          "created": "1995-08-14T04:00:00Z",
+          "status": "bon"
+        },
+        "percentage": 38.46,
+        "reputation": {
+          "domain": "example.com",
+          "malicious_reports": 1,
+          "status": "not reliable"
+        },
+        "score": 50,
+        "url": "http://example.com"
+      },
+      {
+        "ai_analysis": {
+          "reason": "le domaine 'malicious.test' contient le mot 'malicious' qui évoque une intention malveillante",
+          "status": "suspect"
+        },
+        "domain": "malicious.test",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "percentage": 23.08,
+        "reputation": {
+          "domain": "malicious.test",
+          "status": "unknown"
+        },
+        "score": 30,
+        "url": "http://malicious.test/phish"
+      }
+    ],
+    "nb_links": 2,
+    "percentage": 30.77,
+    "risk_level": "low",
+    "score": 40.0
+  },
+  "score_cyber": 10.0,
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte demande une réponse spécifique au format JSON, ce qui suggère une instruction claire et une interaction structurée. | FILE: Extensions dangereuses | LIEN: 2 lien(s) suspect(s) : http://example.com, http://malicious.test/phish",
+  "analyzed_at": "2026-01-29T09:19:07.758193"
+}
