@@ -1,0 +1,146 @@
+{
+  "analysis_id": 14,
+  "explanation": "Lien : 7 URL(s) analysee(s), aucune suspecte",
+  "score": 7.14,
+  "service": "lien",
+  "suspicious_count": 0,
+  "url_count": 7,
+  "urls_analyzed": [
+    {
+      "ai_analysis": {
+        "reason": "le texte affiché correspond au domaine de l'URL et le domaine est légitime",
+        "status": "coherent"
+      },
+      "display_text": "https://stripe.com/billing",
+      "domain": "stripe.com",
+      "domain_age": {
+        "age_years": 30.4,
+        "created": "1995-09-12T04:00:00Z",
+        "status": "bon"
+      },
+      "raw_url": "https://stripe.com/billing",
+      "reputation": {
+        "domain": "stripe.com",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 0
+    },
+    {
+      "ai_analysis": {
+        "reason": "le texte affiché correspond au domaine de l'URL",
+        "status": "coherent"
+      },
+      "display_text": "https://support.anthropic.com/",
+      "domain": "support.anthropic.com",
+      "domain_age": {
+        "age_years": 24.34,
+        "created": "2001-10-02T18:10:32+0000",
+        "status": "bon"
+      },
+      "raw_url": "https://support.anthropic.com/",
+      "reputation": {
+        "domain": "support.anthropic.com",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 0
+    },
+    {
+      "ai_analysis": {
+        "reason": "le domaine et le texte affiché correspondent à l'URL réelle, qui semble être une ressource d'image officielle de Stripe",
+        "status": "coherent"
+      },
+      "display_text": "https://stripe-images.s3.amazonaws.com/emails/invoices_invoice_illustration.png]",
+      "domain": "stripe-images.s3.amazonaws.com",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "https://stripe-images.s3.amazonaws.com/emails/invoices_invoice_illustration.png]",
+      "reputation": {
+        "domain": "stripe-images.s3.amazonaws.com",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 25
+    },
+    {
+      "ai_analysis": {
+        "reason": "le texte affiché correspond au domaine de l'URL",
+        "status": "coherent"
+      },
+      "display_text": "https://stripe.com",
+      "domain": "stripe.com",
+      "domain_age": {
+        "age_years": 30.4,
+        "created": "1995-09-12T04:00:00Z",
+        "status": "bon"
+      },
+      "raw_url": "https://stripe.com",
+      "reputation": {
+        "domain": "stripe.com",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 0
+    },
+    {
+      "ai_analysis": {
+        "reason": "Le texte affiché correspond au domaine de l'URL, qui est pay.stripe.com, et semble être une facture de paiement générée par Stripe, ce qui est cohérent avec le domaine.",
+        "status": "coherent"
+      },
+      "display_text": "https://pay.stripe.com/invoice/acct_1MExQ9BjIQrRQnux/live_YWNjdF8xTUV4UTlCaklRclJRbnV4LF9UcUNyQWlkSER4RENEU0JTc05oUzRxMDFMbWY4V0h5LDE1OTY2MjEyNQ0200UtlgsfDD/pdf?s=em",
+      "domain": "pay.stripe.com",
+      "domain_age": {
+        "age_years": 30.4,
+        "created": "1995-09-12T04:00:00Z",
+        "status": "bon"
+      },
+      "raw_url": "https://pay.stripe.com/invoice/acct_1MExQ9BjIQrRQnux/live_YWNjdF8xTUV4UTlCaklRclJRbnV4LF9UcUNyQWlkSER4RENEU0JTc05oUzRxMDFMbWY4V0h5LDE1OTY2MjEyNQ0200UtlgsfDD/pdf?s=em",
+      "reputation": {
+        "domain": "pay.stripe.com",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 0
+    },
+    {
+      "ai_analysis": {
+        "reason": "Le texte affiché correspond au domaine de l'URL, qui est un lien de Stripe, un service de paiement en ligne réputé.",
+        "status": "coherent"
+      },
+      "display_text": "https://dashboard.stripe.com/receipts/invoices/CAcQARoXChVhY2N0XzFNRXhROUJqSVFyUlFudXgorczKywYyBkPWEFBsSzovFth1AeFUZDgC_QA_D2t4Wq3AQigSEniU4GXc0rSa11Ch-iAkHjW_wcaPI3Xx55g/pdf?s=em",
+      "domain": "dashboard.stripe.com",
+      "domain_age": {
+        "age_years": 30.4,
+        "created": "1995-09-12T04:00:00Z",
+        "status": "bon"
+      },
+      "raw_url": "https://dashboard.stripe.com/receipts/invoices/CAcQARoXChVhY2N0XzFNRXhROUJqSVFyUlFudXgorczKywYyBkPWEFBsSzovFth1AeFUZDgC_QA_D2t4Wq3AQigSEniU4GXc0rSa11Ch-iAkHjW_wcaPI3Xx55g/pdf?s=em",
+      "reputation": {
+        "domain": "dashboard.stripe.com",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 0
+    },
+    {
+      "ai_analysis": {
+        "reason": "le texte affiché correspond au domaine de l'URL",
+        "status": "coherent"
+      },
+      "display_text": "https://www.anthropic.com/",
+      "domain": "www.anthropic.com",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "https://www.anthropic.com/",
+      "reputation": {
+        "domain": "www.anthropic.com",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 25
+    }
+  ]
+}

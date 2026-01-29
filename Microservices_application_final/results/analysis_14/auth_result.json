@@ -1,0 +1,44 @@
+{
+  "analysis_id": 14,
+  "display_vs_domain": {
+    "display_name": "Anthropic, PBC",
+    "from_domain": "mail.anthropic.com",
+    "score": 40,
+    "status": "incoherent"
+  },
+  "dkim": {
+    "protocol": "DKIM",
+    "score": 0,
+    "status": "pass"
+  },
+  "dmarc": {
+    "protocol": "DMARC",
+    "score": 0,
+    "status": "pass"
+  },
+  "domain_age": {
+    "age_years": 24.34,
+    "created_date": "2001-10-02T18:10:32+0000",
+    "domain": "mail.anthropic.com",
+    "status": "bon"
+  },
+  "explanation": "Authentification : FromVsReturn: incoherent | FromVsReply: incoherent | DisplayNameVsDomain: incoherent",
+  "from_vs_reply": {
+    "from_domain": "mail.anthropic.com",
+    "reply_domain": "anthropic.com",
+    "score": 30,
+    "status": "incoherent"
+  },
+  "from_vs_return": {
+    "from_domain": "mail.anthropic.com",
+    "return_domain": "bounce.mail.anthropic.com",
+    "score": 30,
+    "status": "incoherent"
+  },
+  "score": 50,
+  "spf": {
+    "protocol": "SPF",
+    "score": 0,
+    "status": "pass"
+  }
+}

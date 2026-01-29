@@ -1,0 +1,27 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "Correspond à une facture",
+      "status": "ok"
+    },
+    "global_verdict": "coherent",
+    "language_quality": {
+      "reason": "Formulation claire",
+      "status": "ok"
+    },
+    "phishing_indicators": {
+      "reason": "Pas d'urgence ou menace",
+      "status": "ok"
+    }
+  },
+  "analysis_id": 2,
+  "explanation": "Content: Aucun indicateur suspect",
+  "keywords": {
+    "count": 0,
+    "keyword_score": 0,
+    "keywords_found": []
+  },
+  "score": 0,
+  "service": "content",
+  "subject": "Your receipt from Anthropic, PBC #2835-9319-2606"
+}

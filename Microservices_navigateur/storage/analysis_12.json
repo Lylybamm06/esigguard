@@ -1,0 +1,66 @@
+{
+  "analysis_id": 12,
+  "email_data": {
+    "display_name": "Test Sender",
+    "domain": "example.com",
+    "email_date": "2024-01-26T10:00:00+00:00",
+    "email_sender": "test0@example.com",
+    "email_subject": "Ceci est un test complet pour lancer toutes les analyses.",
+    "sender_address": "test0@example.com",
+    "timestamp": 1706263200000
+  },
+  "analysis": {
+    "file": {
+      "Explanation": {
+        "fichiers_suspects": [],
+        "nbre_fichiers_suspects": 0,
+        "raison": "Extensions dangereuses"
+      },
+      "attachment_analysis": [],
+      "moyenne_pourcentage": 0,
+      "nb_attachments": 0
+    },
+    "lien": {
+      "explanation": "0 lien(s) suspect(s) : aucun",
+      "links_analysis": [],
+      "nb_links": 0
+    },
+    "content": {
+      "content_analysis": {
+        "reason": "Le texte demande une réponse spécifique au format JSON, ce qui indique une certaine structure et organisation, caractéristiques d'une demande cohérente.",
+        "status": "cohérent"
+      },
+      "explanation": "Le texte demande une réponse spécifique au format JSON, ce qui indique une certaine structure et organisation, caractéristiques d'une demande cohérente.",
+      "percentage": 0.0,
+      "risk_level": "low",
+      "score": 0
+    },
+    "auth": {
+      "auth_result": {
+        "details": [
+          "Domaine cohérent avec l'adresse expéditeur"
+        ],
+        "domain_age_days": 11126,
+        "explanation": "Domaine cohérent avec l'adresse expéditeur",
+        "score": 0,
+        "timestamp": "2026-01-29T05:30:55.993588"
+      },
+      "email_data": {
+        "display_name": "Test Sender",
+        "domain": "example.com",
+        "email_date": "2024-01-26T10:00:00+00:00",
+        "email_sender": "test0@example.com",
+        "email_subject": "Ceci est un test complet pour lancer toutes les analyses.",
+        "sender_address": "test0@example.com",
+        "timestamp": 1706263200000
+      },
+      "urls": [
+        "http://example.com",
+        "http://malicious.test/phish"
+      ]
+    }
+  },
+  "score_cyber": 0.0,
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte demande une réponse spécifique au format JSON, ce qui indique une certaine structure et organisation, caractéristiques d'une demande cohérente. | FILE: Extensions dangereuses | LIEN: 0 lien(s) suspect(s) : aucun",
+  "analyzed_at": "2026-01-29T05:31:01.000795"
+}
