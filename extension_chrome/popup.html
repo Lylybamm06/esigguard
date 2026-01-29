@@ -4,92 +4,99 @@
     <meta charset="UTF-8">
     <title>ESIG'Guard</title>
     <style>
-        /* --- STYLE GÉNÉRAL --- */
-        body { width: 320px; font-family: 'Segoe UI', Roboto, sans-serif; background: #f8f9fa; margin: 0; }
-        
-        /* --- EN-TÊTE AVEC ICÔNE --- */
-        .header { 
-            background: #1a73e8; /* Bleu Google */
-            color: white; 
-            padding: 15px; 
-            display: flex; 
-            align-items: center; 
-            gap: 15px; /* Espace entre logo et texte */
+        /* --- STYLE DARK DASHBOARD --- */
+        body { 
+            width: 360px; 
+            font-family: 'Segoe UI', Roboto, sans-serif; 
+            background-color: #0f172a; /* Fond sombre Dashboard */
+            color: #e2e8f0; 
+            margin: 0; 
         }
 
-        .logo-img {
-            width: 40px;
-            height: 40px;
-            background: white; /* Petit fond blanc pour faire ressortir le logo */
-            border-radius: 50%; /* Rond parfait */
-            padding: 2px;
+        /* HEADER */
+        .header {
+            background-color: #1e293b; /* Sidebar color */
+            padding: 15px;
+            display: flex; align-items: center; gap: 15px;
+            border-bottom: 1px solid #334155;
         }
+        .header img { width: 40px; height: 40px; }
+        .header h1 { margin: 0; font-size: 18px; color: #fff; }
+        .header p { margin: 0; font-size: 11px; color: #94a3b8; }
 
-        .title-container h1 { margin: 0; font-size: 18px; font-weight: 600; }
-        .title-container p { margin: 2px 0 0; font-size: 12px; opacity: 0.9; }
+        .container { padding: 15px; }
 
-        /* --- LISTE DES MAILS --- */
-        #email-list { list-style: none; padding: 0; margin: 0; max-height: 300px; overflow-y: auto; }
-        
-        /* Message vide par défaut */
-        .empty-state { padding: 30px 20px; text-align: center; color: #888; font-style: italic; font-size: 13px; }
-
-        /* --- ZONES D'ACTION (BOUTONS) --- */
-        .actions { 
-            padding: 15px; 
-            display: flex; 
-            gap: 10px; 
-            border-top: 1px solid #ddd;
-            background: white;
-        }
-
-        /* Le gros bouton SCAN */
+        /* BOUTON SCANNER (Style Bleu/Néon) */
         #scanBtn {
-            flex: 2; /* Prend plus de place */
-            background-color: #1a73e8; 
-            color: white; 
-            border: none; padding: 10px; border-radius: 4px; 
-            font-weight: bold; cursor: pointer;
+            width: 100%;
+            background: linear-gradient(90deg, #3b82f6 0%, #2563eb 100%);
+            color: white; border: none; padding: 14px;
+            border-radius: 8px; font-size: 14px; font-weight: 600;
+            cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px;
+            box-shadow: 0 4px 6px -1px rgba(59, 130, 246, 0.5);
         }
-        #scanBtn:hover { background-color: #1557b0; }
+        #scanBtn:hover { filter: brightness(1.1); }
+        #scanBtn:active { transform: scale(0.98); }
 
-        /* Le petit bouton NETTOYER */
-        #clearBtn {
-            flex: 1;
-            background-color: #f1f3f4; 
-            color: #555; 
-            border: none; padding: 10px; border-radius: 4px; 
-            cursor: pointer; font-size: 12px;
-        }
-        #clearBtn:hover { background-color: #e8eaed; }
+        /* LISTE DES CARDS */
+        ul { list-style: none; padding: 0; margin-top: 20px; }
         
-        /* --- MESSAGES DE STATUT --- */
-        #status { padding: 0 15px 10px; text-align: center; font-size: 12px; font-weight: bold; color: #1a73e8; }
+        .email-card {
+            background-color: #1e293b;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 12px; margin-bottom: 12px;
+            display: flex; align-items: center; gap: 12px;
+            cursor: pointer; transition: background 0.2s;
+        }
+        .email-card:hover { background-color: #334155; border-color: #475569; }
 
+        .card-info { flex: 1; overflow: hidden; }
+        .subject { font-weight: 600; color: #f1f5f9; font-size: 13px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .sender { font-size: 11px; color: #94a3b8; margin-top: 2px; }
+
+        /* --- JAUGE CIRCULAIRE (DONUT CHART) --- */
+        .score-circle {
+            position: relative; width: 42px; height: 42px;
+            border-radius: 50%;
+            /* Le dégradé conique fait la jauge */
+            background: conic-gradient(var(--color) var(--percent), #334155 0);
+            display: flex; align-items: center; justify-content: center;
+        }
+        /* Le centre du donut (trou) */
+        .score-circle::before {
+            content: attr(data-score);
+            position: absolute; width: 34px; height: 34px;
+            background-color: #1e293b; /* Même couleur que la carte */
+            border-radius: 50%;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 10px; font-weight: bold; color: #fff;
+        }
+
+        /* FOOTER */
+        .footer { display: flex; justify-content: space-between; margin-top: 15px; align-items: center; }
+        #clearBtn { background: none; border: none; color: #64748b; font-size: 11px; cursor: pointer; text-decoration: underline; }
+        #status-text { font-size: 10px; color: #64748b; }
     </style>
 </head>
 <body>
-
     <div class="header">
-        <img src="icon128.png" alt="Logo" class="logo-img">
-        
-        <div class="title-container">
+        <img src="icone_bouclier_esigguard.jpg" alt="Logo">
+        <div>
             <h1>ESIG'Guard</h1>
-            <p>Protection Anti-Phishing</p>
+            <p>Analyse cyber en temps réel</p>
         </div>
     </div>
 
-    <div id="status"></div>
-    
-    <ul id="email-list">
-        <li class="empty-state">Ouvrez un mail et cliquez sur "Scanner"</li>
-    </ul>
-
-    <div class="actions">
-        <button id="scanBtn">🔍 SCANNER</button>
-        <button id="clearBtn">🗑️ VIDER</button>
+    <div class="container">
+        <button id="scanBtn">ANALYSER CE MAIL</button>
+        <ul id="email-list"></ul>
+        
+        <div class="footer">
+            <span id="status-text">Prêt</span>
+            <button id="clearBtn">Effacer l'historique</button>
+        </div>
     </div>
-
     <script src="popup.js"></script>
 </body>
 </html>

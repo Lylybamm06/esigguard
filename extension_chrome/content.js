@@ -1,72 +1,57 @@
-console.log("ESIG'Guard: Scanner actif (Mode Stable)");
+// content.js - Le photographe qui attend l'ordre
 
-let lastScannedSubject = ""; // Mémoire pour ne pas spammer
+console.log("ESIG'Guard: Content Script prêt à scanner sur demande.");
 
-function showFullPayload() {
-    // 1. CIBLAGE
-    const emailContainer = document.querySelector('.h7') || document.querySelector('.gs');
-    if (!emailContainer) return; 
-
-    // 2. EXTRACTION TEXTE
-    const subject = document.querySelector('h2.hP')?.innerText || "Sujet non trouvé";
+// On écoute les messages venant du popup
+chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     
-    // STOP : Si on a déjà affiché ce mail, on ne fait rien. La console reste fixe.
-    if (subject === lastScannedSubject) return;
-    lastScannedSubject = subject; // On mémorise le nouveau sujet
+    if (request.action === "extractEmailData") {
+        console.log("Ordre de scan reçu ! Extraction en cours...");
 
-    const senderNode = document.querySelector('.gD'); 
-    const senderName = senderNode?.innerText || "Inconnu";
-    const senderEmail = senderNode?.getAttribute('email') || "Inconnu";
-    const bodyText = document.querySelector('.a3s')?.innerText.substring(0, 500) + "..." || ""; 
+        // --- DÉBUT DE TON CODE D'EXTRACTION ---
+        // (J'ai repris exactement ta logique, juste nettoyé pour correspondre au JSON de David)
 
-    // 3. EXTRACTION URLS
-    const allLinks = document.querySelectorAll('.a3s a');
-    const extractedUrls = [];
-    allLinks.forEach((link) => {
-        if (link.href && link.href.startsWith('http')) extractedUrls.push(link.href);
-    });
+        const subject = document.querySelector('h2.hP')?.innerText || "Sujet non trouvé";
+        
+        const senderNode = document.querySelector('.gD');
+        const senderName = senderNode?.innerText || "Inconnu";
+        const senderEmail = senderNode?.getAttribute('email') || "Inconnu";
+        const bodyText = document.querySelector('.a3s')?.innerText.substring(0, 500) + "..." || "";
 
-    // 4. EXTRACTION PIÈCES JOINTES
-    const attachmentNodes = document.querySelectorAll('.aV3, .aQa'); 
-    const extractedAttachments = [];
-    attachmentNodes.forEach((node) => {
-        const fileName = node.innerText;
-        if (fileName && fileName.trim() !== "") {
-            const extension = fileName.split('.').pop().toLowerCase();
-            extractedAttachments.push({
-                "filename": fileName,
-                "extension": extension,
-                "risk_type": (['exe', 'bat', 'js', 'vbs'].includes(extension)) ? "CRITICAL" : "UNKNOWN"
-            });
-        }
-    });
+        const allLinks = document.querySelectorAll('.a3s a');
+        const extractedUrls = [];
+        allLinks.forEach((link) => {
+            if (link.href && link.href.startsWith('http')) extractedUrls.push(link.href);
+        });
 
-    // 5. EXTRACTION HEADER NINJA
-    const detailsText = document.querySelector('.ajB')?.innerText || ""; 
-    const mailedBy = detailsText.match(/mailed-by:\s*([^\n\r]*)/i)?.[1] || "non_disponible";
-    const signedBy = detailsText.match(/signed-by:\s*([^\n\r]*)/i)?.[1] || "non_disponible";
+        const attachmentNodes = document.querySelectorAll('.aV3, .aQa');
+        const extractedAttachments = [];
+        attachmentNodes.forEach((node) => {
+            const fileName = node.innerText;
+            if (fileName && fileName.trim() !== "") {
+                extractedAttachments.push(fileName); // On envoie juste le nom pour l'instant, comme dans le cURL
+            }
+        });
+        // --- FIN DE TON CODE D'EXTRACTION ---
 
-    // 6. JSON FINAL
-    const fullPayload = {
-        "meta": { "source": "extension_chrome", "timestamp": new Date().toISOString() },
-        "email_data": {
+
+        // ON FORMATE LE JSON EXACTEMENT COMME LE DEMANDE DAVID (voir ton image cURL)
+        const payloadForServer = {
+            "sender": {
+                "address": senderEmail,
+                "name": senderName
+            },
             "subject": subject,
-            "sender": { "name": senderName, "address": senderEmail },
             "body_snippet": bodyText,
-            "urls": extractedUrls, 
+            "urls": extractedUrls,
             "attachments": extractedAttachments,
-            "technical_light": { "spf_indicator": mailedBy, "dkim_indicator": signedBy }
-        }
-    };
+            // On ajoute un timestamp ISO pour faire pro
+            "timestamp": new Date().toISOString() 
+        };
 
-    // 7. AFFICHAGE (SANS CLEAR)
-    console.log("--------------------------------------------------");
-    console.log(`📨 NOUVEAU MAIL DÉTECTÉ : ${subject}`);
-    console.log(fullPayload);
-    
-    if(extractedAttachments.length > 0) console.log(`📎 ${extractedAttachments.length} PJ détectées`);
-    if(extractedUrls.length > 0) console.log(`🔗 ${extractedUrls.length} Liens détectés`);
-}
-
-// On vérifie s'il y a du nouveau toutes les 2 secondes
-setInterval(showFullPayload, 2000);
+        // C'est crucial : on renvoie les données au popup
+        sendResponse(payloadForServer);
+    }
+    // Nécessaire pour que la réponse asynchrone fonctionne
+    return true;
+});
