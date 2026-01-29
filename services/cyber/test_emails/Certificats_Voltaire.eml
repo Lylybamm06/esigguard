@@ -1,0 +1,578 @@
+Delivered-To: adissomarylyne4@gmail.com
+Received: by 2002:a17:906:23ea:b0:b87:f63a:3c22 with SMTP id j10csp1217296ejg;
+        Mon, 26 Jan 2026 01:56:47 -0800 (PST)
+X-Forwarded-Encrypted: i=3; AJvYcCXqBwNNKOPNX96PxVqKdrLNRO2Hfu3aFst8Tkgd6aaiL2tdUVvMvDumh1iiqmACltmrzz0vTppXf7lzSsjmnbg=@gmail.com
+X-Received: by 2002:a05:690c:f15:b0:78f:a81a:6f43 with SMTP id 00721157ae682-7945a965b56mr27443487b3.40.1769421407062;
+        Mon, 26 Jan 2026 01:56:47 -0800 (PST)
+ARC-Seal: i=2; a=rsa-sha256; t=1769421407; cv=pass;
+        d=google.com; s=arc-20240605;
+        b=LabvQbXcG8VNYo46/Vu9tOFrmRzQYuy3QW3CSWZ7Z2VXBP06OlsZKmunM5FYvryilG
+         y4dDV0LzZl4YvxhLvWVy1vHV6DFACXLIvM0vyD+mKtTlu1GRxTIH+2kYk78CAZHLB8vF
+         8eaSQ+rHIFUlYN8r8J80JCRTGFMJZv4N80OQR+i6Cem/BHsI7phr89pmyEAdcjIpGdEh
+         CcuZCMly8ntwzoihbq2FNjlxNMuXtZDP/Tfde0aSXF2DluPIhrBoIJ2DhTtsNvx5Usg8
+         /g2cDfukZJkrIyilNkaA4Z+KxOel9My45VxDDhCSt9mRQF0Yjohrs34i36KLxaDhI+YV
+         9rWw==
+ARC-Message-Signature: i=2; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:content-language:accept-language:message-id:date
+         :thread-index:thread-topic:subject:to:from:dkim-signature;
+        bh=AmyfpgZ0BG0zvzwvsXKcCeJwRDxMgdXhOJ2UenMG290=;
+        fh=RhXoeZ7usU6oMIA+G4s7lSkZKgbPGANi8l88vurxYww=;
+        b=VvxK7I0FjSIqsarOit9Nj5NWl1pJXJoppuRkbLXYQonF8e66jmi/Z0MwceR8wV2Ez3
+         eALTG3xSGKaukQ3TuZEb6FcVjFIrOXxzn/RSJDv6BqOO0EHDEZytY1nwUe3XryZXHwT1
+         LhfNWeqDSN+h4GeXmd+DapR43ZOjzQLMiBkYX0e+DGE+9FUcGBBO1gIRbIFP/qa3tKoF
+         tYa82EphC6xIui8xGdxLerMQS4M8KzKtvtVVHK8FPJLujIScWc3dzTSRpR3uHkT8jJGU
+         yWgkUaVXVJ8vEBh8G1FWR/OsBAMIgKV7ei09847NuiCdqM23uXFAj/f9Bjy95hui69R1
+         p3Vw==;
+        dara=google.com
+ARC-Authentication-Results: i=2; mx.google.com;
+       dkim=pass header.i=@ESIGELEC.onmicrosoft.com header.s=selector2-ESIGELEC-onmicrosoft-com header.b=ARUHpKDj;
+       arc=pass (i=1 spf=pass spfdomain=esigelec.fr dkim=pass dkdomain=esigelec.fr dmarc=pass fromdomain=esigelec.fr);
+       spf=pass (google.com: domain of olivia.jagar@esigelec.fr designates 2a01:111:f403:c200::5 as permitted sender) smtp.mailfrom=Olivia.JAGAR@esigelec.fr;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=esigelec.fr
+Return-Path: <Olivia.JAGAR@esigelec.fr>
+Received: from DUZPR83CU001.outbound.protection.outlook.com (mail-northeuropeazlp170120005.outbound.protection.outlook.com. [2a01:111:f403:c200::5])
+        by mx.google.com with ESMTPS id 00721157ae682-7945f019fc4si25360677b3.169.2026.01.26.01.56.45
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Mon, 26 Jan 2026 01:56:46 -0800 (PST)
+Received-SPF: pass (google.com: domain of olivia.jagar@esigelec.fr designates 2a01:111:f403:c200::5 as permitted sender) client-ip=2a01:111:f403:c200::5;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@ESIGELEC.onmicrosoft.com header.s=selector2-ESIGELEC-onmicrosoft-com header.b=ARUHpKDj;
+       arc=pass (i=1 spf=pass spfdomain=esigelec.fr dkim=pass dkdomain=esigelec.fr dmarc=pass fromdomain=esigelec.fr);
+       spf=pass (google.com: domain of olivia.jagar@esigelec.fr designates 2a01:111:f403:c200::5 as permitted sender) smtp.mailfrom=Olivia.JAGAR@esigelec.fr;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=esigelec.fr
+ARC-Seal: i=1; a=rsa-sha256; s=arcselector10001; d=microsoft.com; cv=none;
+ b=I3h0cfdyrcmHExN/LU+u2Y63fXxGkNz7/yJh7JLSezHg65Dx+6G7nZXCtJqcoFDUhd0aXM/YRLAOD2kDYa4UorYaTDivUF2PuqF0NA9aTVYARORj71YOb96I4XvJoX6BMDu1xv+p5J37g/pbPfNC2bbOwZ644WQWfOVdrafZDhH72hj/lhdM3BUmPQHuX6ikV8UBbBDx/qngRI4+vsOdYAJc55aXAI4Wl1QXVjZTkdwmtxO9yPIHh8HR6BpFCa50FGwa5oNST6VAQL/lXsE/qZjhUUzhEXQNMGlhqC/i38KR9XBohVvn5bXETrtCEjIMDSaDEVbOcv5/pTU8BnmnKw==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=microsoft.com;
+ s=arcselector10001;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-AntiSpam-MessageData-ChunkCount:X-MS-Exchange-AntiSpam-MessageData-0:X-MS-Exchange-AntiSpam-MessageData-1;
+ bh=AmyfpgZ0BG0zvzwvsXKcCeJwRDxMgdXhOJ2UenMG290=;
+ b=s+zw8hjiC7sKbBGbeURIhD6o17fGTiStULNDhIriYELd+nrb1wQPscBK8RZig4SBe69/1bhQJ1DOACp8rT7pOrCyha7QhHv7vTjc9G8j4fzEPpoxUx0tu50pqoLJ3mY6CjeArVdtVjzcsOuIXOJsRIrLl9pY1Aup8xmzK2mQ4FvC95rLwhyDKBxMCUxUS/lgHqdgy8EAddxt1wCAOulqUlAG7kjnYUbfNQXyytoDsmUp7bo8JkOPiDNmgXY8g9VeFPh2Q14DsljQCUV8gjErThFjFovSujvfIkLqsChAfHU2ShqsPt4nsmJK/l7aV53m8DNUi0Us9Fs0tO7il2AZ+Q==
+ARC-Authentication-Results: i=1; mx.microsoft.com 1; spf=pass
+ smtp.mailfrom=esigelec.fr; dmarc=pass action=none header.from=esigelec.fr;
+ dkim=pass header.d=esigelec.fr; arc=none
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+ d=ESIGELEC.onmicrosoft.com; s=selector2-ESIGELEC-onmicrosoft-com;
+ h=From:Date:Subject:Message-ID:Content-Type:MIME-Version:X-MS-Exchange-SenderADCheck;
+ bh=AmyfpgZ0BG0zvzwvsXKcCeJwRDxMgdXhOJ2UenMG290=;
+ b=ARUHpKDjjZbJa5JLy7jL5O3GjhLb3NZc0Y328Z4vZHkSJkBfxC45nLg6QMO3fokexIWnFPIwTESgaEtPNeRmPw7fOqM+F6ViL8EHbCHBrNuoSF5XJF/nV2018IPFSbTL/g7quRtaOhH1AuIZsyHnaaN8Rm5wo5U19/OSUuqGG3I=
+Received: from AS5PR09MB6797.eurprd09.prod.outlook.com (2603:10a6:20b:67d::19)
+ by AS1PR09MB6526.eurprd09.prod.outlook.com (2603:10a6:20b:47d::20) with
+ Microsoft SMTP Server (version=TLS1_2,
+ cipher=TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384) id 15.20.9564.3; Mon, 26 Jan
+ 2026 09:56:38 +0000
+Received: from AS5PR09MB6797.eurprd09.prod.outlook.com
+ ([fe80::2842:96de:eeed:155a]) by AS5PR09MB6797.eurprd09.prod.outlook.com
+ ([fe80::2842:96de:eeed:155a%4]) with mapi id 15.20.9564.001; Mon, 26 Jan 2026
+ 09:56:36 +0000
+From: JAGAR Olivia <Olivia.JAGAR@esigelec.fr>
+To: "abekemanuel@gmail.com" <abekemanuel@gmail.com>,
+	"aureliaabenipadonou@gmail.com" <aureliaabenipadonou@gmail.com>,
+	"mouridachamou0@gmail.com" <mouridachamou0@gmail.com>,
+	"adissomarylyne4@gmail.com" <adissomarylyne4@gmail.com>,
+	"erwanafaton10@gmail.com" <erwanafaton10@gmail.com>,
+	"affossogbejude145@gmail.com" <affossogbejude145@gmail.com>,
+	"christianjudemahounouagbangla@gmail.com"
+	<christianjudemahounouagbangla@gmail.com>, "agbatchossoulorys@gmail.com"
+	<agbatchossoulorys@gmail.com>, "ahouarandall77@gmail.com"
+	<ahouarandall77@gmail.com>, "aidara2003aicha@gmail.com"
+	<aidara2003aicha@gmail.com>, "nathanismael2004@gmail.com"
+	<nathanismael2004@gmail.com>, "fatimazahraaitelcadi@gmail.com"
+	<fatimazahraaitelcadi@gmail.com>, "aklekenanaustin@gmail.com"
+	<aklekenanaustin@gmail.com>, "ivanakplogan18@gmail.com"
+	<ivanakplogan18@gmail.com>, "akploganmalaury062@gmail.com"
+	<akploganmalaury062@gmail.com>, "selomeakp@gmail.com" <selomeakp@gmail.com>,
+	"alamiaroussiidriss@gmail.com" <alamiaroussiidriss@gmail.com>,
+	"aliomejulien76190@gmail.com" <aliomejulien76190@gmail.com>,
+	"arthuramisi14@gmail.com" <arthuramisi14@gmail.com>, "amoussahasna@gmail.com"
+	<amoussahasna@gmail.com>, "mamarieme@hotmail.fr" <mamarieme@hotmail.fr>,
+	"julien.anthore@hotmail.com" <julien.anthore@hotmail.com>,
+	"malo.artur76290@gmail.com" <malo.artur76290@gmail.com>,
+	"leiassani9@gmail.com" <leiassani9@gmail.com>, "camille.aubry76170@gmail.com"
+	<camille.aubry76170@gmail.com>, "Antoine.Avenel08@gmail.com"
+	<Antoine.Avenel08@gmail.com>, "liam.avril1@gmail.com"
+	<liam.avril1@gmail.com>, "coperniquea@gmail.com" <coperniquea@gmail.com>,
+	"bassirouba71@gmail.com" <bassirouba71@gmail.com>,
+	"guillaume.babin14@gmail.com" <guillaume.babin14@gmail.com>,
+	"bakloulilyas@gmail.com" <bakloulilyas@gmail.com>,
+	"mathyys.baliere@gmail.com" <mathyys.baliere@gmail.com>,
+	"fortunebal19@gmail.com" <fortunebal19@gmail.com>,
+	"jeremiebandiaky047@gmail.com" <jeremiebandiaky047@gmail.com>,
+	"bapajacquesprepa@gmail.com" <bapajacquesprepa@gmail.com>,
+	"barayclement2@gmail.com" <barayclement2@gmail.com>,
+	"Valentinebarre9@gmail.com" <Valentinebarre9@gmail.com>,
+	"khadijabassoum36@gmail.com" <khadijabassoum36@gmail.com>,
+	"baurin.florian@free.fr" <baurin.florian@free.fr>, "maximebazzo@gmail.com"
+	<maximebazzo@gmail.com>, "nbehety7@gmail.com" <nbehety7@gmail.com>,
+	"lucas.beirger2003@gmail.com" <lucas.beirger2003@gmail.com>,
+	"maiwenbellec56@gmail.com" <maiwenbellec56@gmail.com>,
+	"raphaelbellierdefromont76@gmail.com" <raphaelbellierdefromont76@gmail.com>,
+	"sidiahmedbello@gmail.com" <sidiahmedbello@gmail.com>,
+	"julien.benard27500@gmail.com" <julien.benard27500@gmail.com>,
+	"theobenard09@gmail.com" <theobenard09@gmail.com>, "anto76benard@gmail.com"
+	<anto76benard@gmail.com>, "alon.bennathan1@gmail.com"
+	<alon.bennathan1@gmail.com>, "alexis.xuxinliang@yahoo.com"
+	<alexis.xuxinliang@yahoo.com>, "maxim.bigot23@gmail.com"
+	<maxim.bigot23@gmail.com>, "bigotnicolas66@gmail.com"
+	<bigotnicolas66@gmail.com>, "sheyrelblin2018@gmail.com"
+	<sheyrelblin2018@gmail.com>, "g6049884@gmail.com" <g6049884@gmail.com>,
+	"mboubakri58@gmail.com" <mboubakri58@gmail.com>, "noe.boucher@outlook.com"
+	<noe.boucher@outlook.com>, "bourhis.j@stjolorient.fr"
+	<bourhis.j@stjolorient.fr>, "emilien.boutleux@sfr.fr"
+	<emilien.boutleux@sfr.fr>, "colin.briand780@gmail.com"
+	<colin.briand780@gmail.com>, "nathanbrunet233@gmail.com"
+	<nathanbrunet233@gmail.com>, "clementcadoret@orange.fr"
+	<clementcadoret@orange.fr>, "camaramlk9@gmail.com" <camaramlk9@gmail.com>,
+	"theo.caradeuc@icloud.com" <theo.caradeuc@icloud.com>,
+	"carbone.elijah@gmail.com" <carbone.elijah@gmail.com>,
+	"hugocarpentier95@gmail.com" <hugocarpentier95@gmail.com>,
+	"cauchonfontaine.jordan@gmail.com" <cauchonfontaine.jordan@gmail.com>,
+	"gabrielcekici@gmail.com" <gabrielcekici@gmail.com>,
+	"lucas.celestine69@hotmail.com" <lucas.celestine69@hotmail.com>,
+	"miracceviz@gmail.com" <miracceviz@gmail.com>, "gchavanneg@gmail.com"
+	<gchavanneg@gmail.com>, "chenyr1026@gmail.com" <chenyr1026@gmail.com>,
+	"Chereau879@gmail.com" <Chereau879@gmail.com>, "maximecherkip@gmail.com"
+	<maximecherkip@gmail.com>, "marie.cheron1911@gmail.com"
+	<marie.cheron1911@gmail.com>, "enzo2003.ch@gmail.com"
+	<enzo2003.ch@gmail.com>, "rocknnarthur@gmail.com" <rocknnarthur@gmail.com>,
+	"alexis.chiappi@gmail.com" <alexis.chiappi@gmail.com>,
+	"loanchincoun76@gmail.com" <loanchincoun76@gmail.com>,
+	"chrifialaouin@gmail.com" <chrifialaouin@gmail.com>,
+	"lea.cinibulak@gmail.com" <lea.cinibulak@gmail.com>,
+	"lauracognard03@gmail.com" <lauracognard03@gmail.com>,
+	"corciusandrine@gmail.com" <corciusandrine@gmail.com>,
+	"marius.crennc@gmail.com" <marius.crennc@gmail.com>,
+	"dasilvahermila02@gmail.com" <dasilvahermila02@gmail.com>,
+	"dabom372@gmail.com" <dabom372@gmail.com>, "astrideddabone@gmail.com"
+	<astrideddabone@gmail.com>, "charly.damman@gmail.com"
+	<charly.damman@gmail.com>, "tomd3102@gmail.com" <tomd3102@gmail.com>,
+	"dantondjieunice@gmail.com" <dantondjieunice@gmail.com>,
+	"ilyasdaouda@gmail.com" <ilyasdaouda@gmail.com>, "aude.dassou@gmail.com"
+	<aude.dassou@gmail.com>, "sarahdedegbe@gmail.com" <sarahdedegbe@gmail.com>,
+	"dedieu.caroline@free.fr" <dedieu.caroline@free.fr>,
+	"tristan.dehon2@gmail.com" <tristan.dehon2@gmail.com>,
+	"delabriere.adrien@gmail.com" <delabriere.adrien@gmail.com>,
+	"babadelaf@gmail.com" <babadelaf@gmail.com>, "sacha.delesques76@gmail.com"
+	<sacha.delesques76@gmail.com>, "delgrangecorentin@gmail.com"
+	<delgrangecorentin@gmail.com>, "f0uf0ouuu@gmail.com" <f0uf0ouuu@gmail.com>,
+	"flo.despe@laposte.net" <flo.despe@laposte.net>, "dessirier.simon@gmail.com"
+	<dessirier.simon@gmail.com>, "samuel.dhanraj02@gmail.com"
+	<samuel.dhanraj02@gmail.com>, "lucas.dic@hotmail.com"
+	<lucas.dic@hotmail.com>, "diagneibrahima269@gmail.com"
+	<diagneibrahima269@gmail.com>, "falitoushdiakhoumpa16@gmail.com"
+	<falitoushdiakhoumpa16@gmail.com>, "oumardiakite476@gmail.com"
+	<oumardiakite476@gmail.com>, "diarrassoubaaida12@gmail.com"
+	<diarrassoubaaida12@gmail.com>, "xadeeja02@gmail.com" <xadeeja02@gmail.com>,
+	rokhayalb <rokhayalb@gmail.com>, "serignefalujene@gmail.com"
+	<serignefalujene@gmail.com>, "nico.dioubate@gmail.com"
+	<nico.dioubate@gmail.com>, "alimatoudiouf01@gmail.com"
+	<alimatoudiouf01@gmail.com>, "dioufmouhamed130@gmail.com"
+	<dioufmouhamed130@gmail.com>, "maguidiouf2002@gmail.com"
+	<maguidiouf2002@gmail.com>, "erwindjia@gmail.com" <erwindjia@gmail.com>,
+	"djimedolorita@gmail.com" <djimedolorita@gmail.com>, "djossou628@gmail.com"
+	<djossou628@gmail.com>, "hultondohinnon6@gmail.com"
+	<hultondohinnon6@gmail.com>, "dontsoppk@gmail.com" <dontsoppk@gmail.com>,
+	"noradossamo1@gmail.com" <noradossamo1@gmail.com>, "ericefrieda@gmail.com"
+	<ericefrieda@gmail.com>, "doubethugo@gmail.com" <doubethugo@gmail.com>,
+	"Imanedouhi7@gmail.com" <Imanedouhi7@gmail.com>, "doulosbryan@gmail.com"
+	<doulosbryan@gmail.com>, "lloaneleontine@gmail.com"
+	<lloaneleontine@gmail.com>, "dubourdieufr@gmail.com"
+	<dubourdieufr@gmail.com>, "dubuisyann@gmail.com" <dubuisyann@gmail.com>,
+	"alissa.dugue26@gmail.com" <alissa.dugue26@gmail.com>,
+	"kevinduval43@gmail.com" <kevinduval43@gmail.com>, "mykwetj@gmail.com"
+	<mykwetj@gmail.com>, "fareselkh94@gmail.com" <fareselkh94@gmail.com>,
+	"aurelien.erni@orange.fr" <aurelien.erni@orange.fr>,
+	"yasmine.essakhi.02@gmail.com" <yasmine.essakhi.02@gmail.com>,
+	"charles.estienne83@orange.fr" <charles.estienne83@orange.fr>,
+	"rubeneytan@gmail.com" <rubeneytan@gmail.com>, "alex.fahloune@gmail.com"
+	<alex.fahloune@gmail.com>, "ndeyef2021@icloud.com" <ndeyef2021@icloud.com>,
+	"fallmamefatou09@gmail.com" <fallmamefatou09@gmail.com>, "3409355183@qq.com"
+	<3409355183@qq.com>, "exaucefdj1@gmail.com" <exaucefdj1@gmail.com>,
+	"aasfaranda.pro@gmail.com" <aasfaranda.pro@gmail.com>,
+	"fayefelix778@gmail.com" <fayefelix778@gmail.com>, "hugofejer95@gmail.com"
+	<hugofejer95@gmail.com>, "esperancefeliho@gmail.com"
+	<esperancefeliho@gmail.com>, "gwendal.ferre02@orange.fr"
+	<gwendal.ferre02@orange.fr>, "didierfeukoua@gmail.com"
+	<didierfeukoua@gmail.com>, "matfig782@gmail.com" <matfig782@gmail.com>,
+	"fingoue.rickywil@hotmail.com" <fingoue.rickywil@hotmail.com>,
+	"manuelfodjo2004@gmail.com" <manuelfodjo2004@gmail.com>,
+	"kamgar916@gmail.com" <kamgar916@gmail.com>, "jeremy76bis@gmail.com"
+	<jeremy76bis@gmail.com>, "2336523599@qq.com" <2336523599@qq.com>,
+	maxence.garambois <maxence.garambois@hotmail.fr>, "egbedozin@gmail.com"
+	<egbedozin@gmail.com>, "zacharie.gentydubus@gmail.com"
+	<zacharie.gentydubus@gmail.com>, "geraldoassaniy@gmail.com"
+	<geraldoassaniy@gmail.com>, "hugo.germond42@gmail.com"
+	<hugo.germond42@gmail.com>, "Antoine.giliberti6@gmail.com"
+	<Antoine.giliberti6@gmail.com>, "miraclegnida@gmail.com"
+	<miraclegnida@gmail.com>, "charles.gobert@sarlgobert.fr"
+	<charles.gobert@sarlgobert.fr>, "maxime.gouelibo@icloud.com"
+	<maxime.gouelibo@icloud.com>, "julie.gour@protonmail.com"
+	<julie.gour@protonmail.com>, "paulgrangepc@gmail.com"
+	<paulgrangepc@gmail.com>, "maxnicogrelaud@gmail.com"
+	<maxnicogrelaud@gmail.com>, "mehdigrumij69@gmail.com"
+	<mehdigrumij69@gmail.com>, "julien.guerlet11@gmail.com"
+	<julien.guerlet11@gmail.com>, "guiadembibiane9@gmail.com"
+	<guiadembibiane9@gmail.com>, "mambaguirassy21@gmail.com"
+	<mambaguirassy21@gmail.com>, "hameau.eliott@gmail.com"
+	<hameau.eliott@gmail.com>, "hammoudinarjiss@gmail.com"
+	<hammoudinarjiss@gmail.com>, "stephanehangouang@gmail.com"
+	<stephanehangouang@gmail.com>, "haroun57@yahoo.com" <haroun57@yahoo.com>,
+	"hauariihauani@hotmail.fr" <hauariihauani@hotmail.fr>, "bsanduni8@gmail.com"
+	<bsanduni8@gmail.com>, "marcjuniorh29@gmail.com" <marcjuniorh29@gmail.com>,
+	"briaqhounkpatin@gmail.com" <briaqhounkpatin@gmail.com>,
+	"hounsonlongodson@gmail.com" <hounsonlongodson@gmail.com>,
+	"tarek.agha03@gmail.com" <tarek.agha03@gmail.com>,
+	"icholaomoniyi06@gmail.com" <icholaomoniyi06@gmail.com>,
+	"abisegaihily@gmail.com" <abisegaihily@gmail.com>, "virgile.imbert@orange.fr"
+	<virgile.imbert@orange.fr>, "loick.n974@gmail.com" <loick.n974@gmail.com>,
+	"jaojobyraymond@gmail.com" <jaojobyraymond@gmail.com>,
+	"vincent.josset36@gmail.com" <vincent.josset36@gmail.com>,
+	"stanislas.kacz@gmail.com" <stanislas.kacz@gmail.com>,
+	"rickykaki35@gmail.com" <rickykaki35@gmail.com>, "angelokamguia@gmail.com"
+	<angelokamguia@gmail.com>, "kaneadjamaguette@gmail.com"
+	<kaneadjamaguette@gmail.com>, "mouhakebe39@gmail.com"
+	<mouhakebe39@gmail.com>, "charlotte.keryhuel@gmail.com"
+	<charlotte.keryhuel@gmail.com>, "mehmet_kilicaslan@protonmail.com"
+	<mehmet_kilicaslan@protonmail.com>, "kounourizkiath@gmail.com"
+	<kounourizkiath@gmail.com>, "kpekflorent02@gmail.com"
+	<kpekflorent02@gmail.com>, "marieangekuitche324@gmail.com"
+	<marieangekuitche324@gmail.com>, "erine.labatutsimon@gmail.com"
+	<erine.labatutsimon@gmail.com>, "simon.lagorce@gmail.com"
+	<simon.lagorce@gmail.com>, "achabilaguide2016@gmail.com"
+	<achabilaguide2016@gmail.com>, "w.lahbib@icloud.com" <w.lahbib@icloud.com>,
+	"ahmedespb@gmail.com" <ahmedespb@gmail.com>, "cyrille.lamero123@gmail.com"
+	<cyrille.lamero123@gmail.com>, "honorine.lams@orange.fr"
+	<honorine.lams@orange.fr>, "lateurtenzo@gmail.com" <lateurtenzo@gmail.com>,
+	"douryathlauriano@gmail.com" <douryathlauriano@gmail.com>,
+	"alladeolayitan10@gmail.com" <alladeolayitan10@gmail.com>,
+	"lucaslawniczak1@gmail.com" <lucaslawniczak1@gmail.com>,
+	"ledouarinalex@gmail.com" <ledouarinalex@gmail.com>,
+	"leadi.hafid.aremou@gmail.com" <leadi.hafid.aremou@gmail.com>,
+	"mathis.lebarbanchon@gmail.com" <mathis.lebarbanchon@gmail.com>,
+	"cecilialebarbey@gmail.com" <cecilialebarbey@gmail.com>,
+	"leber.pro@gmail.com" <leber.pro@gmail.com>, "romain762002@gmail.com"
+	<romain762002@gmail.com>, "lucasleprovots@gmail.com"
+	<lucasleprovots@gmail.com>, "matteo.lequertier@gmail.com"
+	<matteo.lequertier@gmail.com>, "simon.lesage26@gmail.com"
+	<simon.lesage26@gmail.com>, "nathan.letertre@gmail.com"
+	<nathan.letertre@gmail.com>, "irinachedjou67@gmail.com"
+	<irinachedjou67@gmail.com>, "euniceelokossou@gmail.com"
+	<euniceelokossou@gmail.com>, "maxime.lorcerie4125@gmail.com"
+	<maxime.lorcerie4125@gmail.com>, "jessicaloston20@gmail.com"
+	<jessicaloston20@gmail.com>, "mohamedjumal333@gmail.com"
+	<mohamedjumal333@gmail.com>, "lyuning2019@163.com" <lyuning2019@163.com>,
+	"madoutanimoune@gmail.com" <madoutanimoune@gmail.com>,
+	"rashanperera99@gmail.com" <rashanperera99@gmail.com>,
+	"Mohamedsalem.khadi@gmail.com" <Mohamedsalem.khadi@gmail.com>,
+	"majorlucas1801@gmail.com" <majorlucas1801@gmail.com>,
+	"ousseynoumanga24@gmail.com" <ousseynoumanga24@gmail.com>,
+	"mansouri.aminemsr@gmail.com" <mansouri.aminemsr@gmail.com>,
+	"benjaminmarcadet@laposte.net" <benjaminmarcadet@laposte.net>,
+	"marellomarius37@gmail.com" <marellomarius37@gmail.com>,
+	"franck.martine76@free.fr" <franck.martine76@free.fr>,
+	"y.masselot@outlook.fr" <y.masselot@outlook.fr>, "ruth.josee01@gmail.com"
+	<ruth.josee01@gmail.com>, "ousmbeguere@gmail.com" <ousmbeguere@gmail.com>,
+	"aissatoumbengue8@gmail.com" <aissatoumbengue8@gmail.com>,
+	"fatoumbengue1701@gmail.com" <fatoumbengue1701@gmail.com>,
+	"assanembodj82@gmail.com" <assanembodj82@gmail.com>, "aichambow909@gmail.com"
+	<aichambow909@gmail.com>, "ericdorval20@gmail.com" <ericdorval20@gmail.com>,
+	"janicemedja@gmail.com" <janicemedja@gmail.com>, "ismaelmegapche@gmail.com"
+	<ismaelmegapche@gmail.com>, "thomas.menard608@gmail.com"
+	<thomas.menard608@gmail.com>, "esteban.mendes2003@free.fr"
+	<esteban.mendes2003@free.fr>, "carlosmerino.2001@gmail.com"
+	<carlosmerino.2001@gmail.com>, "younes.zkrmst@gmail.com"
+	<younes.zkrmst@gmail.com>, "benjaminmeyer1@numericable.fr"
+	<benjaminmeyer1@numericable.fr>, "kinvymezui@gmail.com"
+	<kinvymezui@gmail.com>, "aminthou@gmail.com" <aminthou@gmail.com>,
+	"2423430701@qq.com" <2423430701@qq.com>, "antonin.mct@gmail.com"
+	<antonin.mct@gmail.com>, "samuellemig@gmail.com" <samuellemig@gmail.com>,
+	"paulmignot8@gmail.com" <paulmignot8@gmail.com>, diego.millerand
+	<diego.millerand@gmail.com>, "ilyasmohamedainan@gmail.com"
+	<ilyasmohamedainan@gmail.com>, "willtheking76@gmail.com"
+	<willtheking76@gmail.com>, "sholamontcho13@gmail.com"
+	<sholamontcho13@gmail.com>, "antoinemorgaint@gmail.com"
+	<antoinemorgaint@gmail.com>, "ramimoulay@gmail.com" <ramimoulay@gmail.com>,
+	"antonin.moulun@gmail.com" <antonin.moulun@gmail.com>, "mokhfr2ecs@gmail.com"
+	<mokhfr2ecs@gmail.com>, "mpoutou.rupert@gmail.com"
+	<mpoutou.rupert@gmail.com>, "antoine.mugnier@protonmail.com"
+	<antoine.mugnier@protonmail.com>, "danidanguessan@gmail.com"
+	<danidanguessan@gmail.com>, "ndiayemamebirameowens@gmail.com"
+	<ndiayemamebirameowens@gmail.com>, "aissatoundiaye941@gmail.com"
+	<aissatoundiaye941@gmail.com>, "ndiayeyayematy@gmail.com"
+	<ndiayeyayematy@gmail.com>, "awandiaye1805@gmail.com"
+	<awandiaye1805@gmail.com>, "sndiaye2017oumar@gmail.com"
+	<sndiaye2017oumar@gmail.com>, "julesnd20@gmail.com" <julesnd20@gmail.com>,
+	"mouhamedmbacken1@gmail.com" <mouhamedmbacken1@gmail.com>,
+	"axel.neiva@yahoo.fr" <axel.neiva@yahoo.fr>, "Levyngassaki0@gmail.com"
+	<Levyngassaki0@gmail.com>, "njimremy@gmail.com" <njimremy@gmail.com>,
+	"franckbayema2@gmail.com" <franckbayema2@gmail.com>,
+	"pierre.norm76@gmail.com" <pierre.norm76@gmail.com>, frantzloicnzitsa
+	<frantzloicnzitsa@gmail.com>, "maellenzoukeu@gmail.com"
+	<maellenzoukeu@gmail.com>, "leirisobey@gmail.com" <leirisobey@gmail.com>,
+	"obouhclement@gmail.com" <obouhclement@gmail.com>, "adiobaddoo@gmail.com"
+	<adiobaddoo@gmail.com>, "salakomael@gmail.com" <salakomael@gmail.com>,
+	"samonifade100@gmail.com" <samonifade100@gmail.com>,
+	"Orange.victor12@gmail.com" <Orange.victor12@gmail.com>,
+	"Ouazar.william@gmail.com" <Ouazar.william@gmail.com>,
+	"jean-michel.ouf@outlook.com" <jean-michel.ouf@outlook.com>,
+	"brahim16oulahcen@gmail.com" <brahim16oulahcen@gmail.com>,
+	"2291543577@qq.com" <2291543577@qq.com>, "3112656683@qq.com"
+	<3112656683@qq.com>, "julien.pavard09@gmail.com" <julien.pavard09@gmail.com>,
+	"idrisperree@gmail.com" <idrisperree@gmail.com>, "martin.pichon14@sfr.fr"
+	<martin.pichon14@sfr.fr>, "pierrelouison@yahoo.fr" <pierrelouison@yahoo.fr>,
+	"pierron.hugo@yahoo.fr" <pierron.hugo@yahoo.fr>, "matpiet19@gmail.com"
+	<matpiet19@gmail.com>, pierrick051102 <pierrick051102@gmail.com>,
+	"gregpf972@gmail.com" <gregpf972@gmail.com>, "ponbofo.romuald10@gmail.com"
+	<ponbofo.romuald10@gmail.com>, "thibaudporee@gmail.com"
+	<thibaudporee@gmail.com>, "baptistepoulain2003@gmail.com"
+	<baptistepoulain2003@gmail.com>, "mimipouye@gmail.com" <mimipouye@gmail.com>,
+	"arno.pretet@gmail.com" <arno.pretet@gmail.com>, "priantom@gmail.com"
+	<priantom@gmail.com>, "titouanprovost7422@gmail.com"
+	<titouanprovost7422@gmail.com>, "mouhssin.rabihi1@gmail.com"
+	<mouhssin.rabihi1@gmail.com>, "jules.rdp@gmail.com" <jules.rdp@gmail.com>,
+	"alizee.redor@orange.fr" <alizee.redor@orange.fr>, "rekikmaissane@gmail.com"
+	<rekikmaissane@gmail.com>, "guillaumernrd76@gmail.com"
+	<guillaumernrd76@gmail.com>, "gregoire.rieu2003@gmail.com"
+	<gregoire.rieu2003@gmail.com>, "constanceheiata@outlook.com"
+	<constanceheiata@outlook.com>, "rousselpierre04@gmail.com"
+	<rousselpierre04@gmail.com>, "arthur.sacoutinho@gmail.com"
+	<arthur.sacoutinho@gmail.com>, "moussasanias@gmail.com"
+	<moussasanias@gmail.com>, "sageotvictor@gmail.com" <sageotvictor@gmail.com>,
+	"astriddjuikem@gmail.com" <astriddjuikem@gmail.com>, "liamsaigre@gmail.com"
+	<liamsaigre@gmail.com>, "mouradsaizonou4@gmail.com"
+	<mouradsaizonou4@gmail.com>, "alisakhi2002@gmail.com"
+	<alisakhi2002@gmail.com>, "gallothierno@gmail.com" <gallothierno@gmail.com>,
+	mouhamedsall061 <mouhamedsall061@gmail.com>, "maevasalong390@gmail.com"
+	<maevasalong390@gmail.com>, "marie.sandhomme@gmail.com"
+	<marie.sandhomme@gmail.com>, "sandwidisahir@gmail.com"
+	<sandwidisahir@gmail.com>, "Ibrahimaseck645@gmail.com"
+	<Ibrahimaseck645@gmail.com>, "asegarajasingam@gmail.com"
+	<asegarajasingam@gmail.com>, "nsene8303@gmail.com" <nsene8303@gmail.com>,
+	"zarachous7@gmail.com" <zarachous7@gmail.com>, "heloise.servain@outlook.fr"
+	<heloise.servain@outlook.fr>, "rubensewanouoza@gmail.com"
+	<rubensewanouoza@gmail.com>, "fari.sintondji@gmail.com"
+	<fari.sintondji@gmail.com>, "sitchepingarthur@gmail.com"
+	<sitchepingarthur@gmail.com>, "izemsmail@gmail.com" <izemsmail@gmail.com>,
+	"normanayode15@gmail.com" <normanayode15@gmail.com>, "sognonoceane@gmail.com"
+	<sognonoceane@gmail.com>, "antoine.sorel@live.fr" <antoine.sorel@live.fr>,
+	"ba.sottejeau@gmail.com" <ba.sottejeau@gmail.com>, "noe.soufflet@gmail.com"
+	<noe.soufflet@gmail.com>, "bolasouhouin@gmail.com" <bolasouhouin@gmail.com>,
+	"mjsouop@yahoo.com" <mjsouop@yahoo.com>, "mathys.southichack@gmail.com"
+	<mathys.southichack@gmail.com>, "sow.brahima2021@gmail.com"
+	<sow.brahima2021@gmail.com>, "mamadou15sow03@gmail.com"
+	<mamadou15sow03@gmail.com>, "Ndeyemaimouna2003@gmail.com"
+	<Ndeyemaimouna2003@gmail.com>, "ousmanebebito77@gmail.com"
+	<ousmanebebito77@gmail.com>, "aminatahamady2003@gmail.com"
+	<aminatahamady2003@gmail.com>, "tadiehansulrich75@gmail.com"
+	<tadiehansulrich75@gmail.com>, "enzoj8451@gmail.com" <enzoj8451@gmail.com>,
+	"tamtomayel2004@gmail.com" <tamtomayel2004@gmail.com>, "tangakev27@gmail.com"
+	<tangakev27@gmail.com>, "nonotankojason@gmail.com"
+	<nonotankojason@gmail.com>, "yannbradytchounkeu@gmail.com"
+	<yannbradytchounkeu@gmail.com>, "techerbastienpl@gmail.com"
+	<techerbastienpl@gmail.com>, "matt.tevane974@gmail.com"
+	<matt.tevane974@gmail.com>, "antathiam329@gmail.com"
+	<antathiam329@gmail.com>, "safirtiamiyou2003@gmail.com"
+	<safirtiamiyou2003@gmail.com>, "tonneau.pro.t@gmail.com"
+	<tonneau.pro.t@gmail.com>, "topanouaurele2003@gmail.com"
+	<topanouaurele2003@gmail.com>, "toriot.alexandre@gmail.com"
+	<toriot.alexandre@gmail.com>, "mohamedtoukourou1@gmail.com"
+	<mohamedtoukourou1@gmail.com>, "gloriatovissanou@gmail.com"
+	<gloriatovissanou@gmail.com>, "eraytozlu4@gmail.com" <eraytozlu4@gmail.com>,
+	"baptduy@gmail.com" <baptduy@gmail.com>, "c-travers@orange.fr"
+	<c-travers@orange.fr>, "meavon.vales@gmail.com" <meavon.vales@gmail.com>,
+	"dylan.valienne@gmail.com" <dylan.valienne@gmail.com>,
+	"matthiasvanherreweghe@gmail.com" <matthiasvanherreweghe@gmail.com>,
+	"alisonvanin24@gmail.com" <alisonvanin24@gmail.com>, "romv76120@gmail.com"
+	<romv76120@gmail.com>, "mayane.verrier@icloud.com"
+	<mayane.verrier@icloud.com>, "valmont.vissouze@gmail.com"
+	<valmont.vissouze@gmail.com>, "wambstephane@gmail.com"
+	<wambstephane@gmail.com>, "willekensbaptiste@yahoo.com"
+	<willekensbaptiste@yahoo.com>, "wuyiwen762@gmail.com" <wuyiwen762@gmail.com>,
+	"xiaokailiang1@gmail.com" <xiaokailiang1@gmail.com>, 15000890653
+	<15000890653@163.com>, "2451148083@qq.com" <2451148083@qq.com>,
+	"umit03.yildirim@gmail.com" <umit03.yildirim@gmail.com>,
+	"ymelebrian@gmail.com" <ymelebrian@gmail.com>, "franckyoumbi1234@gmail.com"
+	<franckyoumbi1234@gmail.com>, "rzml2551@gmail.com" <rzml2551@gmail.com>,
+	"omarzinelabidine99@gmail.com" <omarzinelabidine99@gmail.com>,
+	"davzohoun@gmail.com" <davzohoun@gmail.com>, "ozouchekon@gmail.com"
+	<ozouchekon@gmail.com>
+Subject: Certificats Voltaire
+Thread-Topic: Certificats Voltaire
+Thread-Index: AdyOqclnStZ9K6u9SI6q0nCzQ8UrDA==
+Date: Mon, 26 Jan 2026 09:56:35 +0000
+Message-ID:
+ <AS5PR09MB67978ACB7738E098A952FD9A9293A@AS5PR09MB6797.eurprd09.prod.outlook.com>
+Accept-Language: fr-FR, en-US
+Content-Language: fr-FR
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+authentication-results: dkim=none (message not signed)
+ header.d=none;dmarc=none action=none header.from=esigelec.fr;
+x-ms-publictraffictype: Email
+x-ms-traffictypediagnostic: AS5PR09MB6797:EE_|AS1PR09MB6526:EE_
+x-ms-office365-filtering-correlation-id: a19fbe75-a82c-41ee-1c5c-08de5cc13161
+x-ld-processed: 371cb156-9558-4286-a3cd-3059699b890c,ExtAddr
+x-ms-exchange-senderadcheck: 1
+x-ms-exchange-antispam-relay: 0
+x-microsoft-antispam:
+ BCL:0;ARA:13230040|376014|786006|7416014|366016|1800799024|921020|38070700021|8096899003|41080700001;
+x-microsoft-antispam-message-info:
+ =?iso-8859-1?Q?40TVpn/f+wAW/IjpQNZagn/zLqdwHsrjfVSfeswg8aiDEnnC/WShcwKfzz?=
+ =?iso-8859-1?Q?RIui4GCVsH03ScmJ/F/32l1npi7M22wfEFVbBLqAuQz/1tRhzzqoLNlnrH?=
+ =?iso-8859-1?Q?TaYvrgP0mETsSsuDOGbDwjOAkCxP5+otJhK05AqGvp1y6hkmQi/Ek9u23x?=
+ =?iso-8859-1?Q?YDU5/Lai3+0F9RxXuFP1xFaLvuq19fxT1goTPetF1imj7MkC32OORxtXy6?=
+ =?iso-8859-1?Q?edJT6gH9LxJQMCnpReE9Jx5pMGKdJphfWViHZEAM1L57HUcLVC4fIzPaf3?=
+ =?iso-8859-1?Q?+SptMj9EMiB8CK8PWzORAZJBJQTAE2mKUZL+9svpo25wBnYd53pb78LDC2?=
+ =?iso-8859-1?Q?Hh+kHSop2h965fdNmsXGYq7+3plpTZorFYYgnrB08U7E2MoO3xRcG/XgYh?=
+ =?iso-8859-1?Q?qssKmLyw+nyUgFe2ol8bBwaxcNlrun4k1uTJKY+qymZOCrnU9XHNPH94rX?=
+ =?iso-8859-1?Q?wdliVdjfuuX9Uo0Gh3obcYdFbGF4Ovvo7MVpnkRT8nP3TVNQIpDBCHP/hS?=
+ =?iso-8859-1?Q?kaYxpCvvIKUrBNpkXOllgFozfqpNgbWgAIi/kABr8If7nMSipG+0I9s19D?=
+ =?iso-8859-1?Q?W0HfZzYsL3KC+afpLxOSY35ge8GB2gn3JMWGM6T0zZ4W82F1w08pLbLND+?=
+ =?iso-8859-1?Q?sQq3GieugoqaGWdVBIMsyMujXtB5Xb7nebRovhsvXK39IyLMCMjmYJ/CtT?=
+ =?iso-8859-1?Q?7zGjRNVuwTu0T26m5EDnI3bfQBq8MNTfT6CIKeS/g9WzLai7XHHwP320jf?=
+ =?iso-8859-1?Q?pb3gix2JEy9bPCkDnQw5DGlF9Ple6zu4OGN9NdKPOK/vnikaagbmPztSSq?=
+ =?iso-8859-1?Q?s3P4cj4ZMjtsexTXKLGEPQJRBV/ums7ngLolUhJeqeF2bQ3n6gX+dAubuV?=
+ =?iso-8859-1?Q?TLj947tont+GBjUDeth7j+o1cXCzrkKbJvf8HNssEYoERBr8dNbqiECoSw?=
+ =?iso-8859-1?Q?tNPX236gBc/S3WdhR3VfniZgK37nH3CqiJoCHFpGm/e6wAksj0Lv746Hdi?=
+ =?iso-8859-1?Q?RdbOemK59T9sVJAFUpa5EFaDc5Q3dK6jFiLHcCnKHUpLtB0TiQlEwwx+G6?=
+ =?iso-8859-1?Q?wfIVeVFB3AcA6EvK72nLIvYKCS3mo/q2SNCYsU4JJU1g2e3hi4wZ2+F3ik?=
+ =?iso-8859-1?Q?JizFTVP1mfBodMV/qPZGt7ojnrw4VOWsfx5IU35wC4J/pQJMUT1AxTjqVl?=
+ =?iso-8859-1?Q?zqB5wZPxFwB2oum2kbZCGBXHRLAcR281BgrgTrWeoeDnBLvqV9ZztTebCI?=
+ =?iso-8859-1?Q?gRnJPD/2uQ9q4Wrr2hEOi0aT58qu0GZq7w+0ySuJN+daLEik8atrkFja/o?=
+ =?iso-8859-1?Q?aZDnoQm+QpmtipTjGsjEwW8bbTDy849fACHWoQaiyXuw1rb1g5rhZbKAp7?=
+ =?iso-8859-1?Q?+Xr/s23QSxsSecAWruj5pjEBzzk/afVmpLsUu9I/kXjhKMoH+2vix9dhkb?=
+ =?iso-8859-1?Q?4H2HWIGFL9ztR+chAA2tIYeh84IFM9CH2tVasjsLKI2qtww7jzkfztar9G?=
+ =?iso-8859-1?Q?7Yk+LmvStEWcUoKpAn/1dCaZb+/eKypbp2CY96FaMPMvsWuav62BVY3GQz?=
+ =?iso-8859-1?Q?hb7MkcKSqYW4nH4YcMx0n0qwerlPKvysNpP9YeIyPVP7GhDKqST5MP0j/5?=
+ =?iso-8859-1?Q?IyhDGdkqpVSNVhuBDvJdRgo/tcejsjpqRjFvftOTNqMsAhBEbtmyxgvesv?=
+ =?iso-8859-1?Q?Fo//BFX+Cjo8QkxjMmauqhrz1IYN5+uDSxIVKYXsf9Ez49xUS4CyermGYO?=
+ =?iso-8859-1?Q?EXdg=3D=3D?=
+x-forefront-antispam-report:
+ CIP:255.255.255.255;CTRY:;LANG:fr;SCL:1;SRV:;IPV:NLI;SFV:NSPM;H:AS5PR09MB6797.eurprd09.prod.outlook.com;PTR:;CAT:NONE;SFS:(13230040)(376014)(786006)(7416014)(366016)(1800799024)(921020)(38070700021)(8096899003)(41080700001);DIR:OUT;SFP:1102;
+x-ms-exchange-antispam-messagedata-chunkcount: 1
+x-ms-exchange-antispam-messagedata-0:
+ =?iso-8859-1?Q?2J9FKf8vHqBMn7hXrDxsLUzmIhsV048cmrz37UmZ2sGXsgRObbFLdJ7Rhe?=
+ =?iso-8859-1?Q?fWfF1j9z1Aa1TqhyjnNUYu6Xu1PHJSehAtYgK/oUhIQc7aOCgPATihwDQk?=
+ =?iso-8859-1?Q?3Mo8lF18RkJPcRq587SybwC5vibw9L39fxhr9JsSgbzSUldvSluBL9dYT1?=
+ =?iso-8859-1?Q?YKmuc4M/jNzHxAlN4fro9UMbG+rUwr/RlNJQA0KAeFG0DVgnF75QvDr8Mn?=
+ =?iso-8859-1?Q?BJoDvEUacvuVJmSSEq1GkCKB7ubC5IN+o+9T4Tw6fv68heWRSxltsuVs3Q?=
+ =?iso-8859-1?Q?+Uzc5+e62a2l3UD5v+C0e1WSfBp6tFy1IBm6KnnN/5BaZWkoNRYbyl6TyP?=
+ =?iso-8859-1?Q?9uCuq+v5Yxywh/aIcDnQlcgJS/8IqbsDR2jFki/Ir+oiP6yL0/zWLhszRs?=
+ =?iso-8859-1?Q?ag9P4GwVNmVa7NLV4tl/IKJEee3BZrR1j+WJJtMyTGjhpKxC7itWGQgryw?=
+ =?iso-8859-1?Q?I9QFIF0U5twMb5+lupJkVdmu4RwYnb5yf5lVwhaJqhwYJEUCHXFDe5HgAR?=
+ =?iso-8859-1?Q?ypTgYs2cqf2ACl5CzFvA6LDa88JTxQwXHfRCfOotFAAd9P68HpR6CmjGQd?=
+ =?iso-8859-1?Q?+PHz5nzdATaKwaY7iKvLpCAZKEtPW/iQe0AZH+Bh2vsMSiaNjVcdJVeCrJ?=
+ =?iso-8859-1?Q?8g174rY0IXvGud2zMvm1yihz17uCngExRY1+D24WHTCHeSUJ7JUOAaJcKV?=
+ =?iso-8859-1?Q?6xkEfV1OMmkTj4LIgFixkT2t8P/+bkx9BcxxyhGz+A7BWnySGalLouFV5+?=
+ =?iso-8859-1?Q?poCjKYBM3ER/cKFBJ6TXKZHaUMucwr1YrpFT4/4D1cW3PFASEEq57eUfgW?=
+ =?iso-8859-1?Q?ZeTIKnzxNidotEgEIzABtz1ozZyJurBs3vyVPCl2fJeksk2wptDvGr+Z9G?=
+ =?iso-8859-1?Q?/8rrXbXw9ysT64laIy73RhAH0t4cwAM8IXexsOnePBEFZRGHQBZQ0C7n2q?=
+ =?iso-8859-1?Q?mSLnXDtZxq1YM8D5WWT0oxNE5dV+Z7jGtGXc1hgZwZAdNm4L69ZFxQbsVv?=
+ =?iso-8859-1?Q?/Jf+7HPft9SUgQmzYxSf1v/C9NBzbRRCLg1aMejGU28d3/ir1axinNeThi?=
+ =?iso-8859-1?Q?NajOaKkZUeqsdZXi1Xa5fxs2OEqCblj2NozLag6tGohPMGa275zorkJxrk?=
+ =?iso-8859-1?Q?dueLJ3dyVPgW22KkbeMHVIU16DxHluFfTkbRDvVoWWOOt+DzXrpmafvnnF?=
+ =?iso-8859-1?Q?V7zIOSFQvoUkEdSbkLwDtctezbrkjRPdIjkSt3mNtSoxQ5Xv7mzAHAXnww?=
+ =?iso-8859-1?Q?PrGO91yxG9l5pO9yodEmav2P58JBQEw+5xlwnj3vX+3Epn+ERVeaYfMFJs?=
+ =?iso-8859-1?Q?2SUsaPQfV8b1orbgjEZndbx9QksE613J0tO3OVa2ABHhMq2p2sN2rfjbA9?=
+ =?iso-8859-1?Q?1zO7kClJyP/+3cbFlITwwNfFkh7OFJuleWybQUqTTdUqkRW1wrUPark6S9?=
+ =?iso-8859-1?Q?o6lf0SLmFjQEfD9qnq42ccY6x9J0QugN77m6PyqeyNHb85fuN95ThADHxr?=
+ =?iso-8859-1?Q?Mkev6UKqErVchLhUAO6IeLgnQqXrYws+tt+3ZoVtkWCuMCwfQzZpt++XTP?=
+ =?iso-8859-1?Q?linq2eb9ehdsIktxSmo1PU3J6JVtrK5irmQape0CzU3R+lCOp7TlNeBhF9?=
+ =?iso-8859-1?Q?hqaMs3xpGHBD88VLhOXwVfbxeGxpGAT0ZD2+VuK+wrJ8kRrGLnBz5JTel3?=
+ =?iso-8859-1?Q?Rg9IArHqiwhu3vuWsEdlD3hii5hOL+Boja8fwf6KAb4ev1SmHYZJ9cr+Jp?=
+ =?iso-8859-1?Q?6KkLVb+IBsSGxr4AhqpS0IdHRelIR0JtP826tAMjPqFeEg?=
+Content-Type: multipart/alternative;
+	boundary="_000_AS5PR09MB67978ACB7738E098A952FD9A9293AAS5PR09MB6797eurp_"
+MIME-Version: 1.0
+X-OriginatorOrg: esigelec.fr
+X-MS-Exchange-CrossTenant-AuthAs: Internal
+X-MS-Exchange-CrossTenant-AuthSource: AS5PR09MB6797.eurprd09.prod.outlook.com
+X-MS-Exchange-CrossTenant-Network-Message-Id: a19fbe75-a82c-41ee-1c5c-08de5cc13161
+X-MS-Exchange-CrossTenant-originalarrivaltime: 26 Jan 2026 09:56:36.0038
+ (UTC)
+X-MS-Exchange-CrossTenant-fromentityheader: Hosted
+X-MS-Exchange-CrossTenant-id: 371cb156-9558-4286-a3cd-3059699b890c
+X-MS-Exchange-CrossTenant-mailboxtype: HOSTED
+X-MS-Exchange-CrossTenant-userprincipalname: KarA53XXun4lFrhMdqb+4MMKRPPkJ2w6niefAqKFd/C1mm5ohacCsBCov+t0XhtFrrg6JH5YSWS9HDYtBWVr6A==
+X-MS-Exchange-Transport-CrossTenantHeadersStamped: AS1PR09MB6526
+
+--_000_AS5PR09MB67978ACB7738E098A952FD9A9293AAS5PR09MB6797eurp_
+Content-Type: text/plain; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+Bonjour =E0 tous,
+
+Pour tous ceux qui n'ont pas encore r=E9cup=E9r=E9 leur certificat Voltaire=
+, j'organise une derni=E8re journ=E9e de r=E9cup=E9ration ce jeudi 29 janvi=
+er entre 12h30 et 13h30.
+
+Bien cordialement,
+
+Olivia JAGAR
+
+--_000_AS5PR09MB67978ACB7738E098A952FD9A9293AAS5PR09MB6797eurp_
+Content-Type: text/html; charset="iso-8859-1"
+Content-Transfer-Encoding: quoted-printable
+
+<html xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:schemas-micr=
+osoft-com:office:office" xmlns:w=3D"urn:schemas-microsoft-com:office:word" =
+xmlns:m=3D"http://schemas.microsoft.com/office/2004/12/omml" xmlns=3D"http:=
+//www.w3.org/TR/REC-html40">
+<head>
+<meta http-equiv=3D"Content-Type" content=3D"text/html; charset=3Diso-8859-=
+1">
+<meta name=3D"Generator" content=3D"Microsoft Word 15 (filtered medium)">
+<style><!--
+/* Font Definitions */
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@DengXian";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+/* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0cm;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.EmailStyle17
+	{mso-style-type:personal-compose;
+	font-family:"Calibri",sans-serif;
+	color:windowtext;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	font-family:"Calibri",sans-serif;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;}
+div.WordSection1
+	{page:WordSection1;}
+--></style><!--[if gte mso 9]><xml>
+<o:shapedefaults v:ext=3D"edit" spidmax=3D"1026" />
+</xml><![endif]--><!--[if gte mso 9]><xml>
+<o:shapelayout v:ext=3D"edit">
+<o:idmap v:ext=3D"edit" data=3D"1" />
+</o:shapelayout></xml><![endif]-->
+</head>
+<body lang=3D"FR" link=3D"#0563C1" vlink=3D"#954F72" style=3D"word-wrap:bre=
+ak-word">
+<div class=3D"WordSection1">
+<p class=3D"MsoNormal">Bonjour =E0 tous,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Pour tous ceux qui n&#8217;ont pas encore r=E9cup=E9=
+r=E9 leur certificat Voltaire, j&#8217;organise une derni=E8re journ=E9e de=
+ r=E9cup=E9ration ce jeudi 29 janvier entre 12h30 et 13h30.<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Bien cordialement,<o:p></o:p></p>
+<p class=3D"MsoNormal"><o:p>&nbsp;</o:p></p>
+<p class=3D"MsoNormal">Olivia JAGAR<o:p></o:p></p>
+</div>
+</body>
+</html>
+
+--_000_AS5PR09MB67978ACB7738E098A952FD9A9293AAS5PR09MB6797eurp_--
