@@ -1,0 +1,29 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "correspond à une vraie candidature",
+      "status": "ok"
+    },
+    "global_verdict": "coherent",
+    "language_quality": {
+      "reason": "grammaire correcte",
+      "status": "ok"
+    },
+    "phishing_indicators": {
+      "reason": "pas d'urgence ni menace",
+      "status": "ok"
+    }
+  },
+  "analysis_id": 7,
+  "explanation": "Content: Mots-cles: sécurité",
+  "keywords": {
+    "count": 1,
+    "keyword_score": 15,
+    "keywords_found": [
+      "sécurité"
+    ]
+  },
+  "score": 10,
+  "service": "content",
+  "subject": "CV pour stage en Cybersécurité "
+}

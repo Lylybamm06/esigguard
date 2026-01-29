@@ -1,0 +1,64 @@
+{
+  "analysis_id": 14,
+  "email_data": {
+    "display_name": "Test Sender",
+    "domain": "example.com",
+    "email_date": "2024-01-26T10:00:00+00:00",
+    "email_sender": "test0@example.com",
+    "email_subject": "Ceci est un test complet pour lancer toutes les analyses.",
+    "sender_address": "test0@example.com",
+    "timestamp": 1706263200000
+  },
+  "Auth": {
+    "auth_result": {
+      "details": [
+        "Domaine cohérent avec l'adresse expéditeur"
+      ],
+      "domain_age_days": 11126,
+      "explanation": "Domaine cohérent avec l'adresse expéditeur",
+      "score": 0,
+      "timestamp": "2026-01-29T07:54:52.003169"
+    },
+    "email_data": {
+      "display_name": "Test Sender",
+      "domain": "example.com",
+      "email_date": "2024-01-26T10:00:00+00:00",
+      "email_sender": "test0@example.com",
+      "email_subject": "Ceci est un test complet pour lancer toutes les analyses.",
+      "sender_address": "test0@example.com",
+      "timestamp": 1706263200000
+    },
+    "urls": [
+      "http://example.com",
+      "http://malicious.test/phish"
+    ]
+  },
+  "Content": {
+    "content_analysis": {
+      "reason": "Le texte demande une réponse en JSON et fournit un exemple de format de réponse, ce qui indique une structure claire et logique.",
+      "status": "cohérent"
+    },
+    "explanation": "Le texte demande une réponse en JSON et fournit un exemple de format de réponse, ce qui indique une structure claire et logique.",
+    "percentage": 0.0,
+    "risk_level": "low",
+    "score": 0
+  },
+  "File": {
+    "Explanation": {
+      "fichiers_suspects": [],
+      "nbre_fichiers_suspects": 0,
+      "raison": "Extensions dangereuses"
+    },
+    "attachment_analysis": [],
+    "moyenne_pourcentage": 0,
+    "nb_attachments": 0
+  },
+  "Lien": {
+    "explanation": "0 lien(s) suspect(s) : aucun",
+    "links_analysis": [],
+    "nb_links": 0
+  },
+  "score_cyber": 0.0,
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte demande une réponse en JSON et fournit un exemple de format de réponse, ce qui indique une structure claire et logique. | FILE: Extensions dangereuses | LIEN: 0 lien(s) suspect(s) : aucun",
+  "analyzed_at": "2026-01-29T07:54:52.007760"
+}

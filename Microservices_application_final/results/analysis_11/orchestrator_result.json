@@ -1,0 +1,73 @@
+{
+  "analysis_id": 11,
+  "score_cyber": 16.0,
+  "explanation_cyber": "SMTP : IP source non identifiee | Authentification : FromVsReturn: incoherent | FromVsReply: incoherent | DisplayNameVsDomain: incoherent | Lien: Erreur | File : Aucune piece jointe | Content: Aucun indicateur suspect",
+  "details": {
+    "smtp": {
+      "analysis_id": 11,
+      "explanation": "SMTP : IP source non identifiee",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Unknown",
+        "country": "Unknown",
+        "ip": null,
+        "region": "Unknown"
+      },
+      "ip_reputation": {
+        "ip": null,
+        "malicious_reports": 0,
+        "status": "unknown"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": null,
+      "score": 30,
+      "service": "smtp",
+      "timestamp_status": "ok"
+    },
+    "auth": {
+      "score": 50,
+      "explanation": "Authentification : FromVsReturn: incoherent | FromVsReply: incoherent | DisplayNameVsDomain: incoherent"
+    },
+    "lien": {
+      "score": 0,
+      "explanation": "Lien: Erreur"
+    },
+    "file": {
+      "analysis_id": 11,
+      "attachment_count": 0,
+      "attachments_analysis": [],
+      "explanation": "File : Aucune piece jointe",
+      "score": 0,
+      "service": "file",
+      "suspicious_count": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "correspond à une facture réelle",
+          "status": "ok"
+        },
+        "global_verdict": "coherent",
+        "language_quality": {
+          "reason": "grammaire et orthographe correctes",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "pas d'urgence ni de menace",
+          "status": "ok"
+        }
+      },
+      "analysis_id": 11,
+      "explanation": "Content: Aucun indicateur suspect",
+      "keywords": {
+        "count": 0,
+        "keyword_score": 0,
+        "keywords_found": []
+      },
+      "score": 0,
+      "service": "content",
+      "subject": "Your receipt from Anthropic, PBC #2835-9319-2606"
+    }
+  }
+}

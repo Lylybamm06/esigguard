@@ -1,0 +1,27 @@
+{
+  "analysis_id": 5,
+  "score_cyber": 0.0,
+  "explanation_cyber": "SMTP: Erreur | Auth: Erreur | Lien: Erreur | File: Erreur | Content: Erreur",
+  "details": {
+    "smtp": {
+      "score": 0,
+      "explanation": "SMTP: Erreur"
+    },
+    "auth": {
+      "score": 0,
+      "explanation": "Auth: Erreur"
+    },
+    "lien": {
+      "score": 0,
+      "explanation": "Lien: Erreur"
+    },
+    "file": {
+      "score": 0,
+      "explanation": "File: Erreur"
+    },
+    "content": {
+      "score": 0,
+      "explanation": "Content: Erreur"
+    }
+  }
+}

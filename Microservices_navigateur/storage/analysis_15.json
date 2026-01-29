@@ -1,0 +1,80 @@
+{
+  "analysis_id": 15,
+  "email_data": {
+    "display_name": "Test Sender",
+    "domain": "example.com",
+    "email_date": "2024-01-26T10:00:00+00:00",
+    "email_sender": "test0@example.com",
+    "email_subject": "Ceci est un test complet pour lancer toutes les analyses.",
+    "sender_address": "test0@example.com",
+    "timestamp": 1706263200000
+  },
+  "Auth": {
+    "auth_result": {
+      "details": [
+        "Domaine cohérent avec l'adresse expéditeur"
+      ],
+      "domain_age_days": 11126,
+      "explanation": "Domaine cohérent avec l'adresse expéditeur",
+      "score": 0,
+      "timestamp": "2026-01-29T08:19:07.099729"
+    },
+    "email_data": {
+      "display_name": "Test Sender",
+      "domain": "example.com",
+      "email_date": "2024-01-26T10:00:00+00:00",
+      "email_sender": "test0@example.com",
+      "email_subject": "Ceci est un test complet pour lancer toutes les analyses.",
+      "sender_address": "test0@example.com",
+      "timestamp": 1706263200000,
+      "urls": [
+        "http://example.com",
+        "http://malicious.test/phish"
+      ]
+    },
+    "urls": []
+  },
+  "Content": {
+    "content_analysis": {
+      "reason": "Le contenu est une instruction claire et précise pour répondre à une question.",
+      "status": "cohérent"
+    },
+    "explanation": "Le contenu est une instruction claire et précise pour répondre à une question.",
+    "percentage": 0.0,
+    "risk_level": "low",
+    "score": 0
+  },
+  "File": {
+    "Explanation": {
+      "fichiers_suspects": [],
+      "nbre_fichiers_suspects": 0,
+      "raison": "Extensions dangereuses"
+    },
+    "attachment_analysis": [],
+    "moyenne_pourcentage": 0,
+    "nb_attachments": 0
+  },
+  "Lien": {
+    "explanation": "2 lien(s) suspect(s) : http://example.com, http://malicious.test/phish",
+    "links_analysis": [
+      {
+        "reputation": {
+          "reason": "Le lien http://example.com est un exemple de domaine générique fourni par la RFC 2606 et n'a aucun contenu réel ou propriétaire associé. Par conséquent, il n'est possible d'évaluer sa fiabilité ou son caractère malveillant sans plus d'informations.",
+          "status": "unknown"
+        },
+        "url": "http://example.com"
+      },
+      {
+        "reputation": {
+          "reason": "Le lien contient les mots-clés \"malicious\" et \"phish\" qui sont des indicateurs forts d'activités frauduleuses ou malveillantes, notamment le phishing qui est une technique d'escroquerie en ligne visant à obtenir des informations sensibles.",
+          "status": "malicious"
+        },
+        "url": "http://malicious.test/phish"
+      }
+    ],
+    "nb_links": 2
+  },
+  "score_cyber": 0.0,
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le contenu est une instruction claire et précise pour répondre à une question. | FILE: Extensions dangereuses | LIEN: 2 lien(s) suspect(s) : http://example.com, http://malicious.test/phish",
+  "analyzed_at": "2026-01-29T08:19:07.655108"
+}
