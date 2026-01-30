@@ -10,14 +10,14 @@ class Database:
             host="esigguard-mysql.mysql.database.azure.com",
             user="mysql_admin",
             password="@Ping632026@",
-            database="esigguard_data"
+            database="david"
         )
 
     def get_connection(self):
         return self.pool.get_connection()
 
     # ---------------------------------------------------------
-    # Récupérer les analyses en attente
+    # Analyses en attente
     # ---------------------------------------------------------
     def get_pending_analyses(self, limit=100):
         conn = self.get_connection()
@@ -34,7 +34,7 @@ class Database:
         return rows
 
     # ---------------------------------------------------------
-    # Récupérer une analyse complète (si déjà traitée)
+    # Analyse complète
     # ---------------------------------------------------------
     def get_complete_analysis(self, analysis_id):
         conn = self.get_connection()
@@ -49,7 +49,7 @@ class Database:
         return row
 
     # ---------------------------------------------------------
-    # Mettre à jour les infos extraites du mail
+    # Mise à jour infos email
     # ---------------------------------------------------------
     def update_analysis_email_info(self, analysis_id, info):
         conn = self.get_connection()
@@ -91,7 +91,7 @@ class Database:
         conn.close()
 
     # ---------------------------------------------------------
-    # Ajouter les pièces jointes
+    # Ajouter pièces jointes
     # ---------------------------------------------------------
     def add_attachments(self, analysis_id, attachments):
         conn = self.get_connection()
@@ -115,7 +115,24 @@ class Database:
         conn.close()
 
     # ---------------------------------------------------------
-    # Ajouter les URLs
+    # Mise à jour dangerosité pièce jointe
+    # ---------------------------------------------------------
+    def update_attachment_danger(self, analysis_id, filename, is_dangerous):
+        conn = self.get_connection()
+        cursor = conn.cursor()
+
+        cursor.execute("""
+            UPDATE attachments
+            SET is_dangerous = %s
+            WHERE analysis_id = %s AND filename = %s
+        """, (is_dangerous, analysis_id, filename))
+
+        conn.commit()
+        cursor.close()
+        conn.close()
+
+    # ---------------------------------------------------------
+    # Ajouter URLs
     # ---------------------------------------------------------
     def add_urls(self, analysis_id, urls):
         conn = self.get_connection()
@@ -137,7 +154,7 @@ class Database:
         conn.close()
 
     # ---------------------------------------------------------
-    # 🔥 NOUVEAU : Récupérer les URLs d'une analyse
+    # Récupérer URLs
     # ---------------------------------------------------------
     def get_urls(self, analysis_id):
         conn = self.get_connection()
@@ -155,7 +172,24 @@ class Database:
         return rows
 
     # ---------------------------------------------------------
-    # Mettre à jour le statut
+    # 🔥 NOUVEAU : Mise à jour is_suspicious pour une URL
+    # ---------------------------------------------------------
+    def update_url_suspicious(self, analysis_id, url, is_suspicious):
+        conn = self.get_connection()
+        cursor = conn.cursor()
+
+        cursor.execute("""
+            UPDATE urls
+            SET is_suspicious = %s
+            WHERE analysis_id = %s AND url = %s
+        """, (is_suspicious, analysis_id, url))
+
+        conn.commit()
+        cursor.close()
+        conn.close()
+
+    # ---------------------------------------------------------
+    # Mise à jour statut analyse
     # ---------------------------------------------------------
     def update_status(self, analysis_id, new_status):
         conn = self.get_connection()
@@ -172,7 +206,7 @@ class Database:
         conn.close()
 
     # ---------------------------------------------------------
-    # 🔥 Stocker explanation_cyber et score_cyber
+    # Mise à jour résultats cyber
     # ---------------------------------------------------------
     def update_cyber_results(self, analysis_id, explanation, score):
         conn = self.get_connection()

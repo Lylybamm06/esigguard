@@ -43,7 +43,7 @@ def check_ip_reputation(ip):
                 "malicious_reports": 0
             }
     except Exception as e:
-        print(f"⚠️  Erreur VirusTotal IP: {e}")
+        print(f"⚠  Erreur VirusTotal IP: {e}")
         return {
             "ip": ip,
             "status": "unknown",
@@ -81,7 +81,7 @@ def get_ip_geolocation(ip):
                 "city": "Unknown"
             }
     except Exception as e:
-        print(f"⚠️  Erreur Géolocalisation: {e}")
+        print(f"⚠  Erreur Géolocalisation: {e}")
         return {
             "ip": ip,
             "country": "Unknown",
@@ -91,19 +91,12 @@ def get_ip_geolocation(ip):
 
 def analyze_headers(analysis):
     """Analyse des en-têtes SMTP"""
-    # Vérifier présence Message-ID
-    # Note: Cette info n'est pas extraite par le parser actuel
-    # On pourrait l'ajouter mais pour l'instant on met "unknown"
     message_id_present = "unknown"
-    
-    # Vérifier List-Unsubscribe
     list_unsubscribe_present = "unknown"
     
-    # Analyse timestamp (email_date présent ?)
     email_date = analysis.get("email_date")
     timestamp_status = "ok" if email_date else "missing"
     
-    # Headers status
     headers_status = "normal"
     
     return {
@@ -114,11 +107,11 @@ def analyze_headers(analysis):
     }
 
 def calculate_smtp_score(ip_reputation, ip_geolocation, headers):
-    """Calcule le score SMTP"""
+    """Calcule le score SMTP (normalisé sur 100)"""
     score = 0
     reasons = []
     
-    # IP Reputation (+40 si malicious)
+    # IP Reputation
     if ip_reputation.get("status") == "not reliable":
         score += 40
         reasons.append(f"IP malveillante ({ip_reputation.get('malicious_reports')} signalements)")
@@ -126,22 +119,21 @@ def calculate_smtp_score(ip_reputation, ip_geolocation, headers):
         score += 15
         reasons.append("Réputation IP inconnue")
     
-    # Géolocalisation suspecte (+20 si pays à risque)
-    # Pour simplifier, on n'ajoute pas de points ici
-    # Mais on pourrait vérifier si country est dans une liste noire
-    
-    # List-Unsubscribe absent ou inconnu (+10)
+    # List-Unsubscribe
     list_unsub = headers.get("list_unsubscribe_present")
     if list_unsub in ["no", "unknown"]:
         score += 10
         reasons.append("Pas de lien de desinscription")
     
-    # Timestamp manquant (+15)
+    # Timestamp
     if headers.get("timestamp_status") == "missing":
         score += 15
         reasons.append("Timestamp manquant")
     
-    return min(100, score), reasons
+    # Normalisation sur 100
+    final_score = int((score / 65) * 100)
+    
+    return min(100, final_score), reasons
 
 def analyze_smtp(analysis_id):
     """Analyse SMTP complète"""
@@ -153,11 +145,10 @@ def analyze_smtp(analysis_id):
     if not analysis:
         raise ValueError(f"Analyse {analysis_id} introuvable")
     
-    # Récupérer IP source
     origin_ip = analysis.get('sender_ip')
     
     if not origin_ip:
-        print("  ⚠️  Pas d'IP source identifiée")
+        print("  ⚠  Pas d'IP source identifiée")
         
         return {
             "analysis_id": analysis_id,
@@ -184,26 +175,22 @@ def analyze_smtp(analysis_id):
     
     print(f"  🔍 IP source: {origin_ip}")
     
-    # Analyses
     ip_reputation = check_ip_reputation(origin_ip)
     ip_geolocation = get_ip_geolocation(origin_ip)
     headers = analyze_headers(analysis)
     
     print(f"  📍 Localisation: {ip_geolocation.get('city')}, {ip_geolocation.get('country')}")
-    print(f"  🛡️  Réputation: {ip_reputation.get('status')}")
+    print(f"  🛡  Réputation: {ip_reputation.get('status')}")
     
-    # Mise à jour MySQL (sender_country)
     country = ip_geolocation.get("country", "Unknown")
     try:
         db.update_sender_country(analysis_id, origin_ip, country)
         print(f"  💾 MySQL mis à jour: country={country}")
     except Exception as e:
-        print(f"  ⚠️  Erreur mise à jour MySQL: {e}")
+        print(f"  ⚠  Erreur mise à jour MySQL: {e}")
     
-    # Calcul score
     score, reasons = calculate_smtp_score(ip_reputation, ip_geolocation, headers)
     
-    # Explication
     if reasons:
         explanation = f"SMTP : {', '.join(reasons)}"
     else:
