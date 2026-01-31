@@ -33,7 +33,7 @@ class PhishingDatabase:
     def __init__(self):
         self.host = os.getenv('MYSQL_HOST', 'esigguard-mysql.mysql.database.azure.com')
         self.port = int(os.getenv('MYSQL_PORT', '3306'))
-        self.database = os.getenv('MYSQL_DATABASE', 'esigguard_data')
+        self.database = os.getenv('MYSQL_DATABASE', 'david')
         self.user = os.getenv('MYSQL_USER', 'mysql_admin')
         self.password = os.getenv('MYSQL_PASSWORD', '@Ping632026@')
         
@@ -280,7 +280,19 @@ def parse_browser_payload():
         if "." in filename:
             extension = "." + filename.split(".")[-1]
         
-        dangerous_ext = ['.exe', '.bat', '.vbs', '.js', '.scr', '.cmd', '.com', '.pif']
+        dangerous_ext = [
+            # Exécutables
+            '.exe', '.msi', '.bat', '.cmd', '.com', '.scr', '.pif', '.jar',
+            '.ps1', '.vbs', '.js', '.jse', '.wsf', '.hta',
+             # Macros Office 
+             '.docm', '.xlsm', '.pptm', '.dotm', '.xltm', '.docx',
+             # Archives compressées
+             '.zip', '.rar', '.7z', '.tar', '.gz', '.iso',
+             # Scripts
+             '.sh', '.bash', '.py', '.rb', '.php', '.pl',
+             # Ambiguës ou détournées
+             '.lnk', '.svg', '.rtf', '.eml'
+        ]
         is_dangerous = extension.lower() in dangerous_ext
         
         attachments_data.append({
@@ -299,7 +311,7 @@ def parse_browser_payload():
         print("\n💾 Insertion dans MySQL Azure...")
         
         # 1. Créer l'analyse
-        analysis_id = db.create_analysis("/tmp/navigateur_email.json")
+        analysis_id = db.create_analysis("Viens du navigateur")
         print(f"   ✅ Analyse créée: ID = {analysis_id}")
         
         # 2. Mettre à jour avec les données email

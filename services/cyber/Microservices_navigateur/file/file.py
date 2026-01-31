@@ -30,19 +30,16 @@ def get_extension(filename):
 def ai_analyze_attachment(filename, content_type, size):
     ext = get_extension(filename)
 
-    # Extensions dangereuses
     suspect_ext = [
         ".exe", ".js", ".vbs", ".scr", ".bat", ".cmd",
         ".jar", ".zip", ".rar", ".7z", ".iso"
     ]
 
-    # Extensions macros
     macro_ext = [
         ".docm", ".xlsm", ".pptm",
-        ".dotm", ".xltm", ".potm"
+        ".dotm", ".xltm", ".potm", ".docx"
     ]
 
-    # Analyse
     if ext in suspect_ext or ext in macro_ext:
         return {
             "status": "suspect",
@@ -80,7 +77,7 @@ def calculate_attachment_score(ai_analysis):
 
 def check_attachments(parsed_email):
 
-    attachments = parsed_email["email_data"].get("attachments", [])
+    attachments = parsed_email.get("email_data", {}).get("attachments", [])
     results = []
     total_score = 0
     count = len(attachments)
@@ -88,9 +85,19 @@ def check_attachments(parsed_email):
     suspect_files = []
 
     for att in attachments:
-        filename = att.get("filename")
-        content_type = att.get("content_type")
-        size = att.get("size")
+        # 🔧 Correction : gestion des deux formats
+        if isinstance(att, dict):
+            filename = att.get("filename", "inconnu")
+            content_type = att.get("content_type", "inconnu")
+            size = att.get("size", 0)
+        elif isinstance(att, str):
+            filename = att
+            content_type = "inconnu"
+            size = 0
+        else:
+            filename = "inconnu"
+            content_type = "inconnu"
+            size = 0
 
         ai_report = ai_analyze_attachment(filename, content_type, size)
         score, percentage, details = calculate_attachment_score(ai_report)
@@ -112,15 +119,19 @@ def check_attachments(parsed_email):
 
     average_percentage = round((total_score / (count * 100)) * 100, 2) if count > 0 else 0
 
+    if suspect_files:
+        explanation_text = (
+            f"{len(suspect_files)} fichiers suspects : {', '.join(suspect_files)} "
+            f"| Raison : Extensions dangereuses"
+        )
+    else:
+        explanation_text = "0 fichier suspect | Raison : Aucune extension dangereuse détectée"
+
     return {
         "attachment_analysis": results,
         "nb_attachments": count,
         "moyenne_pourcentage": average_percentage,
-        "Explanation": {
-            "nbre_fichiers_suspects": len(suspect_files),
-            "fichiers_suspects": suspect_files,
-            "raison": "Extensions dangereuses"
-        }
+        "Explanation": explanation_text
     }
 
 # ---------------------------------------------------------
@@ -131,14 +142,10 @@ app = Flask(__name__)
 
 @app.post("/files")
 def analyze_files():
-
     parsed = request.get_json(force=True)
-
     result = check_attachments(parsed)
 
-    # Sauvegarde locale
     filename = FILE_STORAGE / f"file_{datetime.now().strftime('%Y%m%d_%H%M%S_%f')}.json"
-
     with open(filename, "w", encoding="utf-8") as f:
         json.dump({
             "parsed_email": parsed,
@@ -147,7 +154,6 @@ def analyze_files():
         }, f, indent=2, ensure_ascii=False)
 
     print(f"[FILE] Analyse sauvegardée dans : {filename}")
-
     return jsonify(result)
 
 # ---------------------------------------------------------

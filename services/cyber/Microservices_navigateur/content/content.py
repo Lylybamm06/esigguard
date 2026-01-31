@@ -42,7 +42,7 @@ def ai_analyze_content(text):
     response = client.chat.completions.create(
         model="llama-3.3-70b-versatile",
         messages=[{"role": "user", "content": prompt}],
-        max_tokens=200
+        max_tokens=300
     )
 
     raw = response.choices[0].message.content.strip()
@@ -84,13 +84,21 @@ def calculate_content_score(ai_analysis):
 
 def check_content(parsed_email):
 
-    text = parsed_email["email_data"].get("body_snippet", "")
+    # 🔄 Analyse du sujet du mail au lieu du corps
+    text = parsed_email["email_data"].get("email_subject", "")
 
     ai_report = ai_analyze_content(text)
     score, percentage, risk_level, details = calculate_content_score(ai_report)
 
-    # EXPLICATION = raison exacte de l'IA
     explanation = ai_report.get("reason", "Aucune raison fournie")
+
+    # 🔍 Filtrage des phrases indésirables
+    for trigger in ["tandis que", "réponse en JSON"]:
+        if trigger in explanation:
+            explanation = explanation.split(trigger)[0].strip()
+            if explanation.endswith(",") or explanation.endswith("et"):
+                explanation = explanation.rstrip(", et").strip()
+            explanation += "."
 
     return {
         "content_analysis": ai_report,

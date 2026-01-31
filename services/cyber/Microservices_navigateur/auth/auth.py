@@ -32,7 +32,6 @@ def check_auth(email_data, urls):
         score += 30
         details.append("Domaine expéditeur vide")
     else:
-        # Vérification cohérence domaine
         sender_local, sender_domain = sender.split("@") if "@" in sender else ("", "")
         if sender_domain.lower() != domain.lower():
             score += 20
@@ -40,7 +39,7 @@ def check_auth(email_data, urls):
         else:
             details.append("Domaine cohérent avec l'adresse expéditeur")
 
-    # WHOIS sécurisé
+    # WHOIS
     domain_age_days = None
     if domain:
         try:
@@ -55,8 +54,11 @@ def check_auth(email_data, urls):
                 if domain_age_days < 180:
                     score += 40
                     details.append("Domaine trop jeune")
-
+            else:
+                score += 40
+                details.append("Âge du domaine inconnu")
         except Exception:
+            score += 40
             details.append("Impossible de récupérer WHOIS")
 
     # Analyse des URLs
@@ -65,9 +67,10 @@ def check_auth(email_data, urls):
         details.append("Trop de liens dans l'email")
 
     explanation = " | ".join(details) if details else "Aucun problème détecté"
+    normalized_score = round(score / 120, 2)
 
     return {
-        "score": score,
+        "score": normalized_score,
         "explanation": explanation,
         "details": details,
         "domain_age_days": domain_age_days,
@@ -89,20 +92,14 @@ def analyze_email():
 
     auth_result = check_auth(email_data, urls)
 
-    response = {
-        "email_data": email_data,
-        "urls": urls,
-        "auth_result": auth_result
-    }
-
     # Sauvegarde locale
     filename = AUTH_STORAGE / f"auth_{datetime.utcnow().strftime('%Y%m%d_%H%M%S_%f')}.json"
     with open(filename, "w", encoding="utf-8") as f:
-        json.dump(response, f, indent=2, ensure_ascii=False)
+        json.dump(auth_result, f, indent=2, ensure_ascii=False)
 
     print(f"[AUTH] Fichier sauvegardé : {filename}")
 
-    return jsonify(response)
+    return jsonify(auth_result)
 
 # ---------------------------------------------------------
 # LANCEMENT DU SERVEUR
