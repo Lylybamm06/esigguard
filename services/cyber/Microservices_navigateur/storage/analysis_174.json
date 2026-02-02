@@ -1,0 +1,66 @@
+{
+  "email_data": {
+    "display_name": "robotmail@lockimmo.com",
+    "domain": "lockimmo.com",
+    "email_date": "2026-02-02T15:59:54.431000+00:00",
+    "email_sender": "robotmail@lockimmo.com",
+    "email_subject": "\n\n\n\n\nAvis d'échéance\n\n\n\n\n\n\n\nBonjour Monsieur David 1 ZOHOUN,\n\nVous trouverez ci-joint votre avis d'échéance.\n\nEn vous en souhaitant bonne réception.\n\nBonne journée,\n\n\n\n\nLe service Location / Gestion reste à votre écoute pour toute demande concernant votre logement par mail : gestion@strategimmo.fr ou par téléphone : 02 52 56 93 11\n\n\n\n\n\nSTRATEGiMMO\n\nService Gestion locative \n\n02 35 56 93 11\n\n??1 rue Marcel LECHEVALLIER \n\n\n76300 Sotteville Lès Rouen\n\n\n\n\t\n\n​...",
+    "sender_address": "robotmail@lockimmo.com",
+    "timestamp": 1770047994431,
+    "urls": [
+      "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=1",
+      "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=3"
+    ],
+    "attachments": [
+      {
+        "filename": "APPEL-185-53148-16446-25241.pdf"
+      }
+    ]
+  },
+  "auth": {
+    "details": [
+      "Domaine cohérent avec l'adresse expéditeur"
+    ],
+    "domain_age_days": 7203,
+    "explanation": "Domaine cohérent avec l'adresse expéditeur",
+    "score": 0.0,
+    "timestamp": "2026-02-02T15:59:56.312517"
+  },
+  "content": {
+    "content_analysis": {
+      "reason": "Le contenu semble être un email professionnel d'un service de gestion locative, avec un format et des informations cohérentes et personnalisées pour le destinataire.",
+      "status": "cohérent"
+    },
+    "explanation": "Le contenu semble être un email professionnel d'un service de gestion locative, avec un format et des informations cohérentes et personnalisées pour le destinataire.",
+    "percentage": 0.0,
+    "risk_level": "low",
+    "score": 0
+  },
+  "lien": {
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  "file": {
+    "Explanation": "0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+    "attachment_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "L’extension .pdf ne fait pas partie des extensions dangereuses ou à macros.",
+          "status": "coherent"
+        },
+        "content_type": "inconnu",
+        "filename": "APPEL-185-53148-16446-25241.pdf",
+        "percentage": 0.0,
+        "risk_level": "low",
+        "score": 0,
+        "score_details": [],
+        "size": 0
+      }
+    ],
+    "moyenne_pourcentage": 0.0,
+    "nb_attachments": 1
+  },
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le contenu semble être un email professionnel d'un service de gestion locative, avec un format et des informations cohérentes et personnalisées pour le destinataire. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+  "score_cyber": 0.0,
+  "analysis_id": 174,
+  "analyzed_at": "2026-02-02T16:00:01.774686"
+}

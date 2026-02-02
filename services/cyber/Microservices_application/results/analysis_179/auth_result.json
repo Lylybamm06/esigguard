@@ -1,0 +1,44 @@
+{
+  "analysis_id": 179,
+  "display_vs_domain": {
+    "display_name": "Reçu Uber",
+    "from_domain": "uber.com",
+    "score": 0,
+    "status": "coherent"
+  },
+  "dkim": {
+    "protocol": "DKIM",
+    "score": 10,
+    "status": "unknown"
+  },
+  "dmarc": {
+    "protocol": "DMARC",
+    "score": 10,
+    "status": "unknown"
+  },
+  "domain_age": {
+    "age_years": 30.58,
+    "created_date": "1995-07-14T04:00:00+0000",
+    "domain": "uber.com",
+    "status": "bon"
+  },
+  "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown",
+  "from_vs_reply": {
+    "from_domain": "uber.com",
+    "reply_domain": null,
+    "score": 0,
+    "status": "coherent"
+  },
+  "from_vs_return": {
+    "from_domain": "uber.com",
+    "return_domain": "uber.com",
+    "score": 0,
+    "status": "coherent"
+  },
+  "score": 15,
+  "spf": {
+    "protocol": "SPF",
+    "score": 10,
+    "status": "unknown"
+  }
+}

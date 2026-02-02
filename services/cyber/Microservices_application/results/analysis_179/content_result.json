@@ -1,0 +1,27 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "Analyse non disponible",
+      "status": "unknown"
+    },
+    "global_verdict": "error",
+    "language_quality": {
+      "reason": "Analyse non disponible",
+      "status": "unknown"
+    },
+    "phishing_indicators": {
+      "reason": "Erreur IA: Error code: 429 - {'error': {'message': 'Rate limi",
+      "status": "error"
+    }
+  },
+  "analysis_id": 179,
+  "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+  "keywords": {
+    "count": 0,
+    "keyword_score": 0,
+    "keywords_found": []
+  },
+  "score": 0,
+  "service": "content",
+  "subject": "\t\n\t\n1 févr. 2026\n19:19\n\n\n\nMerci d'avoir passé une commande, David\n\n\nVoici votre facture pour Crousty One - Rouen.\n\t\nTélécharger\nTotal\t16,75 €\n \n\t\nPour voir l'intégralité de votre reçu, accédez à Uber Eats, ou téléchargez ce PDF.\n\t\n6,25 €\nÉconomies avec Uber One et autres promotions appliquées\nPaiements\n\n\t\nApple Pay Visa ••••9946\t16,75 €\n\n\n02/02/2026 6:19\t\n \nVous souhaitez changer de moyen de paiement ?\t\n\tChanger\n \nDétails de la commande\n\n\t\nUber Delivery\n\n\n\n\n\n\n\n\t\n\t\n\t\n19:29 - Prise en charge\n108 R..."
+}

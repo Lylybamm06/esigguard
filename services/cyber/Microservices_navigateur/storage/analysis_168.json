@@ -1,0 +1,110 @@
+{
+  "email_data": {
+    "display_name": "robotmail@lockimmo.com",
+    "domain": "lockimmo.com",
+    "email_date": "2026-02-02T15:33:42.377000+00:00",
+    "email_sender": "robotmail@lockimmo.com",
+    "email_subject": "\n\n\n\n\nAvis d'échéance\n\n\n\n\n\n\n\nBonjour Monsieur David 1 ZOHOUN,\n\nVous trouverez ci-joint votre avis d'échéance.\n\nEn vous en souhaitant bonne réception.\n\nBonne journée,\n\n\n\n\nLe service Location / Gestion reste à votre écoute pour toute demande concernant votre logement par mail : gestion@strategimmo.fr ou par téléphone : 02 52 56 93 11\n\n\n\n\n\nSTRATEGiMMO\n\nService Gestion locative \n\n02 35 56 93 11\n\n??1 rue Marcel LECHEVALLIER \n\n\n76300 Sotteville Lès Rouen\n\n\n\n\t\n\n​...",
+    "sender_address": "robotmail@lockimmo.com",
+    "timestamp": 1770046422377,
+    "urls": [
+      "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=1",
+      "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=3"
+    ],
+    "attachments": [
+      {
+        "filename": "APPEL-185-53148-16446-25241.pdf"
+      }
+    ]
+  },
+  "auth": {
+    "details": [
+      "Domaine cohérent avec l'adresse expéditeur"
+    ],
+    "domain_age_days": 7203,
+    "explanation": "Domaine cohérent avec l'adresse expéditeur",
+    "score": 0.0,
+    "timestamp": "2026-02-02T15:33:44.067949"
+  },
+  "content": {
+    "content_analysis": {
+      "reason": "Le contenu semble être un email automatique d'un service de gestion locative, avec un format et des informations standard pour un tel type de message, notamment l'inclusion d'un avis d'échéance et des coordonnées de contact.",
+      "status": "cohérent"
+    },
+    "explanation": "Le contenu semble être un email automatique d'un service de gestion locative, avec un format et des informations standard pour un tel type de message, notamment l'inclusion d'un avis d'échéance et des coordonnées de contact.",
+    "percentage": 0.0,
+    "risk_level": "low",
+    "score": 0
+  },
+  "lien": {
+    "explanation": "2 lien(s) suspect(s) : http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=1, http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=3",
+    "links_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "Le lien semble contenir un paramètre de suivi ou de redirection avec un identifiant aléatoire et une chaîne de caractères encodée, ce qui peut être typique des liens de phishing ou de redirection vers des contenus malveillants",
+          "status": "suspect"
+        },
+        "domain": "z5xx.mjt.lu",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 23.08,
+        "reputation": {
+          "domain": "z5xx.mjt.lu",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 30,
+        "url": "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=1"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Le lien semble être un lien court ou une redirection, car il contient un paramètre 'lnk' et un code long et aléatoire, ce qui est souvent utilisé pour masquer l'URL réelle de la destination, ce qui peut être une tactique utilisée pour les attaques de phishing ou les malware.",
+          "status": "suspect"
+        },
+        "domain": "z5xx.mjt.lu",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 23.08,
+        "reputation": {
+          "domain": "z5xx.mjt.lu",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 30,
+        "url": "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=3"
+      }
+    ],
+    "nb_links": 2,
+    "percentage": 23.08,
+    "risk_level": "low",
+    "score": 30.0
+  },
+  "file": {
+    "Explanation": "0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+    "attachment_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "L’extension .pdf ne fait pas partie des extensions dangereuses ou à macros.",
+          "status": "coherent"
+        },
+        "content_type": "inconnu",
+        "filename": "APPEL-185-53148-16446-25241.pdf",
+        "percentage": 0.0,
+        "risk_level": "low",
+        "score": 0,
+        "score_details": [],
+        "size": 0
+      }
+    ],
+    "moyenne_pourcentage": 0.0,
+    "nb_attachments": 1
+  },
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le contenu semble être un email automatique d'un service de gestion locative, avec un format et des informations standard pour un tel type de message, notamment l'inclusion d'un avis d'échéance et des coordonnées de contact. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 2 lien(s) suspect(s) : http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=1, http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=3",
+  "score_cyber": 7.5,
+  "analysis_id": 168,
+  "analyzed_at": "2026-02-02T15:33:47.618683"
+}
