@@ -1,0 +1,166 @@
+import pika
+import json
+import requests
+from datetime import datetime, UTC
+
+# ---------------------------------------------------------
+# WHOISXMLAPI — Configuration
+# ---------------------------------------------------------
+
+WHOIS_API_KEY = "at_0pTsXdTSxP3MafKUr71l86h8f1Fst"
+WHOIS_URL = "https://www.whoisxmlapi.com/whoisserver/WhoisService"
+
+
+# ---------------------------------------------------------
+# WHOIS — Récupération de l'âge du domaine (VERSION SIMPLE)
+# ---------------------------------------------------------
+
+def get_domain_age(domain):
+    try:
+        url = (
+            f"{WHOIS_URL}?apiKey={WHOIS_API_KEY}"
+            f"&domainName={domain}&outputFormat=JSON"
+        )
+
+        r = requests.get(url, timeout=10)
+        data = r.json()
+
+        record = data.get("WhoisRecord", {})
+        created = record.get("createdDate")
+
+        if not created:
+            return {"status": "unknown", "error": "no creation date"}
+
+        created_dt = datetime.fromisoformat(created.replace("Z", "+00:00"))
+        age_days = (datetime.now(UTC) - created_dt).days
+        age_years = age_days / 365
+
+        return {
+            "created": created,
+            "age_years": round(age_years, 2),
+            "status": "bon" if age_years >= 1 else "suspect"
+        }
+
+    except Exception as e:
+        return {"status": "unknown", "error": str(e)}
+
+
+# ---------------------------------------------------------
+# Comparaison From ↔ Reply-To
+# ---------------------------------------------------------
+
+def compare_from_replyto(from_addr, reply_to_addr):
+    if not reply_to_addr:
+        return "coherent"
+
+    from_domain = from_addr.split("@")[-1] if "@" in from_addr else ""
+    reply_domain = reply_to_addr.split("@")[-1] if "@" in reply_to_addr else ""
+
+    return "coherent" if from_domain == reply_domain else "suspect"
+
+
+# ---------------------------------------------------------
+# Comparaison Display Name ↔ Domaine
+# ---------------------------------------------------------
+
+def compare_display_name_domain(display_name, domain):
+    if not display_name or not domain:
+        return "coherent"
+
+    display_lower = display_name.lower()
+    domain_root = domain.split(".")[0].lower()
+
+    return "coherent" if domain_root in display_lower else "suspect"
+
+
+# ---------------------------------------------------------
+# Analyse principale
+# ---------------------------------------------------------
+
+def check_auth(parsed_email):
+
+    from_addr = parsed_email.get("meta", {}).get("from", {}).get("address", "")
+    from_domain = parsed_email.get("meta", {}).get("from", {}).get("domain", "")
+    display_name = parsed_email.get("meta", {}).get("from", {}).get("display_name", "")
+
+    reply_to_list = parsed_email.get("meta", {}).get("reply_to", [])
+    reply_to_addr = reply_to_list[0].get("address", "") if reply_to_list else ""
+
+    return_path_domain = parsed_email.get("meta", {}).get("return_path", {}).get("domain", "")
+
+    # WHOIS — âge du domaine
+    domain_age_info = get_domain_age(from_domain)
+
+    results = {
+        "email_id": parsed_email.get("email_id"),
+
+        "spf": parsed_email.get("auth", {}).get("spf", "unknown"),
+        "dkim": parsed_email.get("auth", {}).get("dkim", "unknown"),
+        "dmarc": parsed_email.get("auth", {}).get("dmarc", "unknown"),
+
+        "from_address": from_addr,
+        "reply_to_address": reply_to_addr,
+        "return_path_domain": return_path_domain,
+
+        "from_vs_return_path": "coherent" if from_domain == return_path_domain else "different",
+
+        "from_vs_replyto": compare_from_replyto(from_addr, reply_to_addr),
+
+        "display_name_vs_domain": compare_display_name_domain(display_name, from_domain),
+
+        "domain_age": domain_age_info,
+        "analysis_timestamp": datetime.now(UTC).isoformat()
+    }
+
+    return results
+
+
+# ---------------------------------------------------------
+# RabbitMQ — Consommation + Publication
+# ---------------------------------------------------------
+
+def consume_and_process():
+
+    connection = pika.BlockingConnection(
+        pika.ConnectionParameters(host="127.0.0.1")
+    )
+    channel = connection.channel()
+
+    channel.queue_declare(queue="emails", durable=True)
+    channel.queue_declare(queue="auth_results", durable=True)
+
+    def callback(ch, method, properties, body):
+        parsed_email = json.loads(body.decode("utf-8"))
+
+        auth_report = check_auth(parsed_email)
+
+        channel.basic_publish(
+            exchange="",
+            routing_key="auth_results",
+            body=json.dumps(auth_report).encode("utf-8"),
+            properties=pika.BasicProperties(
+                content_type="application/json",
+                delivery_mode=2
+            )
+        )
+
+        print(
+            f"[F-Auth] Email {auth_report['email_id']} → "
+            f"From vs Return-Path: {auth_report['from_vs_return_path']} | "
+            f"From vs Reply-To: {auth_report['from_vs_replyto']} | "
+            f"Display Name vs Domaine: {auth_report['display_name_vs_domain']} | "
+            f"Domaine age: {auth_report['domain_age']}"
+        )
+
+    channel.basic_consume(
+        queue="emails",
+        on_message_callback=callback,
+        auto_ack=True
+    )
+
+    print("[F-Auth] Waiting for parsed emails...")
+    channel.start_consuming()
+
+
+if __name__ == "__main__":
+    consume_and_process()

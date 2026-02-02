@@ -1,0 +1,108 @@
+{
+  "analysis_id": 200,
+  "score_cyber": 9.0,
+  "explanation_cyber": "Authentification : FromVsReturn: incoherent | FromVsReply: incoherent | SMTP : IP identifiee (185.250.237.105, France), aucun indicateur suspect | Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+  "details": {
+    "smtp": {
+      "analysis_id": 200,
+      "explanation": "SMTP : IP identifiee (185.250.237.105, France), aucun indicateur suspect",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Ivry-sur-Seine",
+        "country": "France",
+        "ip": "185.250.237.105",
+        "region": "Ile-de-France"
+      },
+      "ip_reputation": {
+        "ip": "185.250.237.105",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": "185.250.237.105",
+      "score": 15,
+      "service": "smtp",
+      "timestamp_status": "ok"
+    },
+    "auth": {
+      "analysis_id": 200,
+      "display_vs_domain": {
+        "display_name": "",
+        "from_domain": "lockimmo.com",
+        "score": 0,
+        "status": "coherent"
+      },
+      "dkim": {
+        "protocol": "DKIM",
+        "score": 0,
+        "status": "pass"
+      },
+      "dmarc": {
+        "protocol": "DMARC",
+        "score": 0,
+        "status": "pass"
+      },
+      "domain_age": {
+        "age_years": 19.73,
+        "created_date": "2006-05-15 09:02:23",
+        "domain": "lockimmo.com",
+        "status": "bon"
+      },
+      "explanation": "Authentification : FromVsReturn: incoherent | FromVsReply: incoherent",
+      "from_vs_reply": {
+        "from_domain": "lockimmo.com",
+        "reply_domain": "strategimmo.fr",
+        "score": 30,
+        "status": "incoherent"
+      },
+      "from_vs_return": {
+        "from_domain": "lockimmo.com",
+        "return_domain": "a388831.bnc3.mailjet.com",
+        "score": 30,
+        "status": "incoherent"
+      },
+      "score": 30,
+      "spf": {
+        "protocol": "SPF",
+        "score": 0,
+        "status": "pass"
+      }
+    },
+    "lien": {
+      "score": 0,
+      "explanation": "Lien: Erreur (HTTPConnectionPool(host='lien', port=5004): Max retries exceeded with url: /analyze/200 (Caused by NameResolutionError(\"HTTPConnection(host='lien', port=5004): Failed to resolve 'lien' ([Errno -3] Temporary failure in name resolution)\")))"
+    },
+    "file": {
+      "score": 0,
+      "explanation": "File: Erreur (HTTPConnectionPool(host='file', port=5005): Read timed out. (read timeout=30))"
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "Analyse non disponible",
+          "status": "unknown"
+        },
+        "global_verdict": "error",
+        "language_quality": {
+          "reason": "Analyse non disponible",
+          "status": "unknown"
+        },
+        "phishing_indicators": {
+          "reason": "Erreur IA: Error code: 429 - {'error': {'message': 'Rate limi",
+          "status": "error"
+        }
+      },
+      "analysis_id": 200,
+      "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+      "keywords": {
+        "count": 0,
+        "keyword_score": 0,
+        "keywords_found": []
+      },
+      "score": 0,
+      "service": "content",
+      "subject": "Avis d'échéance"
+    }
+  }
+}

@@ -1,8 +1,3 @@
-"""
-File Service - Version améliorée avec JSON détaillé et analyse IA
-Port : 5005
-"""
-
 from flask import Flask, jsonify
 import os, sys, json, re
 
@@ -114,7 +109,7 @@ def analyze_single_attachment(att):
     if "." in filename:
         extension = "." + filename.lower().split(".")[-1]
 
-    print(f"  📎 Analyse: {filename} ({extension})")
+    print(f"  Analyse: {filename} ({extension})")
 
     mime_verdict = analyze_mime_verdict(filename, mime_type, extension)
     ai_analysis = ai_analyze_attachment(filename, mime_type, extension, size)
@@ -122,7 +117,7 @@ def analyze_single_attachment(att):
     is_dangerous = extension.lower() in SUSPICIOUS_EXTENSIONS
 
     if mime_verdict.get("status") == "incoherent" and not is_dangerous:
-        print("    ⚠  MIME incohérent → marquage dangereux")
+        print("  MIME incohérent → marquage dangereux")
         is_dangerous = True
 
     score = 0
@@ -150,7 +145,7 @@ def analyze_single_attachment(att):
     }
 
 def analyze_attachments(analysis_id):
-    print(f"\n📎 FILE - Analyse {analysis_id}")
+    print(f"\n FILE - Analyse {analysis_id}")
     
     db = get_db()
     analysis = db.get_complete_analysis(analysis_id)

@@ -1,8 +1,3 @@
-"""
-Auth Service - Version améliorée avec JSON détaillé
-Port : 5003
-"""
-
 from flask import Flask, jsonify
 import os, sys, requests
 from datetime import datetime, timezone
@@ -17,9 +12,6 @@ WHOIS_API_KEY = os.getenv("WHOIS_API_KEY")
 WHOIS_URL = "https://www.whoisxmlapi.com/whoisserver/WhoisService"
 
 
-# ---------------------------------------------------------
-# WHOIS — Calcul âge du domaine (corrigé)
-# ---------------------------------------------------------
 def get_domain_age(domain):
     if not WHOIS_API_KEY or WHOIS_API_KEY == "votre_cle_whois":
         return {
@@ -53,7 +45,6 @@ def get_domain_age(domain):
                 "created_date": None
             }
 
-        # Correction timezone
         created = parser.parse(created_date)
         if created.tzinfo is None:
             created = created.replace(tzinfo=timezone.utc)
@@ -77,9 +68,7 @@ def get_domain_age(domain):
         }
 
 
-# ---------------------------------------------------------
-# ANALYSE AUTHENTIFICATION
-# ---------------------------------------------------------
+
 def analyze_auth(analysis_id):
     print(f"\n🔐 AUTH - Analyse {analysis_id}")
 
@@ -110,7 +99,7 @@ def analyze_auth(analysis_id):
     score = 0
     issues = []
 
-    # SPF
+    
     spf_status = {"protocol": "SPF", "status": spf, "score": 0}
     if spf == "fail":
         score += 25
@@ -121,7 +110,7 @@ def analyze_auth(analysis_id):
         spf_status["score"] = 10
         issues.append("SPF:unknown")
 
-    # DKIM
+    
     dkim_status = {"protocol": "DKIM", "status": dkim, "score": 0}
     if dkim == "fail":
         score += 25
@@ -132,7 +121,7 @@ def analyze_auth(analysis_id):
         dkim_status["score"] = 10
         issues.append("DKIM:unknown")
 
-    # DMARC
+    
     dmarc_status = {"protocol": "DMARC", "status": dmarc, "score": 0}
     if dmarc == "fail":
         score += 25
@@ -143,7 +132,7 @@ def analyze_auth(analysis_id):
         dmarc_status["score"] = 10
         issues.append("DMARC:unknown")
 
-    # From vs Return-Path
+    
     return_domain = return_path.split('@')[-1] if '@' in return_path else from_domain
     from_vs_return = {
         "from_domain": from_domain,
@@ -156,7 +145,7 @@ def analyze_auth(analysis_id):
         from_vs_return["score"] = 30
         issues.append("FromVsReturn: incoherent")
 
-    # From vs Reply-To
+    
     from_vs_reply = {
         "from_domain": from_domain,
         "reply_domain": None,
@@ -172,7 +161,7 @@ def analyze_auth(analysis_id):
             from_vs_reply["score"] = 30
             issues.append("FromVsReply: incoherent")
 
-    # Display Name vs Domain
+    
     display_vs_domain = {
         "display_name": display_name,
         "from_domain": from_domain,
@@ -187,7 +176,7 @@ def analyze_auth(analysis_id):
             display_vs_domain["score"] = 40
             issues.append("DisplayNameVsDomain: incoherent")
 
-    # Âge domaine
+    
     if domain_age["status"] == "suspect":
         score += 25
         issues.append("AgeDomaine: suspect")
@@ -200,9 +189,8 @@ def analyze_auth(analysis_id):
 
     print(f"  📊 Score: {final_score}/100")
 
-    # ---------------------------------------------------------
-    # AFFICHAGE
-    # ---------------------------------------------------------
+    
+    
     return {
         "analysis_id": analysis_id,
         "spf": spf_status,
@@ -216,10 +204,6 @@ def analyze_auth(analysis_id):
         "explanation": explanation
     }
 
-
-# ---------------------------------------------------------
-# ROUTES
-# ---------------------------------------------------------
 @app.route('/')
 def home():
     return jsonify({"service": "Auth", "port": 5003})

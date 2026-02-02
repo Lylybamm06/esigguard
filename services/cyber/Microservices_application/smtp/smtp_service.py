@@ -1,8 +1,3 @@
-"""
-SMTP Service - Version améliorée avec JSON détaillé
-Port : 5007
-"""
-
 from flask import Flask, jsonify
 import os, sys, requests, re
 
@@ -12,7 +7,7 @@ from database.database import get_db
 app = Flask(__name__)
 
 def check_ip_reputation(ip):
-    """Vérifie réputation IP via VirusTotal"""
+    
     api_key = os.getenv("VT_API_KEY")
     if not api_key or api_key == "votre_cle_virustotal":
         return {
@@ -43,7 +38,7 @@ def check_ip_reputation(ip):
                 "malicious_reports": 0
             }
     except Exception as e:
-        print(f"⚠  Erreur VirusTotal IP: {e}")
+        print(f"  Erreur VirusTotal IP: {e}")
         return {
             "ip": ip,
             "status": "unknown",
@@ -51,7 +46,6 @@ def check_ip_reputation(ip):
         }
 
 def get_ip_geolocation(ip):
-    """Géolocalise IP via ip2location"""
     api_key = os.getenv("IP2LOC_API_KEY")
     if not api_key or api_key == "votre_cle_ip2location":
         return {
@@ -81,7 +75,7 @@ def get_ip_geolocation(ip):
                 "city": "Unknown"
             }
     except Exception as e:
-        print(f"⚠  Erreur Géolocalisation: {e}")
+        print(f" Erreur Géolocalisation: {e}")
         return {
             "ip": ip,
             "country": "Unknown",
@@ -90,7 +84,7 @@ def get_ip_geolocation(ip):
         }
 
 def analyze_headers(analysis):
-    """Analyse des en-têtes SMTP"""
+    
     message_id_present = "unknown"
     list_unsubscribe_present = "unknown"
     
@@ -107,11 +101,11 @@ def analyze_headers(analysis):
     }
 
 def calculate_smtp_score(ip_reputation, ip_geolocation, headers):
-    """Calcule le score SMTP (normalisé sur 100)"""
+    
     score = 0
     reasons = []
     
-    # IP Reputation
+    
     if ip_reputation.get("status") == "not reliable":
         score += 40
         reasons.append(f"IP malveillante ({ip_reputation.get('malicious_reports')} signalements)")
@@ -119,25 +113,25 @@ def calculate_smtp_score(ip_reputation, ip_geolocation, headers):
         score += 15
         reasons.append("Réputation IP inconnue")
     
-    # List-Unsubscribe
+    
     list_unsub = headers.get("list_unsubscribe_present")
     if list_unsub in ["no", "unknown"]:
         score += 10
        
     
-    # Timestamp
+    
     if headers.get("timestamp_status") == "missing":
         score += 15
         reasons.append("Timestamp manquant")
     
-    # Normalisation sur 100
+    
     final_score = int((score / 65) * 100)
     
     return min(100, final_score), reasons
 
 def analyze_smtp(analysis_id):
     """Analyse SMTP complète"""
-    print(f"\n📧 SMTP - Analyse {analysis_id}")
+    print(f"\n SMTP - Analyse {analysis_id}")
     
     db = get_db()
     analysis = db.get_complete_analysis(analysis_id)
@@ -148,7 +142,7 @@ def analyze_smtp(analysis_id):
     origin_ip = analysis.get('sender_ip')
     
     if not origin_ip:
-        print("  ⚠  Pas d'IP source identifiée")
+        print("  Pas d'IP source identifiée")
         
         return {
             "analysis_id": analysis_id,
@@ -173,21 +167,21 @@ def analyze_smtp(analysis_id):
             "explanation": "SMTP : IP source non identifiee"
         }
     
-    print(f"  🔍 IP source: {origin_ip}")
+    print(f" IP source: {origin_ip}")
     
     ip_reputation = check_ip_reputation(origin_ip)
     ip_geolocation = get_ip_geolocation(origin_ip)
     headers = analyze_headers(analysis)
     
-    print(f"  📍 Localisation: {ip_geolocation.get('city')}, {ip_geolocation.get('country')}")
-    print(f"  🛡  Réputation: {ip_reputation.get('status')}")
+    print(f"  Localisation: {ip_geolocation.get('city')}, {ip_geolocation.get('country')}")
+    print(f"  Réputation: {ip_reputation.get('status')}")
     
     country = ip_geolocation.get("country", "Unknown")
     try:
         db.update_sender_country(analysis_id, origin_ip, country)
-        print(f"  💾 MySQL mis à jour: country={country}")
+        print(f"  MySQL mis à jour: country={country}")
     except Exception as e:
-        print(f"  ⚠  Erreur mise à jour MySQL: {e}")
+        print(f"  Erreur mise à jour MySQL: {e}")
     
     score, reasons = calculate_smtp_score(ip_reputation, ip_geolocation, headers)
     
@@ -196,7 +190,7 @@ def analyze_smtp(analysis_id):
     else:
         explanation = f"SMTP : IP identifiee ({origin_ip}, {country}), aucun indicateur suspect"
     
-    print(f"  📊 Score: {score}/100")
+    print(f"  Score: {score}/100")
     
     return {
         "analysis_id": analysis_id,
@@ -232,12 +226,12 @@ def analyze(analysis_id):
         result = analyze_smtp(analysis_id)
         return jsonify(result)
     except Exception as e:
-        print(f"❌ Erreur: {str(e)}")
+        print(f" Erreur: {str(e)}")
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("📧 SMTP Service - Port 5007")
+    print(" SMTP Service - Port 5007")
     print("Version améliorée avec JSON détaillé")
     print("="*60 + "\n")
     

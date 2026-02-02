@@ -1,6 +1,4 @@
-"""
-Parser Azure v4.3 - Texte seul en email_body + URLs depuis HTML
-"""
+
 
 from flask import Flask, request, jsonify
 import os, sys, email, re, quopri
@@ -13,9 +11,7 @@ from database.database import get_db
 
 app = Flask(__name__)
 
-# ---------------------------------------------------------
-# URL extraction
-# ---------------------------------------------------------
+
 def extract_urls(text):
     if not text:
         return []
@@ -29,37 +25,37 @@ def extract_domain(url):
     except:
         return ""
 
-# ---------------------------------------------------------
-# Attachments helpers
-# ---------------------------------------------------------
+
+
+
 def get_file_extension(filename):
     return Path(filename).suffix.lstrip('.').lower() if filename else ""
 
 def is_dangerous_extension(ext):
     return ext.lower() in ['exe','bat','cmd','com','pif','scr','vbs','js','jar','msi']
 
-# ---------------------------------------------------------
-# HTML DECODER (quoted-printable)
-# ---------------------------------------------------------
+
+
+
 def decode_html_part(raw_html):
     try:
         decoded = quopri.decodestring(raw_html).decode("utf-8", errors="ignore")
-        decoded = decoded.replace("=\n", "")   # soft line breaks
-        decoded = decoded.replace("=3D", "=")  # quoted-printable "="
+        decoded = decoded.replace("=\n", "")   
+        decoded = decoded.replace("=3D", "=")  
         return decoded
     except:
         return ""
 
-# ---------------------------------------------------------
-# MAIN PARSER
-# ---------------------------------------------------------
+
+
+
 def parse_email_file(file_path, analysis_id):
     with open(file_path, "rb") as f:
         msg = BytesParser(policy=policy.default).parse(f)
 
-    # -------------------------------
-    # HEADERS
-    # -------------------------------
+    
+    
+    
     email_subject = msg.get("Subject", "")
     sender_from = msg.get("From", "")
     display_name, email_sender = email.utils.parseaddr(sender_from)
@@ -74,30 +70,24 @@ def parse_email_file(file_path, analysis_id):
     except:
         email_date = None
 
-    # -------------------------------
-    # AUTH RESULTS
-    # -------------------------------
+    
+    
+    
     auth_spf = auth_dkim = auth_dmarc = "unknown"
     auth_results = msg.get("Authentication-Results", "").lower()
 
-    if "spf=pass" in auth_results:
-        auth_spf = "pass"
-    elif "spf=fail" in auth_results:
-        auth_spf = "fail"
+    if "spf=pass" in auth_results: auth_spf = "pass"
+    elif "spf=fail" in auth_results: auth_spf = "fail"
 
-    if "dkim=pass" in auth_results:
-        auth_dkim = "pass"
-    elif "dkim=fail" in auth_results:
-        auth_dkim = "fail"
+    if "dkim=pass" in auth_results: auth_dkim = "pass"
+    elif "dkim=fail" in auth_results: auth_dkim = "fail"
 
-    if "dmarc=pass" in auth_results:
-        auth_dmarc = "pass"
-    elif "dmarc=fail" in auth_results:
-        auth_dmarc = "fail"
+    if "dmarc=pass" in auth_results: auth_dmarc = "pass"
+    elif "dmarc=fail" in auth_results: auth_dmarc = "fail"
 
-    # -------------------------------
-    # IP extraction
-    # -------------------------------
+    
+    
+    
     sender_ip = None
     ip_regex = r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'
 
@@ -128,32 +118,31 @@ def parse_email_file(file_path, analysis_id):
     if public_ips:
         sender_ip = public_ips[0]
 
-    # -------------------------------
-    # BODY + ATTACHMENTS
-    # -------------------------------
-    body_text = ""        # ce qui ira dans email_body
-    html_for_urls = ""    # HTML décodé uniquement pour l'extraction d'URLs
+    
+    
+    
+    body = ""
     attachments_list = []
 
     if msg.is_multipart():
         for part in msg.walk():
             ctype = part.get_content_type()
 
-            # ---- TEXT/PLAIN ----
+            
             if ctype == "text/plain":
                 try:
-                    body_text += part.get_content()
+                    body += part.get_content()
                 except:
                     pass
 
-            # ---- TEXT/HTML (pour URLs uniquement) ----
+            
             elif ctype == "text/html":
                 raw_html = part.get_payload(decode=True)
                 if raw_html:
                     decoded_html = decode_html_part(raw_html)
-                    html_for_urls += "\n" + decoded_html
+                    body += "\n" + decoded_html
 
-            # ---- ATTACHMENTS ----
+            
             elif part.get_filename():
                 fname = part.get_filename()
                 ext = get_file_extension(fname)
@@ -169,24 +158,11 @@ def parse_email_file(file_path, analysis_id):
                     "size": size,
                     "is_dangerous": is_dangerous_extension(ext)
                 })
-    else:
-        # Cas non multipart (rare mais possible)
-        ctype = msg.get_content_type()
-        if ctype == "text/plain":
-            try:
-                body_text = msg.get_content()
-            except:
-                body_text = ""
-        elif ctype == "text/html":
-            raw_html = msg.get_payload(decode=True)
-            if raw_html:
-                html_for_urls = decode_html_part(raw_html)
 
-    # -------------------------------
-    # URL extraction (texte + HTML)
-    # -------------------------------
-    urls_source = (body_text or "") + "\n" + (html_for_urls or "")
-    urls_list = extract_urls(urls_source)
+    
+   
+    
+    urls_list = extract_urls(body)
     urls_list = list(set(urls_list))
 
     urls_with_domains = [
@@ -207,14 +183,14 @@ def parse_email_file(file_path, analysis_id):
         "auth_dmarc": auth_dmarc,
         "sender_ip": sender_ip,
         "sender_country": None,
-        "email_body": body_text.strip(),  # ✅ uniquement le corps texte
+        "email_body": body,
         "attachments": attachments_list,
         "urls": urls_with_domains
     }
 
-# ---------------------------------------------------------
-# ROUTES
-# ---------------------------------------------------------
+
+
+
 @app.post("/process/<int:analysis_id>")
 def process_one(analysis_id):
     try:
@@ -234,7 +210,7 @@ def process_one(analysis_id):
 
         email_info = {k: parsed[k] for k in [
             'email_subject', 'email_sender', 'email_date', 'display_name',
-            'reply_to', 'return_path', 'sender_ip', 'sender_country',
+            'reply_to', 'return_path',            'sender_ip', 'sender_country',
             'auth_spf', 'auth_dkim', 'auth_dmarc', 'email_body'
         ]}
 
@@ -251,7 +227,7 @@ def process_one(analysis_id):
         return jsonify({"analysis_id": analysis_id, "status": "success"})
 
     except Exception as e:
-        print("🔥 ERREUR PARSER :", str(e))
+        print(" ERREUR PARSER :", str(e))
         return jsonify({"error": str(e)}), 500
 
 if __name__ == "__main__":

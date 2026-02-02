@@ -1,8 +1,3 @@
-"""
-Lien Service - Version améliorée avec JSON détaillé
-Port : 5004
-"""
-
 from flask import Flask, jsonify
 import os, sys, json, requests, re
 from datetime import datetime, UTC
@@ -13,7 +8,7 @@ from database.database import get_db
 
 app = Flask(__name__)
 
-# Import conditionnel de Groq
+
 try:
     from groq import Groq
     GROQ_API_KEY = os.getenv("GROQ_API_KEY")
@@ -155,7 +150,7 @@ def analyze_url(url: str) -> dict:
     domain_age = get_domain_age(domain)
     ai_analysis = ai_analyze_link(url, url, domain)
 
-    # Score brut (max théorique = 130)
+    
     raw_score = 0
 
     if reputation.get("status") == "not reliable":
@@ -170,7 +165,7 @@ def analyze_url(url: str) -> dict:
     if ai_analysis.get("status") == "suspect":
         raw_score += 30
 
-    # Normalisation sur 100
+    
     url_score = int((raw_score / 130) * 100)
     url_score = min(100, url_score)
 
@@ -219,7 +214,7 @@ def analyze_liens(analysis_id):
         urls_analyzed.append(analysis)
         url_scores.append(analysis["score"])
 
-        # 🔥 Mise à jour DB : marquer l’URL comme suspecte ou non
+        
         is_suspicious = analysis["score"] >= 50
 
         db.update_url_suspicious(
@@ -231,7 +226,7 @@ def analyze_liens(analysis_id):
         if is_suspicious:
             suspicious_count += 1
 
-    # Score global = moyenne des scores normalisés
+    
     global_score = round(sum(url_scores) / len(url_scores), 2) if url_scores else 0
 
     if suspicious_count > 0:

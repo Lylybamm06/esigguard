@@ -1,9 +1,3 @@
-"""
-Content Service - Analyse contenu email (IA Groq + mots-clés)
-Port : 5006
-Version robuste avec logs détaillés
-"""
-
 from flask import Flask, jsonify
 import os
 import sys
@@ -15,7 +9,7 @@ from database.database import get_db
 
 app = Flask(__name__)
 
-# Import conditionnel de Groq
+
 try:
     from groq import Groq
     GROQ_AVAILABLE = True
@@ -33,7 +27,7 @@ except Exception as e:
 def ai_analyze_content(subject, text_plain):
     """Analyse IA du contenu avec Groq"""
     
-    # Si Groq pas disponible, retourner structure par défaut
+    
     if not GROQ_AVAILABLE or not client:
         print("⚠️  Analyse IA ignorée (Groq non disponible)")
         return {
@@ -96,9 +90,9 @@ Réponds UNIQUEMENT avec le JSON, sans texte avant ou après.
         )
 
         raw = response.choices[0].message.content.strip()
-        print(f"📥 Réponse Groq (raw): {raw[:200]}...")
+        print(f" Réponse Groq (raw): {raw[:200]}...")
         
-        # Nettoyer le JSON
+        
         cleaned = raw
         if cleaned.startswith("```json"):
             cleaned = cleaned[7:]
@@ -108,13 +102,13 @@ Réponds UNIQUEMENT avec le JSON, sans texte avant ou après.
             cleaned = cleaned[:-3]
         cleaned = cleaned.strip()
 
-        print(f"🧹 JSON nettoyé: {cleaned[:200]}...")
+        print(f" JSON nettoyé: {cleaned[:200]}...")
 
-        # Parser le JSON
-        result = json.loads(cleaned)
-        print(f"✅ JSON parsé avec succès")
         
-        # Valider la structure
+        result = json.loads(cleaned)
+        print(f" JSON parsé avec succès")
+        
+        
         required_keys = ["global_verdict", "phishing_indicators", "language_quality", "context_coherence"]
         for key in required_keys:
             if key not in result:
@@ -123,7 +117,7 @@ Réponds UNIQUEMENT avec le JSON, sans texte avant ou après.
         return result
         
     except json.JSONDecodeError as e:
-        print(f"❌ Erreur JSON: {e}")
+        print(f" Erreur JSON: {e}")
         print(f"   Contenu: {cleaned[:500]}")
         return {
             "global_verdict": "error",
@@ -141,7 +135,7 @@ Réponds UNIQUEMENT avec le JSON, sans texte avant ou après.
             }
         }
     except Exception as e:
-        print(f"❌ Erreur IA: {type(e).__name__}: {str(e)}")
+        print(f" Erreur IA: {type(e).__name__}: {str(e)}")
         return {
             "global_verdict": "error",
             "phishing_indicators": {
@@ -180,7 +174,7 @@ def analyze_keywords(subject):
             score += points
             keywords_found.append(keyword)
 
-    print(f"🔑 Mots-clés trouvés: {keywords_found} (score: {score})")
+    print(f" Mots-clés trouvés: {keywords_found} (score: {score})")
     
     return {
         "keyword_score": min(100, score),
@@ -189,10 +183,10 @@ def analyze_keywords(subject):
     }
 
 def calculate_content_score(ai_result, keywords_result):
-    """Calcule le score final basé sur l'IA et les mots-clés"""
+    
     score = 0
     
-    # Scoring basé sur l'analyse IA
+    
     if ai_result.get("phishing_indicators", {}).get("status") == "suspect":
         score += 15
         print("  +15 (phishing indicators)")
@@ -205,7 +199,7 @@ def calculate_content_score(ai_result, keywords_result):
         score += 30
         print("  +30 (context coherence)")
     
-    # Ajout mots-clés
+    
     if keywords_result["count"] > 0:
         kw_score = min(40, keywords_result["count"] * 10)
         score += kw_score
@@ -220,22 +214,22 @@ def build_explanation(ai_result, keywords_result, score):
     """Construit l'explication textuelle"""
     parts = []
     
-    # Indicateurs de phishing
+    
     phishing = ai_result.get("phishing_indicators", {})
     if phishing.get("status") == "suspect":
         parts.append(f"Phishing: {phishing.get('reason', 'detecte')}")
     
-    # Qualité linguistique
+    
     language = ai_result.get("language_quality", {})
     if language.get("status") == "suspect":
         parts.append(f"Langue: {language.get('reason', 'suspecte')}")
     
-    # Cohérence contextuelle
+    
     context = ai_result.get("context_coherence", {})
     if context.get("status") == "suspect":
         parts.append(f"Coherence: {context.get('reason', 'douteuse')}")
     
-    # Mots-clés
+    
     if keywords_result["count"] > 0:
         kw_list = ", ".join(keywords_result["keywords_found"][:3])
         if keywords_result["count"] > 3:
@@ -246,8 +240,8 @@ def build_explanation(ai_result, keywords_result, score):
         return (
             "Content: Aucun indicateur suspect."
             "Le message ne contient ni demande inhabituelle, ni urgence artificielle, "
-            "et la formulation est cohérente avec une communication légitime. "
-            "Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing."
+            "et la formulation est coherente avec une communication légitime. "
+            "Le sujet et le contenu sont alignes et ne presentent aucun signe de phishing."
         )
     
     return "Content: " + " | ".join(parts)
@@ -255,9 +249,9 @@ def build_explanation(ai_result, keywords_result, score):
 def analyze_content(analysis_id):
     """Analyse complète du contenu"""
     try:
-        print(f"\n📝 CONTENT - Analyse {analysis_id}")
+        print(f"\n CONTENT - Analyse {analysis_id}")
         
-        # Récupérer données
+        
         db = get_db()
         analysis = db.get_complete_analysis(analysis_id)
 
@@ -267,25 +261,25 @@ def analyze_content(analysis_id):
         subject = analysis.get("email_subject", "") or ""
         body = analysis.get("email_body", "") or ""
         
-        print(f"📧 Sujet: {subject[:50]}...")
-        print(f"📝 Corps: {len(body)} caractères")
+        print(f" Sujet: {subject[:50]}...")
+        print(f" Corps: {len(body)} caractères")
 
-        # Analyse mots-clés
-        print("\n🔑 Analyse mots-clés...")
+        
+        print("\n Analyse mots-clés...")
         keywords_result = analyze_keywords(subject)
         
-        # Analyse IA
-        print("\n🤖 Analyse IA...")
+        
+        print("\n Analyse IA...")
         ai_result = ai_analyze_content(subject, body)
         
-        # Calcul du score
-        print("\n📊 Calcul score...")
+        
+        print("\n Calcul score...")
         score = calculate_content_score(ai_result, keywords_result)
         
-        # Construction de l'explication
+        
         explanation = build_explanation(ai_result, keywords_result, score)
         
-        print(f"\n✅ Analyse terminée: {score}/100")
+        print(f"\n Analyse terminée: {score}/100")
 
         return {
             "analysis_id": analysis_id,
@@ -298,7 +292,7 @@ def analyze_content(analysis_id):
         }
         
     except Exception as e:
-        print(f"\n❌ ERREUR dans analyze_content:")
+        print(f"\n ERREUR dans analyze_content:")
         print(f"   Type: {type(e).__name__}")
         print(f"   Message: {str(e)}")
         print(f"   Traceback:")
@@ -335,18 +329,18 @@ def analyze(analysis_id):
         return jsonify(result)
     except Exception as e:
         error_msg = f"{type(e).__name__}: {str(e)}"
-        print(f"❌ Erreur endpoint: {error_msg}")
+        print(f" Erreur endpoint: {error_msg}")
         return jsonify({"error": error_msg}), 500
 
 if __name__ == "__main__":
     print("\n" + "="*60)
-    print("📝 Content Service - Port 5006")
+    print(" Content Service - Port 5006")
     print("Version robuste avec logs détaillés")
     print("="*60)
     
-    # Vérifier API key
+    
     if GROQ_AVAILABLE and client:
-        print("✅ Groq API: Disponible")
+        print(" Groq API: Disponible")
     else:
         print("⚠️  Groq API: Non disponible (fonctionnement en mode dégradé)")
         print("   Seule l'analyse par mots-clés sera effectuée")

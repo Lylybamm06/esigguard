@@ -1,0 +1,44 @@
+{
+  "analysis_id": 201,
+  "display_vs_domain": {
+    "display_name": "",
+    "from_domain": "lockimmo.com",
+    "score": 0,
+    "status": "coherent"
+  },
+  "dkim": {
+    "protocol": "DKIM",
+    "score": 0,
+    "status": "pass"
+  },
+  "dmarc": {
+    "protocol": "DMARC",
+    "score": 0,
+    "status": "pass"
+  },
+  "domain_age": {
+    "age_years": 19.73,
+    "created_date": "2006-05-15 09:02:23",
+    "domain": "lockimmo.com",
+    "status": "bon"
+  },
+  "explanation": "Authentification : FromVsReturn: incoherent | FromVsReply: incoherent",
+  "from_vs_reply": {
+    "from_domain": "lockimmo.com",
+    "reply_domain": "strategimmo.fr",
+    "score": 30,
+    "status": "incoherent"
+  },
+  "from_vs_return": {
+    "from_domain": "lockimmo.com",
+    "return_domain": "a388831.bnc3.mailjet.com",
+    "score": 30,
+    "status": "incoherent"
+  },
+  "score": 30,
+  "spf": {
+    "protocol": "SPF",
+    "score": 0,
+    "status": "pass"
+  }
+}

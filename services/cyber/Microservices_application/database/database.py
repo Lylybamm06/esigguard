@@ -16,9 +16,9 @@ class Database:
     def get_connection(self):
         return self.pool.get_connection()
 
-    # ---------------------------------------------------------
-    # Analyses en attente
-    # ---------------------------------------------------------
+    
+    
+    
     def get_pending_analyses(self, limit=100):
         conn = self.get_connection()
         cursor = conn.cursor(dictionary=True)
@@ -33,14 +33,14 @@ class Database:
         conn.close()
         return rows
 
-    # ---------------------------------------------------------
-    # Analyse complète (🔥 corrigée avec attachments + urls)
-    # ---------------------------------------------------------
+    
+    
+    
     def get_complete_analysis(self, analysis_id):
         conn = self.get_connection()
         cursor = conn.cursor(dictionary=True)
 
-        # 1) Analyse principale
+        
         cursor.execute("""
             SELECT *
             FROM analyses
@@ -53,7 +53,7 @@ class Database:
             conn.close()
             return None
 
-        # 2) Pièces jointes
+        
         cursor.execute("""
             SELECT
                 filename,
@@ -67,7 +67,7 @@ class Database:
         attachments = cursor.fetchall()
         row["attachments"] = attachments
 
-        # 3) URLs
+        
         cursor.execute("""
             SELECT
                 url,
@@ -83,9 +83,9 @@ class Database:
         conn.close()
         return row
 
-    # ---------------------------------------------------------
-    # Mise à jour infos email
-    # ---------------------------------------------------------
+    
+    
+    
     def update_analysis_email_info(self, analysis_id, info):
         conn = self.get_connection()
         cursor = conn.cursor()
@@ -101,7 +101,7 @@ class Database:
                 sender_ip = %s,
                 sender_country = %s,
                 auth_spf = %s,
-                auth_dkim = %s,
+               auth_dkim = %s,
                 auth_dmarc = %s,
                 email_body = %s
             WHERE id = %s
@@ -125,9 +125,9 @@ class Database:
         cursor.close()
         conn.close()
 
-    # ---------------------------------------------------------
-    # Ajouter pièces jointes
-    # ---------------------------------------------------------
+    
+    
+    
     def add_attachments(self, analysis_id, attachments):
         conn = self.get_connection()
         cursor = conn.cursor()
@@ -149,9 +149,9 @@ class Database:
         cursor.close()
         conn.close()
 
-    # ---------------------------------------------------------
-    # Mise à jour dangerosité pièce jointe
-    # ---------------------------------------------------------
+    
+    
+    
     def update_attachment_danger(self, analysis_id, filename, is_dangerous):
         conn = self.get_connection()
         cursor = conn.cursor()
@@ -166,9 +166,9 @@ class Database:
         cursor.close()
         conn.close()
 
-    # ---------------------------------------------------------
-    # Ajouter URLs
-    # ---------------------------------------------------------
+    
+    
+    
     def add_urls(self, analysis_id, urls):
         conn = self.get_connection()
         cursor = conn.cursor()
@@ -188,9 +188,9 @@ class Database:
         cursor.close()
         conn.close()
 
-    # ---------------------------------------------------------
-    # Récupérer URLs
-    # ---------------------------------------------------------
+    
+    
+    
     def get_urls(self, analysis_id):
         conn = self.get_connection()
         cursor = conn.cursor(dictionary=True)
@@ -206,9 +206,9 @@ class Database:
         conn.close()
         return rows
 
-    # ---------------------------------------------------------
-    # Mise à jour is_suspicious pour une URL
-    # ---------------------------------------------------------
+    
+    
+    
     def update_url_suspicious(self, analysis_id, url, is_suspicious):
         conn = self.get_connection()
         cursor = conn.cursor()
@@ -223,9 +223,8 @@ class Database:
         cursor.close()
         conn.close()
 
-    # ---------------------------------------------------------
-    # Mise à jour statut analyse
-    # ---------------------------------------------------------
+    
+   
     def update_status(self, analysis_id, new_status):
         conn = self.get_connection()
         cursor = conn.cursor()
@@ -240,9 +239,7 @@ class Database:
         cursor.close()
         conn.close()
 
-    # ---------------------------------------------------------
-    # Mise à jour résultats cyber
-    # ---------------------------------------------------------
+    
     def update_cyber_results(self, analysis_id, explanation, score):
         conn = self.get_connection()
         cursor = conn.cursor()
@@ -258,9 +255,6 @@ class Database:
         cursor.close()
         conn.close()
 
-    # ---------------------------------------------------------
-    # Mise à jour pays d'origine IP
-    # ---------------------------------------------------------
     def update_sender_country(self, analysis_id, ip, country):
         conn = self.get_connection()
         cursor = conn.cursor()
@@ -278,7 +272,7 @@ class Database:
         conn.close()
 
 
-# Singleton
+
 _db_instance = None
 
 def get_db():
