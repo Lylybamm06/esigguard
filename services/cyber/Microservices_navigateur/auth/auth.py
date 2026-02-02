@@ -6,15 +6,11 @@ from pathlib import Path
 
 app = Flask(__name__)
 
-# ---------------------------------------------------------
-# DOSSIER DE STOCKAGE LOCAL POUR AUTH
-# ---------------------------------------------------------
+
 AUTH_STORAGE = Path("./storage/auth")
 AUTH_STORAGE.mkdir(parents=True, exist_ok=True)
 
-# ---------------------------------------------------------
-# AUTHENTIFICATION — analyse le domaine et calcule le score
-# ---------------------------------------------------------
+
 def check_auth(email_data, urls):
     sender = email_data.get("sender_address")
     domain = email_data.get("domain")
@@ -22,12 +18,12 @@ def check_auth(email_data, urls):
     score = 0
     details = []
 
-    # Adresse expéditeur
+    
     if not sender:
         score += 30
         details.append("Aucune adresse expéditeur")
 
-    # Domaine expéditeur
+    
     if not domain:
         score += 30
         details.append("Domaine expéditeur vide")
@@ -39,7 +35,7 @@ def check_auth(email_data, urls):
         else:
             details.append("Domaine cohérent avec l'adresse expéditeur")
 
-    # WHOIS
+    
     domain_age_days = None
     if domain:
         try:
@@ -61,7 +57,7 @@ def check_auth(email_data, urls):
             score += 40
             details.append("Impossible de récupérer WHOIS")
 
-    # Analyse des URLs
+    
     if len(urls) > 3:
         score += 20
         details.append("Trop de liens dans l'email")
@@ -77,9 +73,7 @@ def check_auth(email_data, urls):
         "timestamp": datetime.utcnow().isoformat()
     }
 
-# ---------------------------------------------------------
-# ROUTE API — reçoit email_data + urls depuis l'orchestrateur
-# ---------------------------------------------------------
+
 @app.post("/auth")
 def analyze_email():
     data = request.json or {}
@@ -92,7 +86,7 @@ def analyze_email():
 
     auth_result = check_auth(email_data, urls)
 
-    # Sauvegarde locale
+    
     filename = AUTH_STORAGE / f"auth_{datetime.utcnow().strftime('%Y%m%d_%H%M%S_%f')}.json"
     with open(filename, "w", encoding="utf-8") as f:
         json.dump(auth_result, f, indent=2, ensure_ascii=False)
@@ -101,8 +95,8 @@ def analyze_email():
 
     return jsonify(auth_result)
 
-# ---------------------------------------------------------
-# LANCEMENT DU SERVEUR
-# ---------------------------------------------------------
+
+
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5102)

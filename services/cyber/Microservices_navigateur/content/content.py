@@ -5,24 +5,13 @@ from datetime import datetime
 from pathlib import Path
 from groq import Groq
 
-print("🔥🔥🔥 CONTENT.PY CHARGÉ 🔥🔥🔥")
-
-# ---------------------------------------------------------
-# Initialisation du client Groq
-# ---------------------------------------------------------
-
 client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
-# ---------------------------------------------------------
-# Dossier de stockage local
-# ---------------------------------------------------------
 
 CONTENT_STORAGE = Path("./storage/content")
 CONTENT_STORAGE.mkdir(parents=True, exist_ok=True)
 
-# ---------------------------------------------------------
-# Analyse IA du contenu
-# ---------------------------------------------------------
+
 
 def ai_analyze_content(text):
     prompt = f"""
@@ -56,9 +45,6 @@ def ai_analyze_content(text):
             "reason": f"Invalid JSON returned by Groq: {raw}"
         }
 
-# ---------------------------------------------------------
-# Calcul du score
-# ---------------------------------------------------------
 
 def calculate_content_score(ai_analysis):
     MAX_SCORE = 100
@@ -78,13 +64,10 @@ def calculate_content_score(ai_analysis):
 
     return score, percentage, risk_level, details
 
-# ---------------------------------------------------------
-# Analyse principale
-# ---------------------------------------------------------
 
 def check_content(parsed_email):
 
-    # 🔄 Analyse du sujet du mail au lieu du corps
+    
     text = parsed_email["email_data"].get("email_subject", "")
 
     ai_report = ai_analyze_content(text)
@@ -92,7 +75,7 @@ def check_content(parsed_email):
 
     explanation = ai_report.get("reason", "Aucune raison fournie")
 
-    # 🔍 Filtrage des phrases indésirables
+    
     for trigger in ["tandis que", "réponse en JSON"]:
         if trigger in explanation:
             explanation = explanation.split(trigger)[0].strip()
@@ -108,9 +91,6 @@ def check_content(parsed_email):
         "explanation": explanation
     }
 
-# ---------------------------------------------------------
-# Microservice Flask
-# ---------------------------------------------------------
 
 app = Flask(__name__)
 
@@ -121,7 +101,7 @@ def analyze_content():
 
     result = check_content(parsed)
 
-    # Sauvegarde locale
+    
     filename = CONTENT_STORAGE / f"content_{datetime.now().strftime('%Y%m%d_%H%M%S_%f')}.json"
 
     with open(filename, "w", encoding="utf-8") as f:
@@ -135,9 +115,6 @@ def analyze_content():
 
     return jsonify(result)
 
-# ---------------------------------------------------------
-# Lancement du microservice
-# ---------------------------------------------------------
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5103)

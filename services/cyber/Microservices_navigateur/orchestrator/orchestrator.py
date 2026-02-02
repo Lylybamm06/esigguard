@@ -6,13 +6,9 @@ from datetime import datetime
 from pathlib import Path
 import mysql.connector
 
-# ============================================================
-# 🔥 FLASK + CORS
-# ============================================================
 
 app = Flask(__name__)
 
-# CORS manuel (plus fiable que flask_cors pour les extensions Chrome)
 @app.after_request
 def add_cors_headers(response):
     response.headers["Access-Control-Allow-Origin"] = "*"
@@ -21,9 +17,6 @@ def add_cors_headers(response):
     return response
 
 
-# ============================================================
-# 🔐 CLIENT MYSQL
-# ============================================================
 
 class DB:
     def __init__(self):
@@ -98,10 +91,6 @@ class DB:
 db = DB()
 
 
-# ============================================================
-# 🌐 CONFIG SERVICES
-# ============================================================
-
 STORAGE_DIR = Path("./storage")
 STORAGE_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -122,14 +111,11 @@ def safe_post(url, payload):
         return {"error": str(e)}
 
 
-# ============================================================
-# 🚀 ROUTE PRINCIPALE (POST + OPTIONS)
-# ============================================================
 
 @app.route("/analyze", methods=["POST", "OPTIONS"])
 def analyze():
 
-    # --- Réponse au préflight CORS ---
+    
     if request.method == "OPTIONS":
         resp = jsonify({"status": "ok"})
         resp.headers["Access-Control-Allow-Origin"] = "*"
@@ -137,13 +123,13 @@ def analyze():
         resp.headers["Access-Control-Allow-Methods"] = "POST, OPTIONS"
         return resp, 200
 
-    # --- VRAI POST ---
+    
     raw = request.json or {}
 
     print("\n===== ORCHESTRATOR : MAIL REÇU =====")
     print(json.dumps(raw, indent=2, ensure_ascii=False))
 
-    # 1) PARSER
+    
     parsed = safe_post(PARSER_URL, raw)
 
     if "analysis_id" not in parsed:
@@ -152,7 +138,7 @@ def analyze():
     analysis_id = parsed["analysis_id"]
     email_data = parsed["parsed_data"]["email_data"]
 
-    # 2) APPELS MICROSERVICES
+    
     results = {}
 
     enriched_email_data = {
@@ -175,10 +161,6 @@ def analyze():
             name = futures[future]
             results[name] = future.result()
 
-    # ============================================================
-    # 🔍 MISE À JOUR DES URLS DANS MYSQL
-    # ============================================================
-
     lien_results = results["lien"].get("links_analysis", [])
 
     for link in lien_results:
@@ -187,32 +169,29 @@ def analyze():
         db.insert_url_if_missing(analysis_id, url)
         db.update_url_suspicion(analysis_id, url, is_suspicious)
 
-    # ============================================================
-    # 🧠 SCORE CYBER + EXPLANATION CYBER
-    # ============================================================
-
+    
     scores = []
     explanations = []
 
-    # AUTH
+   
     auth_exp = results["auth"].get("explanation", "")
     if auth_exp:
         explanations.append(f"AUTH: {auth_exp}")
     scores.append(results["auth"].get("score", 0))
 
-    # CONTENT
+    
     content_exp = results["content"].get("explanation", "")
     if content_exp:
         explanations.append(f"CONTENT: {content_exp}")
     scores.append(results["content"].get("score", 0))
 
-    # FILE
+    
     file_exp = results["file"].get("Explanation", "")
     if file_exp:
         explanations.append(f"FILE: {file_exp}")
     scores.append(results["file"].get("moyenne_pourcentage", 0))
 
-    # LIEN
+    
     lien_exp = results["lien"].get("explanation", "")
     if lien_exp:
         explanations.append(f"LIEN: {lien_exp}")
@@ -221,10 +200,7 @@ def analyze():
     score_cyber = round(sum(scores) / len(scores), 2)
     explanation_cyber = " | ".join(filter(None, explanations))
 
-    # ============================================================
-    # 📦 STRUCTURE FINALE
-    # ============================================================
-
+    
     final = {
         "email_data": enriched_email_data,
         "auth": results["auth"],
@@ -237,20 +213,17 @@ def analyze():
         "analyzed_at": datetime.utcnow().isoformat()
     }
 
-    # Sauvegarde locale
+    
     with open(STORAGE_DIR / f"analysis_{analysis_id}.json", "w", encoding="utf-8") as f:
         json.dump(final, f, indent=2, ensure_ascii=False)
 
-    # Mise à jour MySQL
+    
     db.update_cyber_results(analysis_id, explanation_cyber, score_cyber)
     db.update_status(analysis_id, "processing")
 
     return jsonify(final)
 
 
-# ============================================================
-# 🚀 LANCEMENT
-# ============================================================
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5106)

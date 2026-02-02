@@ -4,18 +4,9 @@ import os
 from datetime import datetime
 from pathlib import Path
 
-print("🔥🔥🔥 FILE.PY CHARGÉ 🔥🔥🔥")
-
-# ---------------------------------------------------------
-# Dossier de stockage local
-# ---------------------------------------------------------
 
 FILE_STORAGE = Path("./storage/file")
 FILE_STORAGE.mkdir(parents=True, exist_ok=True)
-
-# ---------------------------------------------------------
-# Extraction de l’extension
-# ---------------------------------------------------------
 
 def get_extension(filename):
     filename = filename.lower()
@@ -23,9 +14,6 @@ def get_extension(filename):
         return ""
     return filename[filename.rfind("."):]
 
-# ---------------------------------------------------------
-# Analyse basée sur l’extension
-# ---------------------------------------------------------
 
 def ai_analyze_attachment(filename, content_type, size):
     ext = get_extension(filename)
@@ -51,9 +39,6 @@ def ai_analyze_attachment(filename, content_type, size):
         "reason": f"L’extension {ext} ne fait pas partie des extensions dangereuses ou à macros."
     }
 
-# ---------------------------------------------------------
-# Calcul du score
-# ---------------------------------------------------------
 
 def calculate_attachment_score(ai_analysis):
     MAX_SCORE = 100
@@ -71,9 +56,6 @@ def calculate_attachment_score(ai_analysis):
     percentage = round((score / MAX_SCORE) * 100, 2)
     return score, percentage, details
 
-# ---------------------------------------------------------
-# Analyse principale
-# ---------------------------------------------------------
 
 def check_attachments(parsed_email):
 
@@ -85,7 +67,7 @@ def check_attachments(parsed_email):
     suspect_files = []
 
     for att in attachments:
-        # 🔧 Correction : gestion des deux formats
+        
         if isinstance(att, dict):
             filename = att.get("filename", "inconnu")
             content_type = att.get("content_type", "inconnu")
@@ -134,9 +116,6 @@ def check_attachments(parsed_email):
         "Explanation": explanation_text
     }
 
-# ---------------------------------------------------------
-# Microservice Flask
-# ---------------------------------------------------------
 
 app = Flask(__name__)
 
@@ -155,10 +134,6 @@ def analyze_files():
 
     print(f"[FILE] Analyse sauvegardée dans : {filename}")
     return jsonify(result)
-
-# ---------------------------------------------------------
-# Lancement du microservice
-# ---------------------------------------------------------
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5104)

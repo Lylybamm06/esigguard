@@ -1,0 +1,72 @@
+{
+  "email_data": {
+    "display_name": "David ZOHOUN",
+    "domain": "gmail.com",
+    "email_date": "2026-02-02T18:25:37.772000+00:00",
+    "email_sender": "davzohoun@gmail.com",
+    "email_subject": "Clique urgemment sur ce lien \nhttp:www.jesuisfort.com  . C’est urgent ...",
+    "sender_address": "davzohoun@gmail.com",
+    "timestamp": 1770056737772,
+    "urls": [
+      "http://www.jesuisfort.com/"
+    ],
+    "attachments": []
+  },
+  "auth": {
+    "details": [
+      "Domaine cohérent avec l'adresse expéditeur"
+    ],
+    "domain_age_days": 11131,
+    "explanation": "Domaine cohérent avec l'adresse expéditeur",
+    "score": 0.0,
+    "timestamp": "2026-02-02T18:25:39.807839"
+  },
+  "content": {
+    "content_analysis": {
+      "reason": "Le texte contient un appel à l'action urgent avec un lien vers un site web non vérifié, ce qui est un schéma classique de phishing ou d'escroquerie en ligne.",
+      "status": "suspect"
+    },
+    "explanation": "Le texte contient un appel à l'action urgent avec un lien vers un site web non vérifié, ce qui est un schéma classique de phishing ou d'escroquerie en ligne.",
+    "percentage": 100.0,
+    "risk_level": "high",
+    "score": 100
+  },
+  "lien": {
+    "explanation": "0 lien(s) suspect(s) : aucun",
+    "links_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "Le texte affiché et l'URL réelle sont identiques, ce qui indique que le lien n'est pas malveillant et n'a pas l'intention de tromper l'utilisateur",
+          "status": "coherent"
+        },
+        "domain": "www.jesuisfort.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": false,
+        "percentage": 0.0,
+        "reputation": {
+          "domain": "www.jesuisfort.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 0,
+        "url": "http://www.jesuisfort.com/"
+      }
+    ],
+    "nb_links": 1,
+    "percentage": 0.0,
+    "risk_level": "low",
+    "score": 0.0
+  },
+  "file": {
+    "Explanation": "0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+    "attachment_analysis": [],
+    "moyenne_pourcentage": 0,
+    "nb_attachments": 0
+  },
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte contient un appel à l'action urgent avec un lien vers un site web non vérifié, ce qui est un schéma classique de phishing ou d'escroquerie en ligne. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 0 lien(s) suspect(s) : aucun",
+  "score_cyber": 25.0,
+  "analysis_id": 185,
+  "analyzed_at": "2026-02-02T18:25:40.248491"
+}

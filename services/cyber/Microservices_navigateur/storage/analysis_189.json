@@ -1,0 +1,72 @@
+{
+  "email_data": {
+    "display_name": "David ZOHOUN",
+    "domain": "gmail.com",
+    "email_date": "2026-02-02T19:54:30.908000+00:00",
+    "email_sender": "davzohoun@gmail.com",
+    "email_subject": "Clique urgemment sur ce lien \nhttp:www.jesuisfort.com  . C’est urgent ...",
+    "sender_address": "davzohoun@gmail.com",
+    "timestamp": 1770062070908,
+    "urls": [
+      "http://www.jesuisfort.com/"
+    ],
+    "attachments": []
+  },
+  "auth": {
+    "details": [
+      "Domaine cohérent avec l'adresse expéditeur"
+    ],
+    "domain_age_days": 11131,
+    "explanation": "Domaine cohérent avec l'adresse expéditeur",
+    "score": 0.0,
+    "timestamp": "2026-02-02T19:54:32.683204"
+  },
+  "content": {
+    "content_analysis": {
+      "reason": "Le texte contient un lien non sécurisé et utilise un langage urgent pour inciter l'utilisateur à cliquer, ce qui est un modèle de comportement typique des tentatives de phishing ou de malware.",
+      "status": "Suspect"
+    },
+    "explanation": "Le texte contient un lien non sécurisé et utilise un langage urgent pour inciter l'utilisateur à cliquer, ce qui est un modèle de comportement typique des tentatives de phishing ou de malware.",
+    "percentage": 0.0,
+    "risk_level": "low",
+    "score": 0
+  },
+  "lien": {
+    "explanation": "1 lien(s) suspect(s) : http://www.jesuisfort.com/",
+    "links_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "Le texte affiché correspond à l'URL réelle et le domaine semble être un site web légitime sans indice de phishing ou de tentative de fraude",
+          "status": "coherent"
+        },
+        "domain": "www.jesuisfort.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 38.46,
+        "reputation": {
+          "domain": "www.jesuisfort.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 50,
+        "url": "http://www.jesuisfort.com/"
+      }
+    ],
+    "nb_links": 1,
+    "percentage": 38.46,
+    "risk_level": "low",
+    "score": 50.0
+  },
+  "file": {
+    "Explanation": "0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+    "attachment_analysis": [],
+    "moyenne_pourcentage": 0,
+    "nb_attachments": 0
+  },
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte contient un lien non sécurisé et utilise un langage urgent pour inciter l'utilisateur à cliquer, ce qui est un modèle de comportement typique des tentatives de phishing ou de malware. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 1 lien(s) suspect(s) : http://www.jesuisfort.com/",
+  "score_cyber": 12.5,
+  "analysis_id": 189,
+  "analyzed_at": "2026-02-02T19:54:34.872172"
+}

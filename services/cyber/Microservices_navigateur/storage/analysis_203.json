@@ -1,0 +1,412 @@
+{
+  "email_data": {
+    "display_name": "Reçu Uber",
+    "domain": "uber.com",
+    "email_date": "2026-02-02T23:53:13.893000+00:00",
+    "email_sender": "noreply@uber.com",
+    "email_subject": "\t\n\t\n1 févr. 2026\n19:19\n\n\n\nMerci d'avoir passé une commande, David\n\n\nVoici votre facture pour Crousty One - Rouen.\n\t\nTélécharger\nTotal\t16,75 €\n \n\t\nPour voir l'intégralité de votre reçu, accédez à Uber Eats, ou téléchargez ce PDF.\n\t\n6,25 €\nÉconomies avec Uber One et autres promotions appliquées\nPaiements\n\n\t\nApple Pay Visa ••••9946\t16,75 €\n\n\n02/02/2026 6:19\t\n \nVous souhaitez changer de moyen de paiement ?\t\n\tChanger\n \nDétails de la commande\n\n\t\nUber Delivery\n\n\n\n\n\n\n\n\t\n\t\n\t\n19:29 - Prise en charge\n108 R...",
+    "sender_address": "noreply@uber.com",
+    "timestamp": 1770076393893,
+    "urls": [
+      "https://email.mgt.uber.com/c/eJyUkk1u3DAMhU8j7RRo9K-FFkXROUAvYEgknVFhW64sB0hPXzhIs8oi3ZLA-z4-EJZK25jOs2IKSmkPzgoMeBNGFisKuiI0eBWC9dJpxTHpGKwDTunmvZQyWmf53Ns60ZrrkrbWaV9emZFnof4EbeWPhKBdvGmXracwOx-ljFnrIINzRlLgNcUYHM03I7IHFHb2SmQNWjhZnClOgyXLjLwYTx_Jv1p5d8eo9IxBqCBRWLBF5AxRmFiKmi3hDMiX9BhjP5j-xtSdqfsVQ3kcVxRT99aR-sHU3QVLGUwU0kgUZiYlMhYnFBbvMABZsEzdOwHVffA11-0nQd2vKhPT3zG__GmPdm7MyOc34Qugf_CVjiM_0zRed0qj5-3IMGrb8vKxervmK13wnj7l8HetadC6L3lQT9DWfaFBOP1THp_N2nQe1P_jF86t_j5p-qrwS1J_AwAA__-XYsPA",
+      "https://email.mgt.uber.com/c/eJyUkr-O3CAQxp8GOk4sGDAFRZSL6yhKb8Ew3BLZ4GB80ebpI59WV22xaeeTft8fDSwZS5-PI0c3CiENaMXiGC9s4EGxEHVgEowYR2W4loJGJ-2oNFB0F2M451ZpRVOr64yrz4srteG23MjAj4DtBepKr07BIAJiwuTNhZtkQrA-BIs2gIkm0OysHTWmy8C8gchUMoJ5CZJpHvQQtASFigz89Hj5JP-q4Z49WiFTHJkYeWQKVGDeg2WDDUEkhTFBpIu79r7tRH4hYiJiOjHo-36iiJhqi9h2IqZnYERMsf4pS_WRNQTMWydyglo6lv7ztiGRr99fJ7r6XH4g5O3c2RH5Nfr3v_Vaj0IG_vbR5nSX3-iK--7fcO63DV1vvuweeq7FL5_SR9VnhqLNPfSh96hzx3VbfMfmoK7bgh3jfNdof3Sr87Fj-49HOUr-feD8bOB3J_4FAAD__xSE0JA",
+      "https://email.mgt.uber.com/c/eJzMlD-PnDwQxj8NdF75P6agOL37IkVKdVJqZHvGuyRgE2Mu2fv0kTenUyJdcVGaVGA_M_P8GM3glxljmY5jhsFwLjqvFQEDjEjqFHGgHRG-48aojmrBWxhEb5T2LQ6s6yilvdKqDTmtE652XoaYMm7LrZH0cJhPPq3tdbDgPLMsOG6ocoErpo0PklHgRhit23noe6MxMEls54Go0HFihRdEU6el08IrVI2k1eP0Wvlzci_s0HMRwBBuKBDllSPW-p7I3jkeFELw0C7DtZRtb8RDw8eGj2jLftrj5bTM8UvDx4e-f6rP27fluRHjNKd9gqUR5-pXgxuuaq6q2YqP-7FtKZfpyEtVRp9iwe_lA9TT2QcITmJHaA-WSGM4sQY6onlF9b0zrAZyfcVl-_T48Z70E_B3m6q_fvL95hcePtpcZr_g_d1fbbwg2extxVjIiuWa7jRjTIAvYFJ6wYQGwgAkkYJZ4qS0xKN1QSFDFkTD9WQj5DTD37TAWA3IkWgKmkghLTGKUwJ91wMDY0P_b7dgX8ttw0ac76eQsscpI8wZfWnEmbWrneMj-nmrazQ04j-wT8_pmo7YSHq5D2slFv-3K-67veBUCw4l27hbX-YU7fIq3Sf5PXvQ5uFNnzajx3krU8F1W2zBPPi0bgsWhOlFa8tbd2k6dsx_8B844vz1wOm9wE8D_xEAAP__7ExgNA",
+      "https://email.mgt.uber.com/c/eJyUUkFv2zwM_TXyTYVCWZJ90OH7mgXYbSjQsyGJdKLVtjxZbpb9-sFGUPSQQ3ciHh_4HsHHMESaSreuEW0DIE3QimODB14Lr7hH7bkMBppGGaElVGhl2ygdKrIHY4QQrdKq6nMaOxpdHOyUMs3DjdVi9ZSfQhqri5UgUclemJ4EeNMG3ZJCrP0hILaeqmjbttHUH2ruTECuegPcySC5Fl7XXsugSLFabB5PH8o_k7_vji3IHhsOjUCugvLcudDyuvUeekXYB6wGeyllXpj8j8GJwWmTIVeWTYrBKWWkvDB5GhMyedzhiytxOjPQY8JQfjN5ZKBAmf_3ApB3_jSk672xl81gR0tJmT4z8HxH15Tf-iFdX1-_Hx-O6kaRC3XLRS2Q1z0Bd-g1B_RGYxNIBfVQmaaSbz9SnMpD3T2lbojT22faHKvRxemFQpy3j7BMPqN7_5MuaZ1YLc773bc7yW_VSMviztSV20y2ZDctLpSYJjd8UHsoX4m0yvahT5UpUJxLV2icB1co25DGeaBC2N25qjzqpW5dKP_DS69T_LVS99WF3y38DQAA__8Aovj9",
+      "https://email.mgt.uber.com/c/eJyUkU1u3DAMhU9j7RRoJOtvoUVRdA7QCxiUSGVU2JYryxmkpy88CLLKYrLle3jvI5nmQmufjqNgcFIqm4zm6PDCRxE1j2giV8lK57QVRkmGQXmnTWIULtYKIbw2muVWl4kWKHNYa6Ntfh9GcURqL6ku7BY8CsgaHGQDSaJQ6FU0Y8x2VKMFZCV47wzly8jBJuQ6W8lBJcWNOI1GJU16GMXZ8fKZ_KfGD3b0UmV0XDqBXCcdOUDyfPQxyqwJc0I2h1vv26B-DPI6yOv9fn8kEfT9TBvktTaktrMFyvqbUtnO44RB_UR4-1dv9ViHUbw-EE6_-sUW2nd4pam_bxR6g3WH1EtdYf6UHnzPbMda-LKHNUpUtj51WrYZOrWQ6rLN1AmnD431r2Z1OnZq3_jusZa_B03PAr8F-T8AAP__8im4GQ",
+      "https://email.mgt.uber.com/c/eJyUkU1uHCEQhU8DOyyGfxYsoihzgFygBUW1h4huCE1bck4fjWXNyovxlofe91UV1IL7XM6z5OCEkBaMZtnlC1M8aZaySUyCFc5py40UNAfpnTZAMVys5Zx7bTRdR9sW3GKpYW8De30nip8Jxwu0jd6C8YpLYUBbGbW72OgMCulXtBoAONASvHcG14ti0UJmerWCRQmSGZ6MSkaCRk0UvzNeHs1_Wvp0z17INTsmHM9Mg04sRvBM-ZTEqjGvkGkNtzk7kT-IuBJxvWHtjyoirhgnjoNusey_EUq_byYQ-TPHt3_t1s6dKP76wb__l7_ohscRX3GZ7x3DHHE_IszS9lgf0YfcM6PREb7k0IGApc9l4tbr3TBA23rFiXn5zOj86q0t54HjG6c99_L3xOVZ4bcg_gcAAP__nBW1wg",
+      "https://email.mgt.uber.com/c/eJyUkUGO3CAQRU9jdoxocAFesIiizAFyAQuKYprIBgfDSJPTRz0adTa96Gz_V_3_qgq3TKWvY-TorJTKoAYebbzwWQTgIerAFRppLRihlWTRqcWCRkbuYowQYgENLLW6r7T7vLlSGx3bxzSLEai9YN3Z1Zlkg1SCAJIWKJO1Pi5J-CSjUQCGZbcsVlO6zNwbjBySkdwrVFyLoOegFQLBNItbx8s9-VcNX-xxkSpFy6UVkQNC4N7jwuclBJmAYsLINnft_Tgn9W2Sr5N89Yh1lH6P-yex3efykzAft_O4SX2P_v1PvdZRplm8fULcBtQPttN5-jda-8dBrjdfTo891-K3u_VJ-Mx-rLmHPawRUj762mk_Nt-pOaz7sVGnuH55rD_S6jpOav_x31Hy70Hrs8DvTv4NAAD__3wMuEU",
+      "https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO0Z08esFiyiKD5ALWFCUu4n8F4y71Tl95NGoV7OY2fKk732PwqnQ0objKDl4AOXQGpF9vggtkxEp2yQUOvDeOGkV8BxU541FTuHinJSyM9bwsa7zQHMsU1jWStv0ZFoeieobrjO_BZecA--sAYPaRI8-QSSdbTfqhCrzErrOWxovWkSHWZjRgYgKlbAyWZ2sQkOGaXl2vL3If9b04Z47UGP2ArzMwqBJIkbshO5SgtFQHjHzKdxa23amfjDoGfSPx-OFYtBPdI0Tg36r5R7xyaA_dqo7g57PsSy_Cct2_lZg6meO93_rbT0WpuX13elkqF98pn2PVxrac6PQalz2iK2sS5xe0bvwV-byGj7t4ZWQytaGRvM2xUY14DpvEzXKw0fG22dv63BO-sa5j6X8PWj4qvA9wP8AAAD__-FcvN8",
+      "https://email.mgt.uber.com/c/eJyUkU1u3DAMhU8j7RTI-rUXWhRF5wC9gCGR1IwK2XJtOYP09MUEwayySLZ84Hsf-aAWWvt8ngXDqJT24KzAEQdhZLIioUtCg1fjaL10WnEMehqtA05h8F5KOVlned7bMtMSSw1r22mrb8zIM9H-Am3htxCtx5RJTtZknb0cFGSTFKUB0KCUvIRpGh3lwYjoAYXNXomoQQsnkzPJabBkmZGPjJen85-WPthxUjrjKNQoUViwScQIkzBTSipbwgzIa7j1vh1M_2DqwtTlfr8_rZi6VLrGytSFL7GsvwnK9vhNYPonxtd_7dbOlRl5fSd4bOhffKHjiFea-9tGoe9xPSL00tZYn9I73leO43v4NIfvBFS2Pndatho77QHaslXqhPOHxvtnszafB-3fKPdcy9-T5q8Cvwb1PwAA__8qFLbl",
+      "https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO1qYP8OCRRTFB8gFrKIoT5PYxrHxtCanjzwazWoWnS1PfO-rKpwLrW08z5KjV0r36KzIPnfCyGRFyi4Jjb3y3vbSacVz1MFbh5xi1_dSymCd5dNel5EWKHNc607b_MaMPBPtN6wLv8fJoMwdpaAS9eCTSaEzWQJAkMk44iWG4B1NnRHQYxZ26pUAjVo4mZxJTqMly4y8Om6f5F81fbjnoPSUvVBeZmHRJgGAQZiQkpos5Qkzn-O9te1g-htTA1PD4_G4TYCUav194ZgaLjJTA1-grD8Jy3atJzL9PcPr33qv58qMfHmXuD7oH3yh44AXGtvbRrHtsB6ArdQV5s_o3fCZ-fgev-zhOyGVrY2Nlm2GRnvEumwzNcrjR8bbV291PA_a_-O-51r-nDQ-K_wa1b8AAAD__-pwuEs",
+      "https://email.mgt.uber.com/c/eJyUkcFu3CAQhp8GbqxYMBgfOFRV9wH6AtYwjHepDLgYZ5U-feUoyimH5Movvv-bGVwTlT4fR4reKaVHtEZEF69ikMGIEG0QGkflnBml1YpHrydnLHLy13GUUk7GGr60mmfKkFZfaqNtfWWDPAK1C9bMH_4qZdDS2gjOONAOhtEaAFRy0gQOefLT5Cwt10HAiFGYZVQCNGphZbBDsBoNGTbIs-PyQf5Tw7t7nJReohPKySgMmiAAcBLDFIJaDMUFI1_9o_dtZ_oHUzembs_n85LK3uHeIJ88pm4nmqkbz5DKb8K0nfvxTP-M8PKvPupR2CDvbxbnB_2LZ9p3uNPcXzfyvUHZAXuqBdaP6E3xKwPy5j_t4Y2Q0tbnTnlboVPzWPO2Uqc4v2e8f_ZW52On9o0DHyX9PWj-qvCLV_8DAAD__y9wt-g",
+      "https://email.mgt.uber.com/c/eJyUkc2O3CAQhJ_G3Bhh_jlwiKLsA0TK2YKmvUNkGwfDjiZPH3m1mtMcJtcqddXX3bBk3NrUe07eci4MaEWTTSOVLCoak45UgOHWKsO04CR54azSQNCPxjDGnNKKzLWsE64hL34rFfflPkjWI9YLlJVcPSQYrbQWxDxaLdGNmhk1quS0lEpKkr1zVuM8ShoMJKpmw2kQIKhmUcuoBShUg2Rnx-WR_LvEL_bkuJiTpdyyRBWoSEMAR6WLkc8K0wyJLP7a2n4M4tvA3wb-drvdLvfSW494pp2iZL8iVrKGvP1EyPt5HT-I7yl8_C3X0rdBsvdPhnNA_CArHkd4x6ndd_Sthu0I0HLZwvKwPgFfWY9U_7SHVATMe5sarvsSGlYPZd0XbJimL4-0Z1qZ-oH1P97bt_yn4_Qq8Ifn_wIAAP__Yua2XQ",
+      "https://email.mgt.uber.com/c/eJyUkUGO3CAQRU9jdoxocAFesIiizAFyAQuKYprIBgfDSJPTRz0adTa96Gz_V_3_qgq3TKWvY-TorJTKoAYebbzwWQTgIerAFRppLRihlWTRqcWCRkbuYowQYgENLLW6r7T7vLlSGx3bxzSLEai9YN3Z1Zlkg1SCAJIWKJO1Pi5J-CSjUQCGZbcsVlO6zNwbjBySkdwrVFyLoOegFQLBNItbx8s9-VcNX-xxkSpFy6UVkQNC4N7jwuclBJmAYsLINnft_Tgn9W2Sr5N89Yh1lH6P-yex3efykzAft_O4SX2P_v1PvdZRplm8fULcBtQPttN5-jda-8dBrjdfTo891-K3u_VJ-Mx-rLmHPawRUj762mk_Nt-pOaz7sVGnuH55rD_S6jpOav_x31Hy70Hrs8DvTv4NAAD__3wMuEU",
+      "https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO0Z08esFiyiKD5ALWFCUu4n8F4y71Tl95NGoV7OY2fKk732PwqnQ0objKDl4AOXQGpF9vggtkxEp2yQUOvDeOGkV8BxU541FTuHinJSyM9bwsa7zQHMsU1jWStv0ZFoeieobrjO_BZecA--sAYPaRI8-QSSdbTfqhCrzErrOWxovWkSHWZjRgYgKlbAyWZ2sQkOGaXl2vL3If9b04Z47UGP2ArzMwqBJIkbshO5SgtFQHjHzKdxa23amfjDoGfSPx-OFYtBPdI0Tg36r5R7xyaA_dqo7g57PsSy_Cct2_lZg6meO93_rbT0WpuX13elkqF98pn2PVxrac6PQalz2iK2sS5xe0bvwV-byGj7t4ZWQytaGRvM2xUY14DpvEzXKw0fG22dv63BO-sa5j6X8PWj4qvA9wP8AAAD__-FcvN8",
+      "https://email.mgt.uber.com/c/eJyUkU1u3DAMhU8j7RTI-rUXWhRF5wC9gCGR1IwK2XJtOYP09MUEwayySLZ84Hsf-aAWWvt8ngXDqJT24KzAEQdhZLIioUtCg1fjaL10WnEMehqtA05h8F5KOVlned7bMtMSSw1r22mrb8zIM9H-Am3htxCtx5RJTtZknb0cFGSTFKUB0KCUvIRpGh3lwYjoAYXNXomoQQsnkzPJabBkmZGPjJen85-WPthxUjrjKNQoUViwScQIkzBTSipbwgzIa7j1vh1M_2DqwtTlfr8_rZi6VLrGytSFL7GsvwnK9vhNYPonxtd_7dbOlRl5fSd4bOhffKHjiFea-9tGoe9xPSL00tZYn9I73leO43v4NIfvBFS2Pndatho77QHaslXqhPOHxvtnszafB-3fKPdcy9-T5q8Cvwb1PwAA__8qFLbl",
+      "https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO1qYP8OCRRTFB8gFrKIoT5PYxrHxtCanjzwazWoWnS1PfO-rKpwLrW08z5KjV0r36KzIPnfCyGRFyi4Jjb3y3vbSacVz1MFbh5xi1_dSymCd5dNel5EWKHNc607b_MaMPBPtN6wLv8fJoMwdpaAS9eCTSaEzWQJAkMk44iWG4B1NnRHQYxZ26pUAjVo4mZxJTqMly4y8Om6f5F81fbjnoPSUvVBeZmHRJgGAQZiQkpos5Qkzn-O9te1g-htTA1PD4_G4TYCUav194ZgaLjJTA1-grD8Jy3atJzL9PcPr33qv58qMfHmXuD7oH3yh44AXGtvbRrHtsB6ArdQV5s_o3fCZ-fgev-zhOyGVrY2Nlm2GRnvEumwzNcrjR8bbV291PA_a_-O-51r-nDQ-K_wa1b8AAAD__-pwuEs",
+      "https://email.mgt.uber.com/c/eJyUkcFu3CAQhp8GbqxYMBgfOFRV9wH6AtYwjHepDLgYZ5U-feUoyimH5Movvv-bGVwTlT4fR4reKaVHtEZEF69ikMGIEG0QGkflnBml1YpHrydnLHLy13GUUk7GGr60mmfKkFZfaqNtfWWDPAK1C9bMH_4qZdDS2gjOONAOhtEaAFRy0gQOefLT5Cwt10HAiFGYZVQCNGphZbBDsBoNGTbIs-PyQf5Tw7t7nJReohPKySgMmiAAcBLDFIJaDMUFI1_9o_dtZ_oHUzembs_n85LK3uHeIJ88pm4nmqkbz5DKb8K0nfvxTP-M8PKvPupR2CDvbxbnB_2LZ9p3uNPcXzfyvUHZAXuqBdaP6E3xKwPy5j_t4Y2Q0tbnTnlboVPzWPO2Uqc4v2e8f_ZW52On9o0DHyX9PWj-qvCLV_8DAAD__y9wt-g",
+      "https://email.mgt.uber.com/c/eJyUkc2O3CAQhJ_G3Bhh_jlwiKLsA0TK2YKmvUNkGwfDjiZPH3m1mtMcJtcqddXX3bBk3NrUe07eci4MaEWTTSOVLCoak45UgOHWKsO04CR54azSQNCPxjDGnNKKzLWsE64hL34rFfflPkjWI9YLlJVcPSQYrbQWxDxaLdGNmhk1quS0lEpKkr1zVuM8ShoMJKpmw2kQIKhmUcuoBShUg2Rnx-WR_LvEL_bkuJiTpdyyRBWoSEMAR6WLkc8K0wyJLP7a2n4M4tvA3wb-drvdLvfSW494pp2iZL8iVrKGvP1EyPt5HT-I7yl8_C3X0rdBsvdPhnNA_CArHkd4x6ndd_Sthu0I0HLZwvKwPgFfWY9U_7SHVATMe5sarvsSGlYPZd0XbJimL4-0Z1qZ-oH1P97bt_yn4_Qq8Ifn_wIAAP__Yua2XQ"
+    ],
+    "attachments": []
+  },
+  "auth": {
+    "details": [
+      "Domaine cohérent avec l'adresse expéditeur"
+    ],
+    "domain_age_days": 11161,
+    "explanation": "Domaine cohérent avec l'adresse expéditeur",
+    "score": 0.0,
+    "timestamp": "2026-02-02T23:53:15.160343"
+  },
+  "content": {
+    "content_analysis": {
+      "reason": "Le contenu semble être une facture ou un reçu de commande de nourriture en ligne, probablement d'Uber Eats, avec des détails spécifiques sur la transaction, tels que le montant, le moyen de paiement et les économies appliquées.",
+      "status": "cohérent"
+    },
+    "explanation": "Le contenu semble être une facture ou un reçu de commande de nourriture en ligne, probablement d'Uber Eats, avec des détails spécifiques sur la transaction, tels que le montant, le moyen de paiement et les économies appliquées.",
+    "percentage": 0.0,
+    "risk_level": "low",
+    "score": 0
+  },
+  "lien": {
+    "explanation": "18 lien(s) suspect(s) : https://email.mgt.uber.com/c/eJyUkk1u3DAMhU8j7RRo9K-FFkXROUAvYEgknVFhW64sB0hPXzhIs8oi3ZLA-z4-EJZK25jOs2IKSmkPzgoMeBNGFisKuiI0eBWC9dJpxTHpGKwDTunmvZQyWmf53Ns60ZrrkrbWaV9emZFnof4EbeWPhKBdvGmXracwOx-ljFnrIINzRlLgNcUYHM03I7IHFHb2SmQNWjhZnClOgyXLjLwYTx_Jv1p5d8eo9IxBqCBRWLBF5AxRmFiKmi3hDMiX9BhjP5j-xtSdqfsVQ3kcVxRT99aR-sHU3QVLGUwU0kgUZiYlMhYnFBbvMABZsEzdOwHVffA11-0nQd2vKhPT3zG__GmPdm7MyOc34Qugf_CVjiM_0zRed0qj5-3IMGrb8vKxervmK13wnj7l8HetadC6L3lQT9DWfaFBOP1THp_N2nQe1P_jF86t_j5p-qrwS1J_AwAA__-XYsPA, https://email.mgt.uber.com/c/eJyUkr-O3CAQxp8GOk4sGDAFRZSL6yhKb8Ew3BLZ4GB80ebpI59WV22xaeeTft8fDSwZS5-PI0c3CiENaMXiGC9s4EGxEHVgEowYR2W4loJGJ-2oNFB0F2M451ZpRVOr64yrz4srteG23MjAj4DtBepKr07BIAJiwuTNhZtkQrA-BIs2gIkm0OysHTWmy8C8gchUMoJ5CZJpHvQQtASFigz89Hj5JP-q4Z49WiFTHJkYeWQKVGDeg2WDDUEkhTFBpIu79r7tRH4hYiJiOjHo-36iiJhqi9h2IqZnYERMsf4pS_WRNQTMWydyglo6lv7ztiGRr99fJ7r6XH4g5O3c2RH5Nfr3v_Vaj0IG_vbR5nSX3-iK--7fcO63DV1vvuweeq7FL5_SR9VnhqLNPfSh96hzx3VbfMfmoK7bgh3jfNdof3Sr87Fj-49HOUr-feD8bOB3J_4FAAD__xSE0JA, https://email.mgt.uber.com/c/eJzMlD-PnDwQxj8NdF75P6agOL37IkVKdVJqZHvGuyRgE2Mu2fv0kTenUyJdcVGaVGA_M_P8GM3glxljmY5jhsFwLjqvFQEDjEjqFHGgHRG-48aojmrBWxhEb5T2LQ6s6yilvdKqDTmtE652XoaYMm7LrZH0cJhPPq3tdbDgPLMsOG6ocoErpo0PklHgRhit23noe6MxMEls54Go0HFihRdEU6el08IrVI2k1eP0Wvlzci_s0HMRwBBuKBDllSPW-p7I3jkeFELw0C7DtZRtb8RDw8eGj2jLftrj5bTM8UvDx4e-f6rP27fluRHjNKd9gqUR5-pXgxuuaq6q2YqP-7FtKZfpyEtVRp9iwe_lA9TT2QcITmJHaA-WSGM4sQY6onlF9b0zrAZyfcVl-_T48Z70E_B3m6q_fvL95hcePtpcZr_g_d1fbbwg2extxVjIiuWa7jRjTIAvYFJ6wYQGwgAkkYJZ4qS0xKN1QSFDFkTD9WQj5DTD37TAWA3IkWgKmkghLTGKUwJ91wMDY0P_b7dgX8ttw0ac76eQsscpI8wZfWnEmbWrneMj-nmrazQ04j-wT8_pmo7YSHq5D2slFv-3K-67veBUCw4l27hbX-YU7fIq3Sf5PXvQ5uFNnzajx3krU8F1W2zBPPi0bgsWhOlFa8tbd2k6dsx_8B844vz1wOm9wE8D_xEAAP__7ExgNA, https://email.mgt.uber.com/c/eJyUUkFv2zwM_TXyTYVCWZJ90OH7mgXYbSjQsyGJdKLVtjxZbpb9-sFGUPSQQ3ciHh_4HsHHMESaSreuEW0DIE3QimODB14Lr7hH7bkMBppGGaElVGhl2ygdKrIHY4QQrdKq6nMaOxpdHOyUMs3DjdVi9ZSfQhqri5UgUclemJ4EeNMG3ZJCrP0hILaeqmjbttHUH2ruTECuegPcySC5Fl7XXsugSLFabB5PH8o_k7_vji3IHhsOjUCugvLcudDyuvUeekXYB6wGeyllXpj8j8GJwWmTIVeWTYrBKWWkvDB5GhMyedzhiytxOjPQY8JQfjN5ZKBAmf_3ApB3_jSk672xl81gR0tJmT4z8HxH15Tf-iFdX1-_Hx-O6kaRC3XLRS2Q1z0Bd-g1B_RGYxNIBfVQmaaSbz9SnMpD3T2lbojT22faHKvRxemFQpy3j7BMPqN7_5MuaZ1YLc773bc7yW_VSMviztSV20y2ZDctLpSYJjd8UHsoX4m0yvahT5UpUJxLV2icB1co25DGeaBC2N25qjzqpW5dKP_DS69T_LVS99WF3y38DQAA__8Aovj9, https://email.mgt.uber.com/c/eJyUkU1u3DAMhU9j7RRoJOtvoUVRdA7QCxiUSGVU2JYryxmkpy88CLLKYrLle3jvI5nmQmufjqNgcFIqm4zm6PDCRxE1j2giV8lK57QVRkmGQXmnTWIULtYKIbw2muVWl4kWKHNYa6Ntfh9GcURqL6ku7BY8CsgaHGQDSaJQ6FU0Y8x2VKMFZCV47wzly8jBJuQ6W8lBJcWNOI1GJU16GMXZ8fKZ_KfGD3b0UmV0XDqBXCcdOUDyfPQxyqwJc0I2h1vv26B-DPI6yOv9fn8kEfT9TBvktTaktrMFyvqbUtnO44RB_UR4-1dv9ViHUbw-EE6_-sUW2nd4pam_bxR6g3WH1EtdYf6UHnzPbMda-LKHNUpUtj51WrYZOrWQ6rLN1AmnD431r2Z1OnZq3_jusZa_B03PAr8F-T8AAP__8im4GQ, https://email.mgt.uber.com/c/eJyUkU1uHCEQhU8DOyyGfxYsoihzgFygBUW1h4huCE1bck4fjWXNyovxlofe91UV1IL7XM6z5OCEkBaMZtnlC1M8aZaySUyCFc5py40UNAfpnTZAMVys5Zx7bTRdR9sW3GKpYW8De30nip8Jxwu0jd6C8YpLYUBbGbW72OgMCulXtBoAONASvHcG14ti0UJmerWCRQmSGZ6MSkaCRk0UvzNeHs1_Wvp0z17INTsmHM9Mg04sRvBM-ZTEqjGvkGkNtzk7kT-IuBJxvWHtjyoirhgnjoNusey_EUq_byYQ-TPHt3_t1s6dKP76wb__l7_ohscRX3GZ7x3DHHE_IszS9lgf0YfcM6PREb7k0IGApc9l4tbr3TBA23rFiXn5zOj86q0t54HjG6c99_L3xOVZ4bcg_gcAAP__nBW1wg, https://email.mgt.uber.com/c/eJyUkUGO3CAQRU9jdoxocAFesIiizAFyAQuKYprIBgfDSJPTRz0adTa96Gz_V_3_qgq3TKWvY-TorJTKoAYebbzwWQTgIerAFRppLRihlWTRqcWCRkbuYowQYgENLLW6r7T7vLlSGx3bxzSLEai9YN3Z1Zlkg1SCAJIWKJO1Pi5J-CSjUQCGZbcsVlO6zNwbjBySkdwrVFyLoOegFQLBNItbx8s9-VcNX-xxkSpFy6UVkQNC4N7jwuclBJmAYsLINnft_Tgn9W2Sr5N89Yh1lH6P-yex3efykzAft_O4SX2P_v1PvdZRplm8fULcBtQPttN5-jda-8dBrjdfTo891-K3u_VJ-Mx-rLmHPawRUj762mk_Nt-pOaz7sVGnuH55rD_S6jpOav_x31Hy70Hrs8DvTv4NAAD__3wMuEU, https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO0Z08esFiyiKD5ALWFCUu4n8F4y71Tl95NGoV7OY2fKk732PwqnQ0objKDl4AOXQGpF9vggtkxEp2yQUOvDeOGkV8BxU541FTuHinJSyM9bwsa7zQHMsU1jWStv0ZFoeieobrjO_BZecA--sAYPaRI8-QSSdbTfqhCrzErrOWxovWkSHWZjRgYgKlbAyWZ2sQkOGaXl2vL3If9b04Z47UGP2ArzMwqBJIkbshO5SgtFQHjHzKdxa23amfjDoGfSPx-OFYtBPdI0Tg36r5R7xyaA_dqo7g57PsSy_Cct2_lZg6meO93_rbT0WpuX13elkqF98pn2PVxrac6PQalz2iK2sS5xe0bvwV-byGj7t4ZWQytaGRvM2xUY14DpvEzXKw0fG22dv63BO-sa5j6X8PWj4qvA9wP8AAAD__-FcvN8, https://email.mgt.uber.com/c/eJyUkU1u3DAMhU8j7RTI-rUXWhRF5wC9gCGR1IwK2XJtOYP09MUEwayySLZ84Hsf-aAWWvt8ngXDqJT24KzAEQdhZLIioUtCg1fjaL10WnEMehqtA05h8F5KOVlned7bMtMSSw1r22mrb8zIM9H-Am3htxCtx5RJTtZknb0cFGSTFKUB0KCUvIRpGh3lwYjoAYXNXomoQQsnkzPJabBkmZGPjJen85-WPthxUjrjKNQoUViwScQIkzBTSipbwgzIa7j1vh1M_2DqwtTlfr8_rZi6VLrGytSFL7GsvwnK9vhNYPonxtd_7dbOlRl5fSd4bOhffKHjiFea-9tGoe9xPSL00tZYn9I73leO43v4NIfvBFS2Pndatho77QHaslXqhPOHxvtnszafB-3fKPdcy9-T5q8Cvwb1PwAA__8qFLbl, https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO1qYP8OCRRTFB8gFrKIoT5PYxrHxtCanjzwazWoWnS1PfO-rKpwLrW08z5KjV0r36KzIPnfCyGRFyi4Jjb3y3vbSacVz1MFbh5xi1_dSymCd5dNel5EWKHNc607b_MaMPBPtN6wLv8fJoMwdpaAS9eCTSaEzWQJAkMk44iWG4B1NnRHQYxZ26pUAjVo4mZxJTqMly4y8Om6f5F81fbjnoPSUvVBeZmHRJgGAQZiQkpos5Qkzn-O9te1g-htTA1PD4_G4TYCUav194ZgaLjJTA1-grD8Jy3atJzL9PcPr33qv58qMfHmXuD7oH3yh44AXGtvbRrHtsB6ArdQV5s_o3fCZ-fgev-zhOyGVrY2Nlm2GRnvEumwzNcrjR8bbV291PA_a_-O-51r-nDQ-K_wa1b8AAAD__-pwuEs, https://email.mgt.uber.com/c/eJyUkcFu3CAQhp8GbqxYMBgfOFRV9wH6AtYwjHepDLgYZ5U-feUoyimH5Movvv-bGVwTlT4fR4reKaVHtEZEF69ikMGIEG0QGkflnBml1YpHrydnLHLy13GUUk7GGr60mmfKkFZfaqNtfWWDPAK1C9bMH_4qZdDS2gjOONAOhtEaAFRy0gQOefLT5Cwt10HAiFGYZVQCNGphZbBDsBoNGTbIs-PyQf5Tw7t7nJReohPKySgMmiAAcBLDFIJaDMUFI1_9o_dtZ_oHUzembs_n85LK3uHeIJ88pm4nmqkbz5DKb8K0nfvxTP-M8PKvPupR2CDvbxbnB_2LZ9p3uNPcXzfyvUHZAXuqBdaP6E3xKwPy5j_t4Y2Q0tbnTnlboVPzWPO2Uqc4v2e8f_ZW52On9o0DHyX9PWj-qvCLV_8DAAD__y9wt-g, https://email.mgt.uber.com/c/eJyUkc2O3CAQhJ_G3Bhh_jlwiKLsA0TK2YKmvUNkGwfDjiZPH3m1mtMcJtcqddXX3bBk3NrUe07eci4MaEWTTSOVLCoak45UgOHWKsO04CR54azSQNCPxjDGnNKKzLWsE64hL34rFfflPkjWI9YLlJVcPSQYrbQWxDxaLdGNmhk1quS0lEpKkr1zVuM8ShoMJKpmw2kQIKhmUcuoBShUg2Rnx-WR_LvEL_bkuJiTpdyyRBWoSEMAR6WLkc8K0wyJLP7a2n4M4tvA3wb-drvdLvfSW494pp2iZL8iVrKGvP1EyPt5HT-I7yl8_C3X0rdBsvdPhnNA_CArHkd4x6ndd_Sthu0I0HLZwvKwPgFfWY9U_7SHVATMe5sarvsSGlYPZd0XbJimL4-0Z1qZ-oH1P97bt_yn4_Qq8Ifn_wIAAP__Yua2XQ, https://email.mgt.uber.com/c/eJyUkUGO3CAQRU9jdoxocAFesIiizAFyAQuKYprIBgfDSJPTRz0adTa96Gz_V_3_qgq3TKWvY-TorJTKoAYebbzwWQTgIerAFRppLRihlWTRqcWCRkbuYowQYgENLLW6r7T7vLlSGx3bxzSLEai9YN3Z1Zlkg1SCAJIWKJO1Pi5J-CSjUQCGZbcsVlO6zNwbjBySkdwrVFyLoOegFQLBNItbx8s9-VcNX-xxkSpFy6UVkQNC4N7jwuclBJmAYsLINnft_Tgn9W2Sr5N89Yh1lH6P-yex3efykzAft_O4SX2P_v1PvdZRplm8fULcBtQPttN5-jda-8dBrjdfTo891-K3u_VJ-Mx-rLmHPawRUj762mk_Nt-pOaz7sVGnuH55rD_S6jpOav_x31Hy70Hrs8DvTv4NAAD__3wMuEU, https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO0Z08esFiyiKD5ALWFCUu4n8F4y71Tl95NGoV7OY2fKk732PwqnQ0objKDl4AOXQGpF9vggtkxEp2yQUOvDeOGkV8BxU541FTuHinJSyM9bwsa7zQHMsU1jWStv0ZFoeieobrjO_BZecA--sAYPaRI8-QSSdbTfqhCrzErrOWxovWkSHWZjRgYgKlbAyWZ2sQkOGaXl2vL3If9b04Z47UGP2ArzMwqBJIkbshO5SgtFQHjHzKdxa23amfjDoGfSPx-OFYtBPdI0Tg36r5R7xyaA_dqo7g57PsSy_Cct2_lZg6meO93_rbT0WpuX13elkqF98pn2PVxrac6PQalz2iK2sS5xe0bvwV-byGj7t4ZWQytaGRvM2xUY14DpvEzXKw0fG22dv63BO-sa5j6X8PWj4qvA9wP8AAAD__-FcvN8, https://email.mgt.uber.com/c/eJyUkU1u3DAMhU8j7RTI-rUXWhRF5wC9gCGR1IwK2XJtOYP09MUEwayySLZ84Hsf-aAWWvt8ngXDqJT24KzAEQdhZLIioUtCg1fjaL10WnEMehqtA05h8F5KOVlned7bMtMSSw1r22mrb8zIM9H-Am3htxCtx5RJTtZknb0cFGSTFKUB0KCUvIRpGh3lwYjoAYXNXomoQQsnkzPJabBkmZGPjJen85-WPthxUjrjKNQoUViwScQIkzBTSipbwgzIa7j1vh1M_2DqwtTlfr8_rZi6VLrGytSFL7GsvwnK9vhNYPonxtd_7dbOlRl5fSd4bOhffKHjiFea-9tGoe9xPSL00tZYn9I73leO43v4NIfvBFS2Pndatho77QHaslXqhPOHxvtnszafB-3fKPdcy9-T5q8Cvwb1PwAA__8qFLbl, https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO1qYP8OCRRTFB8gFrKIoT5PYxrHxtCanjzwazWoWnS1PfO-rKpwLrW08z5KjV0r36KzIPnfCyGRFyi4Jjb3y3vbSacVz1MFbh5xi1_dSymCd5dNel5EWKHNc607b_MaMPBPtN6wLv8fJoMwdpaAS9eCTSaEzWQJAkMk44iWG4B1NnRHQYxZ26pUAjVo4mZxJTqMly4y8Om6f5F81fbjnoPSUvVBeZmHRJgGAQZiQkpos5Qkzn-O9te1g-htTA1PD4_G4TYCUav194ZgaLjJTA1-grD8Jy3atJzL9PcPr33qv58qMfHmXuD7oH3yh44AXGtvbRrHtsB6ArdQV5s_o3fCZ-fgev-zhOyGVrY2Nlm2GRnvEumwzNcrjR8bbV291PA_a_-O-51r-nDQ-K_wa1b8AAAD__-pwuEs, https://email.mgt.uber.com/c/eJyUkcFu3CAQhp8GbqxYMBgfOFRV9wH6AtYwjHepDLgYZ5U-feUoyimH5Movvv-bGVwTlT4fR4reKaVHtEZEF69ikMGIEG0QGkflnBml1YpHrydnLHLy13GUUk7GGr60mmfKkFZfaqNtfWWDPAK1C9bMH_4qZdDS2gjOONAOhtEaAFRy0gQOefLT5Cwt10HAiFGYZVQCNGphZbBDsBoNGTbIs-PyQf5Tw7t7nJReohPKySgMmiAAcBLDFIJaDMUFI1_9o_dtZ_oHUzembs_n85LK3uHeIJ88pm4nmqkbz5DKb8K0nfvxTP-M8PKvPupR2CDvbxbnB_2LZ9p3uNPcXzfyvUHZAXuqBdaP6E3xKwPy5j_t4Y2Q0tbnTnlboVPzWPO2Uqc4v2e8f_ZW52On9o0DHyX9PWj-qvCLV_8DAAD__y9wt-g, https://email.mgt.uber.com/c/eJyUkc2O3CAQhJ_G3Bhh_jlwiKLsA0TK2YKmvUNkGwfDjiZPH3m1mtMcJtcqddXX3bBk3NrUe07eci4MaEWTTSOVLCoak45UgOHWKsO04CR54azSQNCPxjDGnNKKzLWsE64hL34rFfflPkjWI9YLlJVcPSQYrbQWxDxaLdGNmhk1quS0lEpKkr1zVuM8ShoMJKpmw2kQIKhmUcuoBShUg2Rnx-WR_LvEL_bkuJiTpdyyRBWoSEMAR6WLkc8K0wyJLP7a2n4M4tvA3wb-drvdLvfSW494pp2iZL8iVrKGvP1EyPt5HT-I7yl8_C3X0rdBsvdPhnNA_CArHkd4x6ndd_Sthu0I0HLZwvKwPgFfWY9U_7SHVATMe5sarvsSGlYPZd0XbJimL4-0Z1qZ-oH1P97bt_yn4_Qq8Ifn_wIAAP__Yua2XQ",
+    "links_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkk1u3DAMhU8j7RRo9K-FFkXROUAvYEgknVFhW64sB0hPXzhIs8oi3ZLA-z4-EJZK25jOs2IKSmkPzgoMeBNGFisKuiI0eBWC9dJpxTHpGKwDTunmvZQyWmf53Ns60ZrrkrbWaV9emZFnof4EbeWPhKBdvGmXracwOx-ljFnrIINzRlLgNcUYHM03I7IHFHb2SmQNWjhZnClOgyXLjLwYTx_Jv1p5d8eo9IxBqCBRWLBF5AxRmFiKmi3hDMiX9BhjP5j-xtSdqfsVQ3kcVxRT99aR-sHU3QVLGUwU0kgUZiYlMhYnFBbvMABZsEzdOwHVffA11-0nQd2vKhPT3zG__GmPdm7MyOc34Qugf_CVjiM_0zRed0qj5-3IMGrb8vKxervmK13wnj7l8HetadC6L3lQT9DWfaFBOP1THp_N2nQe1P_jF86t_j5p-qrwS1J_AwAA__-XYsPA"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkr-O3CAQxp8GOk4sGDAFRZSL6yhKb8Ew3BLZ4GB80ebpI59WV22xaeeTft8fDSwZS5-PI0c3CiENaMXiGC9s4EGxEHVgEowYR2W4loJGJ-2oNFB0F2M451ZpRVOr64yrz4srteG23MjAj4DtBepKr07BIAJiwuTNhZtkQrA-BIs2gIkm0OysHTWmy8C8gchUMoJ5CZJpHvQQtASFigz89Hj5JP-q4Z49WiFTHJkYeWQKVGDeg2WDDUEkhTFBpIu79r7tRH4hYiJiOjHo-36iiJhqi9h2IqZnYERMsf4pS_WRNQTMWydyglo6lv7ztiGRr99fJ7r6XH4g5O3c2RH5Nfr3v_Vaj0IG_vbR5nSX3-iK--7fcO63DV1vvuweeq7FL5_SR9VnhqLNPfSh96hzx3VbfMfmoK7bgh3jfNdof3Sr87Fj-49HOUr-feD8bOB3J_4FAAD__xSE0JA"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJzMlD-PnDwQxj8NdF75P6agOL37IkVKdVJqZHvGuyRgE2Mu2fv0kTenUyJdcVGaVGA_M_P8GM3glxljmY5jhsFwLjqvFQEDjEjqFHGgHRG-48aojmrBWxhEb5T2LQ6s6yilvdKqDTmtE652XoaYMm7LrZH0cJhPPq3tdbDgPLMsOG6ocoErpo0PklHgRhit23noe6MxMEls54Go0HFihRdEU6el08IrVI2k1eP0Wvlzci_s0HMRwBBuKBDllSPW-p7I3jkeFELw0C7DtZRtb8RDw8eGj2jLftrj5bTM8UvDx4e-f6rP27fluRHjNKd9gqUR5-pXgxuuaq6q2YqP-7FtKZfpyEtVRp9iwe_lA9TT2QcITmJHaA-WSGM4sQY6onlF9b0zrAZyfcVl-_T48Z70E_B3m6q_fvL95hcePtpcZr_g_d1fbbwg2extxVjIiuWa7jRjTIAvYFJ6wYQGwgAkkYJZ4qS0xKN1QSFDFkTD9WQj5DTD37TAWA3IkWgKmkghLTGKUwJ91wMDY0P_b7dgX8ttw0ac76eQsscpI8wZfWnEmbWrneMj-nmrazQ04j-wT8_pmo7YSHq5D2slFv-3K-67veBUCw4l27hbX-YU7fIq3Sf5PXvQ5uFNnzajx3krU8F1W2zBPPi0bgsWhOlFa8tbd2k6dsx_8B844vz1wOm9wE8D_xEAAP__7ExgNA"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUUkFv2zwM_TXyTYVCWZJ90OH7mgXYbSjQsyGJdKLVtjxZbpb9-sFGUPSQQ3ciHh_4HsHHMESaSreuEW0DIE3QimODB14Lr7hH7bkMBppGGaElVGhl2ygdKrIHY4QQrdKq6nMaOxpdHOyUMs3DjdVi9ZSfQhqri5UgUclemJ4EeNMG3ZJCrP0hILaeqmjbttHUH2ruTECuegPcySC5Fl7XXsugSLFabB5PH8o_k7_vji3IHhsOjUCugvLcudDyuvUeekXYB6wGeyllXpj8j8GJwWmTIVeWTYrBKWWkvDB5GhMyedzhiytxOjPQY8JQfjN5ZKBAmf_3ApB3_jSk672xl81gR0tJmT4z8HxH15Tf-iFdX1-_Hx-O6kaRC3XLRS2Q1z0Bd-g1B_RGYxNIBfVQmaaSbz9SnMpD3T2lbojT22faHKvRxemFQpy3j7BMPqN7_5MuaZ1YLc773bc7yW_VSMviztSV20y2ZDctLpSYJjd8UHsoX4m0yvahT5UpUJxLV2icB1co25DGeaBC2N25qjzqpW5dKP_DS69T_LVS99WF3y38DQAA__8Aovj9"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkU1u3DAMhU9j7RRoJOtvoUVRdA7QCxiUSGVU2JYryxmkpy88CLLKYrLle3jvI5nmQmufjqNgcFIqm4zm6PDCRxE1j2giV8lK57QVRkmGQXmnTWIULtYKIbw2muVWl4kWKHNYa6Ntfh9GcURqL6ku7BY8CsgaHGQDSaJQ6FU0Y8x2VKMFZCV47wzly8jBJuQ6W8lBJcWNOI1GJU16GMXZ8fKZ_KfGD3b0UmV0XDqBXCcdOUDyfPQxyqwJc0I2h1vv26B-DPI6yOv9fn8kEfT9TBvktTaktrMFyvqbUtnO44RB_UR4-1dv9ViHUbw-EE6_-sUW2nd4pam_bxR6g3WH1EtdYf6UHnzPbMda-LKHNUpUtj51WrYZOrWQ6rLN1AmnD431r2Z1OnZq3_jusZa_B03PAr8F-T8AAP__8im4GQ"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkU1uHCEQhU8DOyyGfxYsoihzgFygBUW1h4huCE1bck4fjWXNyovxlofe91UV1IL7XM6z5OCEkBaMZtnlC1M8aZaySUyCFc5py40UNAfpnTZAMVys5Zx7bTRdR9sW3GKpYW8De30nip8Jxwu0jd6C8YpLYUBbGbW72OgMCulXtBoAONASvHcG14ti0UJmerWCRQmSGZ6MSkaCRk0UvzNeHs1_Wvp0z17INTsmHM9Mg04sRvBM-ZTEqjGvkGkNtzk7kT-IuBJxvWHtjyoirhgnjoNusey_EUq_byYQ-TPHt3_t1s6dKP76wb__l7_ohscRX3GZ7x3DHHE_IszS9lgf0YfcM6PREb7k0IGApc9l4tbr3TBA23rFiXn5zOj86q0t54HjG6c99_L3xOVZ4bcg_gcAAP__nBW1wg"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkUGO3CAQRU9jdoxocAFesIiizAFyAQuKYprIBgfDSJPTRz0adTa96Gz_V_3_qgq3TKWvY-TorJTKoAYebbzwWQTgIerAFRppLRihlWTRqcWCRkbuYowQYgENLLW6r7T7vLlSGx3bxzSLEai9YN3Z1Zlkg1SCAJIWKJO1Pi5J-CSjUQCGZbcsVlO6zNwbjBySkdwrVFyLoOegFQLBNItbx8s9-VcNX-xxkSpFy6UVkQNC4N7jwuclBJmAYsLINnft_Tgn9W2Sr5N89Yh1lH6P-yex3efykzAft_O4SX2P_v1PvdZRplm8fULcBtQPttN5-jda-8dBrjdfTo891-K3u_VJ-Mx-rLmHPawRUj762mk_Nt-pOaz7sVGnuH55rD_S6jpOav_x31Hy70Hrs8DvTv4NAAD__3wMuEU"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO0Z08esFiyiKD5ALWFCUu4n8F4y71Tl95NGoV7OY2fKk732PwqnQ0objKDl4AOXQGpF9vggtkxEp2yQUOvDeOGkV8BxU541FTuHinJSyM9bwsa7zQHMsU1jWStv0ZFoeieobrjO_BZecA--sAYPaRI8-QSSdbTfqhCrzErrOWxovWkSHWZjRgYgKlbAyWZ2sQkOGaXl2vL3If9b04Z47UGP2ArzMwqBJIkbshO5SgtFQHjHzKdxa23amfjDoGfSPx-OFYtBPdI0Tg36r5R7xyaA_dqo7g57PsSy_Cct2_lZg6meO93_rbT0WpuX13elkqF98pn2PVxrac6PQalz2iK2sS5xe0bvwV-byGj7t4ZWQytaGRvM2xUY14DpvEzXKw0fG22dv63BO-sa5j6X8PWj4qvA9wP8AAAD__-FcvN8"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkU1u3DAMhU8j7RTI-rUXWhRF5wC9gCGR1IwK2XJtOYP09MUEwayySLZ84Hsf-aAWWvt8ngXDqJT24KzAEQdhZLIioUtCg1fjaL10WnEMehqtA05h8F5KOVlned7bMtMSSw1r22mrb8zIM9H-Am3htxCtx5RJTtZknb0cFGSTFKUB0KCUvIRpGh3lwYjoAYXNXomoQQsnkzPJabBkmZGPjJen85-WPthxUjrjKNQoUViwScQIkzBTSipbwgzIa7j1vh1M_2DqwtTlfr8_rZi6VLrGytSFL7GsvwnK9vhNYPonxtd_7dbOlRl5fSd4bOhffKHjiFea-9tGoe9xPSL00tZYn9I73leO43v4NIfvBFS2Pndatho77QHaslXqhPOHxvtnszafB-3fKPdcy9-T5q8Cvwb1PwAA__8qFLbl"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO1qYP8OCRRTFB8gFrKIoT5PYxrHxtCanjzwazWoWnS1PfO-rKpwLrW08z5KjV0r36KzIPnfCyGRFyi4Jjb3y3vbSacVz1MFbh5xi1_dSymCd5dNel5EWKHNc607b_MaMPBPtN6wLv8fJoMwdpaAS9eCTSaEzWQJAkMk44iWG4B1NnRHQYxZ26pUAjVo4mZxJTqMly4y8Om6f5F81fbjnoPSUvVBeZmHRJgGAQZiQkpos5Qkzn-O9te1g-htTA1PD4_G4TYCUav194ZgaLjJTA1-grD8Jy3atJzL9PcPr33qv58qMfHmXuD7oH3yh44AXGtvbRrHtsB6ArdQV5s_o3fCZ-fgev-zhOyGVrY2Nlm2GRnvEumwzNcrjR8bbV291PA_a_-O-51r-nDQ-K_wa1b8AAAD__-pwuEs"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkcFu3CAQhp8GbqxYMBgfOFRV9wH6AtYwjHepDLgYZ5U-feUoyimH5Movvv-bGVwTlT4fR4reKaVHtEZEF69ikMGIEG0QGkflnBml1YpHrydnLHLy13GUUk7GGr60mmfKkFZfaqNtfWWDPAK1C9bMH_4qZdDS2gjOONAOhtEaAFRy0gQOefLT5Cwt10HAiFGYZVQCNGphZbBDsBoNGTbIs-PyQf5Tw7t7nJReohPKySgMmiAAcBLDFIJaDMUFI1_9o_dtZ_oHUzembs_n85LK3uHeIJ88pm4nmqkbz5DKb8K0nfvxTP-M8PKvPupR2CDvbxbnB_2LZ9p3uNPcXzfyvUHZAXuqBdaP6E3xKwPy5j_t4Y2Q0tbnTnlboVPzWPO2Uqc4v2e8f_ZW52On9o0DHyX9PWj-qvCLV_8DAAD__y9wt-g"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkc2O3CAQhJ_G3Bhh_jlwiKLsA0TK2YKmvUNkGwfDjiZPH3m1mtMcJtcqddXX3bBk3NrUe07eci4MaEWTTSOVLCoak45UgOHWKsO04CR54azSQNCPxjDGnNKKzLWsE64hL34rFfflPkjWI9YLlJVcPSQYrbQWxDxaLdGNmhk1quS0lEpKkr1zVuM8ShoMJKpmw2kQIKhmUcuoBShUg2Rnx-WR_LvEL_bkuJiTpdyyRBWoSEMAR6WLkc8K0wyJLP7a2n4M4tvA3wb-drvdLvfSW494pp2iZL8iVrKGvP1EyPt5HT-I7yl8_C3X0rdBsvdPhnNA_CArHkd4x6ndd_Sthu0I0HLZwvKwPgFfWY9U_7SHVATMe5sarvsSGlYPZd0XbJimL4-0Z1qZ-oH1P97bt_yn4_Qq8Ifn_wIAAP__Yua2XQ"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkUGO3CAQRU9jdoxocAFesIiizAFyAQuKYprIBgfDSJPTRz0adTa96Gz_V_3_qgq3TKWvY-TorJTKoAYebbzwWQTgIerAFRppLRihlWTRqcWCRkbuYowQYgENLLW6r7T7vLlSGx3bxzSLEai9YN3Z1Zlkg1SCAJIWKJO1Pi5J-CSjUQCGZbcsVlO6zNwbjBySkdwrVFyLoOegFQLBNItbx8s9-VcNX-xxkSpFy6UVkQNC4N7jwuclBJmAYsLINnft_Tgn9W2Sr5N89Yh1lH6P-yex3efykzAft_O4SX2P_v1PvdZRplm8fULcBtQPttN5-jda-8dBrjdfTo891-K3u_VJ-Mx-rLmHPawRUj762mk_Nt-pOaz7sVGnuH55rD_S6jpOav_x31Hy70Hrs8DvTv4NAAD__3wMuEU"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO0Z08esFiyiKD5ALWFCUu4n8F4y71Tl95NGoV7OY2fKk732PwqnQ0objKDl4AOXQGpF9vggtkxEp2yQUOvDeOGkV8BxU541FTuHinJSyM9bwsa7zQHMsU1jWStv0ZFoeieobrjO_BZecA--sAYPaRI8-QSSdbTfqhCrzErrOWxovWkSHWZjRgYgKlbAyWZ2sQkOGaXl2vL3If9b04Z47UGP2ArzMwqBJIkbshO5SgtFQHjHzKdxa23amfjDoGfSPx-OFYtBPdI0Tg36r5R7xyaA_dqo7g57PsSy_Cct2_lZg6meO93_rbT0WpuX13elkqF98pn2PVxrac6PQalz2iK2sS5xe0bvwV-byGj7t4ZWQytaGRvM2xUY14DpvEzXKw0fG22dv63BO-sa5j6X8PWj4qvA9wP8AAAD__-FcvN8"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkU1u3DAMhU8j7RTI-rUXWhRF5wC9gCGR1IwK2XJtOYP09MUEwayySLZ84Hsf-aAWWvt8ngXDqJT24KzAEQdhZLIioUtCg1fjaL10WnEMehqtA05h8F5KOVlned7bMtMSSw1r22mrb8zIM9H-Am3htxCtx5RJTtZknb0cFGSTFKUB0KCUvIRpGh3lwYjoAYXNXomoQQsnkzPJabBkmZGPjJen85-WPthxUjrjKNQoUViwScQIkzBTSipbwgzIa7j1vh1M_2DqwtTlfr8_rZi6VLrGytSFL7GsvwnK9vhNYPonxtd_7dbOlRl5fSd4bOhffKHjiFea-9tGoe9xPSL00tZYn9I73leO43v4NIfvBFS2Pndatho77QHaslXqhPOHxvtnszafB-3fKPdcy9-T5q8Cvwb1PwAA__8qFLbl"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO1qYP8OCRRTFB8gFrKIoT5PYxrHxtCanjzwazWoWnS1PfO-rKpwLrW08z5KjV0r36KzIPnfCyGRFyi4Jjb3y3vbSacVz1MFbh5xi1_dSymCd5dNel5EWKHNc607b_MaMPBPtN6wLv8fJoMwdpaAS9eCTSaEzWQJAkMk44iWG4B1NnRHQYxZ26pUAjVo4mZxJTqMly4y8Om6f5F81fbjnoPSUvVBeZmHRJgGAQZiQkpos5Qkzn-O9te1g-htTA1PD4_G4TYCUav194ZgaLjJTA1-grD8Jy3atJzL9PcPr33qv58qMfHmXuD7oH3yh44AXGtvbRrHtsB6ArdQV5s_o3fCZ-fgev-zhOyGVrY2Nlm2GRnvEumwzNcrjR8bbV291PA_a_-O-51r-nDQ-K_wa1b8AAAD__-pwuEs"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkcFu3CAQhp8GbqxYMBgfOFRV9wH6AtYwjHepDLgYZ5U-feUoyimH5Movvv-bGVwTlT4fR4reKaVHtEZEF69ikMGIEG0QGkflnBml1YpHrydnLHLy13GUUk7GGr60mmfKkFZfaqNtfWWDPAK1C9bMH_4qZdDS2gjOONAOhtEaAFRy0gQOefLT5Cwt10HAiFGYZVQCNGphZbBDsBoNGTbIs-PyQf5Tw7t7nJReohPKySgMmiAAcBLDFIJaDMUFI1_9o_dtZ_oHUzembs_n85LK3uHeIJ88pm4nmqkbz5DKb8K0nfvxTP-M8PKvPupR2CDvbxbnB_2LZ9p3uNPcXzfyvUHZAXuqBdaP6E3xKwPy5j_t4Y2Q0tbnTnlboVPzWPO2Uqc4v2e8f_ZW52On9o0DHyX9PWj-qvCLV_8DAAD__y9wt-g"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (18 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "email.mgt.uber.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "email.mgt.uber.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://email.mgt.uber.com/c/eJyUkc2O3CAQhJ_G3Bhh_jlwiKLsA0TK2YKmvUNkGwfDjiZPH3m1mtMcJtcqddXX3bBk3NrUe07eci4MaEWTTSOVLCoak45UgOHWKsO04CR54azSQNCPxjDGnNKKzLWsE64hL34rFfflPkjWI9YLlJVcPSQYrbQWxDxaLdGNmhk1quS0lEpKkr1zVuM8ShoMJKpmw2kQIKhmUcuoBShUg2Rnx-WR_LvEL_bkuJiTpdyyRBWoSEMAR6WLkc8K0wyJLP7a2n4M4tvA3wb-drvdLvfSW494pp2iZL8iVrKGvP1EyPt5HT-I7yl8_C3X0rdBsvdPhnNA_CArHkd4x6ndd_Sthu0I0HLZwvKwPgFfWY9U_7SHVATMe5sarvsSGlYPZd0XbJimL4-0Z1qZ-oH1P97bt_yn4_Qq8Ifn_wIAAP__Yua2XQ"
+      }
+    ],
+    "nb_links": 18,
+    "percentage": 40.0,
+    "risk_level": "medium",
+    "score": 40.0
+  },
+  "file": {
+    "Explanation": "0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+    "attachment_analysis": [],
+    "moyenne_pourcentage": 0,
+    "nb_attachments": 0
+  },
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le contenu semble être une facture ou un reçu de commande de nourriture en ligne, probablement d'Uber Eats, avec des détails spécifiques sur la transaction, tels que le montant, le moyen de paiement et les économies appliquées. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 18 lien(s) suspect(s) : https://email.mgt.uber.com/c/eJyUkk1u3DAMhU8j7RRo9K-FFkXROUAvYEgknVFhW64sB0hPXzhIs8oi3ZLA-z4-EJZK25jOs2IKSmkPzgoMeBNGFisKuiI0eBWC9dJpxTHpGKwDTunmvZQyWmf53Ns60ZrrkrbWaV9emZFnof4EbeWPhKBdvGmXracwOx-ljFnrIINzRlLgNcUYHM03I7IHFHb2SmQNWjhZnClOgyXLjLwYTx_Jv1p5d8eo9IxBqCBRWLBF5AxRmFiKmi3hDMiX9BhjP5j-xtSdqfsVQ3kcVxRT99aR-sHU3QVLGUwU0kgUZiYlMhYnFBbvMABZsEzdOwHVffA11-0nQd2vKhPT3zG__GmPdm7MyOc34Qugf_CVjiM_0zRed0qj5-3IMGrb8vKxervmK13wnj7l8HetadC6L3lQT9DWfaFBOP1THp_N2nQe1P_jF86t_j5p-qrwS1J_AwAA__-XYsPA, https://email.mgt.uber.com/c/eJyUkr-O3CAQxp8GOk4sGDAFRZSL6yhKb8Ew3BLZ4GB80ebpI59WV22xaeeTft8fDSwZS5-PI0c3CiENaMXiGC9s4EGxEHVgEowYR2W4loJGJ-2oNFB0F2M451ZpRVOr64yrz4srteG23MjAj4DtBepKr07BIAJiwuTNhZtkQrA-BIs2gIkm0OysHTWmy8C8gchUMoJ5CZJpHvQQtASFigz89Hj5JP-q4Z49WiFTHJkYeWQKVGDeg2WDDUEkhTFBpIu79r7tRH4hYiJiOjHo-36iiJhqi9h2IqZnYERMsf4pS_WRNQTMWydyglo6lv7ztiGRr99fJ7r6XH4g5O3c2RH5Nfr3v_Vaj0IG_vbR5nSX3-iK--7fcO63DV1vvuweeq7FL5_SR9VnhqLNPfSh96hzx3VbfMfmoK7bgh3jfNdof3Sr87Fj-49HOUr-feD8bOB3J_4FAAD__xSE0JA, https://email.mgt.uber.com/c/eJzMlD-PnDwQxj8NdF75P6agOL37IkVKdVJqZHvGuyRgE2Mu2fv0kTenUyJdcVGaVGA_M_P8GM3glxljmY5jhsFwLjqvFQEDjEjqFHGgHRG-48aojmrBWxhEb5T2LQ6s6yilvdKqDTmtE652XoaYMm7LrZH0cJhPPq3tdbDgPLMsOG6ocoErpo0PklHgRhit23noe6MxMEls54Go0HFihRdEU6el08IrVI2k1eP0Wvlzci_s0HMRwBBuKBDllSPW-p7I3jkeFELw0C7DtZRtb8RDw8eGj2jLftrj5bTM8UvDx4e-f6rP27fluRHjNKd9gqUR5-pXgxuuaq6q2YqP-7FtKZfpyEtVRp9iwe_lA9TT2QcITmJHaA-WSGM4sQY6onlF9b0zrAZyfcVl-_T48Z70E_B3m6q_fvL95hcePtpcZr_g_d1fbbwg2extxVjIiuWa7jRjTIAvYFJ6wYQGwgAkkYJZ4qS0xKN1QSFDFkTD9WQj5DTD37TAWA3IkWgKmkghLTGKUwJ91wMDY0P_b7dgX8ttw0ac76eQsscpI8wZfWnEmbWrneMj-nmrazQ04j-wT8_pmo7YSHq5D2slFv-3K-67veBUCw4l27hbX-YU7fIq3Sf5PXvQ5uFNnzajx3krU8F1W2zBPPi0bgsWhOlFa8tbd2k6dsx_8B844vz1wOm9wE8D_xEAAP__7ExgNA, https://email.mgt.uber.com/c/eJyUUkFv2zwM_TXyTYVCWZJ90OH7mgXYbSjQsyGJdKLVtjxZbpb9-sFGUPSQQ3ciHh_4HsHHMESaSreuEW0DIE3QimODB14Lr7hH7bkMBppGGaElVGhl2ygdKrIHY4QQrdKq6nMaOxpdHOyUMs3DjdVi9ZSfQhqri5UgUclemJ4EeNMG3ZJCrP0hILaeqmjbttHUH2ruTECuegPcySC5Fl7XXsugSLFabB5PH8o_k7_vji3IHhsOjUCugvLcudDyuvUeekXYB6wGeyllXpj8j8GJwWmTIVeWTYrBKWWkvDB5GhMyedzhiytxOjPQY8JQfjN5ZKBAmf_3ApB3_jSk672xl81gR0tJmT4z8HxH15Tf-iFdX1-_Hx-O6kaRC3XLRS2Q1z0Bd-g1B_RGYxNIBfVQmaaSbz9SnMpD3T2lbojT22faHKvRxemFQpy3j7BMPqN7_5MuaZ1YLc773bc7yW_VSMviztSV20y2ZDctLpSYJjd8UHsoX4m0yvahT5UpUJxLV2icB1co25DGeaBC2N25qjzqpW5dKP_DS69T_LVS99WF3y38DQAA__8Aovj9, https://email.mgt.uber.com/c/eJyUkU1u3DAMhU9j7RRoJOtvoUVRdA7QCxiUSGVU2JYryxmkpy88CLLKYrLle3jvI5nmQmufjqNgcFIqm4zm6PDCRxE1j2giV8lK57QVRkmGQXmnTWIULtYKIbw2muVWl4kWKHNYa6Ntfh9GcURqL6ku7BY8CsgaHGQDSaJQ6FU0Y8x2VKMFZCV47wzly8jBJuQ6W8lBJcWNOI1GJU16GMXZ8fKZ_KfGD3b0UmV0XDqBXCcdOUDyfPQxyqwJc0I2h1vv26B-DPI6yOv9fn8kEfT9TBvktTaktrMFyvqbUtnO44RB_UR4-1dv9ViHUbw-EE6_-sUW2nd4pam_bxR6g3WH1EtdYf6UHnzPbMda-LKHNUpUtj51WrYZOrWQ6rLN1AmnD431r2Z1OnZq3_jusZa_B03PAr8F-T8AAP__8im4GQ, https://email.mgt.uber.com/c/eJyUkU1uHCEQhU8DOyyGfxYsoihzgFygBUW1h4huCE1bck4fjWXNyovxlofe91UV1IL7XM6z5OCEkBaMZtnlC1M8aZaySUyCFc5py40UNAfpnTZAMVys5Zx7bTRdR9sW3GKpYW8De30nip8Jxwu0jd6C8YpLYUBbGbW72OgMCulXtBoAONASvHcG14ti0UJmerWCRQmSGZ6MSkaCRk0UvzNeHs1_Wvp0z17INTsmHM9Mg04sRvBM-ZTEqjGvkGkNtzk7kT-IuBJxvWHtjyoirhgnjoNusey_EUq_byYQ-TPHt3_t1s6dKP76wb__l7_ohscRX3GZ7x3DHHE_IszS9lgf0YfcM6PREb7k0IGApc9l4tbr3TBA23rFiXn5zOj86q0t54HjG6c99_L3xOVZ4bcg_gcAAP__nBW1wg, https://email.mgt.uber.com/c/eJyUkUGO3CAQRU9jdoxocAFesIiizAFyAQuKYprIBgfDSJPTRz0adTa96Gz_V_3_qgq3TKWvY-TorJTKoAYebbzwWQTgIerAFRppLRihlWTRqcWCRkbuYowQYgENLLW6r7T7vLlSGx3bxzSLEai9YN3Z1Zlkg1SCAJIWKJO1Pi5J-CSjUQCGZbcsVlO6zNwbjBySkdwrVFyLoOegFQLBNItbx8s9-VcNX-xxkSpFy6UVkQNC4N7jwuclBJmAYsLINnft_Tgn9W2Sr5N89Yh1lH6P-yex3efykzAft_O4SX2P_v1PvdZRplm8fULcBtQPttN5-jda-8dBrjdfTo891-K3u_VJ-Mx-rLmHPawRUj762mk_Nt-pOaz7sVGnuH55rD_S6jpOav_x31Hy70Hrs8DvTv4NAAD__3wMuEU, https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO0Z08esFiyiKD5ALWFCUu4n8F4y71Tl95NGoV7OY2fKk732PwqnQ0objKDl4AOXQGpF9vggtkxEp2yQUOvDeOGkV8BxU541FTuHinJSyM9bwsa7zQHMsU1jWStv0ZFoeieobrjO_BZecA--sAYPaRI8-QSSdbTfqhCrzErrOWxovWkSHWZjRgYgKlbAyWZ2sQkOGaXl2vL3If9b04Z47UGP2ArzMwqBJIkbshO5SgtFQHjHzKdxa23amfjDoGfSPx-OFYtBPdI0Tg36r5R7xyaA_dqo7g57PsSy_Cct2_lZg6meO93_rbT0WpuX13elkqF98pn2PVxrac6PQalz2iK2sS5xe0bvwV-byGj7t4ZWQytaGRvM2xUY14DpvEzXKw0fG22dv63BO-sa5j6X8PWj4qvA9wP8AAAD__-FcvN8, https://email.mgt.uber.com/c/eJyUkU1u3DAMhU8j7RTI-rUXWhRF5wC9gCGR1IwK2XJtOYP09MUEwayySLZ84Hsf-aAWWvt8ngXDqJT24KzAEQdhZLIioUtCg1fjaL10WnEMehqtA05h8F5KOVlned7bMtMSSw1r22mrb8zIM9H-Am3htxCtx5RJTtZknb0cFGSTFKUB0KCUvIRpGh3lwYjoAYXNXomoQQsnkzPJabBkmZGPjJen85-WPthxUjrjKNQoUViwScQIkzBTSipbwgzIa7j1vh1M_2DqwtTlfr8_rZi6VLrGytSFL7GsvwnK9vhNYPonxtd_7dbOlRl5fSd4bOhffKHjiFea-9tGoe9xPSL00tZYn9I73leO43v4NIfvBFS2Pndatho77QHaslXqhPOHxvtnszafB-3fKPdcy9-T5q8Cvwb1PwAA__8qFLbl, https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO1qYP8OCRRTFB8gFrKIoT5PYxrHxtCanjzwazWoWnS1PfO-rKpwLrW08z5KjV0r36KzIPnfCyGRFyi4Jjb3y3vbSacVz1MFbh5xi1_dSymCd5dNel5EWKHNc607b_MaMPBPtN6wLv8fJoMwdpaAS9eCTSaEzWQJAkMk44iWG4B1NnRHQYxZ26pUAjVo4mZxJTqMly4y8Om6f5F81fbjnoPSUvVBeZmHRJgGAQZiQkpos5Qkzn-O9te1g-htTA1PD4_G4TYCUav194ZgaLjJTA1-grD8Jy3atJzL9PcPr33qv58qMfHmXuD7oH3yh44AXGtvbRrHtsB6ArdQV5s_o3fCZ-fgev-zhOyGVrY2Nlm2GRnvEumwzNcrjR8bbV291PA_a_-O-51r-nDQ-K_wa1b8AAAD__-pwuEs, https://email.mgt.uber.com/c/eJyUkcFu3CAQhp8GbqxYMBgfOFRV9wH6AtYwjHepDLgYZ5U-feUoyimH5Movvv-bGVwTlT4fR4reKaVHtEZEF69ikMGIEG0QGkflnBml1YpHrydnLHLy13GUUk7GGr60mmfKkFZfaqNtfWWDPAK1C9bMH_4qZdDS2gjOONAOhtEaAFRy0gQOefLT5Cwt10HAiFGYZVQCNGphZbBDsBoNGTbIs-PyQf5Tw7t7nJReohPKySgMmiAAcBLDFIJaDMUFI1_9o_dtZ_oHUzembs_n85LK3uHeIJ88pm4nmqkbz5DKb8K0nfvxTP-M8PKvPupR2CDvbxbnB_2LZ9p3uNPcXzfyvUHZAXuqBdaP6E3xKwPy5j_t4Y2Q0tbnTnlboVPzWPO2Uqc4v2e8f_ZW52On9o0DHyX9PWj-qvCLV_8DAAD__y9wt-g, https://email.mgt.uber.com/c/eJyUkc2O3CAQhJ_G3Bhh_jlwiKLsA0TK2YKmvUNkGwfDjiZPH3m1mtMcJtcqddXX3bBk3NrUe07eci4MaEWTTSOVLCoak45UgOHWKsO04CR54azSQNCPxjDGnNKKzLWsE64hL34rFfflPkjWI9YLlJVcPSQYrbQWxDxaLdGNmhk1quS0lEpKkr1zVuM8ShoMJKpmw2kQIKhmUcuoBShUg2Rnx-WR_LvEL_bkuJiTpdyyRBWoSEMAR6WLkc8K0wyJLP7a2n4M4tvA3wb-drvdLvfSW494pp2iZL8iVrKGvP1EyPt5HT-I7yl8_C3X0rdBsvdPhnNA_CArHkd4x6ndd_Sthu0I0HLZwvKwPgFfWY9U_7SHVATMe5sarvsSGlYPZd0XbJimL4-0Z1qZ-oH1P97bt_yn4_Qq8Ifn_wIAAP__Yua2XQ, https://email.mgt.uber.com/c/eJyUkUGO3CAQRU9jdoxocAFesIiizAFyAQuKYprIBgfDSJPTRz0adTa96Gz_V_3_qgq3TKWvY-TorJTKoAYebbzwWQTgIerAFRppLRihlWTRqcWCRkbuYowQYgENLLW6r7T7vLlSGx3bxzSLEai9YN3Z1Zlkg1SCAJIWKJO1Pi5J-CSjUQCGZbcsVlO6zNwbjBySkdwrVFyLoOegFQLBNItbx8s9-VcNX-xxkSpFy6UVkQNC4N7jwuclBJmAYsLINnft_Tgn9W2Sr5N89Yh1lH6P-yex3efykzAft_O4SX2P_v1PvdZRplm8fULcBtQPttN5-jda-8dBrjdfTo891-K3u_VJ-Mx-rLmHPawRUj762mk_Nt-pOaz7sVGnuH55rD_S6jpOav_x31Hy70Hrs8DvTv4NAAD__3wMuEU, https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO0Z08esFiyiKD5ALWFCUu4n8F4y71Tl95NGoV7OY2fKk732PwqnQ0objKDl4AOXQGpF9vggtkxEp2yQUOvDeOGkV8BxU541FTuHinJSyM9bwsa7zQHMsU1jWStv0ZFoeieobrjO_BZecA--sAYPaRI8-QSSdbTfqhCrzErrOWxovWkSHWZjRgYgKlbAyWZ2sQkOGaXl2vL3If9b04Z47UGP2ArzMwqBJIkbshO5SgtFQHjHzKdxa23amfjDoGfSPx-OFYtBPdI0Tg36r5R7xyaA_dqo7g57PsSy_Cct2_lZg6meO93_rbT0WpuX13elkqF98pn2PVxrac6PQalz2iK2sS5xe0bvwV-byGj7t4ZWQytaGRvM2xUY14DpvEzXKw0fG22dv63BO-sa5j6X8PWj4qvA9wP8AAAD__-FcvN8, https://email.mgt.uber.com/c/eJyUkU1u3DAMhU8j7RTI-rUXWhRF5wC9gCGR1IwK2XJtOYP09MUEwayySLZ84Hsf-aAWWvt8ngXDqJT24KzAEQdhZLIioUtCg1fjaL10WnEMehqtA05h8F5KOVlned7bMtMSSw1r22mrb8zIM9H-Am3htxCtx5RJTtZknb0cFGSTFKUB0KCUvIRpGh3lwYjoAYXNXomoQQsnkzPJabBkmZGPjJen85-WPthxUjrjKNQoUViwScQIkzBTSipbwgzIa7j1vh1M_2DqwtTlfr8_rZi6VLrGytSFL7GsvwnK9vhNYPonxtd_7dbOlRl5fSd4bOhffKHjiFea-9tGoe9xPSL00tZYn9I73leO43v4NIfvBFS2Pndatho77QHaslXqhPOHxvtnszafB-3fKPdcy9-T5q8Cvwb1PwAA__8qFLbl, https://email.mgt.uber.com/c/eJyUkU2O3CAQhU8DO1qYP8OCRRTFB8gFrKIoT5PYxrHxtCanjzwazWoWnS1PfO-rKpwLrW08z5KjV0r36KzIPnfCyGRFyi4Jjb3y3vbSacVz1MFbh5xi1_dSymCd5dNel5EWKHNc607b_MaMPBPtN6wLv8fJoMwdpaAS9eCTSaEzWQJAkMk44iWG4B1NnRHQYxZ26pUAjVo4mZxJTqMly4y8Om6f5F81fbjnoPSUvVBeZmHRJgGAQZiQkpos5Qkzn-O9te1g-htTA1PD4_G4TYCUav194ZgaLjJTA1-grD8Jy3atJzL9PcPr33qv58qMfHmXuD7oH3yh44AXGtvbRrHtsB6ArdQV5s_o3fCZ-fgev-zhOyGVrY2Nlm2GRnvEumwzNcrjR8bbV291PA_a_-O-51r-nDQ-K_wa1b8AAAD__-pwuEs, https://email.mgt.uber.com/c/eJyUkcFu3CAQhp8GbqxYMBgfOFRV9wH6AtYwjHepDLgYZ5U-feUoyimH5Movvv-bGVwTlT4fR4reKaVHtEZEF69ikMGIEG0QGkflnBml1YpHrydnLHLy13GUUk7GGr60mmfKkFZfaqNtfWWDPAK1C9bMH_4qZdDS2gjOONAOhtEaAFRy0gQOefLT5Cwt10HAiFGYZVQCNGphZbBDsBoNGTbIs-PyQf5Tw7t7nJReohPKySgMmiAAcBLDFIJaDMUFI1_9o_dtZ_oHUzembs_n85LK3uHeIJ88pm4nmqkbz5DKb8K0nfvxTP-M8PKvPupR2CDvbxbnB_2LZ9p3uNPcXzfyvUHZAXuqBdaP6E3xKwPy5j_t4Y2Q0tbnTnlboVPzWPO2Uqc4v2e8f_ZW52On9o0DHyX9PWj-qvCLV_8DAAD__y9wt-g, https://email.mgt.uber.com/c/eJyUkc2O3CAQhJ_G3Bhh_jlwiKLsA0TK2YKmvUNkGwfDjiZPH3m1mtMcJtcqddXX3bBk3NrUe07eci4MaEWTTSOVLCoak45UgOHWKsO04CR54azSQNCPxjDGnNKKzLWsE64hL34rFfflPkjWI9YLlJVcPSQYrbQWxDxaLdGNmhk1quS0lEpKkr1zVuM8ShoMJKpmw2kQIKhmUcuoBShUg2Rnx-WR_LvEL_bkuJiTpdyyRBWoSEMAR6WLkc8K0wyJLP7a2n4M4tvA3wb-drvdLvfSW494pp2iZL8iVrKGvP1EyPt5HT-I7yl8_C3X0rdBsvdPhnNA_CArHkd4x6ndd_Sthu0I0HLZwvKwPgFfWY9U_7SHVATMe5sarvsSGlYPZd0XbJimL4-0Z1qZ-oH1P97bt_yn4_Qq8Ifn_wIAAP__Yua2XQ",
+  "score_cyber": 10.0,
+  "analysis_id": 203,
+  "analyzed_at": "2026-02-02T23:53:30.492570"
+}
