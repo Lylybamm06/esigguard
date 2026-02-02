@@ -141,7 +141,7 @@ Domaine : {domain}
         }
 
     except Exception as e:
-        print(f"⚠  Erreur IA: {e}")
+	        print(f"⚠  Erreur IA: {e}")
         return {"status": "unknown", "reason": "Erreur IA"}
 
 
