@@ -5,8 +5,9 @@ import requests
 from datetime import datetime, UTC
 from pathlib import Path
 from groq import Groq
+from groq import RateLimitError  # ← Import spécifique pour catcher l'erreur 429
 
-print("🔥🔥🔥 LIEN.PY CHARGÉ (VERSION FUSIONNÉE AVEC DEBUG) 🔥🔥🔥")
+print("🔥🔥🔥 LIEN.PY CHARGÉ (VERSION OPTIMISÉE - MAX 8 LIENS GROQ) 🔥🔥🔥")
 
 # ---------------------------------------------------------
 # Initialisation du client Groq
@@ -114,11 +115,12 @@ def get_domain_age(domain):
     return {"status": "unknown"}
 
 # ---------------------------------------------------------
-# Analyse IA du lien via Groq
+# Analyse IA du lien via Groq (avec gestion rate limit)
 # ---------------------------------------------------------
 
 def ai_analyze_link(display_text, raw_url, domain):
     print(f"\n🔍 [AI_ANALYSIS] Analyse de : {domain}")
+    
     prompt = f"""
     Analyse ce lien :
 
@@ -136,29 +138,40 @@ def ai_analyze_link(display_text, raw_url, domain):
     }}
     """
 
-    response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=150
-    )
-
-    raw = response.choices[0].message.content.strip()
-    raw = raw.replace("```json", "").replace("```", "").strip()
-
     try:
+        response = client.chat.completions.create(
+            model="llama-3.3-70b-versatile",
+            messages=[{"role": "user", "content": prompt}],
+            max_tokens=150
+        )
+
+        raw = response.choices[0].message.content.strip()
+        raw = raw.replace("```json", "").replace("```", "").strip()
+
         result = json.loads(raw)
         print(f"✅ [AI_ANALYSIS] Résultat : {result}")
         return result
-    except Exception as e:
-        print(f"❌ [AI_ANALYSIS] Erreur parsing JSON : {str(e)}")
-        print(f"   Réponse brute : {raw}")
+    
+    except RateLimitError as e:
+        # Gestion spécifique du rate limit Groq (429)
+        print(f"⚠️ [AI_ANALYSIS] Rate limit Groq atteint (429)")
+        print(f"   Détails : {str(e)}")
         return {
             "status": "unknown",
-            "reason": f"Invalid JSON returned by Groq: {raw}"
+            "reason": "Analyse IA non disponible (quota API Groq épuisé)"
+        }
+        
+    except Exception as e:
+        # Autres erreurs (parsing JSON, réseau, etc.)
+        error_msg = str(e)
+        print(f"❌ [AI_ANALYSIS] Erreur : {error_msg}")
+        return {
+            "status": "unknown",
+            "reason": f"Erreur lors de l'analyse : {error_msg}"
         }
 
 # ---------------------------------------------------------
-# Calcul du score pour un lien
+# Calcul du score pour un lien (NOUVEAU : sur 100)
 # ---------------------------------------------------------
 
 def calculate_link_score(reputation, domain_age, ai_analysis):
@@ -166,7 +179,7 @@ def calculate_link_score(reputation, domain_age, ai_analysis):
     print(f"🎯 DÉBUT CALCUL SCORE")
     print(f"{'='*60}")
     
-    MAX_SCORE = 130
+    MAX_SCORE = 100  # ← Changé de 130 à 100
     score = 0
     
     print(f"\n📥 Données reçues :")
@@ -175,19 +188,19 @@ def calculate_link_score(reputation, domain_age, ai_analysis):
     print(f"   ai_analysis : {ai_analysis}")
     print(f"\n💯 Score initial : {score}")
 
-    # Réputation
+    # Réputation (40 points)
     print(f"\n🔍 Test 1 : Réputation")
     rep_status = reputation.get("status")
     print(f"   reputation.get('status') = '{rep_status}'")
     print(f"   Test : '{rep_status}' == 'not reliable' ? {rep_status == 'not reliable'}")
     
     if reputation.get("status") == "not reliable":
-        score += 50
-        print(f"   ✅ AJOUT +50 → score = {score}")
+        score += 40  # ← Changé de 50 à 40
+        print(f"   ✅ AJOUT +40 → score = {score}")
     else:
         print(f"   ❌ Pas de pénalité")
 
-    # Âge du domaine
+    # Âge du domaine (40 points)
     print(f"\n🔍 Test 2 : Âge du domaine")
     age_status = domain_age.get("status")
     print(f"   domain_age.get('status') = '{age_status}'")
@@ -196,27 +209,29 @@ def calculate_link_score(reputation, domain_age, ai_analysis):
     print(f"   Test unknown : '{age_status}' == 'unknown' ? {age_status == 'unknown'}")
     
     if age_status == "suspect":
-        score += 50
-        print(f"   ✅ SUSPECT → AJOUT +50 → score = {score}")
+        score += 40  # ← Changé de 50 à 40
+        print(f"   ✅ SUSPECT → AJOUT +40 → score = {score}")
     elif age_status == "unknown":
-        score += 50
-        print(f"   ✅ UNKNOWN → AJOUT +50 → score = {score}")
+        score += 40  # ← Changé de 50 à 40
+        print(f"   ✅ UNKNOWN → AJOUT +40 → score = {score}")
     else:
         print(f"   ❌ BON ou autre → Pas de pénalité")
 
-    # Analyse IA
+    # Analyse IA (20 points)
     print(f"\n🔍 Test 3 : Analyse IA")
     ai_status = ai_analysis.get("status")
     print(f"   ai_analysis.get('status') = '{ai_status}'")
-    print(f"   Test : '{ai_status}' == 'suspect' ? {ai_status == 'suspect'}")
     
-    if ai_analysis.get("status") == "suspect":
-        score += 30
-        print(f"   ✅ AJOUT +30 → score = {score}")
+    if ai_status == "skipped":
+        print(f"   ⏭️ SKIPPED → Pas d'analyse IA (trop de liens)")
+    elif ai_status == "suspect":
+        score += 20  # ← Changé de 30 à 20
+        print(f"   ✅ SUSPECT → AJOUT +20 → score = {score}")
     else:
         print(f"   ❌ Pas de pénalité")
 
-    percentage = round((score / MAX_SCORE) * 100, 2)
+    # Percentage = score directement (car MAX = 100)
+    percentage = score
     
     print(f"\n{'='*60}")
     print(f"✅ SCORE FINAL = {score} / {MAX_SCORE} ({percentage}%)")
@@ -234,15 +249,26 @@ def check_links(parsed_email):
     print(f"{'#'*60}")
 
     links = parsed_email["email_data"].get("urls", [])
-    print(f"\n📊 Nombre de liens trouvés : {len(links)}")
+    nb_links = len(links)
+    
+    print(f"\n📊 Nombre de liens trouvés : {nb_links}")
     print(f"   Liens : {links}")
+    
+    # 🆕 Désactiver Groq si > 8 liens (pour économiser le quota API)
+    use_groq = nb_links <= 8
+    
+    if not use_groq:
+        print(f"\n⚠️ GROQ DÉSACTIVÉ : {nb_links} liens détectés (> 8)")
+        print(f"   → Analyse basée uniquement sur VirusTotal + WHOIS\n")
+    else:
+        print(f"\n✅ GROQ ACTIVÉ : {nb_links} liens (≤ 8)\n")
     
     results = []
     total_score = 0
 
     for i, raw_url in enumerate(links, 1):
         print(f"\n{'─'*60}")
-        print(f"🔗 LIEN {i}/{len(links)} : {raw_url}")
+        print(f"🔗 LIEN {i}/{nb_links} : {raw_url}")
         print(f"{'─'*60}")
         
         raw_url = clean_url(raw_url)
@@ -252,10 +278,19 @@ def check_links(parsed_email):
         print(f"   URL nettoyée : {raw_url}")
         print(f"   Domaine extrait : {domain}")
 
-        # Collecte des 3 analyses
+        # Collecte des analyses
         reputation = check_domain_reputation(domain)
         age_info = get_domain_age(domain)
-        ai_report = ai_analyze_link(display_text, raw_url, domain)
+        
+        # 🆕 Analyse IA uniquement si ≤ 8 liens
+        if use_groq:
+            ai_report = ai_analyze_link(display_text, raw_url, domain)
+        else:
+            ai_report = {
+                "status": "skipped",
+                "reason": f"Analyse IA désactivée ({nb_links} liens > 8)"
+            }
+            print(f"\n⏭️ [AI_ANALYSIS] Skippée (trop de liens)")
 
         # Calcul du score
         link_score, link_percentage = calculate_link_score(reputation, age_info, ai_report)
@@ -277,9 +312,9 @@ def check_links(parsed_email):
             "is_suspicious": link_score > 0
         })
 
-    nb_links = len(links)
+    # nb_links déjà défini au début de la fonction
     average_score = round(total_score / nb_links, 2) if nb_links > 0 else 0
-    global_percentage = round((average_score / 130) * 100, 2) if nb_links > 0 else 0
+    global_percentage = average_score  # Simplifié car MAX = 100
 
     risk_level = (
         "high" if global_percentage >= 75 else
@@ -324,21 +359,41 @@ app = Flask(__name__)
 def analyze_links():
     print(f"\n🌐 ===== NOUVELLE REQUÊTE REÇUE =====\n")
 
-    parsed = request.get_json(force=True)
-    result = check_links(parsed)
+    try:
+        parsed = request.get_json(force=True)
+        result = check_links(parsed)
 
-    filename = LINK_STORAGE / f"lien_{datetime.now().strftime('%Y%m%d_%H%M%S_%f')}.json"
+        filename = LINK_STORAGE / f"lien_{datetime.now().strftime('%Y%m%d_%H%M%S_%f')}.json"
 
-    with open(filename, "w", encoding="utf-8") as f:
-        json.dump({
-            "parsed_email": parsed,
-            "links_analysis": result,
-            "timestamp": datetime.now().isoformat()
-        }, f, indent=2, ensure_ascii=False)
+        with open(filename, "w", encoding="utf-8") as f:
+            json.dump({
+                "parsed_email": parsed,
+                "links_analysis": result,
+                "timestamp": datetime.now().isoformat()
+            }, f, indent=2, ensure_ascii=False)
 
-    print(f"💾 [LIEN] Analyse sauvegardée dans : {filename}\n")
+        print(f"💾 [LIEN] Analyse sauvegardée dans : {filename}\n")
 
-    return jsonify(result)
+        return jsonify(result)
+    
+    except Exception as e:
+        # Gestion d'erreur globale : ne fait pas crasher le service
+        error_msg = str(e)
+        print(f"\n❌ [ERROR] Erreur critique dans analyze_links :")
+        print(f"   {error_msg}\n")
+        
+        # Retourner une réponse d'erreur au lieu de crasher
+        return jsonify({
+            "error": True,
+            "message": "Erreur lors de l'analyse des liens",
+            "details": error_msg,
+            "links_analysis": [],
+            "nb_links": 0,
+            "score": 0,
+            "percentage": 0,
+            "risk_level": "unknown",
+            "explanation": "Erreur lors de l'analyse"
+        }), 500
 
 # ---------------------------------------------------------
 # Lancement du microservice
@@ -346,5 +401,8 @@ def analyze_links():
 
 if __name__ == "__main__":
     print("\n🚀 Démarrage du serveur Flask sur http://0.0.0.0:5105")
-    print("📝 Mode DEBUG activé - tous les détails seront affichés\n")
+    print("📝 Mode DEBUG activé - tous les détails seront affichés")
+    print("✅ Gestion rate limit Groq activée")
+    print("✅ Scoring sur 100 (intuitif)")
+    print("⚡ Groq désactivé si > 8 liens (économie de quota)\n")
     app.run(host="0.0.0.0", port=5105)
