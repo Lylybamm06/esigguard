@@ -6,7 +6,7 @@ from datetime import datetime, UTC
 from pathlib import Path
 from groq import Groq
 
-print("🔥🔥🔥 LIEN.PY CHARGÉ (VERSION FUSIONNÉE) 🔥🔥🔥")
+print("🔥🔥🔥 LIEN.PY CHARGÉ (VERSION FUSIONNÉE AVEC DEBUG) 🔥🔥🔥")
 
 # ---------------------------------------------------------
 # Initialisation du client Groq
@@ -38,6 +38,7 @@ def clean_url(url):
 # ---------------------------------------------------------
 
 def check_domain_reputation(domain):
+    print(f"\n🔍 [REPUTATION] Vérification de : {domain}")
     try:
         api_key = os.getenv("VT_API_KEY")
         url = f"https://www.virustotal.com/api/v3/domains/{domain}"
@@ -50,15 +51,19 @@ def check_domain_reputation(domain):
             malicious = data.get("data", {}).get("attributes", {}).get("last_analysis_stats", {}).get("malicious", 0)
             status = "reliable" if malicious == 0 else "not reliable"
 
-            return {
+            result = {
                 "domain": domain,
                 "status": status,
                 "malicious_reports": malicious
             }
+            print(f"✅ [REPUTATION] Résultat : {result}")
+            return result
 
     except Exception as e:
+        print(f"❌ [REPUTATION] Erreur : {str(e)}")
         return {"domain": domain, "status": "unknown", "error": str(e)}
 
+    print(f"⚠️ [REPUTATION] Statut unknown par défaut")
     return {"domain": domain, "status": "unknown"}
 
 # ---------------------------------------------------------
@@ -66,6 +71,7 @@ def check_domain_reputation(domain):
 # ---------------------------------------------------------
 
 def get_domain_age(domain):
+    print(f"\n🔍 [DOMAIN_AGE] Vérification de : {domain}")
     try:
         api_key = os.getenv("WHOIS_API_KEY")
         
@@ -92,14 +98,19 @@ def get_domain_age(domain):
 
                 status = "bon" if age_years >= 1 else "suspect"
 
-                return {
+                result = {
                     "created": created_date,
                     "age_years": round(age_years, 2),
                     "status": status
                 }
-    except Exception:
-        pass
+                print(f"✅ [DOMAIN_AGE] Résultat : {result}")
+                return result
+        else:
+            print(f"⚠️ [DOMAIN_AGE] Pas de clé API WHOIS")
+    except Exception as e:
+        print(f"❌ [DOMAIN_AGE] Erreur : {str(e)}")
     
+    print(f"⚠️ [DOMAIN_AGE] Statut unknown par défaut")
     return {"status": "unknown"}
 
 # ---------------------------------------------------------
@@ -107,6 +118,7 @@ def get_domain_age(domain):
 # ---------------------------------------------------------
 
 def ai_analyze_link(display_text, raw_url, domain):
+    print(f"\n🔍 [AI_ANALYSIS] Analyse de : {domain}")
     prompt = f"""
     Analyse ce lien :
 
@@ -134,8 +146,12 @@ def ai_analyze_link(display_text, raw_url, domain):
     raw = raw.replace("```json", "").replace("```", "").strip()
 
     try:
-        return json.loads(raw)
-    except Exception:
+        result = json.loads(raw)
+        print(f"✅ [AI_ANALYSIS] Résultat : {result}")
+        return result
+    except Exception as e:
+        print(f"❌ [AI_ANALYSIS] Erreur parsing JSON : {str(e)}")
+        print(f"   Réponse brute : {raw}")
         return {
             "status": "unknown",
             "reason": f"Invalid JSON returned by Groq: {raw}"
@@ -146,22 +162,65 @@ def ai_analyze_link(display_text, raw_url, domain):
 # ---------------------------------------------------------
 
 def calculate_link_score(reputation, domain_age, ai_analysis):
+    print(f"\n{'='*60}")
+    print(f"🎯 DÉBUT CALCUL SCORE")
+    print(f"{'='*60}")
+    
     MAX_SCORE = 130
     score = 0
+    
+    print(f"\n📥 Données reçues :")
+    print(f"   reputation  : {reputation}")
+    print(f"   domain_age  : {domain_age}")
+    print(f"   ai_analysis : {ai_analysis}")
+    print(f"\n💯 Score initial : {score}")
 
     # Réputation
+    print(f"\n🔍 Test 1 : Réputation")
+    rep_status = reputation.get("status")
+    print(f"   reputation.get('status') = '{rep_status}'")
+    print(f"   Test : '{rep_status}' == 'not reliable' ? {rep_status == 'not reliable'}")
+    
     if reputation.get("status") == "not reliable":
         score += 50
+        print(f"   ✅ AJOUT +50 → score = {score}")
+    else:
+        print(f"   ❌ Pas de pénalité")
 
     # Âge du domaine
-    if domain_age.get("status") == "suspect":
+    print(f"\n🔍 Test 2 : Âge du domaine")
+    age_status = domain_age.get("status")
+    print(f"   domain_age.get('status') = '{age_status}'")
+    print(f"   Type : {type(age_status)}")
+    print(f"   Test suspect : '{age_status}' == 'suspect' ? {age_status == 'suspect'}")
+    print(f"   Test unknown : '{age_status}' == 'unknown' ? {age_status == 'unknown'}")
+    
+    if age_status == "suspect":
         score += 50
+        print(f"   ✅ SUSPECT → AJOUT +50 → score = {score}")
+    elif age_status == "unknown":
+        score += 50
+        print(f"   ✅ UNKNOWN → AJOUT +50 → score = {score}")
+    else:
+        print(f"   ❌ BON ou autre → Pas de pénalité")
 
     # Analyse IA
+    print(f"\n🔍 Test 3 : Analyse IA")
+    ai_status = ai_analysis.get("status")
+    print(f"   ai_analysis.get('status') = '{ai_status}'")
+    print(f"   Test : '{ai_status}' == 'suspect' ? {ai_status == 'suspect'}")
+    
     if ai_analysis.get("status") == "suspect":
         score += 30
+        print(f"   ✅ AJOUT +30 → score = {score}")
+    else:
+        print(f"   ❌ Pas de pénalité")
 
     percentage = round((score / MAX_SCORE) * 100, 2)
+    
+    print(f"\n{'='*60}")
+    print(f"✅ SCORE FINAL = {score} / {MAX_SCORE} ({percentage}%)")
+    print(f"{'='*60}\n")
 
     return score, percentage
 
@@ -170,22 +229,42 @@ def calculate_link_score(reputation, domain_age, ai_analysis):
 # ---------------------------------------------------------
 
 def check_links(parsed_email):
+    print(f"\n{'#'*60}")
+    print(f"🚀 DÉBUT ANALYSE DES LIENS")
+    print(f"{'#'*60}")
 
     links = parsed_email["email_data"].get("urls", [])
+    print(f"\n📊 Nombre de liens trouvés : {len(links)}")
+    print(f"   Liens : {links}")
+    
     results = []
     total_score = 0
 
-    for raw_url in links:
+    for i, raw_url in enumerate(links, 1):
+        print(f"\n{'─'*60}")
+        print(f"🔗 LIEN {i}/{len(links)} : {raw_url}")
+        print(f"{'─'*60}")
+        
         raw_url = clean_url(raw_url)
         display_text = raw_url
         domain = raw_url.replace("http://", "").replace("https://", "").split("/")[0]
+        
+        print(f"   URL nettoyée : {raw_url}")
+        print(f"   Domaine extrait : {domain}")
 
+        # Collecte des 3 analyses
         reputation = check_domain_reputation(domain)
         age_info = get_domain_age(domain)
         ai_report = ai_analyze_link(display_text, raw_url, domain)
 
+        # Calcul du score
         link_score, link_percentage = calculate_link_score(reputation, age_info, ai_report)
         total_score += link_score
+        
+        print(f"\n📊 Résultat pour ce lien :")
+        print(f"   link_score = {link_score}")
+        print(f"   link_percentage = {link_percentage}")
+        print(f"   is_suspicious = {link_score > 0}")
 
         results.append({
             "url": raw_url,
@@ -215,6 +294,17 @@ def check_links(parsed_email):
         f"{', '.join(suspect_links) if suspect_links else 'aucun'}"
     )
 
+    print(f"\n{'#'*60}")
+    print(f"📊 RÉSUMÉ GLOBAL")
+    print(f"{'#'*60}")
+    print(f"   Total liens : {nb_links}")
+    print(f"   Total score : {total_score}")
+    print(f"   Score moyen : {average_score}")
+    print(f"   Pourcentage : {global_percentage}%")
+    print(f"   Niveau risque : {risk_level}")
+    print(f"   Liens suspects : {len(suspect_links)}")
+    print(f"{'#'*60}\n")
+
     return {
         "links_analysis": results,
         "nb_links": nb_links,
@@ -232,6 +322,7 @@ app = Flask(__name__)
 
 @app.post("/lien")
 def analyze_links():
+    print(f"\n🌐 ===== NOUVELLE REQUÊTE REÇUE =====\n")
 
     parsed = request.get_json(force=True)
     result = check_links(parsed)
@@ -245,7 +336,7 @@ def analyze_links():
             "timestamp": datetime.now().isoformat()
         }, f, indent=2, ensure_ascii=False)
 
-    print(f"[LIEN] Analyse sauvegardée dans : {filename}")
+    print(f"💾 [LIEN] Analyse sauvegardée dans : {filename}\n")
 
     return jsonify(result)
 
@@ -254,4 +345,6 @@ def analyze_links():
 # ---------------------------------------------------------
 
 if __name__ == "__main__":
+    print("\n🚀 Démarrage du serveur Flask sur http://0.0.0.0:5105")
+    print("📝 Mode DEBUG activé - tous les détails seront affichés\n")
     app.run(host="0.0.0.0", port=5105)
