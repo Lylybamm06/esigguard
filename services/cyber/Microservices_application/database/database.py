@@ -34,16 +34,51 @@ class Database:
         return rows
 
     # ---------------------------------------------------------
-    # Analyse complète
+    # Analyse complète (🔥 corrigée avec attachments + urls)
     # ---------------------------------------------------------
     def get_complete_analysis(self, analysis_id):
         conn = self.get_connection()
         cursor = conn.cursor(dictionary=True)
+
+        # 1) Analyse principale
         cursor.execute("""
-            SELECT * FROM analyses
+            SELECT *
+            FROM analyses
             WHERE id = %s
         """, (analysis_id,))
         row = cursor.fetchone()
+
+        if not row:
+            cursor.close()
+            conn.close()
+            return None
+
+        # 2) Pièces jointes
+        cursor.execute("""
+            SELECT
+                filename,
+                file_extension AS extension,
+                mime_type,
+                file_size AS size,
+                is_dangerous
+            FROM attachments
+            WHERE analysis_id = %s
+        """, (analysis_id,))
+        attachments = cursor.fetchall()
+        row["attachments"] = attachments
+
+        # 3) URLs
+        cursor.execute("""
+            SELECT
+                url,
+                domain,
+                is_suspicious
+            FROM urls
+            WHERE analysis_id = %s
+        """, (analysis_id,))
+        urls = cursor.fetchall()
+        row["urls"] = urls
+
         cursor.close()
         conn.close()
         return row
@@ -172,7 +207,7 @@ class Database:
         return rows
 
     # ---------------------------------------------------------
-    # 🔥 NOUVEAU : Mise à jour is_suspicious pour une URL
+    # Mise à jour is_suspicious pour une URL
     # ---------------------------------------------------------
     def update_url_suspicious(self, analysis_id, url, is_suspicious):
         conn = self.get_connection()
@@ -220,6 +255,25 @@ class Database:
         """, (explanation, score, analysis_id))
 
         conn.commit()
+        cursor.close()
+        conn.close()
+
+    # ---------------------------------------------------------
+    # Mise à jour pays d'origine IP
+    # ---------------------------------------------------------
+    def update_sender_country(self, analysis_id, ip, country):
+        conn = self.get_connection()
+        cursor = conn.cursor()
+
+        query = """
+           UPDATE analyses
+           SET sender_country = %s
+           WHERE id = %s
+        """
+
+        cursor.execute(query, (country, analysis_id))
+        conn.commit()
+
         cursor.close()
         conn.close()
 

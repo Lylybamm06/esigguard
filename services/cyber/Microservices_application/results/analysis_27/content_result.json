@@ -1,0 +1,27 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "corps vide, pas d'incohérence",
+      "status": "ok"
+    },
+    "global_verdict": "coherent",
+    "language_quality": {
+      "reason": "vide, pas d'erreur",
+      "status": "ok"
+    },
+    "phishing_indicators": {
+      "reason": "aucun indicateur",
+      "status": "ok"
+    }
+  },
+  "analysis_id": 27,
+  "explanation": "Content: Aucun indicateur suspect",
+  "keywords": {
+    "count": 0,
+    "keyword_score": 0,
+    "keywords_found": []
+  },
+  "score": 0,
+  "service": "content",
+  "subject": ""
+}

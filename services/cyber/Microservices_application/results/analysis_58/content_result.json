@@ -1,0 +1,29 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "correspond à une alerte emploi",
+      "status": "ok"
+    },
+    "global_verdict": "coherent",
+    "language_quality": {
+      "reason": "grammaire correcte",
+      "status": "ok"
+    },
+    "phishing_indicators": {
+      "reason": "pas d'urgence",
+      "status": "ok"
+    }
+  },
+  "analysis_id": 58,
+  "explanation": "Content: Mots-cles: sécurité",
+  "keywords": {
+    "count": 1,
+    "keyword_score": 15,
+    "keywords_found": [
+      "sécurité"
+    ]
+  },
+  "score": 10,
+  "service": "content",
+  "subject": "\t\t\n24 nouveaux emplois stage cybersécurité\n\n\n\nCes annonces correspondent à l'alerte Emploi que vous avez enregistrée¹\n\n\n \n\n\nStage de spécialiste de la sécurité\n\n\nAmazon France Logistique SAS - A41\t3.5\t\n\nBoves (80)\nLyon, Brétigny-sur-Orge, Boves, Saran, Augny, Lauwin-Planque. Amazon Operations est au cœur de l'expérience client Amazon. A day in the life.\nPublié à l'instant\n\n\nSTAGE – Animation sécurité H/F\n\n\nDESTAMPES EMBALLAGES\n\nÉtagnac (16)\n\n\tCandidature simplifiée\n\nMise à jour de SEIRICH. Réali..."
+}

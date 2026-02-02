@@ -1,0 +1,115 @@
+{
+  "analysis_id": 58,
+  "score_cyber": 12.0,
+  "explanation_cyber": "SMTP : IP source non identifiee | Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | AgeDomaine: inconnu | Aucune pièce jointe | Content: Mots-cles: sécurité",
+  "details": {
+    "smtp": {
+      "analysis_id": 58,
+      "explanation": "SMTP : IP source non identifiee",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Unknown",
+        "country": "Unknown",
+        "ip": null,
+        "region": "Unknown"
+      },
+      "ip_reputation": {
+        "ip": null,
+        "malicious_reports": 0,
+        "status": "unknown"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": null,
+      "score": 30,
+      "service": "smtp",
+      "timestamp_status": "ok"
+    },
+    "auth": {
+      "analysis_id": 58,
+      "display_vs_domain": {
+        "display_name": "Indeed",
+        "from_domain": "indeed.com",
+        "score": 0,
+        "status": "coherent"
+      },
+      "dkim": {
+        "protocol": "DKIM",
+        "score": 10,
+        "status": "unknown"
+      },
+      "dmarc": {
+        "protocol": "DMARC",
+        "score": 10,
+        "status": "unknown"
+      },
+      "domain_age": {
+        "age_years": null,
+        "created_date": null,
+        "domain": "indeed.com",
+        "status": "unknown"
+      },
+      "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | AgeDomaine: inconnu",
+      "from_vs_reply": {
+        "from_domain": "indeed.com",
+        "reply_domain": null,
+        "score": 0,
+        "status": "coherent"
+      },
+      "from_vs_return": {
+        "from_domain": "indeed.com",
+        "return_domain": "indeed.com",
+        "score": 0,
+        "status": "coherent"
+      },
+      "score": 20,
+      "spf": {
+        "protocol": "SPF",
+        "score": 10,
+        "status": "unknown"
+      }
+    },
+    "lien": {
+      "score": 0,
+      "explanation": "Lien: Erreur (HTTPConnectionPool(host='lien', port=5004): Read timed out. (read timeout=30))"
+    },
+    "file": {
+      "analysis_id": 58,
+      "attachment_count": 0,
+      "attachments_analysis": [],
+      "explanation": "Aucune pièce jointe",
+      "score": 0,
+      "service": "file",
+      "suspicious_count": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "correspond à une alerte emploi",
+          "status": "ok"
+        },
+        "global_verdict": "coherent",
+        "language_quality": {
+          "reason": "grammaire correcte",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "pas d'urgence",
+          "status": "ok"
+        }
+      },
+      "analysis_id": 58,
+      "explanation": "Content: Mots-cles: sécurité",
+      "keywords": {
+        "count": 1,
+        "keyword_score": 15,
+        "keywords_found": [
+          "sécurité"
+        ]
+      },
+      "score": 10,
+      "service": "content",
+      "subject": "\t\t\n24 nouveaux emplois stage cybersécurité\n\n\n\nCes annonces correspondent à l'alerte Emploi que vous avez enregistrée¹\n\n\n \n\n\nStage de spécialiste de la sécurité\n\n\nAmazon France Logistique SAS - A41\t3.5\t\n\nBoves (80)\nLyon, Brétigny-sur-Orge, Boves, Saran, Augny, Lauwin-Planque. Amazon Operations est au cœur de l'expérience client Amazon. A day in the life.\nPublié à l'instant\n\n\nSTAGE – Animation sécurité H/F\n\n\nDESTAMPES EMBALLAGES\n\nÉtagnac (16)\n\n\tCandidature simplifiée\n\nMise à jour de SEIRICH. Réali..."
+    }
+  }
+}

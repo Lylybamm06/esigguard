@@ -1,0 +1,104 @@
+{
+  "analysis_id": 164,
+  "explanation": "Lien : 5 URL(s) analysee(s), aucune suspecte",
+  "score": 25.2,
+  "service": "lien",
+  "suspicious_count": 0,
+  "url_count": 5,
+  "urls_analyzed": [
+    {
+      "ai_analysis": {
+        "reason": "Le lien semble être un lien court ou un lien de redirection, ce qui peut être utilisé pour masquer l'URL réelle et potentiellement mener à des sites malveillants ou à des arnaques.",
+        "status": "suspect"
+      },
+      "display_text": "http://z5xx.mjt.lu/lnk/CAAACB-HLWoAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpc5wWC4yjzcuRQxOcvzxYXhsIEgAFr0o/0/4OOFcic1EobjItdYNHsoFg/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=1",
+      "domain": "z5xx.mjt.lu",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "http://z5xx.mjt.lu/lnk/CAAACB-HLWoAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpc5wWC4yjzcuRQxOcvzxYXhsIEgAFr0o/0/4OOFcic1EobjItdYNHsoFg/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=1",
+      "reputation": {
+        "domain": "z5xx.mjt.lu",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 42
+    },
+    {
+      "ai_analysis": {
+        "reason": "Le lien semble être un tracker ou un pixel de suivi, car il pointe vers un fichier GIF et contient des caractères aléatoires dans l'URL, ce qui est souvent utilisé pour suivre les ouvertures de courriels ou les clics sur des liens",
+        "status": "suspect"
+      },
+      "display_text": "http://z5xx.mjt.lu/oo/CAAACB-HLWoAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpc5wWC4yjzcuRQxOcvzxYXhsIEgAFr0o/2460ad9b/e.gif",
+      "domain": "z5xx.mjt.lu",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "http://z5xx.mjt.lu/oo/CAAACB-HLWoAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpc5wWC4yjzcuRQxOcvzxYXhsIEgAFr0o/2460ad9b/e.gif",
+      "reputation": {
+        "domain": "z5xx.mjt.lu",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 42
+    },
+    {
+      "ai_analysis": {
+        "reason": "Le texte affiché correspond à l'URL réelle et le domaine est une organisation officielle (W3C)",
+        "status": "coherent"
+      },
+      "display_text": "http://www.w3.org/1999/xhtml",
+      "domain": "www.w3.org",
+      "domain_age": {
+        "age_years": 31.6,
+        "created": "1994-07-05T22:00:00Z",
+        "status": "bon"
+      },
+      "raw_url": "http://www.w3.org/1999/xhtml",
+      "reputation": {
+        "domain": "www.w3.org",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 0
+    },
+    {
+      "ai_analysis": {
+        "reason": "Le lien semble être un lien court ou un lien de redirection, ce qui peut être utilisé pour masquer l'URL réelle et potentiellement mener à des sites web malveillants ou à des arnaques.",
+        "status": "suspect"
+      },
+      "display_text": "http://z5xx.mjt.lu/lnk/CAAACB-HLWoAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpc5wWC4yjzcuRQxOcvzxYXhsIEgAFr0o/0/4OOFcic1EobjItdYNHsoFg/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=3",
+      "domain": "z5xx.mjt.lu",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "http://z5xx.mjt.lu/lnk/CAAACB-HLWoAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpc5wWC4yjzcuRQxOcvzxYXhsIEgAFr0o/0/4OOFcic1EobjItdYNHsoFg/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=3",
+      "reputation": {
+        "domain": "z5xx.mjt.lu",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 42
+    },
+    {
+      "ai_analysis": {
+        "reason": "Le texte affiché et l'URL réelle correspondent parfaitement, et le domaine est une organisation réputée et fiable (W3C)",
+        "status": "coherent"
+      },
+      "display_text": "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd",
+      "domain": "www.w3.org",
+      "domain_age": {
+        "age_years": 31.6,
+        "created": "1994-07-05T22:00:00Z",
+        "status": "bon"
+      },
+      "raw_url": "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd",
+      "reputation": {
+        "domain": "www.w3.org",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 0
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "analysis_id": 50,
+  "display_vs_domain": {
+    "display_name": "Marketing Team",
+    "from_domain": "bulk-sender.com",
+    "score": 40,
+    "status": "incoherent"
+  },
+  "dkim": {
+    "protocol": "DKIM",
+    "score": 10,
+    "status": "unknown"
+  },
+  "dmarc": {
+    "protocol": "DMARC",
+    "score": 10,
+    "status": "unknown"
+  },
+  "domain_age": {
+    "age_years": null,
+    "created_date": null,
+    "domain": "bulk-sender.com",
+    "status": "unknown"
+  },
+  "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu",
+  "from_vs_reply": {
+    "from_domain": "bulk-sender.com",
+    "reply_domain": null,
+    "score": 0,
+    "status": "coherent"
+  },
+  "from_vs_return": {
+    "from_domain": "bulk-sender.com",
+    "return_domain": "bulk-sender.com",
+    "score": 0,
+    "status": "coherent"
+  },
+  "score": 40,
+  "spf": {
+    "protocol": "SPF",
+    "score": 10,
+    "status": "unknown"
+  }
+}

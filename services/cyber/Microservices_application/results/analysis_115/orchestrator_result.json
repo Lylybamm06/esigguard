@@ -1,0 +1,117 @@
+{
+  "analysis_id": 115,
+  "score_cyber": 10.0,
+  "explanation_cyber": "Authentification : FromVsReturn: incoherent | FromVsReply: incoherent | AgeDomaine: inconnu | SMTP : IP identifiee (87.253.233.153, France), aucun indicateur suspect | Lien : Aucune URL detectee | Aucune pièce jointe | Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+  "details": {
+    "smtp": {
+      "analysis_id": 115,
+      "explanation": "SMTP : IP identifiee (87.253.233.153, France), aucun indicateur suspect",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Paris",
+        "country": "France",
+        "ip": "87.253.233.153",
+        "region": "Ile-de-France"
+      },
+      "ip_reputation": {
+        "ip": "87.253.233.153",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": "87.253.233.153",
+      "score": 15,
+      "service": "smtp",
+      "timestamp_status": "ok"
+    },
+    "auth": {
+      "analysis_id": 115,
+      "display_vs_domain": {
+        "display_name": "",
+        "from_domain": "lockimmo.com",
+        "score": 0,
+        "status": "coherent"
+      },
+      "dkim": {
+        "protocol": "DKIM",
+        "score": 0,
+        "status": "pass"
+      },
+      "dmarc": {
+        "protocol": "DMARC",
+        "score": 0,
+        "status": "pass"
+      },
+      "domain_age": {
+        "age_years": null,
+        "created_date": null,
+        "domain": "lockimmo.com",
+        "status": "unknown"
+      },
+      "explanation": "Authentification : FromVsReturn: incoherent | FromVsReply: incoherent | AgeDomaine: inconnu",
+      "from_vs_reply": {
+        "from_domain": "lockimmo.com",
+        "reply_domain": "strategimmo.fr",
+        "score": 30,
+        "status": "incoherent"
+      },
+      "from_vs_return": {
+        "from_domain": "lockimmo.com",
+        "return_domain": "a388831.bnc3.mailjet.com",
+        "score": 30,
+        "status": "incoherent"
+      },
+      "score": 35,
+      "spf": {
+        "protocol": "SPF",
+        "score": 0,
+        "status": "pass"
+      }
+    },
+    "lien": {
+      "analysis_id": 115,
+      "explanation": "Lien : Aucune URL detectee",
+      "score": 0,
+      "service": "lien",
+      "url_count": 0,
+      "urls_analyzed": []
+    },
+    "file": {
+      "analysis_id": 115,
+      "attachment_count": 0,
+      "attachments_analysis": [],
+      "explanation": "Aucune pièce jointe",
+      "score": 0,
+      "service": "file",
+      "suspicious_count": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "Analyse non disponible",
+          "status": "unknown"
+        },
+        "global_verdict": "error",
+        "language_quality": {
+          "reason": "Analyse non disponible",
+          "status": "unknown"
+        },
+        "phishing_indicators": {
+          "reason": "Erreur IA: Error code: 429 - {'error': {'message': 'Rate limi",
+          "status": "error"
+        }
+      },
+      "analysis_id": 115,
+      "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+      "keywords": {
+        "count": 0,
+        "keyword_score": 0,
+        "keywords_found": []
+      },
+      "score": 0,
+      "service": "content",
+      "subject": "Demande d'attestation d'assurance"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "corps de message vide",
+      "status": "suspect"
+    },
+    "global_verdict": "suspect",
+    "language_quality": {
+      "reason": "formulation claire",
+      "status": "ok"
+    },
+    "phishing_indicators": {
+      "reason": "manque d'information",
+      "status": "suspect"
+    }
+  },
+  "analysis_id": 138,
+  "explanation": "Content: Phishing: manque d'information | Coherence: corps de message vide",
+  "keywords": {
+    "count": 0,
+    "keyword_score": 0,
+    "keywords_found": []
+  },
+  "score": 45,
+  "service": "content",
+  "subject": "Votre reçu de paiement est disponible"
+}

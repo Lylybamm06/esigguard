@@ -1,0 +1,90 @@
+{
+  "email_data": {
+    "display_name": "Test Sender",
+    "domain": "example.com",
+    "email_date": "2026-01-31T10:00:00+00:00",
+    "email_sender": "test0@example.com",
+    "email_subject": "Bonjour, veuillez vérifier votre compte immédiatement en cliquant sur le lien ci-dessous.",
+    "sender_address": "test0@example.com",
+    "timestamp": 1769853600000,
+    "urls": [
+      "http://fakebank-secure-login.com",
+      "http://malicious.test/phish"
+    ],
+    "attachments": [
+      "facture_2026.pdf",
+      "update.exe"
+    ]
+  },
+  "auth": {
+    "details": [
+      "Domaine cohérent avec l'adresse expéditeur"
+    ],
+    "domain_age_days": 11128,
+    "explanation": "Domaine cohérent avec l'adresse expéditeur",
+    "score": 0.0,
+    "timestamp": "2026-01-31T08:47:14.736832"
+  },
+  "content": {
+    "content_analysis": {
+      "reason": "Le texte demande une réponse strictement en JSON, ce qui est une instruction claire et spécifique, sans contenu suspect.",
+      "status": "cohérent"
+    },
+    "explanation": "Le texte demande une réponse strictement en JSON, ce qui est une instruction claire et spécifique, sans contenu suspect.",
+    "percentage": 0.0,
+    "risk_level": "low",
+    "score": 0
+  },
+  "lien": {
+    "explanation": "2 lien(s) suspect(s) : http://fakebank-secure-login.com, http://malicious.test/phish",
+    "links_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "le domaine du lien semble être frauduleux et ressemble à une tentative de phishing, car il contient le mot 'fake' et une adresse de connexion sécurisée",
+          "status": "suspect"
+        },
+        "domain": "fakebank-secure-login.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 23.08,
+        "reputation": {
+          "domain": "fakebank-secure-login.com",
+          "status": "unknown"
+        },
+        "score": 30,
+        "url": "http://fakebank-secure-login.com"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Le domaine 'malicious.test' semble être un nom de domaine malveillant ou non fiable, suggérant une tentative de phishing ou d'attaque",
+          "status": "suspect"
+        },
+        "domain": "malicious.test",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 23.08,
+        "reputation": {
+          "domain": "malicious.test",
+          "status": "unknown"
+        },
+        "score": 30,
+        "url": "http://malicious.test/phish"
+      }
+    ],
+    "nb_links": 2,
+    "percentage": 23.08,
+    "risk_level": "low",
+    "score": 30.0
+  },
+  "file": {
+    "error": "Expecting value: line 1 column 1 (char 0)"
+  },
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte demande une réponse strictement en JSON, ce qui est une instruction claire et spécifique, sans contenu suspect. | LIEN: 2 lien(s) suspect(s) : http://fakebank-secure-login.com, http://malicious.test/phish",
+  "score_cyber": 7.5,
+  "analysis_id": 79,
+  "analyzed_at": "2026-01-31T08:47:16.234032"
+}

@@ -1,0 +1,90 @@
+{
+  "email_data": {
+    "display_name": "David ZOHOUN",
+    "domain": "gmail.com",
+    "email_date": "2026-01-31T13:18:24.541000+00:00",
+    "email_sender": "davzohoun@gmail.com",
+    "email_subject": "Bonjour . J’espère que vous allez bien . Pour raison familiale, je serai au Sénégal du 20 décembre au 06 janvier . J’aimerais donc demander des congés pour cette période. Voici ci-joint mon billet d’avion comme justificatif ...",
+    "sender_address": "davzohoun@gmail.com",
+    "timestamp": 1769865504541,
+    "urls": [
+      "https://aka.ms/AAb9ysg"
+    ],
+    "attachments": [
+      {
+        "filename": "e-ticket_0822302230556_DAVID PAGUIEL_ZOHOUN.pdf"
+      }
+    ]
+  },
+  "auth": {
+    "details": [
+      "Domaine cohérent avec l'adresse expéditeur"
+    ],
+    "domain_age_days": 11129,
+    "explanation": "Domaine cohérent avec l'adresse expéditeur",
+    "score": 0.0,
+    "timestamp": "2026-01-31T13:18:26.222441"
+  },
+  "content": {
+    "content_analysis": {
+      "reason": "Le texte présente une demande de congés pour raisons familiales avec un justificatif (billet d'avion) et des dates spécifiques, ce qui est une pratique courante et logique dans un contexte professionnel.",
+      "status": "cohérent"
+    },
+    "explanation": "Le texte présente une demande de congés pour raisons familiales avec un justificatif (billet d'avion) et des dates spécifiques, ce qui est une pratique courante et logique dans un contexte professionnel.",
+    "percentage": 0.0,
+    "risk_level": "low",
+    "score": 0
+  },
+  "lien": {
+    "explanation": "1 lien(s) suspect(s) : https://aka.ms/AAb9ysg",
+    "links_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "le lien utilise un URL courtener (aka.ms) qui peut être utilisé pour masquer une URL malveillante",
+          "status": "suspect"
+        },
+        "domain": "aka.ms",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 61.54,
+        "reputation": {
+          "domain": "aka.ms",
+          "malicious_reports": 1,
+          "status": "not reliable"
+        },
+        "score": 80,
+        "url": "https://aka.ms/AAb9ysg"
+      }
+    ],
+    "nb_links": 1,
+    "percentage": 61.54,
+    "risk_level": "medium",
+    "score": 80.0
+  },
+  "file": {
+    "Explanation": "0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+    "attachment_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "L’extension .pdf ne fait pas partie des extensions dangereuses ou à macros.",
+          "status": "coherent"
+        },
+        "content_type": "inconnu",
+        "filename": "e-ticket_0822302230556_DAVID PAGUIEL_ZOHOUN.pdf",
+        "percentage": 0.0,
+        "risk_level": "low",
+        "score": 0,
+        "score_details": [],
+        "size": 0
+      }
+    ],
+    "moyenne_pourcentage": 0.0,
+    "nb_attachments": 1
+  },
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte présente une demande de congés pour raisons familiales avec un justificatif (billet d'avion) et des dates spécifiques, ce qui est une pratique courante et logique dans un contexte professionnel. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 1 lien(s) suspect(s) : https://aka.ms/AAb9ysg",
+  "score_cyber": 20.0,
+  "analysis_id": 109,
+  "analyzed_at": "2026-01-31T13:18:26.559757"
+}

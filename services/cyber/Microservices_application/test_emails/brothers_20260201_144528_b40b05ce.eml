@@ -1,0 +1,114 @@
+Return-Path: <notifications@example.com>
+Received: from mailout.example.com (mailout.example.com [203.0.113.25])
+    by mx.esigguard.local with ESMTPS id 1234567890
+    for <david@esigguard.fr>;
+    Fri, 31 Jan 2025 10:24:35 +0100 (CET)
+Received: from app.internal.example.com (app.internal.example.com [10.0.12.34])
+    by mailout.example.com (Postfix) with ESMTPSA id 9ABCD12345
+    for <david@esigguard.fr>;
+    Fri, 31 Jan 2025 09:24:33 +0000 (UTC)
+Received-SPF: pass (mx.esigguard.local: domain of example.com designates 203.0.113.25 as permitted sender) client-ip=203.0.113.25; envelope-from=notifications@example.com; helo=mailout.example.com;
+Authentication-Results: mx.esigguard.local;
+    spf=pass smtp.mailfrom=example.com;
+    dkim=pass header.d=example.com header.s=mail header.b=abc123;
+    dmarc=pass (p=none) header.from=example.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+    d=example.com; s=mail; t=1738315473;
+    bh=Z3Vlc3RfaGFzaF9iYXNlNjQ=;
+    h=From:To:Subject:Date:Message-ID:MIME-Version:Content-Type;
+    b=abc123def456ghi789jkl012mno345pqr678stu901vwx234yz567abc890def123
+     ghi456jkl789mno012pqr345stu678vwx901yz2
+
+From: "ESIG'Guard Notifications" <notifications@example.com>
+To: David <david@esigguard.fr>
+Subject: Rapport de sécurité – activité détectée sur votre compte
+Date: Fri, 31 Jan 2025 10:24:30 +0100
+Message-ID: <20250131-102430.123456@mailout.example.com>
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="===============1234567890=="
+
+--===============1234567890==
+Content-Type: multipart/alternative; boundary="===============ALT123456=="
+
+--===============ALT123456==
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+Bonjour David,
+
+Nous avons détecté une activité inhabituelle liée à votre compte depuis l'adresse IP 198.51.100.42.
+
+Pour vérifier vos informations et sécuriser votre accès, veuillez consulter votre tableau de bord sécurisé :
+https://secure.example.com/account/overview
+
+Si vous ne reconnaissez pas cette activité, nous vous recommandons de réinitialiser votre mot de passe immédiatement :
+https://secure.example.com/security/reset-password
+
+Vous pouvez également consulter le détail des connexions récentes :
+http://logs.example-security.net/session?id=abc123&user=david
+
+Cordialement,
+L'équipe ESIG'Guard
+
+--===============ALT123456==
+Content-Type: text/html; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>Bonjour David,</p>
+    <p>
+      Nous avons détecté une activité inhabituelle liée à votre compte depuis
+      l'adresse IP <strong>198.51.100.42</strong>.
+    </p>
+    <p>
+      Pour vérifier vos informations et sécuriser votre accès, veuillez
+      consulter votre tableau de bord sécurisé :<br/>
+      <a href="https://secure.example.com/account/overview">
+        https://secure.example.com/account/overview
+      </a>
+    </p>
+    <p>
+      Si vous ne reconnaissez pas cette activité, nous vous recommandons de
+      réinitialiser votre mot de passe immédiatement :<br/>
+      <a href="https://secure.example.com/security/reset-password">
+        https://secure.example.com/security/reset-password
+      </a>
+    </p>
+    <p>
+      Vous pouvez également consulter le détail des connexions récentes :<br/>
+      <a href="http://logs.example-security.net/session?id=abc123&amp;user=david">
+        http://logs.example-security.net/session?id=abc123&amp;user=david
+      </a>
+    </p>
+    <p>Cordialement,<br/>L'équipe ESIG'Guard</p>
+  </body>
+</html>
+
+--===============ALT123456==--
+
+--===============1234567890==
+Content-Type: application/pdf; name="rapport_securite.pdf"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="rapport_securite.pdf"
+
+JVBERi0xLjQKJaqrrK0KMSAwIG9iago8PAovVHlwZSAvQ2F0YWxvZwovUGFnZXMgMiAwIFIKPj4K
+ZW5kb2JqCjIgMCBvYmoKPDwvVHlwZSAvUGFnZXMKL0tpZHMgWzMgMCBSXQo+PgplbmRvYmoKMyAw
+IG9iago8PC9UeXBlIC9QYWdlCi9NZWRpYUJveCBbMCAwIDYxMiA3OTJdCi9Db250ZW50cyA0IDAg
+Ugo+PgplbmRvYmoKNCAwIG9iago8PC9MZW5ndGggNTA+PgpzdHJlYW0KQlQKL0YxIDEyIFRmCjEw
+MCA3MDAgVGQKKChSYXBwb3J0IGRlIHNlY3VyaXRlKSkgVGoKRVQKZW5kc3RyZWFtCmVuZG9iagp4
+cmVmCjAgNQowMDAwMDAwMDAwIDY1NTM1IGYgCjAwMDAwMDAxMDEgMDAwMDAgbiAKMDAwMDAwMDA1
+MCAwMDAwMCBuIAowMDAwMDAwMTUwIDAwMDAwIG4gCjAwMDAwMDAyMDAgMDAwMDAgbiAKdHJhaWxl
+cgo8PC9Sb290IDEgMCBSCj4+CnN0YXJ0eHJlZgozMDAKJSVFT0YK
+
+--===============1234567890==
+Content-Type: application/zip; name="logs_connexions.zip"
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename="logs_connexions.zip"
+
+UEsDBAoAAAAAAI1aZ1QAAAAAAAAAAAAAAAAJAAAAbG9ncy50eHQKSGVsbG8gRGF2aWQsCgpDaS1k
+ZXNzb3VzIGV4ZW1wbGUgZGUgbG9ncyBkZSBjb25uZXhpb25zLgpQSwECHgMKAAAAAACNWmdUAAAA
+AAAAAAAAAAAAAAkAAAAAAAAAAACkgQAAAABsb2dzLnR4dFBLBQYAAAAAAQABADYAAAAyAAAAAAA=
+
+--===============1234567890==--

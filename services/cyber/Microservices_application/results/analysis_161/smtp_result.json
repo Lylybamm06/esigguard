@@ -1,0 +1,22 @@
+{
+  "analysis_id": 161,
+  "explanation": "SMTP : IP identifiee (87.253.233.153, France), aucun indicateur suspect",
+  "headers_status": "normal",
+  "ip_geolocation": {
+    "city": "Paris",
+    "country": "France",
+    "ip": "87.253.233.153",
+    "region": "Ile-de-France"
+  },
+  "ip_reputation": {
+    "ip": "87.253.233.153",
+    "malicious_reports": 0,
+    "status": "reliable"
+  },
+  "list_unsubscribe_present": "unknown",
+  "message_id_present": "unknown",
+  "origin_ip": "87.253.233.153",
+  "score": 15,
+  "service": "smtp",
+  "timestamp_status": "ok"
+}

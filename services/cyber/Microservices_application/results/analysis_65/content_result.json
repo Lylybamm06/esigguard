@@ -1,0 +1,27 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "manque d'info",
+      "status": "suspect"
+    },
+    "global_verdict": "suspect",
+    "language_quality": {
+      "reason": "formulation simple",
+      "status": "ok"
+    },
+    "phishing_indicators": {
+      "reason": "demande d'action",
+      "status": "suspect"
+    }
+  },
+  "analysis_id": 65,
+  "explanation": "Content: Phishing: demande d'action | Coherence: manque d'info",
+  "keywords": {
+    "count": 0,
+    "keyword_score": 0,
+    "keywords_found": []
+  },
+  "score": 45,
+  "service": "content",
+  "subject": "Bonjour, votre facture est prête. Vous pouvez la consulter via les liens ci-dessous."
+}

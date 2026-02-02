@@ -1,0 +1,22 @@
+From: Service Facturation <factures@exemple.com>
+To: david@example.com
+Subject: Votre reçu de paiement est disponible
+Date: Tue, 21 Jan 2025 14:12:00 +0100
+Message-ID: <20250121.141200.67890@exemple.com>
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: 7bit
+Authentication-Results: spf=pass dkim=pass dmarc=pass
+List-Unsubscribe: <mailto:unsubscribe@exemple.com>
+
+Bonjour,
+
+Votre reçu de paiement pour le mois de janvier est désormais disponible.
+Vous pouvez le consulter en toute sécurité via votre espace client :
+
+https://www.impots.gouv.fr
+
+Ce lien pointe vers un site officiel du gouvernement français.
+
+Cordialement,
+Service Facturation

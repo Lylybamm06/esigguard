@@ -1,0 +1,127 @@
+{
+  "email_data": {
+    "display_name": "Test Sender",
+    "domain": "example.com",
+    "email_date": "2026-01-31T10:00:00+00:00",
+    "email_sender": "test0@example.com",
+    "email_subject": "Bonjour, veuillez vérifier votre compte immédiatement en cliquant sur le lien ci-dessous.",
+    "sender_address": "test0@example.com",
+    "timestamp": 1769853600000,
+    "urls": [
+      "http://fakebank-secure-login.com",
+      "http://malicious.test/phish"
+    ],
+    "attachments": [
+      "facture_2026.pdf",
+      "update.exe"
+    ]
+  },
+  "auth": {
+    "details": [
+      "Domaine cohérent avec l'adresse expéditeur"
+    ],
+    "domain_age_days": 11128,
+    "explanation": "Domaine cohérent avec l'adresse expéditeur",
+    "score": 0.0,
+    "timestamp": "2026-01-31T09:10:57.288849"
+  },
+  "content": {
+    "content_analysis": {
+      "reason": "le message demande de cliquer sur un lien sans fournir de contexte ou d'information sur la raison de la vérification du compte, ce qui est un schéma classique d'arnaque par phishing",
+      "status": "suspect"
+    },
+    "explanation": "le message demande de cliquer sur un lien sans fournir de contexte ou d'information sur la raison de la vérification du compte, ce qui est un schéma classique d'arnaque par phishing",
+    "percentage": 100.0,
+    "risk_level": "high",
+    "score": 100
+  },
+  "lien": {
+    "explanation": "2 lien(s) suspect(s) : http://fakebank-secure-login.com, http://malicious.test/phish",
+    "links_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "le domaine ne ressemble pas à celui d'une banque réelle et contient le mot 'fake', ce qui indique une tentative de phishing",
+          "status": "suspect"
+        },
+        "domain": "fakebank-secure-login.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 23.08,
+        "reputation": {
+          "domain": "fakebank-secure-login.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 30,
+        "url": "http://fakebank-secure-login.com"
+      },
+      {
+        "ai_analysis": {
+          "reason": "le domaine 'malicious.test' semble être mal intentionné en raison du mot 'malicious' qui signifie 'malveillant' en français",
+          "status": "suspect"
+        },
+        "domain": "malicious.test",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 23.08,
+        "reputation": {
+          "domain": "malicious.test",
+          "status": "unknown"
+        },
+        "score": 30,
+        "url": "http://malicious.test/phish"
+      }
+    ],
+    "nb_links": 2,
+    "percentage": 23.08,
+    "risk_level": "low",
+    "score": 30.0
+  },
+  "file": {
+    "Explanation": "1 fichiers suspects : update.exe | Raison : Extensions dangereuses",
+    "attachment_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "L’extension .pdf ne fait pas partie des extensions dangereuses ou à macros.",
+          "status": "coherent"
+        },
+        "content_type": "inconnu",
+        "filename": "facture_2026.pdf",
+        "percentage": 0.0,
+        "risk_level": "low",
+        "score": 0,
+        "score_details": [],
+        "size": 0
+      },
+      {
+        "ai_analysis": {
+          "reason": "extension dangereuse",
+          "status": "suspect"
+        },
+        "content_type": "inconnu",
+        "filename": "update.exe",
+        "percentage": 100.0,
+        "risk_level": "high",
+        "score": 100,
+        "score_details": [
+          {
+            "indicator": "ai_analysis",
+            "points": 100,
+            "reason": "extension dangereuse"
+          }
+        ],
+        "size": 0
+      }
+    ],
+    "moyenne_pourcentage": 50.0,
+    "nb_attachments": 2
+  },
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: le message demande de cliquer sur un lien sans fournir de contexte ou d'information sur la raison de la vérification du compte, ce qui est un schéma classique d'arnaque par phishing | FILE: 1 fichiers suspects : update.exe | Raison : Extensions dangereuses | LIEN: 2 lien(s) suspect(s) : http://fakebank-secure-login.com, http://malicious.test/phish",
+  "score_cyber": 45.0,
+  "analysis_id": 81,
+  "analyzed_at": "2026-01-31T09:10:58.597976"
+}

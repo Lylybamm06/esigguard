@@ -1,0 +1,27 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "correspond à une communication officielle",
+      "status": "ok"
+    },
+    "global_verdict": "coherent",
+    "language_quality": {
+      "reason": "grammaire correcte",
+      "status": "ok"
+    },
+    "phishing_indicators": {
+      "reason": "pas d'urgence ni menace",
+      "status": "ok"
+    }
+  },
+  "analysis_id": 157,
+  "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+  "keywords": {
+    "count": 0,
+    "keyword_score": 0,
+    "keywords_found": []
+  },
+  "score": 0,
+  "service": "content",
+  "subject": "Avis d'échéance"
+}

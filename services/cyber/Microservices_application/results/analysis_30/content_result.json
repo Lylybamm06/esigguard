@@ -1,0 +1,27 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "correspond à une communication réelle",
+      "status": "ok"
+    },
+    "global_verdict": "coherent",
+    "language_quality": {
+      "reason": "grammaire et orthographe correctes",
+      "status": "ok"
+    },
+    "phishing_indicators": {
+      "reason": "pas d'urgence ni de menace",
+      "status": "ok"
+    }
+  },
+  "analysis_id": 30,
+  "explanation": "Content: Aucun indicateur suspect",
+  "keywords": {
+    "count": 0,
+    "keyword_score": 0,
+    "keywords_found": []
+  },
+  "score": 0,
+  "service": "content",
+  "subject": "Demande d'attestation d'assurance"
+}

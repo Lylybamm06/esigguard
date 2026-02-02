@@ -1,0 +1,227 @@
+{
+  "analysis_id": 22,
+  "score_cyber": 14.8,
+  "explanation_cyber": "Authentification : FromVsReturn: incoherent | FromVsReply: incoherent | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu | Lien : 7 URL(s) analysee(s), aucune suspecte | Aucune pièce jointe | Content: Aucun indicateur suspect",
+  "details": {
+    "smtp": {
+      "score": 0,
+      "explanation": "SMTP: Erreur (HTTPConnectionPool(host='smtp', port=5007): Max retries exceeded with url: /analyze/22 (Caused by NameResolutionError(\"HTTPConnection(host='smtp', port=5007): Failed to resolve 'smtp' ([Errno -3] Temporary failure in name resolution)\")))"
+    },
+    "auth": {
+      "analysis_id": 22,
+      "display_vs_domain": {
+        "display_name": "Anthropic, PBC",
+        "from_domain": "mail.anthropic.com",
+        "score": 40,
+        "status": "incoherent"
+      },
+      "dkim": {
+        "protocol": "DKIM",
+        "score": 0,
+        "status": "pass"
+      },
+      "dmarc": {
+        "protocol": "DMARC",
+        "score": 0,
+        "status": "pass"
+      },
+      "domain_age": {
+        "age_years": null,
+        "created_date": null,
+        "domain": "mail.anthropic.com",
+        "status": "unknown"
+      },
+      "explanation": "Authentification : FromVsReturn: incoherent | FromVsReply: incoherent | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu",
+      "from_vs_reply": {
+        "from_domain": "mail.anthropic.com",
+        "reply_domain": "anthropic.com",
+        "score": 30,
+        "status": "incoherent"
+      },
+      "from_vs_return": {
+        "from_domain": "mail.anthropic.com",
+        "return_domain": "bounce.mail.anthropic.com",
+        "score": 30,
+        "status": "incoherent"
+      },
+      "score": 55,
+      "spf": {
+        "protocol": "SPF",
+        "score": 0,
+        "status": "pass"
+      }
+    },
+    "lien": {
+      "analysis_id": 22,
+      "explanation": "Lien : 7 URL(s) analysee(s), aucune suspecte",
+      "score": 19.0,
+      "service": "lien",
+      "suspicious_count": 0,
+      "url_count": 7,
+      "urls_analyzed": [
+        {
+          "ai_analysis": {
+            "reason": "Le lien affiché correspond à l'URL réelle et le domaine est celui de Stripe, une entreprise de paiement en ligne réputée",
+            "status": "coherent"
+          },
+          "display_text": "https://pay.stripe.com/invoice/acct_1MExQ9BjIQrRQnux/live_YWNjdF8xTUV4UTlCaklRclJRbnV4LF9UcUNyQWlkSER4RENEU0JTc05oUzRxMDFMbWY4V0h5LDE1OTY2MjEyNQ0200UtlgsfDD/pdf?s=em",
+          "domain": "pay.stripe.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://pay.stripe.com/invoice/acct_1MExQ9BjIQrRQnux/live_YWNjdF8xTUV4UTlCaklRclJRbnV4LF9UcUNyQWlkSER4RENEU0JTc05oUzRxMDFMbWY4V0h5LDE1OTY2MjEyNQ0200UtlgsfDD/pdf?s=em",
+          "reputation": {
+            "domain": "pay.stripe.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 19
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché correspond à l'URL réelle et le domaine semble légitime",
+            "status": "coherent"
+          },
+          "display_text": "https://support.anthropic.com/",
+          "domain": "support.anthropic.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://support.anthropic.com/",
+          "reputation": {
+            "domain": "support.anthropic.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 19
+        },
+        {
+          "ai_analysis": {
+            "reason": "le texte affiché et l'URL réelle correspondent, et le domaine semble légitime",
+            "status": "coherent"
+          },
+          "display_text": "https://www.anthropic.com/",
+          "domain": "www.anthropic.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://www.anthropic.com/",
+          "reputation": {
+            "domain": "www.anthropic.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 19
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le lien affiché correspond au domaine réel et à l'URL réelle, ce qui suggère qu'il n'y a pas de tentative de phishing ou de redirection vers un site malveillant.",
+            "status": "coherent"
+          },
+          "display_text": "https://dashboard.stripe.com/receipts/invoices/CAcQARoXChVhY2N0XzFNRXhROUJqSVFyUlFudXgorczKywYyBkPWEFBsSzovFth1AeFUZDgC_QA_D2t4Wq3AQigSEniU4GXc0rSa11Ch-iAkHjW_wcaPI3Xx55g/pdf?s=em",
+          "domain": "dashboard.stripe.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://dashboard.stripe.com/receipts/invoices/CAcQARoXChVhY2N0XzFNRXhROUJqSVFyUlFudXgorczKywYyBkPWEFBsSzovFth1AeFUZDgC_QA_D2t4Wq3AQigSEniU4GXc0rSa11Ch-iAkHjW_wcaPI3Xx55g/pdf?s=em",
+          "reputation": {
+            "domain": "dashboard.stripe.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 19
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché et l'URL réelle correspondent, et le domaine est celui d'un service d'hébergement d'images légitime (Amazon S3) utilisé par une entreprise réputée (Stripe).",
+            "status": "coherent"
+          },
+          "display_text": "https://stripe-images.s3.amazonaws.com/emails/invoices_invoice_illustration.png]",
+          "domain": "stripe-images.s3.amazonaws.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://stripe-images.s3.amazonaws.com/emails/invoices_invoice_illustration.png]",
+          "reputation": {
+            "domain": "stripe-images.s3.amazonaws.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 19
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché et l'URL réelle correspondent, et le domaine est une entreprise réputée et sécurisée",
+            "status": "coherent"
+          },
+          "display_text": "https://stripe.com/billing",
+          "domain": "stripe.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://stripe.com/billing",
+          "reputation": {
+            "domain": "stripe.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 19
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché et l'URL réelle correspondent parfaitement au domaine stripe.com, il n'y a pas de tentative de phishing ou de manipulation d'URL",
+            "status": "coherent"
+          },
+          "display_text": "https://stripe.com",
+          "domain": "stripe.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://stripe.com",
+          "reputation": {
+            "domain": "stripe.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 19
+        }
+      ]
+    },
+    "file": {
+      "analysis_id": 22,
+      "attachment_count": 0,
+      "attachments_analysis": [],
+      "explanation": "Aucune pièce jointe",
+      "score": 0,
+      "service": "file",
+      "suspicious_count": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "correspond à une facture réelle",
+          "status": "ok"
+        },
+        "global_verdict": "coherent",
+        "language_quality": {
+          "reason": "grammaire et orthographe correctes",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "pas d'urgence ni menace",
+          "status": "ok"
+        }
+      },
+      "analysis_id": 22,
+      "explanation": "Content: Aucun indicateur suspect",
+      "keywords": {
+        "count": 0,
+        "keyword_score": 0,
+        "keywords_found": []
+      },
+      "score": 0,
+      "service": "content",
+      "subject": "Your receipt from Anthropic, PBC #2835-9319-2606"
+    }
+  }
+}

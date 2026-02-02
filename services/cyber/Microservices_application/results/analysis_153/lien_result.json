@@ -1,0 +1,100 @@
+{
+  "analysis_id": 153,
+  "explanation": "Lien : 5 URL(s) analysee(s), aucune suspecte",
+  "score": 32.8,
+  "service": "lien",
+  "suspicious_count": 0,
+  "url_count": 5,
+  "urls_analyzed": [
+    {
+      "ai_analysis": {
+        "reason": "le domaine z5xx.mjt.lu semble être un domaine de redirection ou de tracking, et le lien pointe vers un fichier GIF, ce qui pourrait être utilisé pour des activités de pistage ou de phishing",
+        "status": "suspect"
+      },
+      "display_text": "http://z5xx.mjt.lu/oo/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/40a81a17/e.gif",
+      "domain": "z5xx.mjt.lu",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "http://z5xx.mjt.lu/oo/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/40a81a17/e.gif",
+      "reputation": {
+        "domain": "z5xx.mjt.lu",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 42
+    },
+    {
+      "ai_analysis": {
+        "reason": "le lien semble être un lien court ou un lien de redirection, ce qui peut être utilisé pour masquer l'URL réelle et potentiellement mener à des sites web malveillants ou à des arnaques",
+        "status": "suspect"
+      },
+      "display_text": "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=1",
+      "domain": "z5xx.mjt.lu",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=1",
+      "reputation": {
+        "domain": "z5xx.mjt.lu",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 42
+    },
+    {
+      "ai_analysis": {
+        "reason": "le lien semble être un lien court ou un lien de redirection, ce qui peut être utilisé pour masquer l'URL réelle et potentiellement mener à des sites web malveillants ou à des arnaques",
+        "status": "suspect"
+      },
+      "display_text": "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=3",
+      "domain": "z5xx.mjt.lu",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=3",
+      "reputation": {
+        "domain": "z5xx.mjt.lu",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 42
+    },
+    {
+      "ai_analysis": {
+        "reason": "Le texte affiché et l'URL réelle sont identiques et pointent vers un domaine officiel (w3.org)",
+        "status": "coherent"
+      },
+      "display_text": "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd",
+      "domain": "www.w3.org",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd",
+      "reputation": {
+        "domain": "www.w3.org",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 19
+    },
+    {
+      "ai_analysis": {
+        "reason": "Le texte affiché et l'URL réelle correspondent, et le domaine est celui d'une organisation officielle (W3C), ce qui suggère une authenticité du lien",
+        "status": "coherent"
+      },
+      "display_text": "http://www.w3.org/1999/xhtml",
+      "domain": "www.w3.org",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "http://www.w3.org/1999/xhtml",
+      "reputation": {
+        "domain": "www.w3.org",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 19
+    }
+  ]
+}

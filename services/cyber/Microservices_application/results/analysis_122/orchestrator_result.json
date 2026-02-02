@@ -1,0 +1,31 @@
+{
+  "analysis_id": 122,
+  "score_cyber": 0.0,
+  "explanation_cyber": "Lien : Aucune URL detectee",
+  "details": {
+    "smtp": {
+      "score": 0,
+      "explanation": "SMTP: Erreur HTTP 500"
+    },
+    "auth": {
+      "score": 0,
+      "explanation": "Auth: Erreur HTTP 500"
+    },
+    "lien": {
+      "analysis_id": 122,
+      "explanation": "Lien : Aucune URL detectee",
+      "score": 0,
+      "service": "lien",
+      "url_count": 0,
+      "urls_analyzed": []
+    },
+    "file": {
+      "score": 0,
+      "explanation": "File: Erreur HTTP 500"
+    },
+    "content": {
+      "score": 0,
+      "explanation": "Content: Erreur HTTP 500"
+    }
+  }
+}

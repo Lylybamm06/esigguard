@@ -1,0 +1,46 @@
+{
+  "analysis_id": 52,
+  "explanation": "Lien : 1 URL(s) suspecte(s) (http://spam-site.com/offers)",
+  "score": 61.0,
+  "service": "lien",
+  "suspicious_count": 1,
+  "url_count": 2,
+  "urls_analyzed": [
+    {
+      "ai_analysis": {
+        "reason": "le domaine 'spam-site.com' semble être un site potentiellement malveillant ou de spam",
+        "status": "suspect"
+      },
+      "display_text": "http://spam-site.com/offers",
+      "domain": "spam-site.com",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "http://spam-site.com/offers",
+      "reputation": {
+        "domain": "spam-site.com",
+        "malicious_reports": 1,
+        "status": "not reliable"
+      },
+      "score": 80
+    },
+    {
+      "ai_analysis": {
+        "reason": "le domaine click-here.xyz semble être un domaine générique et peu fiable, et le texte affiché est un appel à l'action direct qui peut être utilisé pour des arnaques ou des phishing",
+        "status": "suspect"
+      },
+      "display_text": "http://click-here.xyz/promo",
+      "domain": "click-here.xyz",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "http://click-here.xyz/promo",
+      "reputation": {
+        "domain": "click-here.xyz",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 42
+    }
+  ]
+}

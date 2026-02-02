@@ -1,0 +1,90 @@
+{
+  "email_data": {
+    "display_name": "David ZOHOUN",
+    "domain": "gmail.com",
+    "email_date": "2026-01-31T10:27:10.710000+00:00",
+    "email_sender": "davzohoun@gmail.com",
+    "email_subject": "Bonjour . J’espère que vous allez bien . Pour raison familiale, je serai au Sénégal du 20 décembre au 06 janvier . J’aimerais donc demander des congés pour cette période. Voici ci-joint mon billet d’avion comme justificatif ...",
+    "sender_address": "davzohoun@gmail.com",
+    "timestamp": 1769855230710,
+    "urls": [
+      "https://aka.ms/AAb9ysg"
+    ],
+    "attachments": [
+      {
+        "filename": "e-ticket_0822302230556_DAVID PAGUIEL_ZOHOUN.pdf"
+      }
+    ]
+  },
+  "auth": {
+    "details": [
+      "Domaine cohérent avec l'adresse expéditeur"
+    ],
+    "domain_age_days": 11129,
+    "explanation": "Domaine cohérent avec l'adresse expéditeur",
+    "score": 0.0,
+    "timestamp": "2026-01-31T10:27:12.280831"
+  },
+  "content": {
+    "content_analysis": {
+      "reason": "Le texte demande une réponse en JSON avec des champs spécifiques, ce qui indique une interaction structurée et logique.",
+      "status": "cohérent"
+    },
+    "explanation": "Le texte demande une.",
+    "percentage": 0.0,
+    "risk_level": "low",
+    "score": 0
+  },
+  "lien": {
+    "explanation": "1 lien(s) suspect(s) : https://aka.ms/AAb9ysg",
+    "links_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "Le domaine 'aka.ms' est souvent utilisé par Microsoft pour des liens courts, mais sans plus de contexte, il est difficile de déterminer la véritable intention derrière ce lien",
+          "status": "suspect"
+        },
+        "domain": "aka.ms",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 61.54,
+        "reputation": {
+          "domain": "aka.ms",
+          "malicious_reports": 1,
+          "status": "not reliable"
+        },
+        "score": 80,
+        "url": "https://aka.ms/AAb9ysg"
+      }
+    ],
+    "nb_links": 1,
+    "percentage": 61.54,
+    "risk_level": "medium",
+    "score": 80.0
+  },
+  "file": {
+    "Explanation": "0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+    "attachment_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "L’extension .pdf ne fait pas partie des extensions dangereuses ou à macros.",
+          "status": "coherent"
+        },
+        "content_type": "inconnu",
+        "filename": "e-ticket_0822302230556_DAVID PAGUIEL_ZOHOUN.pdf",
+        "percentage": 0.0,
+        "risk_level": "low",
+        "score": 0,
+        "score_details": [],
+        "size": 0
+      }
+    ],
+    "moyenne_pourcentage": 0.0,
+    "nb_attachments": 1
+  },
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte demande une. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 1 lien(s) suspect(s) : https://aka.ms/AAb9ysg",
+  "score_cyber": 20.0,
+  "analysis_id": 88,
+  "analyzed_at": "2026-01-31T10:27:12.723030"
+}

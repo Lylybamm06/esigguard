@@ -1,0 +1,250 @@
+{
+  "analysis_id": 167,
+  "score_cyber": 14.04,
+  "explanation_cyber": "Authentification : FromVsReturn: incoherent | FromVsReply: incoherent | SMTP : IP identifiee (185.250.237.105, France), aucun indicateur suspect | Lien : 5 URL(s) analysee(s), aucune suspecte | 2 fichier(s) analysés, aucun suspect | Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+  "details": {
+    "smtp": {
+      "analysis_id": 167,
+      "explanation": "SMTP : IP identifiee (185.250.237.105, France), aucun indicateur suspect",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Ivry-sur-Seine",
+        "country": "France",
+        "ip": "185.250.237.105",
+        "region": "Ile-de-France"
+      },
+      "ip_reputation": {
+        "ip": "185.250.237.105",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": "185.250.237.105",
+      "score": 15,
+      "service": "smtp",
+      "timestamp_status": "ok"
+    },
+    "auth": {
+      "analysis_id": 167,
+      "display_vs_domain": {
+        "display_name": "",
+        "from_domain": "lockimmo.com",
+        "score": 0,
+        "status": "coherent"
+      },
+      "dkim": {
+        "protocol": "DKIM",
+        "score": 0,
+        "status": "pass"
+      },
+      "dmarc": {
+        "protocol": "DMARC",
+        "score": 0,
+        "status": "pass"
+      },
+      "domain_age": {
+        "age_years": 19.73,
+        "created_date": "2006-05-15 09:02:23",
+        "domain": "lockimmo.com",
+        "status": "bon"
+      },
+      "explanation": "Authentification : FromVsReturn: incoherent | FromVsReply: incoherent",
+      "from_vs_reply": {
+        "from_domain": "lockimmo.com",
+        "reply_domain": "strategimmo.fr",
+        "score": 30,
+        "status": "incoherent"
+      },
+      "from_vs_return": {
+        "from_domain": "lockimmo.com",
+        "return_domain": "a388831.bnc3.mailjet.com",
+        "score": 30,
+        "status": "incoherent"
+      },
+      "score": 30,
+      "spf": {
+        "protocol": "SPF",
+        "score": 0,
+        "status": "pass"
+      }
+    },
+    "lien": {
+      "analysis_id": 167,
+      "explanation": "Lien : 5 URL(s) analysee(s), aucune suspecte",
+      "score": 25.2,
+      "service": "lien",
+      "suspicious_count": 0,
+      "url_count": 5,
+      "urls_analyzed": [
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché et l'URL réelle correspondent, et le domaine est celui d'une organisation réputée (W3C), ce qui suggère une absence de tentative de phishing ou de tromperie.",
+            "status": "coherent"
+          },
+          "display_text": "http://www.w3.org/1999/xhtml",
+          "domain": "www.w3.org",
+          "domain_age": {
+            "age_years": 31.6,
+            "created": "1994-07-05T22:00:00Z",
+            "status": "bon"
+          },
+          "raw_url": "http://www.w3.org/1999/xhtml",
+          "reputation": {
+            "domain": "www.w3.org",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 0
+        },
+        {
+          "ai_analysis": {
+            "reason": "le lien semble être un tracker ou un pixel de suivi, car il pointe vers un fichier GIF et contient des caractères aléatoires dans l'URL, ce qui est souvent utilisé pour suivre les ouvertures de courriels ou les clics sur des liens",
+            "status": "suspect"
+          },
+          "display_text": "http://z5xx.mjt.lu/oo/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/40a81a17/e.gif",
+          "domain": "z5xx.mjt.lu",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "http://z5xx.mjt.lu/oo/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/40a81a17/e.gif",
+          "reputation": {
+            "domain": "z5xx.mjt.lu",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 42
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le lien semble être un lien court ou un lien de redirection, ce qui peut être utilisé pour dissimuler l'URL réelle et potentiellement mener à des sites Web malveillants ou à des attaques de phishing.",
+            "status": "suspect"
+          },
+          "display_text": "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=3",
+          "domain": "z5xx.mjt.lu",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=3",
+          "reputation": {
+            "domain": "z5xx.mjt.lu",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 42
+        },
+        {
+          "ai_analysis": {
+            "reason": "le lien semble être un lien court ou un lien de redirection, ce qui peut indiquer une tentative de phishing ou de redirection vers un site malveillant",
+            "status": "suspect"
+          },
+          "display_text": "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=1",
+          "domain": "z5xx.mjt.lu",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "http://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=1",
+          "reputation": {
+            "domain": "z5xx.mjt.lu",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 42
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché et l'URL réelle correspondent, et le domaine est une organisation réputée et officielle (W3C)",
+            "status": "coherent"
+          },
+          "display_text": "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd",
+          "domain": "www.w3.org",
+          "domain_age": {
+            "age_years": 31.6,
+            "created": "1994-07-05T22:00:00Z",
+            "status": "bon"
+          },
+          "raw_url": "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd",
+          "reputation": {
+            "domain": "www.w3.org",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 0
+        }
+      ]
+    },
+    "file": {
+      "analysis_id": 167,
+      "attachment_count": 2,
+      "attachments_analysis": [
+        {
+          "ai_analysis": {
+            "reason": "Le nom du fichier, le type MIME et l'extension sont tous cohérents avec un fichier PDF",
+            "status": "coherent"
+          },
+          "extension": ".pdf",
+          "filename": "APPEL-185-53148-16446-25241.pdf",
+          "is_dangerous": false,
+          "mime_type": "application/pdf",
+          "mime_verdict": {
+            "extension": ".pdf",
+            "mime": "application/pdf",
+            "reason": "Extension cohérente",
+            "status": "coherent"
+          },
+          "score": 0,
+          "size": 0
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le nom, le MIME et l'extension sont tous cohérents avec un fichier image PNG",
+            "status": "coherent"
+          },
+          "extension": ".png",
+          "filename": "622-manchette.png",
+          "is_dangerous": false,
+          "mime_type": "image/png",
+          "mime_verdict": {
+            "extension": ".png",
+            "mime": "image/png",
+            "reason": "Extension cohérente",
+            "status": "coherent"
+          },
+          "score": 0,
+          "size": 0
+        }
+      ],
+      "explanation": "2 fichier(s) analysés, aucun suspect",
+      "score": 0.0,
+      "service": "file",
+      "suspicious_count": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "correspond à une vraie communication",
+          "status": "ok"
+        },
+        "global_verdict": "coherent",
+        "language_quality": {
+          "reason": "grammaire correcte",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "pas d'urgence",
+          "status": "ok"
+        }
+      },
+      "analysis_id": 167,
+      "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+      "keywords": {
+        "count": 0,
+        "keyword_score": 0,
+        "keywords_found": []
+      },
+      "score": 0,
+      "service": "content",
+      "subject": "Avis d'échéance"
+    }
+  }
+}

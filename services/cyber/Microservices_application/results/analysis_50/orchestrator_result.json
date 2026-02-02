@@ -1,0 +1,155 @@
+{
+  "analysis_id": 50,
+  "score_cyber": 35.2,
+  "explanation_cyber": "SMTP : IP source non identifiee | Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu | Lien : 1 URL(s) suspecte(s) (http://spam-site.com/offers) | Aucune pièce jointe | Content: Phishing: Urgence et demande d'action | Coherence: Manque de contexte",
+  "details": {
+    "smtp": {
+      "analysis_id": 50,
+      "explanation": "SMTP : IP source non identifiee",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Unknown",
+        "country": "Unknown",
+        "ip": null,
+        "region": "Unknown"
+      },
+      "ip_reputation": {
+        "ip": null,
+        "malicious_reports": 0,
+        "status": "unknown"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": null,
+      "score": 30,
+      "service": "smtp",
+      "timestamp_status": "ok"
+    },
+    "auth": {
+      "analysis_id": 50,
+      "display_vs_domain": {
+        "display_name": "Marketing Team",
+        "from_domain": "bulk-sender.com",
+        "score": 40,
+        "status": "incoherent"
+      },
+      "dkim": {
+        "protocol": "DKIM",
+        "score": 10,
+        "status": "unknown"
+      },
+      "dmarc": {
+        "protocol": "DMARC",
+        "score": 10,
+        "status": "unknown"
+      },
+      "domain_age": {
+        "age_years": null,
+        "created_date": null,
+        "domain": "bulk-sender.com",
+        "status": "unknown"
+      },
+      "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu",
+      "from_vs_reply": {
+        "from_domain": "bulk-sender.com",
+        "reply_domain": null,
+        "score": 0,
+        "status": "coherent"
+      },
+      "from_vs_return": {
+        "from_domain": "bulk-sender.com",
+        "return_domain": "bulk-sender.com",
+        "score": 0,
+        "status": "coherent"
+      },
+      "score": 40,
+      "spf": {
+        "protocol": "SPF",
+        "score": 10,
+        "status": "unknown"
+      }
+    },
+    "lien": {
+      "analysis_id": 50,
+      "explanation": "Lien : 1 URL(s) suspecte(s) (http://spam-site.com/offers)",
+      "score": 61.0,
+      "service": "lien",
+      "suspicious_count": 1,
+      "url_count": 2,
+      "urls_analyzed": [
+        {
+          "ai_analysis": {
+            "reason": "le domaine 'spam-site.com' semble être un site potentiellement malveillant ou de spam",
+            "status": "suspect"
+          },
+          "display_text": "http://spam-site.com/offers",
+          "domain": "spam-site.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "http://spam-site.com/offers",
+          "reputation": {
+            "domain": "spam-site.com",
+            "malicious_reports": 1,
+            "status": "not reliable"
+          },
+          "score": 80
+        },
+        {
+          "ai_analysis": {
+            "reason": "le domaine click-here.xyz semble être un domaine générique et potentiellement malveillant, et le texte affiché est un appel à l'action générique qui peut être utilisé pour des arnaques ou des attaques de phishing",
+            "status": "suspect"
+          },
+          "display_text": "http://click-here.xyz/promo",
+          "domain": "click-here.xyz",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "http://click-here.xyz/promo",
+          "reputation": {
+            "domain": "click-here.xyz",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 42
+        }
+      ]
+    },
+    "file": {
+      "analysis_id": 50,
+      "attachment_count": 0,
+      "attachments_analysis": [],
+      "explanation": "Aucune pièce jointe",
+      "score": 0,
+      "service": "file",
+      "suspicious_count": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "Manque de contexte",
+          "status": "suspect"
+        },
+        "global_verdict": "suspect",
+        "language_quality": {
+          "reason": "Formulation simple",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "Urgence et demande d'action",
+          "status": "suspect"
+        }
+      },
+      "analysis_id": 50,
+      "explanation": "Content: Phishing: Urgence et demande d'action | Coherence: Manque de contexte",
+      "keywords": {
+        "count": 0,
+        "keyword_score": 0,
+        "keywords_found": []
+      },
+      "score": 45,
+      "service": "content",
+      "subject": "Check out our amazing offers in the attached files!"
+    }
+  }
+}

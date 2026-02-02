@@ -1,0 +1,22 @@
+{
+  "analysis_id": 143,
+  "explanation": "SMTP : IP identifiee (185.250.237.105, France), aucun indicateur suspect",
+  "headers_status": "normal",
+  "ip_geolocation": {
+    "city": "Ivry-sur-Seine",
+    "country": "France",
+    "ip": "185.250.237.105",
+    "region": "Ile-de-France"
+  },
+  "ip_reputation": {
+    "ip": "185.250.237.105",
+    "malicious_reports": 0,
+    "status": "reliable"
+  },
+  "list_unsubscribe_present": "unknown",
+  "message_id_present": "unknown",
+  "origin_ip": "185.250.237.105",
+  "score": 15,
+  "service": "smtp",
+  "timestamp_status": "ok"
+}

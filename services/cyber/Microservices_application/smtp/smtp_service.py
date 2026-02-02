@@ -123,7 +123,7 @@ def calculate_smtp_score(ip_reputation, ip_geolocation, headers):
     list_unsub = headers.get("list_unsubscribe_present")
     if list_unsub in ["no", "unknown"]:
         score += 10
-        reasons.append("Pas de lien de desinscription")
+       
     
     # Timestamp
     if headers.get("timestamp_status") == "missing":

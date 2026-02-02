@@ -1,0 +1,173 @@
+{
+  "analysis_id": 65,
+  "score_cyber": 24.33,
+  "explanation_cyber": "SMTP : IP source non identifiee | Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | AgeDomaine: inconnu | Lien : 3 URL(s) analysee(s), aucune suspecte | Aucune pièce jointe | Content: Phishing: demande d'action | Coherence: manque d'info",
+  "details": {
+    "smtp": {
+      "analysis_id": 65,
+      "explanation": "SMTP : IP source non identifiee",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Unknown",
+        "country": "Unknown",
+        "ip": null,
+        "region": "Unknown"
+      },
+      "ip_reputation": {
+        "ip": null,
+        "malicious_reports": 0,
+        "status": "unknown"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": null,
+      "score": 30,
+      "service": "smtp",
+      "timestamp_status": "ok"
+    },
+    "auth": {
+      "analysis_id": 65,
+      "display_vs_domain": {
+        "display_name": "Microsoft Support",
+        "from_domain": "microsoft.com",
+        "score": 0,
+        "status": "coherent"
+      },
+      "dkim": {
+        "protocol": "DKIM",
+        "score": 10,
+        "status": "unknown"
+      },
+      "dmarc": {
+        "protocol": "DMARC",
+        "score": 10,
+        "status": "unknown"
+      },
+      "domain_age": {
+        "age_years": null,
+        "created_date": null,
+        "domain": "microsoft.com",
+        "status": "unknown"
+      },
+      "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | AgeDomaine: inconnu",
+      "from_vs_reply": {
+        "from_domain": "microsoft.com",
+        "reply_domain": null,
+        "score": 0,
+        "status": "coherent"
+      },
+      "from_vs_return": {
+        "from_domain": "microsoft.com",
+        "return_domain": "microsoft.com",
+        "score": 0,
+        "status": "coherent"
+      },
+      "score": 20,
+      "spf": {
+        "protocol": "SPF",
+        "score": 10,
+        "status": "unknown"
+      }
+    },
+    "lien": {
+      "analysis_id": 65,
+      "explanation": "Lien : 3 URL(s) analysee(s), aucune suspecte",
+      "score": 26.67,
+      "service": "lien",
+      "suspicious_count": 0,
+      "url_count": 3,
+      "urls_analyzed": [
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché et l'URL réelle correspondent parfaitement, et le domaine est un domaine officiel de Microsoft",
+            "status": "coherent"
+          },
+          "display_text": "https://www.microsoft.com",
+          "domain": "www.microsoft.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://www.microsoft.com",
+          "reputation": {
+            "domain": "www.microsoft.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 19
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le domaine www.gooouygle.com ressemble à une fausse version du domaine officiel de Google, ce qui pourrait indiquer une tentative de phishing ou d'usurpation d'identité",
+            "status": "suspect"
+          },
+          "display_text": "https://www.gooouygle.com",
+          "domain": "www.gooouygle.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://www.gooouygle.com",
+          "reputation": {
+            "domain": "www.gooouygle.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 42
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché correspond à l'URL réelle et le domaine est valide",
+            "status": "coherent"
+          },
+          "display_text": "https://www.wikipedia.org",
+          "domain": "www.wikipedia.org",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://www.wikipedia.org",
+          "reputation": {
+            "domain": "www.wikipedia.org",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 19
+        }
+      ]
+    },
+    "file": {
+      "analysis_id": 65,
+      "attachment_count": 0,
+      "attachments_analysis": [],
+      "explanation": "Aucune pièce jointe",
+      "score": 0,
+      "service": "file",
+      "suspicious_count": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "manque d'info",
+          "status": "suspect"
+        },
+        "global_verdict": "suspect",
+        "language_quality": {
+          "reason": "formulation simple",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "demande d'action",
+          "status": "suspect"
+        }
+      },
+      "analysis_id": 65,
+      "explanation": "Content: Phishing: demande d'action | Coherence: manque d'info",
+      "keywords": {
+        "count": 0,
+        "keyword_score": 0,
+        "keywords_found": []
+      },
+      "score": 45,
+      "service": "content",
+      "subject": "Bonjour, votre facture est prête. Vous pouvez la consulter via les liens ci-dessous."
+    }
+  }
+}

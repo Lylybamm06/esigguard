@@ -1,0 +1,22 @@
+{
+  "analysis_id": 91,
+  "explanation": "SMTP : Pas de lien de desinscription",
+  "headers_status": "normal",
+  "ip_geolocation": {
+    "city": "Seattle",
+    "country": "United States of America",
+    "ip": "54.240.61.166",
+    "region": "Washington"
+  },
+  "ip_reputation": {
+    "ip": "54.240.61.166",
+    "malicious_reports": 0,
+    "status": "reliable"
+  },
+  "list_unsubscribe_present": "unknown",
+  "message_id_present": "unknown",
+  "origin_ip": "54.240.61.166",
+  "score": 15,
+  "service": "smtp",
+  "timestamp_status": "ok"
+}

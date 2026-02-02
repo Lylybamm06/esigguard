@@ -118,7 +118,7 @@ def orchestrate_analysis(analysis_id):
 
     # Explication globale SANS erreurs techniques
     explanations = []
-    for service_name in ["smtp", "auth", "lien", "file", "content"]:
+    for service_name in ["auth", "smtp", "lien", "file", "content"]:
         exp = results[service_name].get("explanation", "")
         if exp and "Erreur" not in exp:
             explanations.append(exp)

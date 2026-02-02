@@ -1,0 +1,64 @@
+{
+  "analysis_id": 65,
+  "explanation": "Lien : 3 URL(s) analysee(s), aucune suspecte",
+  "score": 26.67,
+  "service": "lien",
+  "suspicious_count": 0,
+  "url_count": 3,
+  "urls_analyzed": [
+    {
+      "ai_analysis": {
+        "reason": "Le texte affiché et l'URL réelle correspondent parfaitement, et le domaine est un domaine officiel de Microsoft",
+        "status": "coherent"
+      },
+      "display_text": "https://www.microsoft.com",
+      "domain": "www.microsoft.com",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "https://www.microsoft.com",
+      "reputation": {
+        "domain": "www.microsoft.com",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 19
+    },
+    {
+      "ai_analysis": {
+        "reason": "Le domaine www.gooouygle.com ressemble à une fausse version du domaine officiel de Google, ce qui pourrait indiquer une tentative de phishing ou d'usurpation d'identité",
+        "status": "suspect"
+      },
+      "display_text": "https://www.gooouygle.com",
+      "domain": "www.gooouygle.com",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "https://www.gooouygle.com",
+      "reputation": {
+        "domain": "www.gooouygle.com",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 42
+    },
+    {
+      "ai_analysis": {
+        "reason": "Le texte affiché correspond à l'URL réelle et le domaine est valide",
+        "status": "coherent"
+      },
+      "display_text": "https://www.wikipedia.org",
+      "domain": "www.wikipedia.org",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "https://www.wikipedia.org",
+      "reputation": {
+        "domain": "www.wikipedia.org",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 19
+    }
+  ]
+}

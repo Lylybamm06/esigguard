@@ -1,0 +1,44 @@
+{
+  "analysis_id": 126,
+  "display_vs_domain": {
+    "display_name": "Club Developpez.com",
+    "from_domain": "redaction-developpez.com",
+    "score": 40,
+    "status": "incoherent"
+  },
+  "dkim": {
+    "protocol": "DKIM",
+    "score": 0,
+    "status": "pass"
+  },
+  "dmarc": {
+    "protocol": "DMARC",
+    "score": 0,
+    "status": "pass"
+  },
+  "domain_age": {
+    "age_years": null,
+    "created_date": null,
+    "domain": "redaction-developpez.com",
+    "status": "unknown"
+  },
+  "explanation": "Authentification : DisplayNameVsDomain: incoherent | AgeDomaine: inconnu",
+  "from_vs_reply": {
+    "from_domain": "redaction-developpez.com",
+    "reply_domain": null,
+    "score": 0,
+    "status": "coherent"
+  },
+  "from_vs_return": {
+    "from_domain": "redaction-developpez.com",
+    "return_domain": "redaction-developpez.com",
+    "score": 0,
+    "status": "coherent"
+  },
+  "score": 25,
+  "spf": {
+    "protocol": "SPF",
+    "score": 0,
+    "status": "pass"
+  }
+}

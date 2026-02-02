@@ -1,0 +1,44 @@
+{
+  "analysis_id": 58,
+  "display_vs_domain": {
+    "display_name": "Indeed",
+    "from_domain": "indeed.com",
+    "score": 0,
+    "status": "coherent"
+  },
+  "dkim": {
+    "protocol": "DKIM",
+    "score": 10,
+    "status": "unknown"
+  },
+  "dmarc": {
+    "protocol": "DMARC",
+    "score": 10,
+    "status": "unknown"
+  },
+  "domain_age": {
+    "age_years": null,
+    "created_date": null,
+    "domain": "indeed.com",
+    "status": "unknown"
+  },
+  "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | AgeDomaine: inconnu",
+  "from_vs_reply": {
+    "from_domain": "indeed.com",
+    "reply_domain": null,
+    "score": 0,
+    "status": "coherent"
+  },
+  "from_vs_return": {
+    "from_domain": "indeed.com",
+    "return_domain": "indeed.com",
+    "score": 0,
+    "status": "coherent"
+  },
+  "score": 20,
+  "spf": {
+    "protocol": "SPF",
+    "score": 10,
+    "status": "unknown"
+  }
+}

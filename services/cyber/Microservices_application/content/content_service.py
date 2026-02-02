@@ -243,7 +243,12 @@ def build_explanation(ai_result, keywords_result, score):
         parts.append(f"Mots-cles: {kw_list}")
     
     if not parts:
-        return "Content: Aucun indicateur suspect"
+        return (
+            "Content: Aucun indicateur suspect."
+            "Le message ne contient ni demande inhabituelle, ni urgence artificielle, "
+            "et la formulation est cohérente avec une communication légitime. "
+            "Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing."
+        )
     
     return "Content: " + " | ".join(parts)
 

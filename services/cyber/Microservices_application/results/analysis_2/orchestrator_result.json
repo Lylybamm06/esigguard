@@ -1,0 +1,240 @@
+{
+  "analysis_id": 2,
+  "score_cyber": 22.0,
+  "explanation_cyber": "SMTP : IP source non identifiee | Authentification : FromVsReturn: incoherent | FromVsReply: incoherent | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu | Lien : 7 URL(s) analysee(s), aucune suspecte | File : 2 fichier(s) analysé(s), aucun suspect | Content: Aucun indicateur suspect",
+  "details": {
+    "smtp": {
+      "analysis_id": 2,
+      "explanation": "SMTP : IP source non identifiee",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Unknown",
+        "country": "Unknown",
+        "ip": null,
+        "region": "Unknown"
+      },
+      "ip_reputation": {
+        "ip": null,
+        "malicious_reports": 0,
+        "status": "unknown"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": null,
+      "score": 30,
+      "service": "smtp",
+      "timestamp_status": "ok"
+    },
+    "auth": {
+      "score": 55,
+      "explanation": "Authentification : FromVsReturn: incoherent | FromVsReply: incoherent | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu"
+    },
+    "lien": {
+      "analysis_id": 2,
+      "explanation": "Lien : 7 URL(s) analysee(s), aucune suspecte",
+      "score": 25.0,
+      "service": "lien",
+      "suspicious_count": 0,
+      "url_count": 7,
+      "urls_analyzed": [
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché correspond au domaine de l'URL",
+            "status": "coherent"
+          },
+          "display_text": "https://www.anthropic.com/",
+          "domain": "www.anthropic.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://www.anthropic.com/",
+          "reputation": {
+            "domain": "www.anthropic.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 25
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché correspond au domaine de l'URL, qui est dashboard.stripe.com, et il s'agit d'un lien de facture Stripe, ce qui est cohérent avec le contenu attendu sur ce domaine.",
+            "status": "coherent"
+          },
+          "display_text": "https://dashboard.stripe.com/receipts/invoices/CAcQARoXChVhY2N0XzFNRXhROUJqSVFyUlFudXgorczKywYyBkPWEFBsSzovFth1AeFUZDgC_QA_D2t4Wq3AQigSEniU4GXc0rSa11Ch-iAkHjW_wcaPI3Xx55g/pdf?s=em",
+          "domain": "dashboard.stripe.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://dashboard.stripe.com/receipts/invoices/CAcQARoXChVhY2N0XzFNRXhROUJqSVFyUlFudXgorczKywYyBkPWEFBsSzovFth1AeFUZDgC_QA_D2t4Wq3AQigSEniU4GXc0rSa11Ch-iAkHjW_wcaPI3Xx55g/pdf?s=em",
+          "reputation": {
+            "domain": "dashboard.stripe.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 25
+        },
+        {
+          "ai_analysis": {
+            "reason": "le texte affiché correspond au domaine de l'URL et le domaine est fiable",
+            "status": "coherent"
+          },
+          "display_text": "https://stripe.com/billing",
+          "domain": "stripe.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://stripe.com/billing",
+          "reputation": {
+            "domain": "stripe.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 25
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché correspond au domaine de l'URL",
+            "status": "coherent"
+          },
+          "display_text": "https://support.anthropic.com/",
+          "domain": "support.anthropic.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://support.anthropic.com/",
+          "reputation": {
+            "domain": "support.anthropic.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 25
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché correspond au domaine de l'URL, qui est une adresse de stockage d'images pour Stripe, un service de paiement en ligne.",
+            "status": "coherent"
+          },
+          "display_text": "https://stripe-images.s3.amazonaws.com/emails/invoices_invoice_illustration.png]",
+          "domain": "stripe-images.s3.amazonaws.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://stripe-images.s3.amazonaws.com/emails/invoices_invoice_illustration.png]",
+          "reputation": {
+            "domain": "stripe-images.s3.amazonaws.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 25
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché correspond au domaine de l'URL et le domaine est une adresse Stripe légitime",
+            "status": "coherent"
+          },
+          "display_text": "https://pay.stripe.com/invoice/acct_1MExQ9BjIQrRQnux/live_YWNjdF8xTUV4UTlCaklRclJRbnV4LF9UcUNyQWlkSER4RENEU0JTc05oUzRxMDFMbWY4V0h5LDE1OTY2MjEyNQ0200UtlgsfDD/pdf?s=em",
+          "domain": "pay.stripe.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://pay.stripe.com/invoice/acct_1MExQ9BjIQrRQnux/live_YWNjdF8xTUV4UTlCaklRclJRbnV4LF9UcUNyQWlkSER4RENEU0JTc05oUzRxMDFMbWY4V0h5LDE1OTY2MjEyNQ0200UtlgsfDD/pdf?s=em",
+          "reputation": {
+            "domain": "pay.stripe.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 25
+        },
+        {
+          "ai_analysis": {
+            "reason": "le texte affiché correspond au domaine de l'URL",
+            "status": "coherent"
+          },
+          "display_text": "https://stripe.com",
+          "domain": "stripe.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "https://stripe.com",
+          "reputation": {
+            "domain": "stripe.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 25
+        }
+      ]
+    },
+    "file": {
+      "analysis_id": 2,
+      "attachment_count": 2,
+      "attachments_analysis": [
+        {
+          "ai_analysis": {
+            "reason": "Le nom du fichier est clair et décrit son contenu, le type MIME et l'extension sont cohérents avec un document PDF légitime",
+            "status": "coherent"
+          },
+          "extension": ".pdf",
+          "filename": "Invoice-0GUDYWGX-0002.pdf",
+          "mime_type": "application/pdf",
+          "mime_verdict": {
+            "extension": ".pdf",
+            "mime": "application/pdf",
+            "reason": "L'extension correspond au type MIME",
+            "status": "coherent"
+          },
+          "score": 0,
+          "size": 0
+        },
+        {
+          "ai_analysis": {
+            "reason": "Le nom du fichier est clair et décrit un reçu, le type MIME et l'extension correspondent à un fichier PDF légitime",
+            "status": "coherent"
+          },
+          "extension": ".pdf",
+          "filename": "Receipt-2835-9319-2606.pdf",
+          "mime_type": "application/pdf",
+          "mime_verdict": {
+            "extension": ".pdf",
+            "mime": "application/pdf",
+            "reason": "L'extension correspond au type MIME",
+            "status": "coherent"
+          },
+          "score": 0,
+          "size": 0
+        }
+      ],
+      "explanation": "File : 2 fichier(s) analysé(s), aucun suspect",
+      "score": 0.0,
+      "service": "file",
+      "suspicious_count": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "Correspond à une facture",
+          "status": "ok"
+        },
+        "global_verdict": "coherent",
+        "language_quality": {
+          "reason": "Formulation claire",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "Pas d'urgence ou menace",
+          "status": "ok"
+        }
+      },
+      "analysis_id": 2,
+      "explanation": "Content: Aucun indicateur suspect",
+      "keywords": {
+        "count": 0,
+        "keyword_score": 0,
+        "keywords_found": []
+      },
+      "score": 0,
+      "service": "content",
+      "subject": "Your receipt from Anthropic, PBC #2835-9319-2606"
+    }
+  }
+}
