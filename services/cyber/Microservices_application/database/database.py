@@ -10,7 +10,7 @@ class Database:
             host="esigguard-mysql.mysql.database.azure.com",
             user="mysql_admin",
             password="@Ping632026@",
-            database="david"
+            database="esigguard_data"
         )
 
     def get_connection(self):
