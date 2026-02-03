@@ -34,7 +34,7 @@ class PhishingDatabase:
     def __init__(self):
         self.host = os.getenv('MYSQL_HOST', 'esigguard-mysql.mysql.database.azure.com')
         self.port = int(os.getenv('MYSQL_PORT', '3306'))
-        self.database = os.getenv('MYSQL_DATABASE', 'david')
+        self.database = os.getenv('MYSQL_DATABASE', 'esigguard_data')
         self.user = os.getenv('MYSQL_USER', 'mysql_admin')
         self.password = os.getenv('MYSQL_PASSWORD', '@Ping632026@')  # ← Plus de mot de passe en dur !
 
@@ -443,7 +443,7 @@ if __name__ == "__main__":
     print("\n💾 Stockage: MySQL Azure automatique")
     print("\n🔧 Configuration MySQL:")
     print(f"   Host:     {os.getenv('MYSQL_HOST', 'esigguard-mysql.mysql.database.azure.com')}")
-    print(f"   Database: {os.getenv('MYSQL_DATABASE', 'david')}")
+    print(f"   Database: {os.getenv('MYSQL_DATABASE', 'esigguard_data')}")
     print(f"   User:     {os.getenv('MYSQL_USER', 'mysql_admin')}")
     print("="*70 + "\n")
 
