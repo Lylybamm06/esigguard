@@ -8,9 +8,9 @@ from database.database import get_db
 
 app = Flask(__name__)
 
-# =================================================================
-# GROQ - Initialisation
-# =================================================================
+
+
+
 try:
     from groq import Groq, RateLimitError
     GROQ_API_KEY = os.getenv("GROQ_API_KEY")
@@ -25,9 +25,9 @@ except:
     client = None
 
 
-# =================================================================
-# FONCTIONS UTILITAIRES
-# =================================================================
+
+
+
 def clean_url(url: str) -> str:
     if not url:
         return ""
@@ -46,9 +46,9 @@ def extract_domain(url: str) -> str:
         return url
 
 
-# =================================================================
-# VIRUSTOTAL - Reputation du domaine
-# =================================================================
+
+
+
 def check_domain_reputation(domain: str) -> dict:
     try:
         api_key = os.getenv("VT_API_KEY")
@@ -78,9 +78,9 @@ def check_domain_reputation(domain: str) -> dict:
         return {"domain": domain, "status": "unknown", "malicious_reports": 0}
 
 
-# =================================================================
-# WHOIS - Age du domaine
-# =================================================================
+
+
+
 def get_domain_age(domain: str) -> dict:
     try:
         api_key = os.getenv("WHOIS_API_KEY")
@@ -114,9 +114,7 @@ def get_domain_age(domain: str) -> dict:
         return {"status": "unknown"}
 
 
-# =================================================================
-# GROQ - Analyse IA du lien
-# =================================================================
+
 def ai_analyze_link(display_text: str, raw_url: str, domain: str) -> dict:
     if not GROQ_AVAILABLE or not client:
         return {"status": "unknown", "reason": "Analyse IA non disponible"}
@@ -156,50 +154,43 @@ def ai_analyze_link(display_text: str, raw_url: str, domain: str) -> dict:
         return {"status": "unknown", "reason": "Erreur IA"}
 
 
-# =================================================================
-# ANALYSE D'UNE URL
-# Scoring sur 100 :
-#   Reputation not reliable  -> +40
-#   Domain age suspect       -> +40
-#   Domain age unknown       -> +20
-#   AI suspect               -> +20
-# =================================================================
+
 def analyze_url(url: str, use_groq: bool = True) -> dict:
     print(f"   Analyse: {url[:60]}...")
 
     url    = clean_url(url)
     domain = extract_domain(url)
 
-    # VirusTotal + WHOIS (toujours actifs)
+    
     reputation = check_domain_reputation(domain)
     domain_age = get_domain_age(domain)
 
-    # Groq (conditionnel selon nombre de liens)
+    
     if use_groq:
         ai_analysis = ai_analyze_link(url, url, domain)
     else:
         ai_analysis = {"status": "skipped", "reason": "Trop de liens (>8)"}
         print("      AI skippee (>8 liens)")
 
-    # --- Calcul du score ---
+    
     raw_score = 0
 
-    # Reputation : +40
+    
     if reputation.get("status") == "not reliable":
         raw_score += 40
 
-    # Domain age : +40 suspect / +20 unknown
+    
     age_status = domain_age.get("status")
     if age_status == "suspect":
         raw_score += 40
     elif age_status == "unknown":
         raw_score += 20
 
-    # AI : +20 (seulement si utilisee)
+    
     if ai_analysis.get("status") == "suspect":
         raw_score += 20
 
-    # Score final capped à 100
+    
     url_score = min(raw_score, 100)
 
     print(f"     Score: {url_score}/100")
@@ -215,9 +206,7 @@ def analyze_url(url: str, use_groq: bool = True) -> dict:
     }
 
 
-# =================================================================
-# ANALYSE DE TOUS LES LIENS D'UNE ANALYSE
-# =================================================================
+
 def analyze_liens(analysis_id):
     print(f"\n LIEN - Analyse {analysis_id}")
 
@@ -238,7 +227,7 @@ def analyze_liens(analysis_id):
     nb_urls = len(urls_data)
     print(f"   {nb_urls} URL(s) trouvee(s)")
 
-    #  Skip Groq si > 8 liens (economie de quota)
+    
     use_groq = nb_urls <= 8
     if not use_groq:
         print(f"    GROQ DESACTIVE : {nb_urls} liens detectes (> 8)")
@@ -257,7 +246,7 @@ def analyze_liens(analysis_id):
         urls_analyzed.append(analysis)
         url_scores.append(analysis["score"])
 
-        # Suspicious si score >= 50
+        
         is_suspicious = analysis["score"] >= 50
 
         db.update_url_suspicious(
@@ -269,10 +258,10 @@ def analyze_liens(analysis_id):
         if is_suspicious:
             suspicious_count += 1
 
-    # Score global = moyenne des scores
+    
     global_score = round(sum(url_scores) / len(url_scores), 2) if url_scores else 0
 
-    # Explication
+    
     if suspicious_count > 0:
         suspicious_urls = [u["raw_url"] for u in urls_analyzed if u["score"] >= 50]
         if len(suspicious_urls) <= 2:
@@ -296,9 +285,7 @@ def analyze_liens(analysis_id):
     }
 
 
-# =================================================================
-# ROUTES API
-# =================================================================
+
 @app.route('/')
 def home():
     return jsonify({"service": "Lien", "port": 5004})
@@ -325,9 +312,7 @@ def analyze(analysis_id):
         return jsonify({"error": str(e)}), 500
 
 
-# =================================================================
-# LANCEMENT
-# =================================================================
+
 if __name__ == "__main__":
     print("\n" + "="*60)
     print(" Lien Service - Port 5004")

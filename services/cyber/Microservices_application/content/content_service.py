@@ -81,7 +81,7 @@ Réponds UNIQUEMENT avec le JSON, sans texte avant ou après.
 """
 
     try:
-        print("🤖 Appel Groq API...")
+        print(" Appel Groq API...")
         response = client.chat.completions.create(
             model="llama-3.3-70b-versatile",
             messages=[{"role": "user", "content": prompt}],
