@@ -22,7 +22,7 @@ class DB:
     def __init__(self):
         self.host = "esigguard-mysql.mysql.database.azure.com"
         self.port = 3306
-        self.database = "david"
+        self.database = "esigguard_data"
         self.user = "mysql_admin"
         self.password = "@Ping632026@"
 
