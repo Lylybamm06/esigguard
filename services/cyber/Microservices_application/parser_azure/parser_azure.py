@@ -43,9 +43,9 @@ def decode_html_part(raw_html):
         return ""
 
 
-# =================================================================
-# NETTOYAGE DU BODY : enlever le subject s'il est présent
-# =================================================================
+
+
+
 def clean_body(body, subject):
     """Enlève le subject du body s'il apparaît au début"""
     if not subject or not body:
@@ -54,11 +54,11 @@ def clean_body(body, subject):
     body_clean    = body.strip()
     subject_clean = subject.strip()
 
-    # Cas 1 : body commence exactement par le subject
+    
     if body_clean.startswith(subject_clean):
         body_clean = body_clean[len(subject_clean):]
 
-        # Enlever les séparateurs après le subject
+        
         for sep in [" - ", " | ", " : ", "  ", "\n\n", "\n", "\t", "-", ":"]:
             if body_clean.startswith(sep):
                 body_clean = body_clean[len(sep):]
@@ -66,14 +66,14 @@ def clean_body(body, subject):
 
         return body_clean.strip()
 
-    # Cas 2 : le subject apparaît comme une ligne séparée dans le body
+    
     body_lines    = body_clean.split("\n")
     cleaned_lines = []
     subject_found = False
 
     for line in body_lines:
         line_stripped = line.strip()
-        # Enlever la première occurrence exacte du subject
+        
         if not subject_found and line_stripped == subject_clean:
             subject_found = True
             continue
@@ -82,13 +82,12 @@ def clean_body(body, subject):
     if subject_found:
         return "\n".join(cleaned_lines).strip()
 
-    # Cas 3 : rien trouvé, retourner tel quel
+    
     return body.strip()
 
 
-# =================================================================
-# PARSING DE L'EMAIL
-# =================================================================
+
+
 def parse_email_file(file_path, analysis_id):
     with open(file_path, "rb") as f:
         msg = BytesParser(policy=policy.default).parse(f)
@@ -107,7 +106,7 @@ def parse_email_file(file_path, analysis_id):
     except:
         email_date = None
 
-    # --- Authentification ---
+   
     auth_spf = auth_dkim = auth_dmarc = "unknown"
     auth_results = msg.get("Authentication-Results", "").lower()
 
@@ -120,7 +119,7 @@ def parse_email_file(file_path, analysis_id):
     if "dmarc=pass" in auth_results:    auth_dmarc = "pass"
     elif "dmarc=fail" in auth_results:  auth_dmarc = "fail"
 
-    # --- IP expéditeur ---
+    
     sender_ip = None
     ip_regex  = r'(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})'
 
@@ -151,11 +150,11 @@ def parse_email_file(file_path, analysis_id):
     if public_ips:
         sender_ip = public_ips[0]
 
-    # =================================================================
-    # EXTRACTION DU BODY - Séparer text/plain et text/html
-    # =================================================================
-    body_plain       = ""   # Partie text/plain
-    body_html        = ""   # Partie text/html
+    
+    
+    
+    body_plain       = ""   
+    body_html        = ""   
     attachments_list = []
 
     if msg.is_multipart():
@@ -190,7 +189,7 @@ def parse_email_file(file_path, analysis_id):
                     "is_dangerous": is_dangerous_extension(ext)
                 })
     else:
-        # Email simple (pas multipart)
+        
         ctype = msg.get_content_type()
         if ctype == "text/plain":
             try:
@@ -202,7 +201,7 @@ def parse_email_file(file_path, analysis_id):
             if raw_html:
                 body_html = decode_html_part(raw_html)
 
-    # Préférer text/plain, sinon text/html
+    
     if body_plain.strip():
         body = body_plain
         print("    Body source : text/plain")
@@ -210,11 +209,11 @@ def parse_email_file(file_path, analysis_id):
         body = body_html
         print("    Body source : text/html")
 
-    # Nettoyer le subject du body
+    
     body = clean_body(body, email_subject)
     print("    Body nettoyé (subject enlevé si présent)")
 
-    # --- URLs ---
+   
     urls_list = extract_urls(body)
     urls_list = list(set(urls_list))
 
@@ -242,9 +241,9 @@ def parse_email_file(file_path, analysis_id):
     }
 
 
-# =================================================================
-# ROUTE API
-# =================================================================
+
+
+
 @app.post("/process/<int:analysis_id>")
 def process_one(analysis_id):
     try:
@@ -285,8 +284,6 @@ def process_one(analysis_id):
         return jsonify({"error": str(e)}), 500
 
 
-# =================================================================
-# LANCEMENT
-# =================================================================
+
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5001, debug=True)
