@@ -2,89 +2,72 @@
   "email_data": {
     "display_name": "David ZOHOUN",
     "domain": "gmail.com",
-    "email_date": "2026-01-31T10:33:48.832000+00:00",
+    "email_body": "Clique urgemment sur ce lien \nhttp:www.jesuisfort.com  . C’est urgent ...",
+    "email_date": "2026-02-03T23:57:50.403000+00:00",
     "email_sender": "davzohoun@gmail.com",
-    "email_subject": "Bonjour . J’espère que vous allez bien . Pour raison familiale, je serai au Sénégal du 20 décembre au 06 janvier . J’aimerais donc demander des congés pour cette période. Voici ci-joint mon billet d’avion comme justificatif ...",
+    "email_subject": "Essai",
     "sender_address": "davzohoun@gmail.com",
-    "timestamp": 1769855628832,
+    "timestamp": 1770163070403,
     "urls": [
-      "https://aka.ms/AAb9ysg"
+      "http://www.jesuisfort.com/"
     ],
-    "attachments": [
-      {
-        "filename": "e-ticket_0822302230556_DAVID PAGUIEL_ZOHOUN.pdf"
-      }
-    ]
+    "attachments": []
   },
   "auth": {
     "details": [
       "Domaine cohérent avec l'adresse expéditeur"
     ],
-    "domain_age_days": 11129,
+    "domain_age_days": 11132,
     "explanation": "Domaine cohérent avec l'adresse expéditeur",
     "score": 0.0,
-    "timestamp": "2026-01-31T10:33:50.270749"
+    "timestamp": "2026-02-03T23:57:51.896693"
   },
   "content": {
     "content_analysis": {
-      "reason": "Le texte présente une demande de congés pour une raison familiale avec un justificatif (billet d'avion) et des dates précises, ce qui est une pratique courante et acceptable dans un contexte professionnel.",
+      "reason": "le contenu n'a rien de suspect, il s'agit simplement d'un essai avec une instruction pour répondre en JSON",
       "status": "cohérent"
     },
-    "explanation": "Le texte présente une demande de congés pour une raison familiale avec un justificatif (billet d'avion) et des dates précises, ce qui est une pratique courante et acceptable dans un contexte professionnel.",
+    "explanation": "le contenu n'a rien de suspect, il s'agit simplement d'un essai avec une instruction pour répondre en JSON",
     "percentage": 0.0,
     "risk_level": "low",
     "score": 0
   },
   "lien": {
-    "explanation": "1 lien(s) suspect(s) : https://aka.ms/AAb9ysg",
+    "explanation": "1 lien(s) suspect(s) : http://www.jesuisfort.com/",
     "links_analysis": [
       {
         "ai_analysis": {
-          "reason": "le lien est court et utilise un service d'abrégement d'URL (aka.ms), ce qui peut être utilisé pour masquer l'URL réelle et potentiellement mener à des attaques de phishing",
-          "status": "suspect"
+          "reason": "Le texte affiché corresponde à l'URL réelle, ce qui indique qu'il n'y a pas de tentative de phishing ou de redirection vers un site malveillant.",
+          "status": "coherent"
         },
-        "domain": "aka.ms",
+        "domain": "www.jesuisfort.com",
         "domain_age": {
           "status": "unknown"
         },
         "is_suspicious": true,
-        "percentage": 61.54,
+        "percentage": 40,
         "reputation": {
-          "domain": "aka.ms",
-          "malicious_reports": 1,
-          "status": "not reliable"
+          "domain": "www.jesuisfort.com",
+          "malicious_reports": 0,
+          "status": "reliable"
         },
-        "score": 80,
-        "url": "https://aka.ms/AAb9ysg"
+        "score": 40,
+        "url": "http://www.jesuisfort.com/"
       }
     ],
     "nb_links": 1,
-    "percentage": 61.54,
+    "percentage": 40.0,
     "risk_level": "medium",
-    "score": 80.0
+    "score": 40.0
   },
   "file": {
     "Explanation": "0 fichier suspect | Raison : Aucune extension dangereuse détectée",
-    "attachment_analysis": [
-      {
-        "ai_analysis": {
-          "reason": "L’extension .pdf ne fait pas partie des extensions dangereuses ou à macros.",
-          "status": "coherent"
-        },
-        "content_type": "inconnu",
-        "filename": "e-ticket_0822302230556_DAVID PAGUIEL_ZOHOUN.pdf",
-        "percentage": 0.0,
-        "risk_level": "low",
-        "score": 0,
-        "score_details": [],
-        "size": 0
-      }
-    ],
-    "moyenne_pourcentage": 0.0,
-    "nb_attachments": 1
+    "attachment_analysis": [],
+    "moyenne_pourcentage": 0,
+    "nb_attachments": 0
   },
-  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte présente une demande de congés pour une raison familiale avec un justificatif (billet d'avion) et des dates précises, ce qui est une pratique courante et acceptable dans un contexte professionnel. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 1 lien(s) suspect(s) : https://aka.ms/AAb9ysg",
-  "score_cyber": 20.0,
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: le contenu n'a rien de suspect, il s'agit simplement d'un essai avec une instruction pour répondre en JSON | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 1 lien(s) suspect(s) : http://www.jesuisfort.com/",
+  "score_cyber": 10.0,
   "analysis_id": 89,
-  "analyzed_at": "2026-01-31T10:33:51.031367"
+  "analyzed_at": "2026-02-03T23:57:52.677701"
 }

@@ -1,0 +1,193 @@
+{
+  "email_data": {
+    "display_name": "Apple",
+    "domain": "email.apple.com",
+    "email_body": "iCloud+\n1 mois\n0,99 €/mois\n\nProblème de facturation\n\t \n \n \n\tChère/Cher David ZOHOUN,\t\n\n\tPour éviter toute interruption du service, veuillez mettre à jour votre mode de paiement ou ajouter des fonds.\t\n\n\tMettre à jour votre mode de paiement\t\n \n\tCordialement,\nApple\t\n \n\tPour obtenir de l’aide avec les abonnements et les achats, consultez l’assistance Apple.\t\n\n \n\t\t\n \n\tCompte Apple • Historique d’achats • Conditions générales de vente • Engagement de confident...",
+    "email_date": "2026-02-04T12:43:11.145000+00:00",
+    "email_sender": "no_reply@email.apple.com",
+    "email_subject": "Problème de facturation",
+    "sender_address": "no_reply@email.apple.com",
+    "timestamp": 1770208991145,
+    "urls": [
+      "https://apps.apple.com/account/billing?mt=8&mtPageRef=BE-EML",
+      "https://support.apple.com/billing",
+      "https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/accountSummary?mt=8",
+      "https://finance-app.itunes.apple.com/purchases",
+      "http://www.apple.com/legal/internet-services/icloud/ww/",
+      "https://www.apple.com/fr/privacy/",
+      "https://www.apple.com/fr/legal/"
+    ],
+    "attachments": []
+  },
+  "auth": {
+    "details": [
+      "Domaine cohérent avec l'adresse expéditeur"
+    ],
+    "domain_age_days": 14230,
+    "explanation": "Domaine cohérent avec l'adresse expéditeur",
+    "score": 0.0,
+    "timestamp": "2026-02-04T12:43:11.054228"
+  },
+  "content": {
+    "content_analysis": {
+      "reason": "Invalid JSON returned by Groq: Analyse du contenu :\n\nLe contenu semble cohérent car il décrit un problème spécifique (\"Problème de facturation\") et demande une réponse structurée en JSON, ce qui est couramment utilisé pour les échanges de données entre systèmes ou applications. La demande de réponse en JSON avec des champs \"status\" et \"reason\" suggère une tentative d'automatiser ou de standardiser la gestion de problèmes, ce qui est une pratique courante dans les systèmes de support ou de gestion de tickets.\n\nRéponse en JSON :\n\n{\n    \"status\": \"cohérent\",\n    \"reason\": \"Le contenu décrit un problème spécifique et demande une réponse structurée.\"\n}",
+      "status": "unknown"
+    },
+    "explanation": "Invalid JSON returned by Groq: Analyse du contenu :\n\nLe contenu semble cohérent car il décrit un problème spécifique (\"Problème de facturation\") et demande une réponse structurée en JSON, ce qui est couramment utilisé pour les échanges de données entre systèmes ou applications. La demande de.",
+    "percentage": 0.0,
+    "risk_level": "low",
+    "score": 0
+  },
+  "lien": {
+    "explanation": "7 lien(s) suspect(s) : https://apps.apple.com/account/billing?mt=8&mtPageRef=BE-EML, https://support.apple.com/billing, https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/accountSummary?mt=8, https://finance-app.itunes.apple.com/purchases, http://www.apple.com/legal/internet-services/icloud/ww/, https://www.apple.com/fr/privacy/, https://www.apple.com/fr/legal/",
+    "links_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "Le domaine du lien est apps.apple.com, qui est un domaine officiel d'Apple, et le lien mène à la page de facturation de l'App Store, ce qui est une destination attendue pour un tel lien.",
+          "status": "coherent"
+        },
+        "domain": "apps.apple.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "apps.apple.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://apps.apple.com/account/billing?mt=8&mtPageRef=BE-EML"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Le texte affiché et l'URL réelle sont identiques et pointent vers un domaine officiel d'Apple, ce qui suggère que le lien est légitime et non malveillant.",
+          "status": "coherent"
+        },
+        "domain": "support.apple.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "support.apple.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://support.apple.com/billing"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Le domaine du lien appartient à Apple, ce qui est cohérent avec le contenu du lien, qui semble être lié à un résumé de compte iTunes.",
+          "status": "coherent"
+        },
+        "domain": "buy.itunes.apple.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "buy.itunes.apple.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/accountSummary?mt=8"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Le domaine 'finance-app.itunes.apple.com' semble être un sous-domaine non officiel ou personnalisé, et non un sous-domaine officiel d'Apple, ce qui pourrait indiquer une tentative de phishing ou d'usurpation d'identité.",
+          "status": "suspect"
+        },
+        "domain": "finance-app.itunes.apple.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 60,
+        "reputation": {
+          "domain": "finance-app.itunes.apple.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 60,
+        "url": "https://finance-app.itunes.apple.com/purchases"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Le texte affiché et l'URL réelle correspondent parfaitement, et le domaine est celui d'une entreprise réputée, Apple.",
+          "status": "coherent"
+        },
+        "domain": "www.apple.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "www.apple.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "http://www.apple.com/legal/internet-services/icloud/ww/"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Le texte affiché correspond à l'URL réelle et le domaine est légitime, c'est-à-dire qu'il s'agit d'un site officiel d'Apple",
+          "status": "coherent"
+        },
+        "domain": "www.apple.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "www.apple.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://www.apple.com/fr/privacy/"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Le texte affiché et l'URL réelle sont identiques, ce qui confirme l'authenticité du lien et indique qu'il n'y a pas de tentative de phishing par substitution d'URL",
+          "status": "coherent"
+        },
+        "domain": "www.apple.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "www.apple.com",
+          "malicious_reports": 0,
+          "status": "reliable"
+        },
+        "score": 40,
+        "url": "https://www.apple.com/fr/legal/"
+      }
+    ],
+    "nb_links": 7,
+    "percentage": 42.86,
+    "risk_level": "medium",
+    "score": 42.86
+  },
+  "file": {
+    "Explanation": "0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+    "attachment_analysis": [],
+    "moyenne_pourcentage": 0,
+    "nb_attachments": 0
+  },
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Invalid JSON returned by Groq: Analyse du contenu :\n\nLe contenu semble cohérent car il décrit un problème spécifique (\"Problème de facturation\") et demande une réponse structurée en JSON, ce qui est couramment utilisé pour les échanges de données entre systèmes ou applications. La demande de. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 7 lien(s) suspect(s) : https://apps.apple.com/account/billing?mt=8&mtPageRef=BE-EML, https://support.apple.com/billing, https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/accountSummary?mt=8, https://finance-app.itunes.apple.com/purchases, http://www.apple.com/legal/internet-services/icloud/ww/, https://www.apple.com/fr/privacy/, https://www.apple.com/fr/legal/",
+  "score_cyber": 10.71,
+  "analysis_id": 123,
+  "analyzed_at": "2026-02-04T12:43:36.568925"
+}

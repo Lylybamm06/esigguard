@@ -6,19 +6,18 @@ from datetime import datetime
 from pathlib import Path
 import mysql.connector
 
+
 app = Flask(__name__)
 
 @app.after_request
 def add_cors_headers(response):
     response.headers["Access-Control-Allow-Origin"] = "*"
     response.headers["Access-Control-Allow-Headers"] = "Content-Type"
-    response.headers["Access-Control-Allow-Methods"] = "POST, OPTIONS, GET"
+    response.headers["Access-Control-Allow-Methods"] = "POST, OPTIONS"
     return response
 
 
-# ================================================================
-# DATABASE
-# ================================================================
+
 class DB:
     def __init__(self):
         self.host = "esigguard-mysql.mysql.database.azure.com"
@@ -88,43 +87,10 @@ class DB:
         cursor.close()
         conn.close()
 
-    # ================================================================
-    # Récupération complète pour /result/<id>
-    # ================================================================
-    def get_analysis(self, analysis_id):
-        conn = self.connect()
-        cursor = conn.cursor(dictionary=True)
-
-        query = """
-        SELECT 
-            id,
-            score_cyber,
-            explanation_cyber,
-            final_score,
-            final_verdict,
-            human_explanation,
-            status,
-            raw_file_path,
-            upload_date
-        FROM analyses
-        WHERE id = %s
-        """
-
-        cursor.execute(query, (analysis_id,))
-        result = cursor.fetchone()
-
-        cursor.close()
-        conn.close()
-
-        return result
-
 
 db = DB()
 
 
-# ================================================================
-# ORCHESTRATOR
-# ================================================================
 STORAGE_DIR = Path("./storage")
 STORAGE_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -145,9 +111,11 @@ def safe_post(url, payload):
         return {"error": str(e)}
 
 
+
 @app.route("/analyze", methods=["POST", "OPTIONS"])
 def analyze():
 
+    
     if request.method == "OPTIONS":
         resp = jsonify({"status": "ok"})
         resp.headers["Access-Control-Allow-Origin"] = "*"
@@ -155,8 +123,13 @@ def analyze():
         resp.headers["Access-Control-Allow-Methods"] = "POST, OPTIONS"
         return resp, 200
 
+    
     raw = request.json or {}
 
+    print("\n===== ORCHESTRATOR : MAIL REÇU =====")
+    print(json.dumps(raw, indent=2, ensure_ascii=False))
+
+    
     parsed = safe_post(PARSER_URL, raw)
 
     if "analysis_id" not in parsed:
@@ -165,6 +138,7 @@ def analyze():
     analysis_id = parsed["analysis_id"]
     email_data = parsed["parsed_data"]["email_data"]
 
+    
     results = {}
 
     enriched_email_data = {
@@ -187,41 +161,46 @@ def analyze():
             name = futures[future]
             results[name] = future.result()
 
-    # URLs
     lien_results = results["lien"].get("links_analysis", [])
+
     for link in lien_results:
         url = link.get("url")
         is_suspicious = link.get("is_suspicious", False)
         db.insert_url_if_missing(analysis_id, url)
         db.update_url_suspicion(analysis_id, url, is_suspicious)
 
-    # Scores + explications
+    
     scores = []
     explanations = []
 
+   
     auth_exp = results["auth"].get("explanation", "")
     if auth_exp:
         explanations.append(f"AUTH: {auth_exp}")
     scores.append(results["auth"].get("score", 0))
 
+    
     content_exp = results["content"].get("explanation", "")
     if content_exp:
         explanations.append(f"CONTENT: {content_exp}")
     scores.append(results["content"].get("score", 0))
 
+    
     file_exp = results["file"].get("Explanation", "")
     if file_exp:
         explanations.append(f"FILE: {file_exp}")
     scores.append(results["file"].get("moyenne_pourcentage", 0))
 
+    
     lien_exp = results["lien"].get("explanation", "")
     if lien_exp:
         explanations.append(f"LIEN: {lien_exp}")
-    scores.append(results["lien"].get("percentage", 0))
+    scores.append(results["lien"].get("score", 0))
 
     score_cyber = round(sum(scores) / len(scores), 2)
     explanation_cyber = " | ".join(filter(None, explanations))
 
+    
     final = {
         "email_data": enriched_email_data,
         "auth": results["auth"],
@@ -234,60 +213,16 @@ def analyze():
         "analyzed_at": datetime.utcnow().isoformat()
     }
 
+    
     with open(STORAGE_DIR / f"analysis_{analysis_id}.json", "w", encoding="utf-8") as f:
         json.dump(final, f, indent=2, ensure_ascii=False)
 
+    
     db.update_cyber_results(analysis_id, explanation_cyber, score_cyber)
     db.update_status(analysis_id, "processing")
 
     return jsonify(final)
 
-
-# ================================================================
-# NOUVEL ENDPOINT : /result/<id>
-# ================================================================
-@app.route("/result/<int:analysis_id>", methods=["GET", "OPTIONS"])
-def get_result(analysis_id):
-
-    if request.method == "OPTIONS":
-        resp = jsonify({"status": "ok"})
-        resp.headers["Access-Control-Allow-Origin"] = "*"
-        resp.headers["Access-Control-Allow-Headers"] = "Content-Type"
-        resp.headers["Access-Control-Allow-Methods"] = "GET, OPTIONS"
-        return resp, 200
-
-    try:
-        result = db.get_analysis(analysis_id)
-
-        if result:
-            return jsonify({
-                "success": True,
-                "analysis_id": result["id"],
-
-                # NOUVEAUX CHAMPS
-                "final_score": result.get("final_score"),
-                "final_verdict": result.get("final_verdict"),
-                "human_explanation": result.get("human_explanation"),
-
-                # ANCIENS CHAMPS (toujours utiles)
-                "score_cyber": result.get("score_cyber"),
-                "explanation_cyber": result.get("explanation_cyber"),
-
-                "status": result.get("status"),
-                "file_path": result.get("raw_file_path"),
-                "upload_date": result.get("upload_date").isoformat() if result.get("upload_date") else None
-            })
-
-        return jsonify({
-            "success": False,
-            "error": f"Analyse {analysis_id} non trouvée"
-        }), 404
-
-    except Exception as e:
-        return jsonify({
-            "success": False,
-            "error": str(e)
-        }), 500
 
 
 if __name__ == "__main__":

@@ -1,0 +1,737 @@
+{
+  "email_data": {
+    "display_name": "Healthcare.com",
+    "domain": "poczta.onet.pl",
+    "email_body": "...",
+    "email_date": "2026-02-04T15:31:16.342000+00:00",
+    "email_sender": "bluegranaa@poczta.onet.pl",
+    "email_subject": "Congress Approves ”Health-lnsurance” Plans For $O Premium PerMonth",
+    "sender_address": "bluegranaa@poczta.onet.pl",
+    "timestamp": 1770219076342,
+    "urls": [
+      "http://jokfemmbaaknsxmlvwmdufrvtjqeifytvyjyoqetumsckouwfn.yesyoucan.us.com/4eHuHz0KHDX43hthpgjzssv0QFCZISDXUHMIYKC0EGVD613e0?fuZWGhKonwFKGgXObwAvIiwCFroonWxtscSSGSDlStTqnWLOpf",
+      "http://ayhcprcvqrddeayqrxcualtnjkbbbwwauxbnqsjbxgkjmelzwx.yesyoucan.us.com/5sssQt0mUQH43dtzywesfsh0HZTJIRDNXRPPCLZ0NXUV613N0?RpLDNsoUtCdkDoadECURsCshiJwKOeEClmUFrIWoFCAqWVWSUf",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145730&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGImcDE9JTQwbHFibWpOJTJGWGRNVEZ6UzNyeHNWMklRTkpGeFdzUDFIMlJQZ3dTWUduUTF3JTNE&s=4oyZQduVLZ_XdcWRJ2V9MML-zVFvoN2my5m-72AYgJE",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145731&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=fNrztxKgxOsX2m1_bOZ8ASKsXeu9kXyFuxfYJD0mQsg",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145732&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=pH8A0XSECyvsbO192QggIR3fbTSOWRpysT-nONcygtk",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145734&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=xg9IUUF0moDc2aQ4esAZ9KrMWzrKAAt8joNQef_jfhE",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145735&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=bfz6ZelX7LqElRTKHD5bB0374RpeQgIldE3pge9yQRA",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145736&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=2nhPlG0wP2Fnyw0a8Jm4x8NhZQERAHQF_cn_-i9a-JA",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145737&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=1DJEgAPWyYr8QWK8PVprECvP997V4jEOKvKhWA9GAnw",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145738&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=bLycL-lIByF9OfGaKyJU_BeNA58NRfEDbQiVb61tzwE",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145739&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=CLZ22qHYzUUtuKi-COL6gfL_vb4ms2pr6-waz6qLx4s",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573a&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=J_bEoFqW-wLaIsnn3jqO91DH1aE3uG4wMbo-ii-6YlI",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573b&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=-NtmMZvnesy88UGkfELKTONY8xlUH1-yQEv9ca2fjEk",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573c&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=tBzdPKbCGJ6W2iZJBPy1MdtV6ccqM1Q6WgJtbuPm-EM",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573d&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=83sf1D6xaVZSbF7a3ROIqG2vqUBLY1h24QECkwdpmO8",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573e&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=WaxvAqhj7MiyJzu91HiYFoIY1GyqNOWXKhLg8cnjYHI",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573f&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=iNtJtCEH87gasSn5CJai_fcpN0w2Jfrt2uciQ65BPs4",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145740&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=lAbGPxePCXCyJCumYkjGx44NADA6B90zKvsCdAuW-Og",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145741&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=mL3w9xmaBm4ErkEsOxFVTYzKIa9HI-Nwtw5d9q-qm2M",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145742&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=gFb4SXu93tH4AFr__lXYmmgd3xqQ4DXk_KERPy4zQT0",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145743&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=ikZDsIxrrh5wUmEaluDo5sfoh43AefVooFvvKNCpawA",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145744&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=Ja72W0r2uKG0rbFFOIgBRnWv0y8jSj4ICWqZEkLaLk4",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145745&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=ugzu30XIQEe0N_mr3I12fAIAcpJzlolnYo461w1FUhM",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457dc&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=XFukqdugZ2iAHYJ0VX73GoY62-okHD1cUCSWnrjQ_VA",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457dd&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=8akdKKSx1xZPFHbycxRpG1rweXLjZ0mhZrnq4QufdIo",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457de&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=2Wuz8fKPjFsSgiGsWMiRef79_dnvh1YuRbEz8dUmILE",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457df",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e0",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e1",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e2",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e3&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=PR8Cd5ESdsPjwgWUGPVSsbFLjkntYVWMb0n1LhOxkMM",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e4&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=JcrI5qTYRgAVUIpAgBoDhXTkkNVrU-Cf5ZzXZcxQ0Y0",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e5&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGImcDE9JTQwaFI4d2pCdkQ1ZWoxZEYzdXElMkI2MG13JTNEJTNEJnAyPTElMjA4MDAlMjA5MjklMjAzNDY3&s=d7P1EU64yeg-P359X3k0nwa203k7YCI-e3nnPTzlaEc",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e6&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=z_WhhZDAD3o8DaXLTYdvNgPTImWrqRAOQxxJH-dho04",
+      "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e7&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=x4d-pGyTvC_vivu7mdAzoYhSIcbV9TLK3IqRa0-ZSy8",
+      "https://mail.google.com/mail/u/0?ui=2&ik=95e18349ee&view=lg&permmsgid=msg-f:1856137878734436333"
+    ],
+    "attachments": []
+  },
+  "auth": {
+    "details": [
+      "Domaine cohérent avec l'adresse expéditeur"
+    ],
+    "domain_age_days": 10819,
+    "explanation": "Domaine cohérent avec l'adresse expéditeur",
+    "score": 0.0,
+    "timestamp": "2026-02-04T15:31:16.830697"
+  },
+  "content": {
+    "content_analysis": {
+      "reason": "Le texte contient une erreur de frappe et d'orthographe ('Health-lnsurance' au lieu de 'Health-Insurance' et un espace avant 'PerMonth'), ainsi que des guillemets qui peuvent indiquer une fausse ou trompeuse information.",
+      "status": "suspect"
+    },
+    "explanation": "Le texte contient une erreur de frappe et d'orthographe ('Health-lnsurance' au lieu de 'Health-Insurance' et un espace avant 'PerMonth'), ainsi que des guillemets qui peuvent indiquer une fausse ou trompeuse information.",
+    "percentage": 100.0,
+    "risk_level": "high",
+    "score": 100
+  },
+  "lien": {
+    "explanation": "36 lien(s) suspect(s) : http://jokfemmbaaknsxmlvwmdufrvtjqeifytvyjyoqetumsckouwfn.yesyoucan.us.com/4eHuHz0KHDX43hthpgjzssv0QFCZISDXUHMIYKC0EGVD613e0?fuZWGhKonwFKGgXObwAvIiwCFroonWxtscSSGSDlStTqnWLOpf, http://ayhcprcvqrddeayqrxcualtnjkbbbwwauxbnqsjbxgkjmelzwx.yesyoucan.us.com/5sssQt0mUQH43dtzywesfsh0HZTJIRDNXRPPCLZ0NXUV613N0?RpLDNsoUtCdkDoadECURsCshiJwKOeEClmUFrIWoFCAqWVWSUf, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145730&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGImcDE9JTQwbHFibWpOJTJGWGRNVEZ6UzNyeHNWMklRTkpGeFdzUDFIMlJQZ3dTWUduUTF3JTNE&s=4oyZQduVLZ_XdcWRJ2V9MML-zVFvoN2my5m-72AYgJE, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145731&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=fNrztxKgxOsX2m1_bOZ8ASKsXeu9kXyFuxfYJD0mQsg, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145732&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=pH8A0XSECyvsbO192QggIR3fbTSOWRpysT-nONcygtk, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145734&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=xg9IUUF0moDc2aQ4esAZ9KrMWzrKAAt8joNQef_jfhE, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145735&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=bfz6ZelX7LqElRTKHD5bB0374RpeQgIldE3pge9yQRA, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145736&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=2nhPlG0wP2Fnyw0a8Jm4x8NhZQERAHQF_cn_-i9a-JA, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145737&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=1DJEgAPWyYr8QWK8PVprECvP997V4jEOKvKhWA9GAnw, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145738&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=bLycL-lIByF9OfGaKyJU_BeNA58NRfEDbQiVb61tzwE, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145739&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=CLZ22qHYzUUtuKi-COL6gfL_vb4ms2pr6-waz6qLx4s, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573a&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=J_bEoFqW-wLaIsnn3jqO91DH1aE3uG4wMbo-ii-6YlI, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573b&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=-NtmMZvnesy88UGkfELKTONY8xlUH1-yQEv9ca2fjEk, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573c&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=tBzdPKbCGJ6W2iZJBPy1MdtV6ccqM1Q6WgJtbuPm-EM, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573d&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=83sf1D6xaVZSbF7a3ROIqG2vqUBLY1h24QECkwdpmO8, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573e&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=WaxvAqhj7MiyJzu91HiYFoIY1GyqNOWXKhLg8cnjYHI, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573f&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=iNtJtCEH87gasSn5CJai_fcpN0w2Jfrt2uciQ65BPs4, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145740&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=lAbGPxePCXCyJCumYkjGx44NADA6B90zKvsCdAuW-Og, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145741&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=mL3w9xmaBm4ErkEsOxFVTYzKIa9HI-Nwtw5d9q-qm2M, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145742&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=gFb4SXu93tH4AFr__lXYmmgd3xqQ4DXk_KERPy4zQT0, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145743&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=ikZDsIxrrh5wUmEaluDo5sfoh43AefVooFvvKNCpawA, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145744&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=Ja72W0r2uKG0rbFFOIgBRnWv0y8jSj4ICWqZEkLaLk4, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145745&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=ugzu30XIQEe0N_mr3I12fAIAcpJzlolnYo461w1FUhM, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457dc&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=XFukqdugZ2iAHYJ0VX73GoY62-okHD1cUCSWnrjQ_VA, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457dd&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=8akdKKSx1xZPFHbycxRpG1rweXLjZ0mhZrnq4QufdIo, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457de&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=2Wuz8fKPjFsSgiGsWMiRef79_dnvh1YuRbEz8dUmILE, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457df, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e0, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e1, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e2, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e3&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=PR8Cd5ESdsPjwgWUGPVSsbFLjkntYVWMb0n1LhOxkMM, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e4&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=JcrI5qTYRgAVUIpAgBoDhXTkkNVrU-Cf5ZzXZcxQ0Y0, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e5&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGImcDE9JTQwaFI4d2pCdkQ1ZWoxZEYzdXElMkI2MG13JTNEJTNEJnAyPTElMjA4MDAlMjA5MjklMjAzNDY3&s=d7P1EU64yeg-P359X3k0nwa203k7YCI-e3nnPTzlaEc, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e6&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=z_WhhZDAD3o8DaXLTYdvNgPTImWrqRAOQxxJH-dho04, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e7&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=x4d-pGyTvC_vivu7mdAzoYhSIcbV9TLK3IqRa0-ZSy8, https://mail.google.com/mail/u/0?ui=2&ik=95e18349ee&view=lg&permmsgid=msg-f:1856137878734436333",
+    "links_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "jokfemmbaaknsxmlvwmdufrvtjqeifytvyjyoqetumsckouwfn.yesyoucan.us.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "jokfemmbaaknsxmlvwmdufrvtjqeifytvyjyoqetumsckouwfn.yesyoucan.us.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "http://jokfemmbaaknsxmlvwmdufrvtjqeifytvyjyoqetumsckouwfn.yesyoucan.us.com/4eHuHz0KHDX43hthpgjzssv0QFCZISDXUHMIYKC0EGVD613e0?fuZWGhKonwFKGgXObwAvIiwCFroonWxtscSSGSDlStTqnWLOpf"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "ayhcprcvqrddeayqrxcualtnjkbbbwwauxbnqsjbxgkjmelzwx.yesyoucan.us.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "ayhcprcvqrddeayqrxcualtnjkbbbwwauxbnqsjbxgkjmelzwx.yesyoucan.us.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "http://ayhcprcvqrddeayqrxcualtnjkbbbwwauxbnqsjbxgkjmelzwx.yesyoucan.us.com/5sssQt0mUQH43dtzywesfsh0HZTJIRDNXRPPCLZ0NXUV613N0?RpLDNsoUtCdkDoadECURsCshiJwKOeEClmUFrIWoFCAqWVWSUf"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145730&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGImcDE9JTQwbHFibWpOJTJGWGRNVEZ6UzNyeHNWMklRTkpGeFdzUDFIMlJQZ3dTWUduUTF3JTNE&s=4oyZQduVLZ_XdcWRJ2V9MML-zVFvoN2my5m-72AYgJE"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145731&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=fNrztxKgxOsX2m1_bOZ8ASKsXeu9kXyFuxfYJD0mQsg"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145732&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=pH8A0XSECyvsbO192QggIR3fbTSOWRpysT-nONcygtk"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145734&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=xg9IUUF0moDc2aQ4esAZ9KrMWzrKAAt8joNQef_jfhE"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145735&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=bfz6ZelX7LqElRTKHD5bB0374RpeQgIldE3pge9yQRA"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145736&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=2nhPlG0wP2Fnyw0a8Jm4x8NhZQERAHQF_cn_-i9a-JA"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145737&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=1DJEgAPWyYr8QWK8PVprECvP997V4jEOKvKhWA9GAnw"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145738&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=bLycL-lIByF9OfGaKyJU_BeNA58NRfEDbQiVb61tzwE"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145739&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=CLZ22qHYzUUtuKi-COL6gfL_vb4ms2pr6-waz6qLx4s"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573a&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=J_bEoFqW-wLaIsnn3jqO91DH1aE3uG4wMbo-ii-6YlI"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573b&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=-NtmMZvnesy88UGkfELKTONY8xlUH1-yQEv9ca2fjEk"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573c&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=tBzdPKbCGJ6W2iZJBPy1MdtV6ccqM1Q6WgJtbuPm-EM"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573d&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=83sf1D6xaVZSbF7a3ROIqG2vqUBLY1h24QECkwdpmO8"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573e&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=WaxvAqhj7MiyJzu91HiYFoIY1GyqNOWXKhLg8cnjYHI"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573f&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=iNtJtCEH87gasSn5CJai_fcpN0w2Jfrt2uciQ65BPs4"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145740&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=lAbGPxePCXCyJCumYkjGx44NADA6B90zKvsCdAuW-Og"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145741&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=mL3w9xmaBm4ErkEsOxFVTYzKIa9HI-Nwtw5d9q-qm2M"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145742&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=gFb4SXu93tH4AFr__lXYmmgd3xqQ4DXk_KERPy4zQT0"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145743&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=ikZDsIxrrh5wUmEaluDo5sfoh43AefVooFvvKNCpawA"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145744&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=Ja72W0r2uKG0rbFFOIgBRnWv0y8jSj4ICWqZEkLaLk4"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145745&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=ugzu30XIQEe0N_mr3I12fAIAcpJzlolnYo461w1FUhM"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457dc&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=XFukqdugZ2iAHYJ0VX73GoY62-okHD1cUCSWnrjQ_VA"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457dd&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=8akdKKSx1xZPFHbycxRpG1rweXLjZ0mhZrnq4QufdIo"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457de&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=2Wuz8fKPjFsSgiGsWMiRef79_dnvh1YuRbEz8dUmILE"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457df"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e0"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e1"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e2"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e3&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=PR8Cd5ESdsPjwgWUGPVSsbFLjkntYVWMb0n1LhOxkMM"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e4&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=JcrI5qTYRgAVUIpAgBoDhXTkkNVrU-Cf5ZzXZcxQ0Y0"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e5&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGImcDE9JTQwaFI4d2pCdkQ1ZWoxZEYzdXElMkI2MG13JTNEJTNEJnAyPTElMjA4MDAlMjA5MjklMjAzNDY3&s=d7P1EU64yeg-P359X3k0nwa203k7YCI-e3nnPTzlaEc"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e6&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=z_WhhZDAD3o8DaXLTYdvNgPTImWrqRAOQxxJH-dho04"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "t.news.christiandior.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "t.news.christiandior.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e7&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=x4d-pGyTvC_vivu7mdAzoYhSIcbV9TLK3IqRa0-ZSy8"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Analyse IA désactivée (36 liens > 8)",
+          "status": "skipped"
+        },
+        "domain": "mail.google.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 40,
+        "reputation": {
+          "domain": "mail.google.com",
+          "status": "unknown"
+        },
+        "score": 40,
+        "url": "https://mail.google.com/mail/u/0?ui=2&ik=95e18349ee&view=lg&permmsgid=msg-f:1856137878734436333"
+      }
+    ],
+    "nb_links": 36,
+    "percentage": 40.0,
+    "risk_level": "medium",
+    "score": 40.0
+  },
+  "file": {
+    "Explanation": "0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+    "attachment_analysis": [],
+    "moyenne_pourcentage": 0,
+    "nb_attachments": 0
+  },
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte contient une erreur de frappe et d'orthographe ('Health-lnsurance' au lieu de 'Health-Insurance' et un espace avant 'PerMonth'), ainsi que des guillemets qui peuvent indiquer une fausse ou trompeuse information. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 36 lien(s) suspect(s) : http://jokfemmbaaknsxmlvwmdufrvtjqeifytvyjyoqetumsckouwfn.yesyoucan.us.com/4eHuHz0KHDX43hthpgjzssv0QFCZISDXUHMIYKC0EGVD613e0?fuZWGhKonwFKGgXObwAvIiwCFroonWxtscSSGSDlStTqnWLOpf, http://ayhcprcvqrddeayqrxcualtnjkbbbwwauxbnqsjbxgkjmelzwx.yesyoucan.us.com/5sssQt0mUQH43dtzywesfsh0HZTJIRDNXRPPCLZ0NXUV613N0?RpLDNsoUtCdkDoadECURsCshiJwKOeEClmUFrIWoFCAqWVWSUf, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145730&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGImcDE9JTQwbHFibWpOJTJGWGRNVEZ6UzNyeHNWMklRTkpGeFdzUDFIMlJQZ3dTWUduUTF3JTNE&s=4oyZQduVLZ_XdcWRJ2V9MML-zVFvoN2my5m-72AYgJE, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145731&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=fNrztxKgxOsX2m1_bOZ8ASKsXeu9kXyFuxfYJD0mQsg, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145732&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=pH8A0XSECyvsbO192QggIR3fbTSOWRpysT-nONcygtk, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145734&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=xg9IUUF0moDc2aQ4esAZ9KrMWzrKAAt8joNQef_jfhE, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145735&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=bfz6ZelX7LqElRTKHD5bB0374RpeQgIldE3pge9yQRA, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145736&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=2nhPlG0wP2Fnyw0a8Jm4x8NhZQERAHQF_cn_-i9a-JA, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145737&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=1DJEgAPWyYr8QWK8PVprECvP997V4jEOKvKhWA9GAnw, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145738&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=bLycL-lIByF9OfGaKyJU_BeNA58NRfEDbQiVb61tzwE, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145739&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=CLZ22qHYzUUtuKi-COL6gfL_vb4ms2pr6-waz6qLx4s, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573a&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=J_bEoFqW-wLaIsnn3jqO91DH1aE3uG4wMbo-ii-6YlI, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573b&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=-NtmMZvnesy88UGkfELKTONY8xlUH1-yQEv9ca2fjEk, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573c&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=tBzdPKbCGJ6W2iZJBPy1MdtV6ccqM1Q6WgJtbuPm-EM, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573d&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=83sf1D6xaVZSbF7a3ROIqG2vqUBLY1h24QECkwdpmO8, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573e&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=WaxvAqhj7MiyJzu91HiYFoIY1GyqNOWXKhLg8cnjYHI, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a14573f&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=iNtJtCEH87gasSn5CJai_fcpN0w2Jfrt2uciQ65BPs4, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145740&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=lAbGPxePCXCyJCumYkjGx44NADA6B90zKvsCdAuW-Og, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145741&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=mL3w9xmaBm4ErkEsOxFVTYzKIa9HI-Nwtw5d9q-qm2M, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145742&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=gFb4SXu93tH4AFr__lXYmmgd3xqQ4DXk_KERPy4zQT0, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145743&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=ikZDsIxrrh5wUmEaluDo5sfoh43AefVooFvvKNCpawA, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145744&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=Ja72W0r2uKG0rbFFOIgBRnWv0y8jSj4ICWqZEkLaLk4, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a145745&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=ugzu30XIQEe0N_mr3I12fAIAcpJzlolnYo461w1FUhM, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457dc&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=XFukqdugZ2iAHYJ0VX73GoY62-okHD1cUCSWnrjQ_VA, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457dd&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=8akdKKSx1xZPFHbycxRpG1rweXLjZ0mhZrnq4QufdIo, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457de&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=2Wuz8fKPjFsSgiGsWMiRef79_dnvh1YuRbEz8dUmILE, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457df, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e0, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e1, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e2, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e3&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=PR8Cd5ESdsPjwgWUGPVSsbFLjkntYVWMb0n1LhOxkMM, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e4&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=JcrI5qTYRgAVUIpAgBoDhXTkkNVrU-Cf5ZzXZcxQ0Y0, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e5&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGImcDE9JTQwaFI4d2pCdkQ1ZWoxZEYzdXElMkI2MG13JTNEJTNEJnAyPTElMjA4MDAlMjA5MjklMjAzNDY3&s=d7P1EU64yeg-P359X3k0nwa203k7YCI-e3nnPTzlaEc, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e6&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=z_WhhZDAD3o8DaXLTYdvNgPTImWrqRAOQxxJH-dho04, https://t.news.christiandior.com/r/?id=h37069e05,1b4e4346,a1457e7&e=dXRtX3NvdXJjZT1kaW9yJnV0bV9tZWRpdW09ZW1haWwmdXRtX2NhbXBhaWduPW5sX211bHRpX3ZkYXkyX3VzX2NhXzAzXzAyX2VuX3VzJmhlX3BhcmFtPTEyMzk2OGQ4ODM1OTEzYTc0NzYxY2FjYjM0OTQ3OGE0ZTlhMjJiY2NkYWNlZWU5ZTMzNzQwZTQ5ZmM1YzgyZGI&s=x4d-pGyTvC_vivu7mdAzoYhSIcbV9TLK3IqRa0-ZSy8, https://mail.google.com/mail/u/0?ui=2&ik=95e18349ee&view=lg&permmsgid=msg-f:1856137878734436333",
+  "score_cyber": 35.0,
+  "analysis_id": 158,
+  "analyzed_at": "2026-02-04T15:31:44.204851"
+}

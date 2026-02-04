@@ -3,11 +3,11 @@
     "display_name": "Taptap Send",
     "domain": "taptapsend.com",
     "email_body": "‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌   ‌\nBonjour !\n\n\nNous apprécions votre fidélité. Voici un récapitulatif de votre activité de transfert pour votre information, y compris le mois dernier, (janvier 2026).\n\nSi vous rencontrez un problème, contactez-nous par e-mail à support@taptapsend.com ou par téléphone.\n\n\n\t\t...",
-    "email_date": "2026-02-04T10:18:29.012000+00:00",
+    "email_date": "2026-02-04T11:38:42.348000+00:00",
     "email_sender": "no-reply@taptapsend.com",
     "email_subject": "Votre activité Taptap Send de janvier 2026",
     "sender_address": "no-reply@taptapsend.com",
-    "timestamp": 1770200309012,
+    "timestamp": 1770205122348,
     "urls": [
       "https://mandrillapp.com/track/click/31072723/www.taptapsend.com?p=eyJzIjoidmhRZWd4STQtOGNOc1BGekpkVENaZHhLSVljIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy50YXB0YXBzZW5kLmNvbVxcXC9cIixcImlkXCI6XCJkZjliN2Q3MWViMWE0NTI5YWVkZmIwZDZjZjVlOGI2NlwiLFwidXJsX2lkc1wiOltcImEwZDY1OTY4MmQ0Y2RhNjExNTNjMjZhMDAxOTZmZjNmYzZmZWFkNjhcIl0sXCJtc2dfdHNcIjoxNzcwMTU3MDMyfSJ9",
       "https://mandrillapp.com/track/click/31072723/support.taptapsend.com?p=eyJzIjoiN2JNeWlKMTZZS0N1QzJ2bkFwR2JUZENJTGxrIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3N1cHBvcnQudGFwdGFwc2VuZC5jb21cXFwvXCIsXCJpZFwiOlwiZGY5YjdkNzFlYjFhNDUyOWFlZGZiMGQ2Y2Y1ZThiNjZcIixcInVybF9pZHNcIjpbXCJjYjc1ZjAxZGMxYzljZWZhNGM2ZTEzM2E1YWM1OWZmMjMwMTFiNTZkXCJdLFwibXNnX3RzXCI6MTc3MDE1NzAzMn0ifQ",
@@ -31,14 +31,14 @@
     "domain_age_days": 2885,
     "explanation": "Domaine cohérent avec l'adresse expéditeur",
     "score": 0.0,
-    "timestamp": "2026-02-04T10:18:29.886718"
+    "timestamp": "2026-02-04T11:38:42.969236"
   },
   "content": {
     "content_analysis": {
-      "reason": "Le texte semble être un extrait d'un relevé d'activité bancaire ou d'un récapitulatif de transactions, ce qui est une pratique courante pour informer les utilisateurs de leurs mouvements financiers.",
+      "reason": "Le texte semble être un extrait d'un rapport d'activité pour un service spécifique (Taptap Send) et pour une période de temps précise (janvier 2026), ce qui suggère une notification légale ou une mise à jour informative.",
       "status": "cohérent"
     },
-    "explanation": "Le texte semble être un extrait d'un relevé d'activité bancaire ou d'un récapitulatif de transactions, ce qui est une pratique courante pour informer les utilisateurs de leurs mouvements financiers.",
+    "explanation": "Le texte semble être un extrait d'un rapport d'activité pour un service spécifique (Taptap Send) et pour une période de temps précise (janvier 2026), ce qui suggère une notification légale ou une mise à jour informative.",
     "percentage": 0.0,
     "risk_level": "low",
     "score": 0
@@ -48,7 +48,7 @@
     "links_analysis": [
       {
         "ai_analysis": {
-          "reason": "Le lien contient des paramètres URL codés et une chaîne de caractères aléatoires, ce qui pourrait être caractéristique d'une tentative de phishing ou d'une redirection vers un site malveillant.",
+          "reason": "Le lien semble être un lien de suivi de clics créé par Mandrill, un service de messagerie marketing, et redirige vers un autre site (www.taptapsend.com) via une URL encodée en base64, ce qui pourrait être utilisé pour des activités de phishing ou de spam.",
           "status": "suspect"
         },
         "domain": "mandrillapp.com",
@@ -67,7 +67,7 @@
       },
       {
         "ai_analysis": {
-          "reason": "Le lien semble être un lien de suivi de clic pour une application de messagerie, mais il est trop long et complexe, et le paramètre 'p' contient une chaîne de caractères codée en base64 qui pourrait potentiellement contenir des informations sensibles ou des codes malveillants.",
+          "reason": "Le lien contient des paramètres URL encodés en base64 et utilise une redirection de tracking, ce qui peut être caractéristique d'une tentative de phishing ou de spam.",
           "status": "suspect"
         },
         "domain": "mandrillapp.com",
@@ -86,123 +86,123 @@
       },
       {
         "ai_analysis": {
-          "reason": "Analyse IA non disponible (quota API Groq épuisé)",
-          "status": "unknown"
+          "reason": "Le lien contient un paramètre 'p' avec une valeur codée en base64 qui pourrait potentiellement contenir des informations malveillantes ou non sécurisées, et le fait que le domaine 'mandrillapp.com' soit un service de tracking d'emails pourrait indiquer une tentative de phishing ou de tracking de l'utilisateur sans son consentement.",
+          "status": "suspect"
         },
         "domain": "mandrillapp.com",
         "domain_age": {
           "status": "unknown"
         },
         "is_suspicious": true,
-        "percentage": 80,
+        "percentage": 100,
         "reputation": {
           "domain": "mandrillapp.com",
           "malicious_reports": 3,
           "status": "not reliable"
         },
-        "score": 80,
+        "score": 100,
         "url": "https://mandrillapp.com/track/click/31072723/taptapsend.page.link?p=eyJzIjoiaDhETzRHbVhxMVEtUGFXcUIyUm5Ud0JXT3NnIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3RhcHRhcHNlbmQucGFnZS5saW5rXFxcL1JlZmVyQUZyaWVuZFwiLFwiaWRcIjpcImRmOWI3ZDcxZWIxYTQ1MjlhZWRmYjBkNmNmNWU4YjY2XCIsXCJ1cmxfaWRzXCI6W1wiNmRhNzQwYTlmMmJjNDQwZmI4Nzg5OTQ3YjkwZWRjNGJhM2ZjOGFlZFwiXSxcIm1zZ190c1wiOjE3NzAxNTcwMzJ9In0"
       },
       {
         "ai_analysis": {
-          "reason": "Analyse IA non disponible (quota API Groq épuisé)",
-          "status": "unknown"
+          "reason": "le lien contient des paramètres et des caractères spéciaux non standards, notamment le paramètre 'p' qui contient une chaîne JSON cryptique, ce qui pourrait indiquer une tentative de phishing ou de tracking non désiré",
+          "status": "suspect"
         },
         "domain": "mandrillapp.com",
         "domain_age": {
           "status": "unknown"
         },
         "is_suspicious": true,
-        "percentage": 80,
+        "percentage": 100,
         "reputation": {
           "domain": "mandrillapp.com",
           "malicious_reports": 3,
           "status": "not reliable"
         },
-        "score": 80,
+        "score": 100,
         "url": "https://mandrillapp.com/track/click/31072723/www.taptapsend.com?p=eyJzIjoidmhRZWd4STQtOGNOc1BGekpkVENaZHhLSVljIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy50YXB0YXBzZW5kLmNvbVxcXC9cIixcImlkXCI6XCJkZjliN2Q3MWViMWE0NTI5YWVkZmIwZDZjZjVlOGI2NlwiLFwidXJsX2lkc1wiOltcImEwZDY1OTY4MmQ0Y2RhNjExNTNjMjZhMDAxOTZmZjNmYzZmZWFkNjhcIl0sXCJtc2dfdHNcIjoxNzcwMTU3MDMyfSJ9"
       },
       {
         "ai_analysis": {
-          "reason": "Analyse IA non disponible (quota API Groq épuisé)",
-          "status": "unknown"
+          "reason": "Le lien utilise un tracker de clic (mandrillapp.com) pour rediriger l'utilisateur vers Facebook, ce qui peut être utilisé pour des fins de marketing ou de phishing.",
+          "status": "suspect"
         },
         "domain": "mandrillapp.com",
         "domain_age": {
           "status": "unknown"
         },
         "is_suspicious": true,
-        "percentage": 80,
+        "percentage": 100,
         "reputation": {
           "domain": "mandrillapp.com",
           "malicious_reports": 3,
           "status": "not reliable"
         },
-        "score": 80,
+        "score": 100,
         "url": "https://mandrillapp.com/track/click/31072723/www.facebook.com?p=eyJzIjoiMHpsTHdLc3hYdFYzelNKaklFbks4U3VlSkpzIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy5mYWNlYm9vay5jb21cXFwvdGFwdGFwc2VuZGZyXFxcL1wiLFwiaWRcIjpcImRmOWI3ZDcxZWIxYTQ1MjlhZWRmYjBkNmNmNWU4YjY2XCIsXCJ1cmxfaWRzXCI6W1wiNWE0NTNjNzY1ZTQ1OGE3NjhiNGViNDEwNTIyZjI4NThkMDg2MWFmM1wiXSxcIm1zZ190c1wiOjE3NzAxNTcwMzJ9In0"
       },
       {
         "ai_analysis": {
-          "reason": "Analyse IA non disponible (quota API Groq épuisé)",
-          "status": "unknown"
+          "reason": "Le lien contient des paramètres URL codés en base64 et utilisent des caractères spéciaux, ce qui est souvent utilisé par les attaques de phishing ou les malwares pour masquer les URL réelles et tromper les utilisateurs.",
+          "status": "suspect"
         },
         "domain": "mandrillapp.com",
         "domain_age": {
           "status": "unknown"
         },
         "is_suspicious": true,
-        "percentage": 80,
+        "percentage": 100,
         "reputation": {
           "domain": "mandrillapp.com",
           "malicious_reports": 3,
           "status": "not reliable"
         },
-        "score": 80,
+        "score": 100,
         "url": "https://mandrillapp.com/track/click/31072723/twitter.com?p=eyJzIjoiRklKUkpVaXFNeVpVMWd3R2ZBSVg5MjFQTF9FIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3R3aXR0ZXIuY29tXFxcL3RhcHRhcHNlbmRmclwiLFwiaWRcIjpcImRmOWI3ZDcxZWIxYTQ1MjlhZWRmYjBkNmNmNWU4YjY2XCIsXCJ1cmxfaWRzXCI6W1wiMTVlM2VjZWViMWFkYmZiMjI5MzMwZDMzNWMwZWFkNjFkYTM3MmFiMVwiXSxcIm1zZ190c1wiOjE3NzAxNTcwMzJ9In0"
       },
       {
         "ai_analysis": {
-          "reason": "Analyse IA non disponible (quota API Groq épuisé)",
-          "status": "unknown"
+          "reason": "Le lien semble être un lien de suivi créé par l'outil Mandrill, mais il redirige vers Instagram. Cela peut être une technique utilisée pour dissimuler la véritable destination du lien ou pour suivre les clics de l'utilisateur sans son consentement.",
+          "status": "suspect"
         },
         "domain": "mandrillapp.com",
         "domain_age": {
           "status": "unknown"
         },
         "is_suspicious": true,
-        "percentage": 80,
+        "percentage": 100,
         "reputation": {
           "domain": "mandrillapp.com",
           "malicious_reports": 3,
           "status": "not reliable"
         },
-        "score": 80,
+        "score": 100,
         "url": "https://mandrillapp.com/track/click/31072723/www.instagram.com?p=eyJzIjoiMV81cEZ3dTJQVGdQU1AyMEdlX0xQcHVnbTZrIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy5pbnN0YWdyYW0uY29tXFxcL3RhcHRhcHNlbmRmclxcXC9cIixcImlkXCI6XCJkZjliN2Q3MWViMWE0NTI5YWVkZmIwZDZjZjVlOGI2NlwiLFwidXJsX2lkc1wiOltcIjliNDgzNGRlOGU0OTQxNzE0NDVlYjYwMmU3N2U2ZTc2YzQxMjdkNzJcIl0sXCJtc2dfdHNcIjoxNzcwMTU3MDMyfSJ9"
       },
       {
         "ai_analysis": {
-          "reason": "Analyse IA non disponible (quota API Groq épuisé)",
-          "status": "unknown"
+          "reason": "Le lien contient des paramètres URL codés et une longue chaîne de caractères aléatoires qui ressemblent à un identifiant unique, ce qui peut être utilisé pour suivre les clics et collecter des informations personnelles.",
+          "status": "suspect"
         },
         "domain": "mandrillapp.com",
         "domain_age": {
           "status": "unknown"
         },
         "is_suspicious": true,
-        "percentage": 80,
+        "percentage": 100,
         "reputation": {
           "domain": "mandrillapp.com",
           "malicious_reports": 3,
           "status": "not reliable"
         },
-        "score": 80,
+        "score": 100,
         "url": "https://mandrillapp.com/track/click/31072723/www.taptapsend.com?p=eyJzIjoiZ3ZXbEZGb1ZwZ0VnTW1nUERtbUpaVFR4bzR3IiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy50YXB0YXBzZW5kLmNvbVxcXC90ZXJtcy1hbmQtY29uZGl0aW9uc1wiLFwiaWRcIjpcImRmOWI3ZDcxZWIxYTQ1MjlhZWRmYjBkNmNmNWU4YjY2XCIsXCJ1cmxfaWRzXCI6W1wiYWJkNDA2NjBmODQ2ZmEzZWExMWRiN2U3MzY5MmE3NGU3MWFkZmJiMFwiXSxcIm1zZ190c1wiOjE3NzAxNTcwMzJ9In0"
       }
     ],
     "nb_links": 8,
-    "percentage": 85.0,
+    "percentage": 100.0,
     "risk_level": "high",
-    "score": 85.0
+    "score": 100.0
   },
   "file": {
     "Explanation": "0 fichier suspect | Raison : Aucune extension dangereuse détectée",
@@ -224,8 +224,8 @@
     "moyenne_pourcentage": 0.0,
     "nb_attachments": 1
   },
-  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte semble être un extrait d'un relevé d'activité bancaire ou d'un récapitulatif de transactions, ce qui est une pratique courante pour informer les utilisateurs de leurs mouvements financiers. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 8 lien(s) suspect(s) : https://mandrillapp.com/track/click/31072723/www.taptapsend.com?p=eyJzIjoidmhRZWd4STQtOGNOc1BGekpkVENaZHhLSVljIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy50YXB0YXBzZW5kLmNvbVxcXC9cIixcImlkXCI6XCJkZjliN2Q3MWViMWE0NTI5YWVkZmIwZDZjZjVlOGI2NlwiLFwidXJsX2lkc1wiOltcImEwZDY1OTY4MmQ0Y2RhNjExNTNjMjZhMDAxOTZmZjNmYzZmZWFkNjhcIl0sXCJtc2dfdHNcIjoxNzcwMTU3MDMyfSJ9, https://mandrillapp.com/track/click/31072723/support.taptapsend.com?p=eyJzIjoiN2JNeWlKMTZZS0N1QzJ2bkFwR2JUZENJTGxrIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3N1cHBvcnQudGFwdGFwc2VuZC5jb21cXFwvXCIsXCJpZFwiOlwiZGY5YjdkNzFlYjFhNDUyOWFlZGZiMGQ2Y2Y1ZThiNjZcIixcInVybF9pZHNcIjpbXCJjYjc1ZjAxZGMxYzljZWZhNGM2ZTEzM2E1YWM1OWZmMjMwMTFiNTZkXCJdLFwibXNnX3RzXCI6MTc3MDE1NzAzMn0ifQ, https://mandrillapp.com/track/click/31072723/taptapsend.page.link?p=eyJzIjoiaDhETzRHbVhxMVEtUGFXcUIyUm5Ud0JXT3NnIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3RhcHRhcHNlbmQucGFnZS5saW5rXFxcL1JlZmVyQUZyaWVuZFwiLFwiaWRcIjpcImRmOWI3ZDcxZWIxYTQ1MjlhZWRmYjBkNmNmNWU4YjY2XCIsXCJ1cmxfaWRzXCI6W1wiNmRhNzQwYTlmMmJjNDQwZmI4Nzg5OTQ3YjkwZWRjNGJhM2ZjOGFlZFwiXSxcIm1zZ190c1wiOjE3NzAxNTcwMzJ9In0, https://mandrillapp.com/track/click/31072723/www.taptapsend.com?p=eyJzIjoidmhRZWd4STQtOGNOc1BGekpkVENaZHhLSVljIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy50YXB0YXBzZW5kLmNvbVxcXC9cIixcImlkXCI6XCJkZjliN2Q3MWViMWE0NTI5YWVkZmIwZDZjZjVlOGI2NlwiLFwidXJsX2lkc1wiOltcImEwZDY1OTY4MmQ0Y2RhNjExNTNjMjZhMDAxOTZmZjNmYzZmZWFkNjhcIl0sXCJtc2dfdHNcIjoxNzcwMTU3MDMyfSJ9, https://mandrillapp.com/track/click/31072723/www.facebook.com?p=eyJzIjoiMHpsTHdLc3hYdFYzelNKaklFbks4U3VlSkpzIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy5mYWNlYm9vay5jb21cXFwvdGFwdGFwc2VuZGZyXFxcL1wiLFwiaWRcIjpcImRmOWI3ZDcxZWIxYTQ1MjlhZWRmYjBkNmNmNWU4YjY2XCIsXCJ1cmxfaWRzXCI6W1wiNWE0NTNjNzY1ZTQ1OGE3NjhiNGViNDEwNTIyZjI4NThkMDg2MWFmM1wiXSxcIm1zZ190c1wiOjE3NzAxNTcwMzJ9In0, https://mandrillapp.com/track/click/31072723/twitter.com?p=eyJzIjoiRklKUkpVaXFNeVpVMWd3R2ZBSVg5MjFQTF9FIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3R3aXR0ZXIuY29tXFxcL3RhcHRhcHNlbmRmclwiLFwiaWRcIjpcImRmOWI3ZDcxZWIxYTQ1MjlhZWRmYjBkNmNmNWU4YjY2XCIsXCJ1cmxfaWRzXCI6W1wiMTVlM2VjZWViMWFkYmZiMjI5MzMwZDMzNWMwZWFkNjFkYTM3MmFiMVwiXSxcIm1zZ190c1wiOjE3NzAxNTcwMzJ9In0, https://mandrillapp.com/track/click/31072723/www.instagram.com?p=eyJzIjoiMV81cEZ3dTJQVGdQU1AyMEdlX0xQcHVnbTZrIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy5pbnN0YWdyYW0uY29tXFxcL3RhcHRhcHNlbmRmclxcXC9cIixcImlkXCI6XCJkZjliN2Q3MWViMWE0NTI5YWVkZmIwZDZjZjVlOGI2NlwiLFwidXJsX2lkc1wiOltcIjliNDgzNGRlOGU0OTQxNzE0NDVlYjYwMmU3N2U2ZTc2YzQxMjdkNzJcIl0sXCJtc2dfdHNcIjoxNzcwMTU3MDMyfSJ9, https://mandrillapp.com/track/click/31072723/www.taptapsend.com?p=eyJzIjoiZ3ZXbEZGb1ZwZ0VnTW1nUERtbUpaVFR4bzR3IiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy50YXB0YXBzZW5kLmNvbVxcXC90ZXJtcy1hbmQtY29uZGl0aW9uc1wiLFwiaWRcIjpcImRmOWI3ZDcxZWIxYTQ1MjlhZWRmYjBkNmNmNWU4YjY2XCIsXCJ1cmxfaWRzXCI6W1wiYWJkNDA2NjBmODQ2ZmEzZWExMWRiN2U3MzY5MmE3NGU3MWFkZmJiMFwiXSxcIm1zZ190c1wiOjE3NzAxNTcwMzJ9In0",
-  "score_cyber": 21.25,
-  "analysis_id": 102,
-  "analyzed_at": "2026-02-04T10:18:36.345317"
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte semble être un extrait d'un rapport d'activité pour un service spécifique (Taptap Send) et pour une période de temps précise (janvier 2026), ce qui suggère une notification légale ou une mise à jour informative. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 8 lien(s) suspect(s) : https://mandrillapp.com/track/click/31072723/www.taptapsend.com?p=eyJzIjoidmhRZWd4STQtOGNOc1BGekpkVENaZHhLSVljIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy50YXB0YXBzZW5kLmNvbVxcXC9cIixcImlkXCI6XCJkZjliN2Q3MWViMWE0NTI5YWVkZmIwZDZjZjVlOGI2NlwiLFwidXJsX2lkc1wiOltcImEwZDY1OTY4MmQ0Y2RhNjExNTNjMjZhMDAxOTZmZjNmYzZmZWFkNjhcIl0sXCJtc2dfdHNcIjoxNzcwMTU3MDMyfSJ9, https://mandrillapp.com/track/click/31072723/support.taptapsend.com?p=eyJzIjoiN2JNeWlKMTZZS0N1QzJ2bkFwR2JUZENJTGxrIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3N1cHBvcnQudGFwdGFwc2VuZC5jb21cXFwvXCIsXCJpZFwiOlwiZGY5YjdkNzFlYjFhNDUyOWFlZGZiMGQ2Y2Y1ZThiNjZcIixcInVybF9pZHNcIjpbXCJjYjc1ZjAxZGMxYzljZWZhNGM2ZTEzM2E1YWM1OWZmMjMwMTFiNTZkXCJdLFwibXNnX3RzXCI6MTc3MDE1NzAzMn0ifQ, https://mandrillapp.com/track/click/31072723/taptapsend.page.link?p=eyJzIjoiaDhETzRHbVhxMVEtUGFXcUIyUm5Ud0JXT3NnIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3RhcHRhcHNlbmQucGFnZS5saW5rXFxcL1JlZmVyQUZyaWVuZFwiLFwiaWRcIjpcImRmOWI3ZDcxZWIxYTQ1MjlhZWRmYjBkNmNmNWU4YjY2XCIsXCJ1cmxfaWRzXCI6W1wiNmRhNzQwYTlmMmJjNDQwZmI4Nzg5OTQ3YjkwZWRjNGJhM2ZjOGFlZFwiXSxcIm1zZ190c1wiOjE3NzAxNTcwMzJ9In0, https://mandrillapp.com/track/click/31072723/www.taptapsend.com?p=eyJzIjoidmhRZWd4STQtOGNOc1BGekpkVENaZHhLSVljIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy50YXB0YXBzZW5kLmNvbVxcXC9cIixcImlkXCI6XCJkZjliN2Q3MWViMWE0NTI5YWVkZmIwZDZjZjVlOGI2NlwiLFwidXJsX2lkc1wiOltcImEwZDY1OTY4MmQ0Y2RhNjExNTNjMjZhMDAxOTZmZjNmYzZmZWFkNjhcIl0sXCJtc2dfdHNcIjoxNzcwMTU3MDMyfSJ9, https://mandrillapp.com/track/click/31072723/www.facebook.com?p=eyJzIjoiMHpsTHdLc3hYdFYzelNKaklFbks4U3VlSkpzIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy5mYWNlYm9vay5jb21cXFwvdGFwdGFwc2VuZGZyXFxcL1wiLFwiaWRcIjpcImRmOWI3ZDcxZWIxYTQ1MjlhZWRmYjBkNmNmNWU4YjY2XCIsXCJ1cmxfaWRzXCI6W1wiNWE0NTNjNzY1ZTQ1OGE3NjhiNGViNDEwNTIyZjI4NThkMDg2MWFmM1wiXSxcIm1zZ190c1wiOjE3NzAxNTcwMzJ9In0, https://mandrillapp.com/track/click/31072723/twitter.com?p=eyJzIjoiRklKUkpVaXFNeVpVMWd3R2ZBSVg5MjFQTF9FIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3R3aXR0ZXIuY29tXFxcL3RhcHRhcHNlbmRmclwiLFwiaWRcIjpcImRmOWI3ZDcxZWIxYTQ1MjlhZWRmYjBkNmNmNWU4YjY2XCIsXCJ1cmxfaWRzXCI6W1wiMTVlM2VjZWViMWFkYmZiMjI5MzMwZDMzNWMwZWFkNjFkYTM3MmFiMVwiXSxcIm1zZ190c1wiOjE3NzAxNTcwMzJ9In0, https://mandrillapp.com/track/click/31072723/www.instagram.com?p=eyJzIjoiMV81cEZ3dTJQVGdQU1AyMEdlX0xQcHVnbTZrIiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy5pbnN0YWdyYW0uY29tXFxcL3RhcHRhcHNlbmRmclxcXC9cIixcImlkXCI6XCJkZjliN2Q3MWViMWE0NTI5YWVkZmIwZDZjZjVlOGI2NlwiLFwidXJsX2lkc1wiOltcIjliNDgzNGRlOGU0OTQxNzE0NDVlYjYwMmU3N2U2ZTc2YzQxMjdkNzJcIl0sXCJtc2dfdHNcIjoxNzcwMTU3MDMyfSJ9, https://mandrillapp.com/track/click/31072723/www.taptapsend.com?p=eyJzIjoiZ3ZXbEZGb1ZwZ0VnTW1nUERtbUpaVFR4bzR3IiwidiI6MiwicCI6IntcInVcIjozMTA3MjcyMyxcInZcIjoyLFwidXJsXCI6XCJodHRwczpcXFwvXFxcL3d3dy50YXB0YXBzZW5kLmNvbVxcXC90ZXJtcy1hbmQtY29uZGl0aW9uc1wiLFwiaWRcIjpcImRmOWI3ZDcxZWIxYTQ1MjlhZWRmYjBkNmNmNWU4YjY2XCIsXCJ1cmxfaWRzXCI6W1wiYWJkNDA2NjBmODQ2ZmEzZWExMWRiN2U3MzY5MmE3NGU3MWFkZmJiMFwiXSxcIm1zZ190c1wiOjE3NzAxNTcwMzJ9In0",
+  "score_cyber": 25.0,
+  "analysis_id": 113,
+  "analyzed_at": "2026-02-04T11:38:52.671998"
 }

@@ -3,11 +3,11 @@
     "display_name": "Opodo",
     "domain": "e.opodo.com",
     "email_body": "Préférences e-mail\nPsst... Ajoutez-nous à vos contacts pour ne manquer aucune offre\n\t\nVols\tHôtels\tVol + Hôtel\tLocation de voiture\nFinit dans    \n \nNe laissez pas votre bonne affaire s'envoler, Erice\n \nVous avez trouvé une réduction trop GRANDE pour la rater, mais vous n'êtes pas prêt à réserver ? Aucun problème. Bloquez le prix de n'importe quel vol pour 1 € avec Prime et garantissez vos économies pour plus tard.\n\nÉconomisez de l'argent et organisez votre voyage sans stress avec Price Freeze.\n \n...",
-    "email_date": "2026-02-04T14:07:43.670000+00:00",
+    "email_date": "2026-02-04T14:01:23.498000+00:00",
     "email_sender": "fr@e.opodo.com",
     "email_subject": "Erice, bloquez le prix d'un vol pour 1 € ",
     "sender_address": "fr@e.opodo.com",
-    "timestamp": 1770214063670,
+    "timestamp": 1770213683498,
     "urls": [
       "https://mc0b-2bdcfl28v65rv9nl3hy9dpy.pub.sfmc-content.com/1v34r1kqhne?id=Sc8RBLCz%2fr5Oghj3PiU3YVhJQ1yRmDP1iPWv3CNBEMT95cUw36ALUo2kNCpJ1oDsR9ZBfnt9wTKdQ25%2f5O8VKg%3d%3d&utid=XX-XX-CRM-E-NL-PDA-FL-B-NP_PrimeDays14_Reminder2_Trans_040226",
       "https://opodo.onelink.me/RnQA?pid=CRM&af_adset=email&af_ad=crm_nl_pda_app_mob_banner_main&is_retargeting=true&af_dp=op-app%3A%2F%2Flaunch%2F%3Futm_source=sf&utm_medium=crm&utm_campaign=nl&utm_term=XX-XX-CRM-E-NL-PDA-FL-B-NP_PrimeDays14_Reminder2_Trans_040226_635299&mktportal=NL&utm_content=app_mob_banner_main&af_web_dp=https%3a%2f%2fwww.opodo.fr%2fapp-vacances%2f%3foptin%3dn%26crmapp%3dtrue%26start%3dMjAyNS0wNy0zMQ%3d%3d%26end%3dMjAyNi0wMi0wNw%3d%3d%26cbgdesk%3dHero-pd14-OP.jpg%26logo%3dPD14_OP_FR_app.png%26ch1%3dD%25C3%25A9couvrez%2520les%2520meilleures%2520offres%252024%2520heures%2520%25C3%25A0%2520l%2527avance%252C%2520uniquement%2520dans%2520l%2527appli%26utm_source=sf&utm_medium=crm&utm_campaign=nl&utm_term=XX-XX-CRM-E-NL-PDA-FL-B-NP_PrimeDays14_Reminder2_Trans_040226_635299&mktportal=NL&utm_content=app_mob_banner_main",
@@ -50,14 +50,14 @@
     "domain_age_days": 9294,
     "explanation": "Domaine cohérent avec l'adresse expéditeur",
     "score": 0.0,
-    "timestamp": "2026-02-04T14:07:54.085118"
+    "timestamp": "2026-02-04T14:01:34.060318"
   },
   "content": {
     "content_analysis": {
-      "reason": "Le prix d'un vol bloqué pour 1 € est peu crédible et probablement trompeur.",
+      "reason": "Le texte semble être une publicité ou une offre trop belle pour être vraie, ce qui pourrait indiquer une arnaque ou un piège.",
       "status": "suspect"
     },
-    "explanation": "Le prix d'un vol bloqué pour 1 € est peu crédible et probablement trompeur.",
+    "explanation": "Le texte semble être une publicité ou une offre trop belle pour être vraie, ce qui pourrait indiquer une arnaque ou un piège.",
     "percentage": 100.0,
     "risk_level": "high",
     "score": 100
@@ -71,8 +71,8 @@
     "moyenne_pourcentage": 0,
     "nb_attachments": 0
   },
-  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le prix d'un vol bloqué pour 1 € est peu crédible et probablement trompeur. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte semble être une publicité ou une offre trop belle pour être vraie, ce qui pourrait indiquer une arnaque ou un piège. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée",
   "score_cyber": 25.0,
-  "analysis_id": 139,
-  "analyzed_at": "2026-02-04T14:08:14.056050"
+  "analysis_id": 137,
+  "analyzed_at": "2026-02-04T14:01:53.878468"
 }

@@ -1,0 +1,54 @@
+{
+  "email_data": {
+    "display_name": "Apple",
+    "domain": "email.apple.com",
+    "email_body": "iCloud+\n1 mois\n0,99 €/mois\n\nProblème de facturation\n\t \n \n \n\tChère/Cher David ZOHOUN,\t\n\n\tPour éviter toute interruption du service, veuillez mettre à jour votre mode de paiement ou ajouter des fonds.\t\n\n\tMettre à jour votre mode de paiement\t\n \n\tCordialement,\nApple\t\n \n\tPour obtenir de l’aide avec les abonnements et les achats, consultez l’assistance Apple.\t\n\n \n\t\t\n \n\tCompte Apple • Historique d’achats • Conditions générales de vente • Engagement de confident...",
+    "email_date": "2026-02-04T12:49:02.689000+00:00",
+    "email_sender": "no_reply@email.apple.com",
+    "email_subject": "Problème de facturation",
+    "sender_address": "no_reply@email.apple.com",
+    "timestamp": 1770209342689,
+    "urls": [
+      "https://apps.apple.com/account/billing?mt=8&mtPageRef=BE-EML",
+      "https://support.apple.com/billing",
+      "https://buy.itunes.apple.com/WebObjects/MZFinance.woa/wa/accountSummary?mt=8",
+      "https://finance-app.itunes.apple.com/purchases",
+      "http://www.apple.com/legal/internet-services/icloud/ww/",
+      "https://www.apple.com/fr/privacy/",
+      "https://www.apple.com/fr/legal/"
+    ],
+    "attachments": []
+  },
+  "auth": {
+    "details": [
+      "Domaine cohérent avec l'adresse expéditeur"
+    ],
+    "domain_age_days": 14230,
+    "explanation": "Domaine cohérent avec l'adresse expéditeur",
+    "score": 0.0,
+    "timestamp": "2026-02-04T12:49:02.871032"
+  },
+  "content": {
+    "content_analysis": {
+      "reason": "Invalid JSON returned by Groq: Contenu analysé, voici mon évaluation :\n\n\n{\n    \"status\": \"Cohérent\",\n    \"reason\": \"Le texte annonce clairement un problème de facturation et demande une réponse standardisée en JSON, ce qui est une pratique courante dans les communications techniques ou commerciales.\"\n}",
+      "status": "unknown"
+    },
+    "explanation": "Invalid JSON returned by Groq: Contenu analysé, voici mon évaluation :\n\n\n{\n    \"status\": \"Cohérent\",\n    \"reason\": \"Le texte annonce clairement un problème de facturation et demande une réponse standardisée en JSON, ce qui est une pratique courante dans les communications techniques ou commerciales.\"\n}",
+    "percentage": 0.0,
+    "risk_level": "low",
+    "score": 0
+  },
+  "lien": {
+    "error": "HTTPConnectionPool(host='lien', port=5105): Read timed out. (read timeout=30)"
+  },
+  "file": {
+    "Explanation": "0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+    "attachment_analysis": [],
+    "moyenne_pourcentage": 0,
+    "nb_attachments": 0
+  },
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Invalid JSON returned by Groq: Contenu analysé, voici mon évaluation :\n\n\n{\n    \"status\": \"Cohérent\",\n    \"reason\": \"Le texte annonce clairement un problème de facturation et demande une réponse standardisée en JSON, ce qui est une pratique courante dans les communications techniques ou commerciales.\"\n} | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+  "score_cyber": 0.0,
+  "analysis_id": 124,
+  "analyzed_at": "2026-02-04T12:49:32.773020"
+}

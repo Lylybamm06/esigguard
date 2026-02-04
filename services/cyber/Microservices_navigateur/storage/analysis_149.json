@@ -3,11 +3,11 @@
     "display_name": "SENSAS Rouen",
     "domain": "bookeo.com",
     "email_body": "SENSAS Rouen\n\n 158 rue Constantine, Rouen 76000   (voir le plan)\n contact-rouen@sensas.ms\n http://rouen.sensas.top\n\n\nRappel\n\nBonjour Erice, nous souhaitons vous rappeler votre visite !\n\nParcours sensoriel SENSAS\nmercredi, 4 février 2026\n20:00 - 22:00 (2 heures)\n(Veuillez arriver avant 19:45)\n\n\n\tDétails de la réservation\nParticipants:\t6 adultes\nPrix total:\t174 €\nMontant payé:\t0 €\nMontant exigible:\t174 €\nMontant dû maintenant:\t60 €\nNuméro de réservation:\t250601304467359\n\n\n\tClient\nErice Dossou-Yovo...",
-    "email_date": "2026-02-04T11:12:40.382000+00:00",
+    "email_date": "2026-02-04T15:05:15.174000+00:00",
     "email_sender": "messaging@bookeo.com",
     "email_subject": "Rappel: mercredi, 4 février 2026 20:00",
     "sender_address": "messaging@bookeo.com",
-    "timestamp": 1770203560382,
+    "timestamp": 1770217515174,
     "urls": [
       "http://maps.google.com/maps?f=q&hl=en&geocode=&q=158+rue+Constantine%2c+Rouen+76000%2c+France",
       "http://rouen.sensas.top/",
@@ -30,17 +30,17 @@
     "details": [
       "Domaine cohérent avec l'adresse expéditeur"
     ],
-    "domain_age_days": 8659,
+    "domain_age_days": 8660,
     "explanation": "Domaine cohérent avec l'adresse expéditeur",
     "score": 0.0,
-    "timestamp": "2026-02-04T11:12:41.214753"
+    "timestamp": "2026-02-04T15:05:16.033894"
   },
   "content": {
     "content_analysis": {
-      "reason": "Le texte est une simple notification de rappel avec une date et une heure spécifiques, sans contenu incohérent ou suspect.",
+      "reason": "Le texte annonce un rappel avec une date et une heure spécifiques, ce qui semble être une notification légitime.",
       "status": "cohérent"
     },
-    "explanation": "Le texte est une simple notification de rappel avec une date et une heure spécifiques, sans contenu incohérent ou suspect.",
+    "explanation": "Le texte annonce un rappel avec une date et une heure spécifiques, ce qui semble être une notification légitime.",
     "percentage": 0.0,
     "risk_level": "low",
     "score": 0
@@ -61,8 +61,7 @@
         "percentage": 40,
         "reputation": {
           "domain": "maps.google.com",
-          "malicious_reports": 0,
-          "status": "reliable"
+          "status": "unknown"
         },
         "score": 40,
         "url": "http://maps.google.com/maps?f=q&hl=en&geocode=&q=158+rue+Constantine%2c+Rouen+76000%2c+France"
@@ -80,8 +79,7 @@
         "percentage": 40,
         "reputation": {
           "domain": "rouen.sensas.top",
-          "malicious_reports": 0,
-          "status": "reliable"
+          "status": "unknown"
         },
         "score": 40,
         "url": "http://rouen.sensas.top/"
@@ -99,8 +97,7 @@
         "percentage": 40,
         "reputation": {
           "domain": "bookeo.com",
-          "malicious_reports": 0,
-          "status": "reliable"
+          "status": "unknown"
         },
         "score": 40,
         "url": "https://bookeo.com/sensas-rouen/review?b=250601304467359&s=JTWRL97N3N7T63L3&payRequest=true"
@@ -118,8 +115,7 @@
         "percentage": 40,
         "reputation": {
           "domain": "bookeo.com",
-          "malicious_reports": 0,
-          "status": "reliable"
+          "status": "unknown"
         },
         "score": 40,
         "url": "https://bookeo.com/sensas-rouen/review?b=250601304467359&s=JTWRL97N3N7T63L3"
@@ -137,8 +133,7 @@
         "percentage": 40,
         "reputation": {
           "domain": "bookeo.com",
-          "malicious_reports": 0,
-          "status": "reliable"
+          "status": "unknown"
         },
         "score": 40,
         "url": "https://bookeo.com/sensas-rouen/review?b=250601304467359&s=JTWRL97N3N7T63L3&payBalance=true"
@@ -156,8 +151,7 @@
         "percentage": 40,
         "reputation": {
           "domain": "rouen.sensas.top",
-          "malicious_reports": 0,
-          "status": "reliable"
+          "status": "unknown"
         },
         "score": 40,
         "url": "https://rouen.sensas.top/"
@@ -175,8 +169,7 @@
         "percentage": 40,
         "reputation": {
           "domain": "rouen.sensas.top",
-          "malicious_reports": 0,
-          "status": "reliable"
+          "status": "unknown"
         },
         "score": 40,
         "url": "https://rouen.sensas.top/reservation/"
@@ -194,8 +187,7 @@
         "percentage": 40,
         "reputation": {
           "domain": "rouen.sensas.top",
-          "malicious_reports": 0,
-          "status": "reliable"
+          "status": "unknown"
         },
         "score": 40,
         "url": "https://rouen.sensas.top/reservation/"
@@ -213,8 +205,7 @@
         "percentage": 40,
         "reputation": {
           "domain": "rouen.sensas.top",
-          "malicious_reports": 0,
-          "status": "reliable"
+          "status": "unknown"
         },
         "score": 40,
         "url": "https://rouen.sensas.top/"
@@ -250,8 +241,7 @@
         "percentage": 40,
         "reputation": {
           "domain": "rouen.sensas.top",
-          "malicious_reports": 0,
-          "status": "reliable"
+          "status": "unknown"
         },
         "score": 40,
         "url": "https://rouen.sensas.top/"
@@ -269,8 +259,7 @@
         "percentage": 40,
         "reputation": {
           "domain": "rouen.sensas.top",
-          "malicious_reports": 0,
-          "status": "reliable"
+          "status": "unknown"
         },
         "score": 40,
         "url": "https://rouen.sensas.top/"
@@ -288,8 +277,7 @@
         "percentage": 40,
         "reputation": {
           "domain": "rouen.sensas.top",
-          "malicious_reports": 0,
-          "status": "reliable"
+          "status": "unknown"
         },
         "score": 40,
         "url": "https://rouen.sensas.top/"
@@ -307,8 +295,7 @@
         "percentage": 40,
         "reputation": {
           "domain": "www.bookeo.com",
-          "malicious_reports": 0,
-          "status": "reliable"
+          "status": "unknown"
         },
         "score": 40,
         "url": "https://www.bookeo.com/"
@@ -325,8 +312,8 @@
     "moyenne_pourcentage": 0,
     "nb_attachments": 0
   },
-  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte est une simple notification de rappel avec une date et une heure spécifiques, sans contenu incohérent ou suspect. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 14 lien(s) suspect(s) : http://maps.google.com/maps?f=q&hl=en&geocode=&q=158+rue+Constantine%2c+Rouen+76000%2c+France, http://rouen.sensas.top/, https://bookeo.com/sensas-rouen/review?b=250601304467359&s=JTWRL97N3N7T63L3&payRequest=true, https://bookeo.com/sensas-rouen/review?b=250601304467359&s=JTWRL97N3N7T63L3, https://bookeo.com/sensas-rouen/review?b=250601304467359&s=JTWRL97N3N7T63L3&payBalance=true, https://rouen.sensas.top/, https://rouen.sensas.top/reservation/, https://rouen.sensas.top/reservation/, https://rouen.sensas.top/, http://contact-rouen@sensas.top/, https://rouen.sensas.top/, https://rouen.sensas.top/, https://rouen.sensas.top/, https://www.bookeo.com/",
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte annonce un rappel avec une date et une heure spécifiques, ce qui semble être une notification légitime. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 14 lien(s) suspect(s) : http://maps.google.com/maps?f=q&hl=en&geocode=&q=158+rue+Constantine%2c+Rouen+76000%2c+France, http://rouen.sensas.top/, https://bookeo.com/sensas-rouen/review?b=250601304467359&s=JTWRL97N3N7T63L3&payRequest=true, https://bookeo.com/sensas-rouen/review?b=250601304467359&s=JTWRL97N3N7T63L3, https://bookeo.com/sensas-rouen/review?b=250601304467359&s=JTWRL97N3N7T63L3&payBalance=true, https://rouen.sensas.top/, https://rouen.sensas.top/reservation/, https://rouen.sensas.top/reservation/, https://rouen.sensas.top/, http://contact-rouen@sensas.top/, https://rouen.sensas.top/, https://rouen.sensas.top/, https://rouen.sensas.top/, https://www.bookeo.com/",
   "score_cyber": 10.0,
-  "analysis_id": 109,
-  "analyzed_at": "2026-02-04T11:12:52.193744"
+  "analysis_id": 149,
+  "analyzed_at": "2026-02-04T15:05:28.546201"
 }

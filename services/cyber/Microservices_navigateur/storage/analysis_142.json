@@ -1,0 +1,167 @@
+{
+  "email_data": {
+    "display_name": "Sophie de Cours de japonais",
+    "domain": "cours-de-japonais.com",
+    "email_body": "Konnichiwa Erice Frieda Adjokè,\n\n\n\n\nPetit mail spécial aujourd’hui :\n\nJe voulais vous informer d’un changement à venir concernant notre cahier d’exercices kana.\n\n\n\n\nLe format actuellement disponible sur notre boutique en ligne va prochainement être retiré, car le projet entre dans une nouvelle phase d’évolution. \n\n\n\n\nSi vous envisagiez de vous le procurer au format PDF ou physique, il est disponible sur la boutique jusqu’au 10 février 2026.\n\n\n\nVoir la boutique cahiers\n\n\nAprès cette date, il d...",
+    "email_date": "2026-02-04T14:34:01.211000+00:00",
+    "email_sender": "contact@cours-de-japonais.com",
+    "email_subject": " Mon cahier kana ne sera bientôt plus dispo, Erice Frieda Adjokè",
+    "sender_address": "contact@cours-de-japonais.com",
+    "timestamp": 1770215641211,
+    "urls": [
+      "https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_P",
+      "https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_P",
+      "https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_9",
+      "https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_~",
+      "https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_D",
+      "http://cours-de-japonais.activehosted.com/proc.php?c=2264&m=3569&s=ea18cfc3aa18c899f068a4bb616b748f&d=210377&v=2&nl=38&act=unsub"
+    ],
+    "attachments": []
+  },
+  "auth": {
+    "details": [
+      "Domaine cohérent avec l'adresse expéditeur"
+    ],
+    "domain_age_days": 2566,
+    "explanation": "Domaine cohérent avec l'adresse expéditeur",
+    "score": 0.0,
+    "timestamp": "2026-02-04T14:34:01.754475"
+  },
+  "content": {
+    "content_analysis": {
+      "reason": "Le texte semble contenir des informations personnelles ou des références peu claires, tels que le nom 'Erice Frieda Adjokè', dont la réelle intention n'est pas claire.",
+      "status": "suspect"
+    },
+    "explanation": "Le texte semble contenir des informations personnelles ou des références peu claires, tels que le nom 'Erice Frieda Adjokè', dont la réelle intention n'est pas claire.",
+    "percentage": 100.0,
+    "risk_level": "high",
+    "score": 100
+  },
+  "lien": {
+    "explanation": "6 lien(s) suspect(s) : https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_P, https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_P, https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_9, https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_~, https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_D, http://cours-de-japonais.activehosted.com/proc.php?c=2264&m=3569&s=ea18cfc3aa18c899f068a4bb616b748f&d=210377&v=2&nl=38&act=unsub",
+    "links_analysis": [
+      {
+        "ai_analysis": {
+          "reason": "Le lien contient des paramètres GET aléatoires et non descriptifs, tels que 'x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_P', ce qui est souvent utilisé pour des liens de phishing ou de spam",
+          "status": "suspect"
+        },
+        "domain": "cours-de-japonais.acemlna.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 60,
+        "reputation": {
+          "domain": "cours-de-japonais.acemlna.com",
+          "status": "unknown"
+        },
+        "score": 60,
+        "url": "https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_P"
+      },
+      {
+        "ai_analysis": {
+          "reason": "le lien contient des caractères aléatoires et ressemble à un lien de tracking ou de redirection, ce qui est souvent utilisé pour des campagnes de phishing ou de spam",
+          "status": "suspect"
+        },
+        "domain": "cours-de-japonais.acemlna.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 60,
+        "reputation": {
+          "domain": "cours-de-japonais.acemlna.com",
+          "status": "unknown"
+        },
+        "score": 60,
+        "url": "https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_P"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Le lien utilise un système de tracking (lt.php) et contient des paramètres cryptiques (~, _), ce qui est souvent utilisé pour des campagnes de phishing ou de spam.",
+          "status": "suspect"
+        },
+        "domain": "cours-de-japonais.acemlna.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 60,
+        "reputation": {
+          "domain": "cours-de-japonais.acemlna.com",
+          "status": "unknown"
+        },
+        "score": 60,
+        "url": "https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_9"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Le lien contient des caractères non alphanumériques (~, _, -) et un chemin d'accès non standard (lt.php), ce qui suggère une tentative de phishing ou de redirection vers un site malveillant.",
+          "status": "suspect"
+        },
+        "domain": "cours-de-japonais.acemlna.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 60,
+        "reputation": {
+          "domain": "cours-de-japonais.acemlna.com",
+          "status": "unknown"
+        },
+        "score": 60,
+        "url": "https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_~"
+      },
+      {
+        "ai_analysis": {
+          "reason": "Le lien contient des caractères et des codes alphanumériques inhabituels dans l'URL, ce qui pourrait être un indicateur de phishing ou de redirection non sécurisée.",
+          "status": "suspect"
+        },
+        "domain": "cours-de-japonais.acemlna.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 60,
+        "reputation": {
+          "domain": "cours-de-japonais.acemlna.com",
+          "status": "unknown"
+        },
+        "score": 60,
+        "url": "https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_D"
+      },
+      {
+        "ai_analysis": {
+          "reason": "le lien contient des paramètres d'URL tels que 'act=unsub' qui pourraient indiquer une tentative de phishing ou une action non sollicitée",
+          "status": "suspect"
+        },
+        "domain": "cours-de-japonais.activehosted.com",
+        "domain_age": {
+          "status": "unknown"
+        },
+        "is_suspicious": true,
+        "percentage": 60,
+        "reputation": {
+          "domain": "cours-de-japonais.activehosted.com",
+          "status": "unknown"
+        },
+        "score": 60,
+        "url": "http://cours-de-japonais.activehosted.com/proc.php?c=2264&m=3569&s=ea18cfc3aa18c899f068a4bb616b748f&d=210377&v=2&nl=38&act=unsub"
+      }
+    ],
+    "nb_links": 6,
+    "percentage": 60.0,
+    "risk_level": "medium",
+    "score": 60.0
+  },
+  "file": {
+    "Explanation": "0 fichier suspect | Raison : Aucune extension dangereuse détectée",
+    "attachment_analysis": [],
+    "moyenne_pourcentage": 0,
+    "nb_attachments": 0
+  },
+  "explanation_cyber": "AUTH: Domaine cohérent avec l'adresse expéditeur | CONTENT: Le texte semble contenir des informations personnelles ou des références peu claires, tels que le nom 'Erice Frieda Adjokè', dont la réelle intention n'est pas claire. | FILE: 0 fichier suspect | Raison : Aucune extension dangereuse détectée | LIEN: 6 lien(s) suspect(s) : https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_P, https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_P, https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_9, https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_~, https://cours-de-japonais.acemlna.com/lt.php?x=4lZy~GE6UnGhDaKsywy4UOie3HUpvd90lhYzjaLJInbL6XB~_ky7xeJs1H-nj0A0_ueglPLFI3ad95_-zdQYUui-132hj_D, http://cours-de-japonais.activehosted.com/proc.php?c=2264&m=3569&s=ea18cfc3aa18c899f068a4bb616b748f&d=210377&v=2&nl=38&act=unsub",
+  "score_cyber": 40.0,
+  "analysis_id": 142,
+  "analyzed_at": "2026-02-04T14:34:14.456712"
+}
