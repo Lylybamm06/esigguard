@@ -1,0 +1,77 @@
+{
+  "analysis_id": 140,
+  "score_cyber": 6.0,
+  "explanation_cyber": "SMTP : IP source non identifiee | Lien : Aucune URL detectee | Aucune pièce jointe | Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est coherente avec une communication légitime. Le sujet et le contenu sont alignes et ne presentent aucun signe de phishing.",
+  "details": {
+    "smtp": {
+      "analysis_id": 140,
+      "explanation": "SMTP : IP source non identifiee",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Unknown",
+        "country": "Unknown",
+        "ip": null,
+        "region": "Unknown"
+      },
+      "ip_reputation": {
+        "ip": null,
+        "malicious_reports": 0,
+        "status": "unknown"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": null,
+      "score": 30,
+      "service": "smtp",
+      "timestamp_status": "ok"
+    },
+    "auth": {
+      "score": 0,
+      "explanation": "Auth: Erreur HTTP 500"
+    },
+    "lien": {
+      "analysis_id": 140,
+      "explanation": "Lien : Aucune URL detectee",
+      "score": 0,
+      "service": "lien",
+      "url_count": 0,
+      "urls_analyzed": []
+    },
+    "file": {
+      "analysis_id": 140,
+      "attachment_count": 0,
+      "attachments_analysis": [],
+      "explanation": "Aucune pièce jointe",
+      "score": 0,
+      "service": "file",
+      "suspicious_count": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "Analyse non disponible",
+          "status": "unknown"
+        },
+        "global_verdict": "error",
+        "language_quality": {
+          "reason": "Analyse non disponible",
+          "status": "unknown"
+        },
+        "phishing_indicators": {
+          "reason": "Erreur IA: Error code: 429 - {'error': {'message': 'Rate limi",
+          "status": "error"
+        }
+      },
+      "analysis_id": 140,
+      "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est coherente avec une communication légitime. Le sujet et le contenu sont alignes et ne presentent aucun signe de phishing.",
+      "keywords": {
+        "count": 0,
+        "keyword_score": 0,
+        "keywords_found": []
+      },
+      "score": 0,
+      "service": "content",
+      "subject": ""
+    }
+  }
+}

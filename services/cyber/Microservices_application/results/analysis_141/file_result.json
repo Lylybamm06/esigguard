@@ -1,0 +1,46 @@
+{
+  "analysis_id": 141,
+  "attachment_count": 2,
+  "attachments_analysis": [
+    {
+      "ai_analysis": {
+        "reason": "Le nom du fichier, le type MIME et l'extension sont tous cohérents avec un fichier image PNG",
+        "status": "coherent"
+      },
+      "extension": ".png",
+      "filename": "Outlook-ysg5ly1q.png",
+      "is_dangerous": false,
+      "mime_type": "image/png",
+      "mime_verdict": {
+        "extension": ".png",
+        "mime": "image/png",
+        "reason": "Extension cohérente",
+        "status": "coherent"
+      },
+      "score": 0,
+      "size": 341127
+    },
+    {
+      "ai_analysis": {
+        "reason": "le nom du fichier contient des caractères aléatoires, ce qui peut indiquer une tentative de masquer son véritable contenu",
+        "status": "suspect"
+      },
+      "extension": ".jpeg",
+      "filename": "pro-lZIUYY4z.jpeg",
+      "is_dangerous": false,
+      "mime_type": "image/jpeg",
+      "mime_verdict": {
+        "extension": ".jpeg",
+        "mime": "image/jpeg",
+        "reason": "Extension cohérente",
+        "status": "coherent"
+      },
+      "score": 25,
+      "size": 682086
+    }
+  ],
+  "explanation": "2 fichier(s) analysés, aucun suspect",
+  "score": 12.5,
+  "service": "file",
+  "suspicious_count": 0
+}

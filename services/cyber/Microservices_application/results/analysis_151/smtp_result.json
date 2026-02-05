@@ -1,0 +1,22 @@
+{
+  "analysis_id": 151,
+  "explanation": "SMTP : Réputation IP inconnue",
+  "headers_status": "normal",
+  "ip_geolocation": {
+    "city": "Bordeaux",
+    "country": "France",
+    "ip": "195.62.74.29",
+    "region": "Nouvelle-Aquitaine"
+  },
+  "ip_reputation": {
+    "ip": "195.62.74.29",
+    "malicious_reports": 0,
+    "status": "unknown"
+  },
+  "list_unsubscribe_present": "unknown",
+  "message_id_present": "unknown",
+  "origin_ip": "195.62.74.29",
+  "score": 38,
+  "service": "smtp",
+  "timestamp_status": "ok"
+}

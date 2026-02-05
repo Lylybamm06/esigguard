@@ -1,0 +1,139 @@
+{
+  "analysis_id": 88,
+  "score_cyber": 10.0,
+  "explanation_cyber": "Authentification : DisplayNameVsDomain: incoherent | SMTP : IP source non identifiee | Lien : 1 URL(s) analysee(s), aucune suspecte | Aucune pièce jointe | Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est coherente avec une communication légitime. Le sujet et le contenu sont alignes et ne presentent aucun signe de phishing.",
+  "details": {
+    "smtp": {
+      "analysis_id": 88,
+      "explanation": "SMTP : IP source non identifiee",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Unknown",
+        "country": "Unknown",
+        "ip": null,
+        "region": "Unknown"
+      },
+      "ip_reputation": {
+        "ip": null,
+        "malicious_reports": 0,
+        "status": "unknown"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": null,
+      "score": 30,
+      "service": "smtp",
+      "timestamp_status": "ok"
+    },
+    "auth": {
+      "analysis_id": 88,
+      "display_vs_domain": {
+        "display_name": "Service Facturation",
+        "from_domain": "exemple.com",
+        "score": 40,
+        "status": "incoherent"
+      },
+      "dkim": {
+        "protocol": "DKIM",
+        "score": 0,
+        "status": "pass"
+      },
+      "dmarc": {
+        "protocol": "DMARC",
+        "score": 0,
+        "status": "pass"
+      },
+      "domain_age": {
+        "age_years": 21.87,
+        "created_date": "2004-03-28T14:07:03Z",
+        "domain": "exemple.com",
+        "status": "bon"
+      },
+      "explanation": "Authentification : DisplayNameVsDomain: incoherent",
+      "from_vs_reply": {
+        "from_domain": "exemple.com",
+        "reply_domain": null,
+        "score": 0,
+        "status": "coherent"
+      },
+      "from_vs_return": {
+        "from_domain": "exemple.com",
+        "return_domain": "exemple.com",
+        "score": 0,
+        "status": "coherent"
+      },
+      "score": 20,
+      "spf": {
+        "protocol": "SPF",
+        "score": 0,
+        "status": "pass"
+      }
+    },
+    "lien": {
+      "analysis_id": 88,
+      "explanation": "Lien : 1 URL(s) analysee(s), aucune suspecte",
+      "score": 0.0,
+      "service": "lien",
+      "suspicious_count": 0,
+      "url_count": 1,
+      "urls_analyzed": [
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiché et l'URL réelle correspondent, et le domaine appartient à une institution gouvernementale française, ce qui suggère une authenticité et une sécurité de la source.",
+            "status": "coherent"
+          },
+          "display_text": "https://www.impots.gouv.fr",
+          "domain": "www.impots.gouv.fr",
+          "domain_age": {
+            "age_years": 17.16,
+            "created": "2008-12-10T08:44:04Z",
+            "status": "bon"
+          },
+          "raw_url": "https://www.impots.gouv.fr",
+          "reputation": {
+            "domain": "www.impots.gouv.fr",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 0
+        }
+      ]
+    },
+    "file": {
+      "analysis_id": 88,
+      "attachment_count": 0,
+      "attachments_analysis": [],
+      "explanation": "Aucune pièce jointe",
+      "score": 0,
+      "service": "file",
+      "suspicious_count": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "correspond à une communication officielle",
+          "status": "ok"
+        },
+        "global_verdict": "coherent",
+        "language_quality": {
+          "reason": "grammaire et orthographe correctes",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "pas d'urgence ni de menace",
+          "status": "ok"
+        }
+      },
+      "analysis_id": 88,
+      "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est coherente avec une communication légitime. Le sujet et le contenu sont alignes et ne presentent aucun signe de phishing.",
+      "keywords": {
+        "count": 0,
+        "keyword_score": 0,
+        "keywords_found": []
+      },
+      "score": 0,
+      "service": "content",
+      "subject": "Votre reçu de paiement est disponible"
+    }
+  }
+}

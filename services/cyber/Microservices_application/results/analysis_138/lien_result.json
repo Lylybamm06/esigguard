@@ -1,8 +1,30 @@
 {
   "analysis_id": 138,
-  "explanation": "Lien : Aucune URL detectee",
-  "score": 0,
+  "explanation": "Lien : 1 URL(s) analysee(s), aucune suspecte",
+  "score": 0.0,
   "service": "lien",
-  "url_count": 0,
-  "urls_analyzed": []
+  "suspicious_count": 0,
+  "url_count": 1,
+  "urls_analyzed": [
+    {
+      "ai_analysis": {
+        "reason": "Le texte affiche et l'URL reelle sont identiques, et le domaine semble etre officiel et legitime",
+        "status": "coherent"
+      },
+      "display_text": "https://www.crous-normandie.fr/",
+      "domain": "www.crous-normandie.fr",
+      "domain_age": {
+        "age_years": 9.67,
+        "created": "2016-06-07T11:43:47Z",
+        "status": "bon"
+      },
+      "raw_url": "https://www.crous-normandie.fr/",
+      "reputation": {
+        "domain": "www.crous-normandie.fr",
+        "malicious_reports": 0,
+        "status": "unknown"
+      },
+      "score": 0
+    }
+  ]
 }

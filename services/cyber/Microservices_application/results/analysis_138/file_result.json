@@ -1,9 +1,28 @@
 {
   "analysis_id": 138,
-  "attachment_count": 0,
-  "attachments_analysis": [],
-  "explanation": "Aucune pièce jointe",
-  "score": 0,
+  "attachment_count": 1,
+  "attachments_analysis": [
+    {
+      "ai_analysis": {
+        "reason": "Le nom du fichier contient \"dosftidl\" qui ressemble à une faute de frappe ou un mot généré aléatoirement, ce qui peut être un indicateur de phishing ou de malware",
+        "status": "suspect"
+      },
+      "extension": ".png",
+      "filename": "Outlook-dosftidl.png",
+      "is_dangerous": false,
+      "mime_type": "image/png",
+      "mime_verdict": {
+        "extension": ".png",
+        "mime": "image/png",
+        "reason": "Extension cohérente",
+        "status": "coherent"
+      },
+      "score": 25,
+      "size": 341127
+    }
+  ],
+  "explanation": "1 fichier(s) analysés, aucun suspect",
+  "score": 25.0,
   "service": "file",
   "suspicious_count": 0
 }

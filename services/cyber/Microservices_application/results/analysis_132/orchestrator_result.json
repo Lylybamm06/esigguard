@@ -1,0 +1,137 @@
+{
+  "analysis_id": 132,
+  "score_cyber": 31.0,
+  "explanation_cyber": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu | SMTP : IP source non identifiee | Lien : 1 URL(s) analysee(s), aucune suspecte | Aucune pièce jointe | Content: Phishing: lien suspect | Coherence: contexte peu clair",
+  "details": {
+    "smtp": {
+      "analysis_id": 132,
+      "explanation": "SMTP : IP source non identifiee",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Unknown",
+        "country": "Unknown",
+        "ip": null,
+        "region": "Unknown"
+      },
+      "ip_reputation": {
+        "ip": null,
+        "malicious_reports": 0,
+        "status": "unknown"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": null,
+      "score": 30,
+      "service": "smtp",
+      "timestamp_status": "ok"
+    },
+    "auth": {
+      "analysis_id": 132,
+      "display_vs_domain": {
+        "display_name": "IT Support",
+        "from_domain": "company-it-helpdesk.com",
+        "score": 40,
+        "status": "incoherent"
+      },
+      "dkim": {
+        "protocol": "DKIM",
+        "score": 10,
+        "status": "unknown"
+      },
+      "dmarc": {
+        "protocol": "DMARC",
+        "score": 10,
+        "status": "unknown"
+      },
+      "domain_age": {
+        "age_years": null,
+        "created_date": null,
+        "domain": "company-it-helpdesk.com",
+        "status": "unknown"
+      },
+      "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu",
+      "from_vs_reply": {
+        "from_domain": "company-it-helpdesk.com",
+        "reply_domain": null,
+        "score": 0,
+        "status": "coherent"
+      },
+      "from_vs_return": {
+        "from_domain": "company-it-helpdesk.com",
+        "return_domain": "company-it-helpdesk.com",
+        "score": 0,
+        "status": "coherent"
+      },
+      "score": 40,
+      "spf": {
+        "protocol": "SPF",
+        "score": 10,
+        "status": "unknown"
+      }
+    },
+    "lien": {
+      "analysis_id": 132,
+      "explanation": "Lien : 1 URL(s) analysee(s), aucune suspecte",
+      "score": 40.0,
+      "service": "lien",
+      "suspicious_count": 0,
+      "url_count": 1,
+      "urls_analyzed": [
+        {
+          "ai_analysis": {
+            "reason": "Le domaine semble être créé pour une attaque de phishing, car il contient des mots-clés tels que 'reset-password' qui pourraient être utilisés pour inciter les utilisateurs à révéler leurs informations de connexion",
+            "status": "suspect"
+          },
+          "display_text": "http://company-reset-password-secure.com",
+          "domain": "company-reset-password-secure.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "http://company-reset-password-secure.com",
+          "reputation": {
+            "domain": "company-reset-password-secure.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 40
+        }
+      ]
+    },
+    "file": {
+      "analysis_id": 132,
+      "attachment_count": 0,
+      "attachments_analysis": [],
+      "explanation": "Aucune pièce jointe",
+      "score": 0,
+      "service": "file",
+      "suspicious_count": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "contexte peu clair",
+          "status": "suspect"
+        },
+        "global_verdict": "suspect",
+        "language_quality": {
+          "reason": "anglais correct",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "lien suspect",
+          "status": "suspect"
+        }
+      },
+      "analysis_id": 132,
+      "explanation": "Content: Phishing: lien suspect | Coherence: contexte peu clair",
+      "keywords": {
+        "count": 0,
+        "keyword_score": 0,
+        "keywords_found": []
+      },
+      "score": 45,
+      "service": "content",
+      "subject": "Password Reset Required"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "analysis_id": 125,
+  "display_vs_domain": {
+    "display_name": "Streaming Service",
+    "from_domain": "streamflix.com",
+    "score": 40,
+    "status": "incoherent"
+  },
+  "dkim": {
+    "protocol": "DKIM",
+    "score": 10,
+    "status": "unknown"
+  },
+  "dmarc": {
+    "protocol": "DMARC",
+    "score": 10,
+    "status": "unknown"
+  },
+  "domain_age": {
+    "age_years": 21.95,
+    "created_date": "2004-02-29T17:45:25Z",
+    "domain": "streamflix.com",
+    "status": "bon"
+  },
+  "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent",
+  "from_vs_reply": {
+    "from_domain": "streamflix.com",
+    "reply_domain": null,
+    "score": 0,
+    "status": "coherent"
+  },
+  "from_vs_return": {
+    "from_domain": "streamflix.com",
+    "return_domain": "streamflix.com",
+    "score": 0,
+    "status": "coherent"
+  },
+  "score": 35,
+  "spf": {
+    "protocol": "SPF",
+    "score": 10,
+    "status": "unknown"
+  }
+}

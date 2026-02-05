@@ -1,0 +1,30 @@
+{
+  "analysis_id": 88,
+  "explanation": "Lien : 1 URL(s) analysee(s), aucune suspecte",
+  "score": 0.0,
+  "service": "lien",
+  "suspicious_count": 0,
+  "url_count": 1,
+  "urls_analyzed": [
+    {
+      "ai_analysis": {
+        "reason": "Le texte affiché et l'URL réelle correspondent, et le domaine appartient à une institution gouvernementale française, ce qui suggère une authenticité et une sécurité de la source.",
+        "status": "coherent"
+      },
+      "display_text": "https://www.impots.gouv.fr",
+      "domain": "www.impots.gouv.fr",
+      "domain_age": {
+        "age_years": 17.16,
+        "created": "2008-12-10T08:44:04Z",
+        "status": "bon"
+      },
+      "raw_url": "https://www.impots.gouv.fr",
+      "reputation": {
+        "domain": "www.impots.gouv.fr",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 0
+    }
+  ]
+}

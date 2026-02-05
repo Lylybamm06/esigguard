@@ -1,15 +1,73 @@
 {
   "analysis_id": 125,
-  "score_cyber": 0.0,
-  "explanation_cyber": "Lien : Aucune URL detectee",
+  "score_cyber": 13.0,
+  "explanation_cyber": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent | SMTP : IP source non identifiee | Lien : Aucune URL detectee | Aucune pièce jointe | Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est coherente avec une communication légitime. Le sujet et le contenu sont alignes et ne presentent aucun signe de phishing.",
   "details": {
     "smtp": {
-      "score": 0,
-      "explanation": "SMTP: Erreur HTTP 500"
+      "analysis_id": 125,
+      "explanation": "SMTP : IP source non identifiee",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Unknown",
+        "country": "Unknown",
+        "ip": null,
+        "region": "Unknown"
+      },
+      "ip_reputation": {
+        "ip": null,
+        "malicious_reports": 0,
+        "status": "unknown"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": null,
+      "score": 30,
+      "service": "smtp",
+      "timestamp_status": "ok"
     },
     "auth": {
-      "score": 0,
-      "explanation": "Auth: Erreur HTTP 500"
+      "analysis_id": 125,
+      "display_vs_domain": {
+        "display_name": "Streaming Service",
+        "from_domain": "streamflix.com",
+        "score": 40,
+        "status": "incoherent"
+      },
+      "dkim": {
+        "protocol": "DKIM",
+        "score": 10,
+        "status": "unknown"
+      },
+      "dmarc": {
+        "protocol": "DMARC",
+        "score": 10,
+        "status": "unknown"
+      },
+      "domain_age": {
+        "age_years": 21.95,
+        "created_date": "2004-02-29T17:45:25Z",
+        "domain": "streamflix.com",
+        "status": "bon"
+      },
+      "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent",
+      "from_vs_reply": {
+        "from_domain": "streamflix.com",
+        "reply_domain": null,
+        "score": 0,
+        "status": "coherent"
+      },
+      "from_vs_return": {
+        "from_domain": "streamflix.com",
+        "return_domain": "streamflix.com",
+        "score": 0,
+        "status": "coherent"
+      },
+      "score": 35,
+      "spf": {
+        "protocol": "SPF",
+        "score": 10,
+        "status": "unknown"
+      }
     },
     "lien": {
       "analysis_id": 125,
@@ -20,12 +78,40 @@
       "urls_analyzed": []
     },
     "file": {
+      "analysis_id": 125,
+      "attachment_count": 0,
+      "attachments_analysis": [],
+      "explanation": "Aucune pièce jointe",
       "score": 0,
-      "explanation": "File: Erreur HTTP 500"
+      "service": "file",
+      "suspicious_count": 0
     },
     "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "correspond à une vraie communication",
+          "status": "ok"
+        },
+        "global_verdict": "coherent",
+        "language_quality": {
+          "reason": "grammaire correcte",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "pas d'urgence",
+          "status": "ok"
+        }
+      },
+      "analysis_id": 125,
+      "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est coherente avec une communication légitime. Le sujet et le contenu sont alignes et ne presentent aucun signe de phishing.",
+      "keywords": {
+        "count": 0,
+        "keyword_score": 0,
+        "keywords_found": []
+      },
       "score": 0,
-      "explanation": "Content: Erreur HTTP 500"
+      "service": "content",
+      "subject": "Subscription Renewal Notice"
     }
   }
 }

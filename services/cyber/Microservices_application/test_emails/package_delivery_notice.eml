@@ -1,0 +1,10 @@
+From: DHL Express <no-reply@dhl-delivery-alert.net>
+To: user@example.com
+Subject: Package Delivery Attempt Failed
+Date: Tue, 03 Feb 2026 11:03:00 +0000
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+We attempted to deliver your package.
+Please confirm your address:
+http://dhl-reschedule-payment.com

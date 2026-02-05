@@ -1,0 +1,27 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "Lien non officiel",
+      "status": "suspect"
+    },
+    "global_verdict": "suspect",
+    "language_quality": {
+      "reason": "Formulation simple",
+      "status": "ok"
+    },
+    "phishing_indicators": {
+      "reason": "Urgence et lien suspect",
+      "status": "suspect"
+    }
+  },
+  "analysis_id": 122,
+  "explanation": "Content: Phishing: Urgence et lien suspect | Coherence: Lien non officiel",
+  "keywords": {
+    "count": 0,
+    "keyword_score": 0,
+    "keywords_found": []
+  },
+  "score": 45,
+  "service": "content",
+  "subject": "Password Reset Required"
+}

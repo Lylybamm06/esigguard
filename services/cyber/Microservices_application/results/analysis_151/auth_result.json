@@ -1,0 +1,44 @@
+{
+  "analysis_id": 151,
+  "display_vs_domain": {
+    "display_name": "Hello bank!",
+    "from_domain": "vous.hellobank.fr",
+    "score": 40,
+    "status": "incoherent"
+  },
+  "dkim": {
+    "protocol": "DKIM",
+    "score": 0,
+    "status": "pass"
+  },
+  "dmarc": {
+    "protocol": "DMARC",
+    "score": 0,
+    "status": "pass"
+  },
+  "domain_age": {
+    "age_years": 13.45,
+    "created_date": "2012-08-28T13:20:54Z",
+    "domain": "vous.hellobank.fr",
+    "status": "bon"
+  },
+  "explanation": "Authentification : FromVsReply: incoherent | DisplayNameVsDomain: incoherent",
+  "from_vs_reply": {
+    "from_domain": "vous.hellobank.fr",
+    "reply_domain": "hellobank.fr",
+    "score": 30,
+    "status": "incoherent"
+  },
+  "from_vs_return": {
+    "from_domain": "vous.hellobank.fr",
+    "return_domain": "vous.hellobank.fr",
+    "score": 0,
+    "status": "coherent"
+  },
+  "score": 35,
+  "spf": {
+    "protocol": "SPF",
+    "score": 0,
+    "status": "pass"
+  }
+}

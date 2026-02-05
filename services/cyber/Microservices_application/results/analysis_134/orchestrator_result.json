@@ -1,72 +1,72 @@
 {
   "analysis_id": 134,
-  "score_cyber": 11.6,
-  "explanation_cyber": "Authentification : FromVsReturn: incoherent | AgeDomaine: inconnu | SMTP : Timestamp manquant | Lien : Aucune URL detectee | Aucune pièce jointe | Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+  "score_cyber": 15.0,
+  "explanation_cyber": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent | SMTP : IP source non identifiee | Lien : Aucune URL detectee | Aucune pièce jointe | Content: Mots-cles: confirm",
   "details": {
     "smtp": {
       "analysis_id": 134,
-      "explanation": "SMTP : Timestamp manquant",
+      "explanation": "SMTP : IP source non identifiee",
       "headers_status": "normal",
       "ip_geolocation": {
-        "city": "-",
-        "country": "-",
-        "ip": "203.0.113.25",
-        "region": "-"
+        "city": "Unknown",
+        "country": "Unknown",
+        "ip": null,
+        "region": "Unknown"
       },
       "ip_reputation": {
-        "ip": "203.0.113.25",
+        "ip": null,
         "malicious_reports": 0,
-        "status": "reliable"
+        "status": "unknown"
       },
       "list_unsubscribe_present": "unknown",
       "message_id_present": "unknown",
-      "origin_ip": "203.0.113.25",
-      "score": 38,
+      "origin_ip": null,
+      "score": 30,
       "service": "smtp",
-      "timestamp_status": "missing"
+      "timestamp_status": "ok"
     },
     "auth": {
       "analysis_id": 134,
       "display_vs_domain": {
-        "display_name": "",
-        "from_domain": "",
-        "score": 0,
-        "status": "coherent"
+        "display_name": "HR",
+        "from_domain": "company.com",
+        "score": 40,
+        "status": "incoherent"
       },
       "dkim": {
         "protocol": "DKIM",
-        "score": 0,
-        "status": "pass"
+        "score": 10,
+        "status": "unknown"
       },
       "dmarc": {
         "protocol": "DMARC",
-        "score": 0,
-        "status": "pass"
-      },
-      "domain_age": {
-        "age_years": null,
-        "created_date": null,
-        "domain": "",
+        "score": 10,
         "status": "unknown"
       },
-      "explanation": "Authentification : FromVsReturn: incoherent | AgeDomaine: inconnu",
+      "domain_age": {
+        "age_years": 31.6,
+        "created_date": "1994-07-07T23:00:00Z",
+        "domain": "company.com",
+        "status": "bon"
+      },
+      "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent",
       "from_vs_reply": {
-        "from_domain": "",
+        "from_domain": "company.com",
         "reply_domain": null,
         "score": 0,
         "status": "coherent"
       },
       "from_vs_return": {
-        "from_domain": "",
-        "return_domain": "example.com",
-        "score": 30,
-        "status": "incoherent"
+        "from_domain": "company.com",
+        "return_domain": "company.com",
+        "score": 0,
+        "status": "coherent"
       },
-      "score": 20,
+      "score": 35,
       "spf": {
         "protocol": "SPF",
-        "score": 0,
-        "status": "pass"
+        "score": 10,
+        "status": "unknown"
       }
     },
     "lien": {
@@ -89,29 +89,31 @@
     "content": {
       "ai_content_analysis": {
         "context_coherence": {
-          "reason": "corps vide",
+          "reason": "correspond à une communication",
           "status": "ok"
         },
         "global_verdict": "coherent",
         "language_quality": {
-          "reason": "vide, pas d'erreur",
+          "reason": "grammaire correcte",
           "status": "ok"
         },
         "phishing_indicators": {
-          "reason": "aucun indicateur",
+          "reason": "pas d'urgence",
           "status": "ok"
         }
       },
       "analysis_id": 134,
-      "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+      "explanation": "Content: Mots-cles: confirm",
       "keywords": {
-        "count": 0,
-        "keyword_score": 0,
-        "keywords_found": []
+        "count": 1,
+        "keyword_score": 15,
+        "keywords_found": [
+          "confirm"
+        ]
       },
-      "score": 0,
+      "score": 10,
       "service": "content",
-      "subject": ""
+      "subject": "Meeting Confirmation"
     }
   }
 }

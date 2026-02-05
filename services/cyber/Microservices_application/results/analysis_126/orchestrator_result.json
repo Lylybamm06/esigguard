@@ -1,81 +1,101 @@
 {
   "analysis_id": 126,
-  "score_cyber": 8.0,
-  "explanation_cyber": "Authentification : DisplayNameVsDomain: incoherent | AgeDomaine: inconnu | SMTP : IP identifiee (91.134.132.115, France), aucun indicateur suspect | Lien : Aucune URL detectee | Aucune pièce jointe | Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+  "score_cyber": 31.0,
+  "explanation_cyber": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu | SMTP : IP source non identifiee | Lien : 1 URL(s) analysee(s), aucune suspecte | Aucune pièce jointe | Content: Phishing: Demande d'action urgente | Coherence: Lien non sécurisé",
   "details": {
     "smtp": {
       "analysis_id": 126,
-      "explanation": "SMTP : IP identifiee (91.134.132.115, France), aucun indicateur suspect",
+      "explanation": "SMTP : IP source non identifiee",
       "headers_status": "normal",
       "ip_geolocation": {
-        "city": "Roubaix",
-        "country": "France",
-        "ip": "91.134.132.115",
-        "region": "Hauts-de-France"
+        "city": "Unknown",
+        "country": "Unknown",
+        "ip": null,
+        "region": "Unknown"
       },
       "ip_reputation": {
-        "ip": "91.134.132.115",
+        "ip": null,
         "malicious_reports": 0,
-        "status": "reliable"
+        "status": "unknown"
       },
       "list_unsubscribe_present": "unknown",
       "message_id_present": "unknown",
-      "origin_ip": "91.134.132.115",
-      "score": 15,
+      "origin_ip": null,
+      "score": 30,
       "service": "smtp",
       "timestamp_status": "ok"
     },
     "auth": {
       "analysis_id": 126,
       "display_vs_domain": {
-        "display_name": "Club Developpez.com",
-        "from_domain": "redaction-developpez.com",
+        "display_name": "IT Support",
+        "from_domain": "company-it-helpdesk.com",
         "score": 40,
         "status": "incoherent"
       },
       "dkim": {
         "protocol": "DKIM",
-        "score": 0,
-        "status": "pass"
+        "score": 10,
+        "status": "unknown"
       },
       "dmarc": {
         "protocol": "DMARC",
-        "score": 0,
-        "status": "pass"
+        "score": 10,
+        "status": "unknown"
       },
       "domain_age": {
         "age_years": null,
         "created_date": null,
-        "domain": "redaction-developpez.com",
+        "domain": "company-it-helpdesk.com",
         "status": "unknown"
       },
-      "explanation": "Authentification : DisplayNameVsDomain: incoherent | AgeDomaine: inconnu",
+      "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu",
       "from_vs_reply": {
-        "from_domain": "redaction-developpez.com",
+        "from_domain": "company-it-helpdesk.com",
         "reply_domain": null,
         "score": 0,
         "status": "coherent"
       },
       "from_vs_return": {
-        "from_domain": "redaction-developpez.com",
-        "return_domain": "redaction-developpez.com",
+        "from_domain": "company-it-helpdesk.com",
+        "return_domain": "company-it-helpdesk.com",
         "score": 0,
         "status": "coherent"
       },
-      "score": 25,
+      "score": 40,
       "spf": {
         "protocol": "SPF",
-        "score": 0,
-        "status": "pass"
+        "score": 10,
+        "status": "unknown"
       }
     },
     "lien": {
       "analysis_id": 126,
-      "explanation": "Lien : Aucune URL detectee",
-      "score": 0,
+      "explanation": "Lien : 1 URL(s) analysee(s), aucune suspecte",
+      "score": 40.0,
       "service": "lien",
-      "url_count": 0,
-      "urls_analyzed": []
+      "suspicious_count": 0,
+      "url_count": 1,
+      "urls_analyzed": [
+        {
+          "ai_analysis": {
+            "reason": "Le domaine contient des mots-clés suspects tels que 'reset-password' qui sont souvent utilisés dans les attaques de phishing",
+            "status": "suspect"
+          },
+          "display_text": "http://company-reset-password-secure.com",
+          "domain": "company-reset-password-secure.com",
+          "domain_age": {
+            "status": "unknown"
+          },
+          "raw_url": "http://company-reset-password-secure.com",
+          "reputation": {
+            "domain": "company-reset-password-secure.com",
+            "malicious_reports": 0,
+            "status": "reliable"
+          },
+          "score": 40
+        }
+      ]
     },
     "file": {
       "analysis_id": 126,
@@ -89,29 +109,29 @@
     "content": {
       "ai_content_analysis": {
         "context_coherence": {
-          "reason": "Analyse non disponible",
-          "status": "unknown"
+          "reason": "Lien non sécurisé",
+          "status": "suspect"
         },
-        "global_verdict": "error",
+        "global_verdict": "suspect",
         "language_quality": {
-          "reason": "Analyse non disponible",
-          "status": "unknown"
+          "reason": "Formulation simple",
+          "status": "ok"
         },
         "phishing_indicators": {
-          "reason": "Erreur IA: Error code: 429 - {'error': {'message': 'Rate limi",
-          "status": "error"
+          "reason": "Demande d'action urgente",
+          "status": "suspect"
         }
       },
       "analysis_id": 126,
-      "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+      "explanation": "Content: Phishing: Demande d'action urgente | Coherence: Lien non sécurisé",
       "keywords": {
         "count": 0,
         "keyword_score": 0,
         "keywords_found": []
       },
-      "score": 0,
+      "score": 45,
       "service": "content",
-      "subject": "La newsletter des professionnels en informatique du 27/01/2026"
+      "subject": "Password Reset Required"
     }
   }
 }

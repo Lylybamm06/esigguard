@@ -1,0 +1,44 @@
+{
+  "analysis_id": 141,
+  "display_vs_domain": {
+    "display_name": "Muriel BENARD",
+    "from_domain": "crous-normandie.fr",
+    "score": 40,
+    "status": "incoherent"
+  },
+  "dkim": {
+    "protocol": "DKIM",
+    "score": 0,
+    "status": "pass"
+  },
+  "dmarc": {
+    "protocol": "DMARC",
+    "score": 0,
+    "status": "pass"
+  },
+  "domain_age": {
+    "age_years": 9.67,
+    "created_date": "2016-06-07T11:43:47Z",
+    "domain": "crous-normandie.fr",
+    "status": "bon"
+  },
+  "explanation": "Authentification : DisplayNameVsDomain: incoherent",
+  "from_vs_reply": {
+    "from_domain": "crous-normandie.fr",
+    "reply_domain": null,
+    "score": 0,
+    "status": "coherent"
+  },
+  "from_vs_return": {
+    "from_domain": "crous-normandie.fr",
+    "return_domain": "crous-normandie.fr",
+    "score": 0,
+    "status": "coherent"
+  },
+  "score": 20,
+  "spf": {
+    "protocol": "SPF",
+    "score": 0,
+    "status": "pass"
+  }
+}

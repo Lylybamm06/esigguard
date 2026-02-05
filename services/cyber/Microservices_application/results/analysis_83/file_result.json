@@ -1,0 +1,46 @@
+{
+  "analysis_id": 83,
+  "attachment_count": 2,
+  "attachments_analysis": [
+    {
+      "ai_analysis": {
+        "reason": "Le nom du fichier, le type MIME et l'extension sont tous cohérents avec un fichier PDF",
+        "status": "coherent"
+      },
+      "extension": ".pdf",
+      "filename": "APPEL-185-53148-16446-25241.pdf",
+      "is_dangerous": false,
+      "mime_type": "application/pdf",
+      "mime_verdict": {
+        "extension": ".pdf",
+        "mime": "application/pdf",
+        "reason": "Extension cohérente",
+        "status": "coherent"
+      },
+      "score": 0,
+      "size": 0
+    },
+    {
+      "ai_analysis": {
+        "reason": "le nom, le MIME et l'extension sont tous cohérents avec un fichier image au format PNG",
+        "status": "coherent"
+      },
+      "extension": ".png",
+      "filename": "622-manchette.png",
+      "is_dangerous": false,
+      "mime_type": "image/png",
+      "mime_verdict": {
+        "extension": ".png",
+        "mime": "image/png",
+        "reason": "Extension cohérente",
+        "status": "coherent"
+      },
+      "score": 0,
+      "size": 0
+    }
+  ],
+  "explanation": "2 fichier(s) analysés, aucun suspect",
+  "score": 0.0,
+  "service": "file",
+  "suspicious_count": 0
+}

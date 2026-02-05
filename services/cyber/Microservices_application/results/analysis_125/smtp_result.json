@@ -1,0 +1,22 @@
+{
+  "analysis_id": 125,
+  "explanation": "SMTP : IP source non identifiee",
+  "headers_status": "normal",
+  "ip_geolocation": {
+    "city": "Unknown",
+    "country": "Unknown",
+    "ip": null,
+    "region": "Unknown"
+  },
+  "ip_reputation": {
+    "ip": null,
+    "malicious_reports": 0,
+    "status": "unknown"
+  },
+  "list_unsubscribe_present": "unknown",
+  "message_id_present": "unknown",
+  "origin_ip": null,
+  "score": 30,
+  "service": "smtp",
+  "timestamp_status": "ok"
+}

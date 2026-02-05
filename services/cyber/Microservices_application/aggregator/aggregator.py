@@ -1,16 +1,23 @@
 import time
 import os
 import logging
+import threading
 import mysql.connector
+from flask import Flask, jsonify
+from flask_cors import CORS
 from groq import Groq
 from dotenv import load_dotenv
 
-# --- 1. CONFIGURATION ---
+# --- CONFIGURATION ---
 script_dir = os.path.dirname(os.path.abspath(__file__))
 load_dotenv(os.path.join(script_dir, '.env'))
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(message)s', datefmt='%H:%M:%S')
 logger = logging.getLogger(__name__)
+
+# API POUR L'EXTENSION (Port 5306)
+app = Flask(__name__)
+CORS(app)
 
 # CONFIG BDD
 DB_CONFIG = {
@@ -22,150 +29,134 @@ DB_CONFIG = {
     'autocommit': True
 }
 
-# CONFIG IA
+# IA
 client = None
 try:
     client = Groq(api_key=os.getenv('GROQ_API_KEY'))
-    logger.info("IA Groq connectée (Mode Arbitre).")
-except Exception as e:
-    logger.error(f"s d'IA: {e}")
+except: pass
 
 def get_db():
     return mysql.connector.connect(**DB_CONFIG)
 
 # =========================================================
-# LE CERVEAU (IA Arbitre)
+# PARTIE 1 : REPONDRE A L'EXTENSION (GET)
 # =========================================================
-
-def ask_ai_arbitration(math_score, task):
-    """
-    Fonction qui demande à l'IA de valider ou corriger le score.
-    """
-    if not client: 
-        return math_score, "SUSPECT", "IA indisponible, score basé sur les règles."
-
-    # Prompt qui force l'IA à prendre une décision binaire sur le score
-    prompt = f"""
-    Agis comme un expert Cyber. J'ai un doute sur ce mail.
-    Mon algorithme mathématique lui donne un score de : {math_score}/100.
-    
-    DETAILS DU MAIL :
-    - Sujet : "{task.get('email_subject')}"
-    - Expéditeur : "{task.get('email_sender')}"
-    - Contenu (extrait) : "{task.get('email_body', '')[:500]}..."
-    - Analyse technique (Data) : {task.get('explanation_data', 'Non disponible')}
-
-    TA MISSION :
-    1. Analyse le contenu. Est-ce du Phishing, une Arnaque, ou un Virus ?
-    2. Si C'EST DANGEREUX mais que mon score est bas (<80), TU DOIS LE CORRIGER (mets 90 ou 95).
-    3. Si c'est légitime, garde mon score bas.
-    
-    REPONDS UNIQUEMENT SOUS CE FORMAT EXACT :
-    SCORE_FINAL: [Ton score corrigé]
-    VERDICT: [SÛR / SUSPECT / DANGER]
-    EXPLICATION: [Ton explication en 2 phrases simples pour un humain]
-    """
-
+@app.route('/result/<task_id>', methods=['GET'])
+def get_result(task_id):
     try:
-        chat = client.chat.completions.create(
-            messages=[{"role": "user", "content": prompt}],
-            model="llama-3.3-70b-versatile", # Modèle rapide
-            temperature=0.1
-        )
-        response = chat.choices[0].message.content
+        conn = get_db()
+        cursor = conn.cursor(dictionary=True)
+        query = "SELECT status, final_score, final_verdict, human_explanation FROM analyses WHERE id = %s"
+        cursor.execute(query, (task_id,))
+        result = cursor.fetchone()
+        conn.close()
 
-        # Valeurs par défaut
-        f_score = math_score
-        verdict = "SUSPECT"
-        expl = "Analyse terminée."
-
-        # Parsing robuste
-        for line in response.split('\n'):
-            line = line.strip()
-            if line.startswith("SCORE_FINAL:"):
-                try: 
-                    txt = line.replace("SCORE_FINAL:", "").replace("/100", "").strip()
-                    f_score = int(txt)
-                except: pass
-            elif line.startswith("VERDICT:"):
-                verdict = line.replace("VERDICT:", "").strip()
-            elif line.startswith("EXPLICATION:"):
-                expl = line.replace("EXPLICATION:", "").strip()
-        
-        return f_score, verdict, expl
-
+        if result:
+            return jsonify(result)
+        else:
+            return jsonify({"status": "not_found"}), 404
     except Exception as e:
-        logger.error(f"Erreur IA: {e}")
-        return math_score, "SUSPECT", "Erreur lors de l'analyse IA."
-
+        return jsonify({"error": str(e)}), 500
 
 # =========================================================
-# BOUCLE PRINCIPALE (WORKER)
+# PARTIE 2 : WORKER (CALCUL)
 # =========================================================
-
-def run_worker():
-    logger.info("AGGREGATOR (Worker Mode) : En attente du service Data...")
+def ask_ai_arbitration(math_score, task):
+    if not client: return math_score, "SUSPECT", "IA indisponible."
     
+    # --- SECURITE ANTI-CRASH (Fix Erreur 400) ---
+    # On s'assure que rien n'est None avant d'envoyer à Groq
+    subj = str(task.get('email_subject') or "Sans objet")
+    sender = str(task.get('email_sender') or "Inconnu")
+    # On coupe le body s'il est trop long pour éviter les erreurs de token
+    body = str(task.get('email_body') or "Contenu vide")[:800]
+    data_res = str(task.get('explanation_data') or "RAS")
+
+    prompt = f"""
+    Analyse ce mail. Score technique: {math_score}/100.
+    Sujet: {subj}
+    Expéditeur: {sender}
+    Contenu: {body}
+    Data: {data_res}
+    
+    Si Arnaque/Phishing évident et score < 80, CORRIGE (mets 95).
+    Sinon garde le score.
+    
+    FORMAT:
+    SCORE_FINAL: [Nombre]
+    VERDICT: [SÛR/SUSPECT/DANGER]
+    EXPLICATION: [Texte court]
+    """
+    try:
+        # Utilisation d'un modèle fiable
+        resp = client.chat.completions.create(
+            messages=[{"role": "user", "content": prompt}],
+            model="llama-4-scout-17b-16e-instruct",
+            temperature=0.1
+        ).choices[0].message.content
+        
+        f_score, verdict, expl = math_score, "SUSPECT", "Analyse faite."
+        for line in resp.split('\n'):
+            line = line.strip()
+            if "SCORE_FINAL:" in line: 
+                try: f_score = int(line.split(':')[1].replace('/100','').strip())
+                except: pass
+            if "VERDICT:" in line: verdict = line.split(':')[1].strip()
+            if "EXPLICATION:" in line: expl = line.split(':')[1].strip()
+        return f_score, verdict, expl
+    except Exception as e:
+        logger.error(f"Erreur Groq (Ignorée): {e}")
+        # En cas de pépin IA, on renvoie le score mathématique au lieu de planter
+        return math_score, "SUSPECT", "IA momentanément indisponible."
+
+def run_worker_loop():
+    logger.info("🔧 Worker STRICT actif (Attente Data + Cyber)...")
     while True:
-        conn = None
         try:
             conn = get_db()
             cursor = conn.cursor(dictionary=True)
             
-            # --- LA REQUÊTE QUI ATTEND ---
-            # On ne prend QUE les lignes où 'score_data' est REMPLI (IS NOT NULL)
-            # Tant que le service Data n'a pas écrit, cette requête renvoie vide.
+            # TU AS DEMANDÉ : STRICTEMENT CYBER ET DATA PRÉSENTS
             query = """
                 SELECT * FROM analyses 
                 WHERE status='processing' 
                 AND score_data IS NOT NULL 
-		AND score_cyber IS NOT NULL
+                AND score_cyber IS NOT NULL 
                 AND final_score IS NULL
             """
             cursor.execute(query)
             tasks = cursor.fetchall()
 
-            if not tasks:
-                # Si pas de tâches prêtes (ou si Data n'a pas fini), on attend
-                time.sleep(1.5)
-                continue
-
             for task in tasks:
-                logger.info(f"Traitement ID {task['id']} (Data reçue : {task['score_data']})")
-
-                # 1. Récupération des scores (On est sûr que Data est là)
-                s_cyber = task.get('score_cyber') or 0
-                s_data = task['score_data'] # Pas de 'or 0' car on sait qu'il est là
+                logger.info(f"Traitement ID {task['id']}...")
                 
-                # 2. Moyenne Mathématique de base
+                s_cyber = task['score_cyber'] # On sait qu'il est là grâce au SQL
+                s_data = task['score_data']
+                
                 math_score = int((s_cyber + s_data) / 2)
-                
-                # Sécurité : Si l'un des services a détecté une menace forte, on monte le score
-                if s_cyber > 70 or s_data > 70:
-                    math_score = max(s_cyber, s_data)
+                if s_cyber > 75 or s_data > 75: math_score = max(s_cyber, s_data)
 
-                # 3. Arbitrage IA (Le Patron)
                 final_score, final_verdict, explanation = ask_ai_arbitration(math_score, task)
 
-                # 4. ÉCRITURE FINALE
                 cursor.execute("""
                     UPDATE analyses 
                     SET final_score=%s, final_verdict=%s, human_explanation=%s, status='done'
                     WHERE id=%s
                 """, (final_score, final_verdict, explanation, task['id']))
-                
                 conn.commit()
-                logger.info(f"ID {task['id']} CLOS -> Score Final: {final_score} ({final_verdict})")
+                logger.info(f"--> ID {task['id']} TERMINE : {final_score}")
 
-            cursor.close()
-
+            conn.close()
         except Exception as e:
-            logger.error(f"Erreur BDD/Boucle: {e}")
-            time.sleep(5) 
-        finally:
-            if conn and conn.is_connected(): conn.close()
-        
-        time.sleep(1)
+            logger.error(f"Erreur Worker: {e}")
+        time.sleep(1.5)
 
 if __name__ == "__main__":
-    run_worker()
+    # 1. On lance le worker
+    t = threading.Thread(target=run_worker_loop)
+    t.daemon = True
+    t.start()
+    
+    # 2. On lance l'API
+    logger.info("🚀 AGGREGATOR PRET SUR LE PORT 5306")
+    app.run(host='0.0.0.0', port=5306)

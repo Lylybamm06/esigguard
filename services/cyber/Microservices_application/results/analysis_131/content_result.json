@@ -1,21 +1,21 @@
 {
   "ai_content_analysis": {
     "context_coherence": {
-      "reason": "pas de texte",
+      "reason": "Correspond à une vraie communication",
       "status": "ok"
     },
     "global_verdict": "coherent",
     "language_quality": {
-      "reason": "pas de texte",
+      "reason": "Formulation claire",
       "status": "ok"
     },
     "phishing_indicators": {
-      "reason": "aucun indicateur",
+      "reason": "Pas d'urgence",
       "status": "ok"
     }
   },
   "analysis_id": 131,
-  "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+  "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est coherente avec une communication légitime. Le sujet et le contenu sont alignes et ne presentent aucun signe de phishing.",
   "keywords": {
     "count": 0,
     "keyword_score": 0,
@@ -23,5 +23,5 @@
   },
   "score": 0,
   "service": "content",
-  "subject": ""
+  "subject": "Application Update"
 }

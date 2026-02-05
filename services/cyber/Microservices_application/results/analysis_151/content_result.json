@@ -1,0 +1,29 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "Informations personnelles et lien",
+      "status": "suspect"
+    },
+    "global_verdict": "suspect",
+    "language_quality": {
+      "reason": "Formulation correcte",
+      "status": "ok"
+    },
+    "phishing_indicators": {
+      "reason": "Urgence et lien suspect",
+      "status": "suspect"
+    }
+  },
+  "analysis_id": 151,
+  "explanation": "Content: Phishing: Urgence et lien suspect | Coherence: Informations personnelles et lien | Mots-cles: important",
+  "keywords": {
+    "count": 1,
+    "keyword_score": 10,
+    "keywords_found": [
+      "important"
+    ]
+  },
+  "score": 55,
+  "service": "content",
+  "subject": "Des messages importants vous attendent dans votre Espace Client"
+}

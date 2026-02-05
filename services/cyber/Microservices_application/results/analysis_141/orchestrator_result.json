@@ -1,0 +1,196 @@
+{
+  "analysis_id": 141,
+  "score_cyber": 16.1,
+  "explanation_cyber": "Authentification : DisplayNameVsDomain: incoherent | SMTP : Réputation IP inconnue | Lien : 2 URL(s) analysee(s), aucune suspecte | 2 fichier(s) analysés, aucun suspect | Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est coherente avec une communication légitime. Le sujet et le contenu sont alignes et ne presentent aucun signe de phishing.",
+  "details": {
+    "smtp": {
+      "analysis_id": 141,
+      "explanation": "SMTP : Réputation IP inconnue",
+      "headers_status": "normal",
+      "ip_geolocation": {
+        "city": "Unknown",
+        "country": "Unknown",
+        "ip": "026.01.26.09",
+        "region": "Unknown"
+      },
+      "ip_reputation": {
+        "ip": "026.01.26.09",
+        "malicious_reports": 0,
+        "status": "unknown"
+      },
+      "list_unsubscribe_present": "unknown",
+      "message_id_present": "unknown",
+      "origin_ip": "026.01.26.09",
+      "score": 38,
+      "service": "smtp",
+      "timestamp_status": "ok"
+    },
+    "auth": {
+      "analysis_id": 141,
+      "display_vs_domain": {
+        "display_name": "Muriel BENARD",
+        "from_domain": "crous-normandie.fr",
+        "score": 40,
+        "status": "incoherent"
+      },
+      "dkim": {
+        "protocol": "DKIM",
+        "score": 0,
+        "status": "pass"
+      },
+      "dmarc": {
+        "protocol": "DMARC",
+        "score": 0,
+        "status": "pass"
+      },
+      "domain_age": {
+        "age_years": 9.67,
+        "created_date": "2016-06-07T11:43:47Z",
+        "domain": "crous-normandie.fr",
+        "status": "bon"
+      },
+      "explanation": "Authentification : DisplayNameVsDomain: incoherent",
+      "from_vs_reply": {
+        "from_domain": "crous-normandie.fr",
+        "reply_domain": null,
+        "score": 0,
+        "status": "coherent"
+      },
+      "from_vs_return": {
+        "from_domain": "crous-normandie.fr",
+        "return_domain": "crous-normandie.fr",
+        "score": 0,
+        "status": "coherent"
+      },
+      "score": 20,
+      "spf": {
+        "protocol": "SPF",
+        "score": 0,
+        "status": "pass"
+      }
+    },
+    "lien": {
+      "analysis_id": 141,
+      "explanation": "Lien : 2 URL(s) analysee(s), aucune suspecte",
+      "score": 10.0,
+      "service": "lien",
+      "suspicious_count": 0,
+      "url_count": 2,
+      "urls_analyzed": [
+        {
+          "ai_analysis": {
+            "reason": "le domaine aka.ms est souvent utilise pour les liens courts de Microsoft, mais il peut egalement etre utilise pour des attaques de phishing ou des liens malveillants",
+            "status": "suspect"
+          },
+          "display_text": "https://aka.ms/AAb9ysg",
+          "domain": "aka.ms",
+          "domain_age": {
+            "age_years": 15.05,
+            "created": "2011-01-20T16:48:05Z",
+            "status": "bon"
+          },
+          "raw_url": "https://aka.ms/AAb9ysg",
+          "reputation": {
+            "domain": "aka.ms",
+            "malicious_reports": 0,
+            "status": "unknown"
+          },
+          "score": 20
+        },
+        {
+          "ai_analysis": {
+            "reason": "L'URL affichée correspond à l'URL réelle et le domaine semble légitime, ce qui suggère qu'il n'y a pas de tentative de phishing ou de redirection malveillante.",
+            "status": "coherent"
+          },
+          "display_text": "https://www.crous-normandie.fr/",
+          "domain": "www.crous-normandie.fr",
+          "domain_age": {
+            "age_years": 9.67,
+            "created": "2016-06-07T11:43:47Z",
+            "status": "bon"
+          },
+          "raw_url": "https://www.crous-normandie.fr/",
+          "reputation": {
+            "domain": "www.crous-normandie.fr",
+            "malicious_reports": 0,
+            "status": "unknown"
+          },
+          "score": 0
+        }
+      ]
+    },
+    "file": {
+      "analysis_id": 141,
+      "attachment_count": 2,
+      "attachments_analysis": [
+        {
+          "ai_analysis": {
+            "reason": "Le nom du fichier, le type MIME et l'extension sont tous cohérents avec un fichier image PNG",
+            "status": "coherent"
+          },
+          "extension": ".png",
+          "filename": "Outlook-ysg5ly1q.png",
+          "is_dangerous": false,
+          "mime_type": "image/png",
+          "mime_verdict": {
+            "extension": ".png",
+            "mime": "image/png",
+            "reason": "Extension cohérente",
+            "status": "coherent"
+          },
+          "score": 0,
+          "size": 341127
+        },
+        {
+          "ai_analysis": {
+            "reason": "le nom du fichier contient des caractères aléatoires, ce qui peut indiquer une tentative de masquer son véritable contenu",
+            "status": "suspect"
+          },
+          "extension": ".jpeg",
+          "filename": "pro-lZIUYY4z.jpeg",
+          "is_dangerous": false,
+          "mime_type": "image/jpeg",
+          "mime_verdict": {
+            "extension": ".jpeg",
+            "mime": "image/jpeg",
+            "reason": "Extension cohérente",
+            "status": "coherent"
+          },
+          "score": 25,
+          "size": 682086
+        }
+      ],
+      "explanation": "2 fichier(s) analysés, aucun suspect",
+      "score": 12.5,
+      "service": "file",
+      "suspicious_count": 0
+    },
+    "content": {
+      "ai_content_analysis": {
+        "context_coherence": {
+          "reason": "situation réaliste et contexte clair",
+          "status": "ok"
+        },
+        "global_verdict": "coherent",
+        "language_quality": {
+          "reason": "grammaire et orthographe correctes",
+          "status": "ok"
+        },
+        "phishing_indicators": {
+          "reason": "pas d'urgence ni de menace",
+          "status": "ok"
+        }
+      },
+      "analysis_id": 141,
+      "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est coherente avec une communication légitime. Le sujet et le contenu sont alignes et ne presentent aucun signe de phishing.",
+      "keywords": {
+        "count": 0,
+        "keyword_score": 0,
+        "keywords_found": []
+      },
+      "score": 0,
+      "service": "content",
+      "subject": " Poubelle de tri débordante – situation inadmissible"
+    }
+  }
+}

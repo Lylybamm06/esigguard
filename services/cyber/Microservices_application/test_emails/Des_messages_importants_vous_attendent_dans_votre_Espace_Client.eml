@@ -1,0 +1,1518 @@
+Delivered-To: adissomarylyne4@gmail.com
+Received: by 2002:a17:907:b02b:b0:b87:f63a:3c22 with SMTP id fu43csp395573ejc;
+        Wed, 21 Jan 2026 04:12:01 -0800 (PST)
+X-Received: by 2002:a05:600c:4586:b0:477:76cb:4812 with SMTP id 5b1f17b1804b1-4801e2a50e4mr245239065e9.0.1768997521316;
+        Wed, 21 Jan 2026 04:12:01 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1768997521; cv=none;
+        d=google.com; s=arc-20240605;
+        b=eOb693hpVNRUifYk0CcjUiY/Zmk1BUJ8hH7AMaiGEyA7bWWD/aqyXWjSKtFGOyBxOQ
+         LsRqJYiEbniceIy8u+sU0hk4NMZCtRCf+grN0XzAOW/zYfvzsyToXl9CaV283NOEa6Fm
+         oBVwF0nb6ZKd5TBe7UPk7YLzglHrZeBKywl/6BojMx/wXM4hPUU/LMu20BhCFm6o8WXf
+         +evn7s2GJgIiBlAxg078RXOswyXO3j7ey+PyJU4QQ1Brs3vO13PFQ7+cqOJmEIuUPzDQ
+         h2Ueju0gGM4GviqUlucgt2qZ1RI9R0r4z9wu4oJ3asQNV1AoZvV3s1k1YRdIVvso6JQJ
+         /cCQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:list-unsubscribe-post:list-unsubscribe:precedence
+         :feedback-id:reply-to:to:message-id:subject:date:from:dkim-signature
+         :dkim-signature;
+        bh=ZjNfET/thMkxlObpD1cNlwehJTsC47TUFvENzd1zfpI=;
+        fh=FAbaUppWRV2cuHIcpA+TVvPbll39jlyQnlRGrPCg68Q=;
+        b=ahqs49OmA0Hm0aar37bUE3llLLPnL5m7cTLfpEuQeZ7Z0pL9e5q4vFjqw4AI1KhBNF
+         Hv/9Auaub1L91F/017ezwGs80yCqmefSTjV4Vx76pSKu7w9gWhI72OnbZIwsNoQnOw1t
+         eaPMVXOwFgjNBh6uavFP5PJZ/vbB+BRLRjUxHL9R2ooembM8nL+RdT732nxD0jHB5tkW
+         Q//j8xtNellkWZKVckT8xgMs6YjsC1cbnfW7zgZtiWs3wPle0ejqrUvMMDBVuiZn6Bfo
+         9GMGs/pE09qMAy8/6Lrk6iXQW4Q6y3cgqI+vPksarxqlycuBz7c04qonG32nZDEhG75x
+         R4pw==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@vous.hellobank.fr header.s=dkim2 header.b=sLWyku+E;
+       dkim=pass header.i=@espmp-aufr.net header.s=dkim1 header.b=RB9n2wuj;
+       spf=pass (google.com: domain of mperfbouncescifa02k002u2m008l9coa@vous.hellobank.fr designates 195.62.74.29 as permitted sender) smtp.mailfrom=MperfBouncesCIFA02K002U2M008L9COA@vous.hellobank.fr;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=vous.hellobank.fr
+Return-Path: <MperfBouncesCIFA02K002U2M008L9COA@vous.hellobank.fr>
+Received: from mail.static.s29.74.lr001.net (mail.static.s29.74.lr001.net. [195.62.74.29])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-435699964d9si25317759f8f.249.2026.01.21.04.12.00
+        for <adissomarylyne4@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 21 Jan 2026 04:12:01 -0800 (PST)
+Received-SPF: pass (google.com: domain of mperfbouncescifa02k002u2m008l9coa@vous.hellobank.fr designates 195.62.74.29 as permitted sender) client-ip=195.62.74.29;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@vous.hellobank.fr header.s=dkim2 header.b=sLWyku+E;
+       dkim=pass header.i=@espmp-aufr.net header.s=dkim1 header.b=RB9n2wuj;
+       spf=pass (google.com: domain of mperfbouncescifa02k002u2m008l9coa@vous.hellobank.fr designates 195.62.74.29 as permitted sender) smtp.mailfrom=MperfBouncesCIFA02K002U2M008L9COA@vous.hellobank.fr;
+       dmarc=pass (p=REJECT sp=REJECT dis=NONE) header.from=vous.hellobank.fr
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed; s=dkim2; d=vous.hellobank.fr;
+ h=From:Date:Subject:Message-Id:To:Reply-To:List-Unsubscribe:
+ List-Unsubscribe-Post:MIME-Version:Content-Type; i=client@vous.hellobank.fr;
+ bh=nLbyORyZeDZACP/1O1L7fvUFeyQ456EkW9ahJ5nCMpI=;
+ b=sLWyku+E4JiV06fKhaAJtpgD8YWumLYhtRFMt2QqkGNjEJtKT3/bVfD2fur8J1ZPE0TQEyU/Mlvj
+   jhH80JOB6aHQcga7SxKnTq1FebB+Kqd/JBB4mHyU8QEKAYI3CGUYfJZVB/bQpMo8UrilFkqyfXsS
+   Wy9hCzTbE46KfhYWdI4Bchm/FJfyeVZmbMGtndUoABEEu8cu+FOR5ngYvBxpd8xjgGHnG97/ac3Q
+   h8Iop41faPDl4HE+G++FiKrtB0eBoGKPPyBowexu6T7PSKo4JcV9LE6A4+GeVVdBQFxtoqQYYpgT
+   a4rdCCPWuu2dqRH5DPtEaVjkSxVCzvcoRyW4PQ==
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed; s=dkim1; d=espmp-aufr.net;
+ h=From:Date:Subject:Message-Id:To:Reply-To:Feedback-ID:List-Unsubscribe:
+ List-Unsubscribe-Post:MIME-Version:Content-Type;
+ bh=nLbyORyZeDZACP/1O1L7fvUFeyQ456EkW9ahJ5nCMpI=;
+ b=RB9n2wujOIlpN3RjzUC7Yr5LgTZhbrVw5r7E3zH4xhBuiUWPXt5kuNXxas3apkSt5x0UuXMmvBpJ
+   RYIBEgC0e+MypiotIP4zUSQGdC8bM8DHAWeoDoec3QCgCXIGUP6zvyEyjgRMVZDz2b6XKbU/cDeI
+   Ozu0LOirdlX6I7r8N48=
+Received: by mail.static.s29.74.lr001.net id he3190368tos for <adissomarylyne4@gmail.com>; Wed, 21 Jan 2026 10:24:21 +0100 (envelope-from <MperfBouncesCIFA02K002U2M008L9COA@vous.hellobank.fr>)
+From: Hello bank! <client@vous.hellobank.fr>
+Date: Wed, 21 Jan 2026 09:24:21 +0000
+Subject: Des messages importants vous attendent dans votre Espace Client
+Message-Id: <CIFA02K002U2M008L9COA1768987458508@vous.hellobank.fr>
+To: adissomarylyne4@gmail.com
+Reply-To: ne-pas-repondre@hellobank.fr
+X-TRID: 008L9COA
+X-CAID: 002U2M
+X-CUID: 02K
+X-AID: CIFA
+X-CAT: GCIFA02K-118
+Feedback-ID: CIFA:02K:002U2M:espmp-np6
+X-Conf: CIFA#02K#666
+X-Media-Field-Id: 1012
+Precedence: bulk
+List-Unsubscribe:
+ <https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/OCoMpKKuuq4ZRS2Ig1pE7FWvYkhM4gWDFg8_9FwWeao5KCmczddIE1zF-DpTrBdq47tj48EzhdLVZW96sAFmPB1CvGjsI3gy5d961tbN_JfS2J5U5tVATT7q6UI5NWPPUec7jt86C_DUASnOq3hWoCDYmq2GFTlZ9CMBao05tTZqacewSZicYO5uL6Z2nls8fY3Tlbu4RPdQlBW4rPzPEedBt9IOfeTwXOTUXlxWomvvku0jmj9-eN2wTSCSBt0q5zZ2_VFxZSakdbq92zMmQp-wn14yzQ9vemMvBb_QAGAwY4f_7pEyiPG3_lQjVW_i6B2JeF2UrskZGR9oITiyP7cL4gg9KBn5HFPDyJvDb_sP6Ow49ZDHy-35yn6j-bqknnqmPcoU34nhNYCBen0TOyWIOZvUE6qKUeJo0G-DqR_HesgZR5oGhpDqe0lmOAMqxcmY_OTJL8QBibhbPvVrSjdejk5Dxm17XheDOD6TOz8wwkGNj4F14rZakAM_jPf-S_WTtDAV_pCS9yVfpfDnUZRj8IAfMYQL_3Xh6OfwdV5soyHNKjzlrSIsX8B-TxfHvZCcpHoHn6lCQ0VHICM>,
+ <mailto:MPU-ACIFA02K-002U2M-008L9COA@vous.hellobank.fr?subject=unsubscribe>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+X-UK: aff88b837c1a2669947b4d0e94966648
+X-Consent-Open: 1
+X-Consent-Click: 1
+X-Stamp-Id: c7b9d51f-9134-42fd-883a-5844a9475d78
+X-ConversationId: c7b9d51f-9134-42fd-883a-5844a9475d78
+X-Render: 0
+X-Audience: AAAAAAAAAAQ=
+X-Engine: 10.9.67985
+X-Activation-Version: 3.9.0
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="=-OnMn+p0K7ARiaOFHgURSZA=="
+
+--=-OnMn+p0K7ARiaOFHgURSZA==
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+
+
+
+
+=E2=80=8C
+Vous avez plusieurs nouveaux messages
+
+Voir la version en ligne
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/CKAfLGTl2yCeNknGnFSj9QmK21p0m_=
+Y0FQIyatVGab9IJ-UvfIFELjzLqn-dpVDDtAD53Pge1RMGzJmzPenpZ15DTlSF99Oi8zeDDe-6j=
+cbT8I_h3i8hUBi7RM89pqobvk9EEgfLwe8ZjjzscHx2Ggu_d6zP57F92vEGWbQ0ST713UWxAWFb=
+y-VIePRcIl_pdG5ODQEs2KC4oilWniCDRwAEQ46flJt91telCbUCApdH_TtHXC_gmDbFQTXrs7m=
+o9rGmUHXRCYiAr00DOCcviwmMsV5aHF-eo9XCiwjr6n2ixk6jxjJhe5XwRJcvcJPeG4I_ZkVeqI=
+M0CK2yv73f2Z7UBdYqefoT3AoeotVaoMnpq196YtPp7OsPg_8DAV1MpM43N4QEtJKjonGCYI7QY=
+2P5clDqMAIl7awPxBIE-Ry_c3eqBpHbwDZ5toUB5EJh6xaBeik0jgUPqDhXjZuIxLARSGErmUBz=
+rEdaC2S2nGyI8mVvACZwIf3O4Ja0FxywNfcNeHIHMmkxTKry5vcnfoK4R-O244g5H_XniC5ko3a=
+YPJ8Dhiu818fkT-LYlat098kzRX0wl4VkA5bmJdrZfbjxaOGAP06rhiEkGZaxkg=20
+
+Informations personnelles de s=C3=A9curit=C3=A9 : 06/03
+
+
+
+Hello Marylyne,
+=E2=80=8C
+Plusieurs messages vous attendent dans votre Espace=C2=A0Client.
+=E2=80=8C
+
+
+
+
+
+
+
+
+
+=E2=80=8C
+
+
+Information annuelle r=C3=A9glementaire sur le Fonds de Garantie des D=C3=A9=
+p=C3=B4ts et de R=C3=A9solution.
+
+=E2=80=8C
+
+
+=C3=89volution des conditions g=C3=A9n=C3=A9rales de votre Convention de co=
+mpte au 1er=C2=A0avril=C2=A02026.
+=E2=80=8C
+
+
+=E2=80=8C
+
+=E2=80=8C
+Rendez-vous sur votre=20
+application Hello bank!*
+=E2=80=8C
+
+=E2=80=8C
+
+Depuis la une des Comptes, acc=C3=A9dez =C3=A0 la rubrique =C2=AB=C2=A0Noti=
+fications=C2=A0=C2=BB via la cloche en haut =C3=A0 droite.
+=E2=80=8C
+
+=E2=80=8C
+
+
+Et prenez connaissance de
+vos nouveaux messages.
+=E2=80=8C
+
+Vous pouvez =C3=A9galement prendre connaissance de ces messages sur le site=
+ hellobank.fr* en acc=C3=A9dant =C3=A0 votre Espace=C2=A0Client avec vos co=
+des personnels.
+
+=E2=80=8C
+
+
+=E2=80=8C
+
+
+=E2=80=8C
+
+
+
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/zFCTD_ANNvchUatcn1qfbNALIKiOJv=
+_mixHaBW-Z3NdZ-cLQuTQtLOhFyGA6B47BA8zRVjZX93jZ9u6MQ-RESzoxAEuJpMrDEdBUn7OUn=
+y0_-BpsL2qkMDmwIVqxHVg0ngZFJ4U7gGVT5s5Ewga8dD8H3Qc49VNInvFvPUuQJsiiUaipLgrG=
+Ir9GkA0QJGiXma9TbMz6GXQWGSR90THPz4WEiobUtBRlWMVf3rgwHsMzKKB5baIYf3joJpzJgiD=
+cNGsV4qif33i8m2KxptqGXxfK5gdkNuaHy6jDjM9Jtbw14UmRJnmkwJEteS1D7Z_fdttDhO730L=
+gOgp6xnbl7xeuZ2x4_tHnOHKZIKU67p8TfAj-IQNXSheWq-uL0qGnT3KmA4A7bJZndIoHFyLsyN=
+pJj8TLDZXEfAfENcmJlp_EOyxUS-4sviaX33HsMK7svJyHyqhOPIEVeFPUljhn7zkbtzI5oTPqN=
+tStJqiyWIRpaqLs2L51Ev3tQa_B96Dsxe1RqOSrvzlEqYARE8yojwVdpqTY-LSxQe9Xx7YsXJ03=
+fpTFwWCO8h9MN-SP8k_fjS_2-2wBgWZ4XTcCdImmPF8eoRZY5YNcN-YsOzV-sJrNTkzMuBG6dYn=
+CLDLjsUbAiay261xdfKeEh0nm37xHCBHubq0v_tA=20
+
+
+
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/VZYgMZwy62oeFP0-qeEv4_ncGittgM=
+McKf0aRAAWj_am2CPNxWYB8gr4_Qv0Xz5k3YH9bFaNcM9TID60trbkN7j7VDhBJJJErmCefDzZ_=
+6vAruOofRcioONjKTP6Qc5tu8vco7XAqOGwsd0beB-9cgWwT1JtfSx199sW0AnqwUXWrkcmdFVU=
+UHzZHIhVp4yxk9tSbhZXee-yEmoFF3siz_gZO_ED4h2TJdsbCD11-QN_awleIl_-eB1mJ_tS-W-=
+LjueblS_Tqrx1reWL-foSAoEwHRXGwWElNEcqlEDWemvGfn75WutunVEeV-l_vFb0g221K8WYsM=
+NWdtxOlqtgQA5Eq2b2hzh-21OhD0bYB6TsyQPfBtj4UVQKa5eGXF67RC8tIi8VkEIZuU3rMKn1T=
+H3CUlSRNk6rwGyyofRl5e6IRkfi7uB-oQGmboMIPxi9C1wDq8UBAcGXgAGES_pA1cO70cChCBxS=
+Psgq2csMOmjcSQJPRjJ7UhHWtOJ8X9x0hvOJoDG0bpvsq0UuI8wpoSHyGOjAPqOtmcf-0o7J8Ff=
+OcQzfJGHAm-Y3gxa5T-f9OgjUYA335aSnj51364sbIwgUO944m6kx1GW6wWNEl5BBwwvfGBBBSC=
+CAQ8_JjhNZQo00J7B74_-LWDiA8GGqml989hfnZw7XGFBsLaYDP5sFVNFCu6Q-MfLkxjJ2Q5q_R=
+Q=20
+
+
+
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/NWoT1unk0p4diteOctDekVUIRJXuDU=
+C-OG28wyasH9qg0_OIRqGf6tK_4cuPqbmOIpEg_x0qxG4zGV8GnEE8VgciaOIn-_5y_UrW2bzJ1=
+ja1iW9loU22uKEzmiYjXnMRkZjij4lyhEEJpG46NuVKJukBmqFOkB5XP9VQRyMzfAlBrpnUpubR=
+Sd2jVST8HUaVr-vTDrjOGTUFFrv3D6mi6B4bEkYEFPEHDccSfYsJIHqAtnWIjoE4PCZpSLHJA0a=
+Q97q44Fb-1sWuNzeptIFiehY5IvwuZNXsJ62RYW2ooWYojFQrxde5UjKa57YI0_jLd412khYmvA=
+O7JkrF27hAEgNFhS388NOQJM4CfcESFLuk4PKnJ0081hMbr8qkVCL4N50_A5UjaNuhKe6l2yoan=
+Lu-6CCxHU5nyd_LoxmjQrLtuJ6M7yJsk-Okix26oKUgP9Ek6TbqSAcDeZIUZYsr3Fb33Bh7QFFC=
+zSjjyB9x1Fj8Rv49AT0DTRS76SKcZbAA3NZID3nYhR_HbmmkdR4R4DXNMr1g_yksf_JZ68sbQe6=
+2Fz5XZjQsLxUj5Y4oeK-WdLvF0mVp4o_6-j_h9r-YVNBfG_iqR4PfzgowVzJxCn5VETrqhhtZIg=
+vZlKklm3v0GvfOl8nEGXPVaYpicsZMcjM=20
+
+=E2=80=8C
+
+=E2=80=8C
+=E2=80=8C
+
+
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/H_yUWr9T0eF7lRcx3tdJwebmIVq0Nb=
+x2HfVC4NkNAjKtjltI-3jfRuQCGb9stkkoN-CdM-RAn2F6GyBSiB9U1kyu0AmFulbgaE2xWrAG8=
+pNufcxJn0kvmEd4TsbU5PUdBUiodcT-vBXNURCCnQQwNDwjj_51UM5s0iYhfZH5uNLE73xTH1B0=
+sz0eRxtV8JWiiCHzg51be319S42hIlCzBaXGMfUdr18_YnD_I9CfVqKv8V1aqVtsIz9pefaT_kp=
+SPG4zoQ1JXaAQH7qQbH7dXbN6tTLKdtYHigkk8z_sZG8qzTe1ThGDPinwWqVJ5uDwxjGDu1hu4L=
+TFyYLRDhR4Lur2YzWGMiZYNfgPbB96LnQSFE5i0nr7gGiWSxuKHuIsxtNe8fFfLPCvbDh3Mdg9b=
+1NVoZIGyAohpoQuXB8CM-9_5lgwcmWd7iCEFgPNqS2pL-Kpx-g3fYWZiA2rUlEd_626vknL7Fzr=
+AUnxMj2yxA51f0iH6yAXGTuKkGH5SESrz8HNIdgqqUliDE4sYMccNHdXnnGCm97pLuHuDDVQcCF=
+-hOYVOwumWpe5xdqIBSxav53YOpNjWAkxDiUp-Cx2dtXvnbn_KXXKSJOOTksfLj8KipPnbCWtwy=
+wY2nYCuyw_KC-Y5dIKtzb-8PL4GZuOkYZRDOUKKWpk7jpaew=20
+
+=E2=80=8C
+
+
+
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/RKQjwEtoTesPKtrRENTJDHyUeY9TPX=
+Sy53ChEKD9axAUDDO7vWmBppsANEwVKHv1wHbkVnlCb_GsCrg60eZc-fhz5y46rPIJHk-Y-Q7pd=
+yAFoqQrsffbyjHHpWXEB8oVEZWWW7n5puMrjugfOx30SGVsRL2k7GM-5IZtJ2I9jjg7mqflwYNl=
+8sEkXp4ik_2uzal6k8XyBrGvf6Fkj2jkzAVhXy9SsN8xZxET-HebyxJ0caVFH18GUH-0b4b_sxM=
+Nox0OKToUQd7j29WGhB_3Km1Blm4RfhYkEDztC-kUPsvcU9PWpp0IZHMpV8g6WG4CUFXEIpNWao=
+ZWYEzqiOHBw0RReE0h6TfHrYBsmyCCw0xjuJP1ltqskIq00sTtxGh-4lC3vdC2FOsBsrWkLKniO=
+pWqVdvrowJXoyCA8cp3cxnXixfG2MgD5LQueoeoQ-nqLwTholDrU1bXPVFPueV9J_B8z4LCqget=
+VHivg2WiR0OnUAn15-ynHXa_qAfSZSSF46mQa7tzbTI8mx3RJ4RJQ5NOVagopvq0OoY3p5bhUcY=
+6_LRPyBN69GCi3tybZ7pZCf8EcOi2nJJ6z7fmi3bvgYSaGDEvL9mPObLgiT1-LWA0uJCO_cMuvj=
+76dGR9xiQCx5wWyjc-nihJ2SoyarbzTLjfwnzX=20
+
+
+
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/RSM2ECRffVXOPXAxGlCiVS7gWGbchs=
+8KKo1eRJHklP4UOEqDsolsRwwiZvyR6Ypuxt8J_Lbzf4EeqHD_V5fgKnIIw52rR_CVjJL9LBKo-=
+vaxMykKyYHVZAzXoYewbNFxAVpaNnsZnEv75PzWquBo-zscJpiVSrDHS4TQ00fZnPPwmzMHVpqt=
+YWQ5Bka6LDC7i6K_nOLcHAlIhZLesjLQCMJAr5FqXL3aVFxyN9zZWsrXjyP0cjWsB7r6Qfds6I6=
+iw5DSccK77JocP3YX3QRdSQY0ukHk4cLROfoXA6vrtUoDBge7XyabzWgvt4fRCSbIRfAwNiaVkw=
+RXjdx0BoifUwmexypSmnpu7eWe0WxteyOJnddmKT0TryuWxAw255w_qG_S3EdFVoKqgCRvvvAoL=
+JZj2aOgYL63_BS2s9rKELxDZ2IR3LKwNieWK64ZU2rX99ZLtLkXw-VT2V3h5UdtCrUXrKrY5dWf=
+EcnRnqj3bDiJmjts8i8EbbP7YU-MjB9LfC0LYn4tOalO8pBvaEu4qUNURSrFvImkimezDFaFgkY=
+gehMzfjGmm4iN_NuqJbyHGQt3ksUVoxL5YiuRgDYqkeoJ00xnx9fw4cONVhv0aH-cPJNebybDPJ=
+llPfWq7xtTdZAu5zC79yejD_1k3y0uuxA=20
+
+
+
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/5yVxeDpUK-VMggmE9dYUvuVulPFq13=
+iL2eLB-0cKiDov8w4uXxxRpbsBiIX7q_mwJuNpxi2CWHkKRAfdZr4obv90Nnsv14TwK41oqhQAk=
+G_fxI0cuLKTk5NA__K5cEYcnYwdJQ_orv_lzbzPCSx9WnpqLUgOkhqI2MEKEb2zFKXHeEdgLTwl=
+whKj5m3z7PKcSv8ugpy25wZlDczUID-ePILhgvqTaoDIdR7KAQJzSkAyUMIZX-FXnBnqkLH2wdN=
+4sv3HqSyKlf-K9ZQ9E4eexaNOpiaT0FndDW89x2ol9c7tthbIxGUy_ZcQJkMYJuICBkiqdSniSS=
+eaUNXbPFSm5xBlGz3ZWDaaLqIiY7Yc9cCoHBfnQW6F7WDlRMhzYzMcrtsPxN-95rMpeXpUn66Ow=
+ghpUzbDDcDtlJVvRsG-QTSS4ShMvgBetA_qS0R9E7g1hf9teDmT18LUYKsbsIRzF5rZSF4nYCTH=
+XsVOxPaGrBrF1gMbs4J8BAVDNcF3A2AUxnco4zeMWyuSWreVYflm3hqDLLo6dfw3UpJOUcMW3Kn=
+7c0FS1WngFF0ZyJroRGEdN5iqlJU-l7SdRCGxIx_UHZznesW2FjRDiT6xLsj1Pn61a9JhfuGFBe=
+MEur302NF9vOXRp8XZKVvEmov_U1TSdn2AbF4=20
+
+
+
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/tCLTuBU8iVAkJhdLo0YdFextKqvgyg=
+8gWNP7SvSFhBVrYQeLvYUwLooPI6BpuQmC1NWp2Da1Ldv3pUTO_0xV-5ttDXQWfS3cyX_Bm7kK0=
+SlaCz3IetdpkHlWmKHf_xEnWIEOsiM82UkjQ7s7mEIxLmQSCRUux5f0XPxtDPOIQtIPyirln2ZE=
+Z2pW3xqrDqjv8fmVJR_2-Ffd6XDcyWux8-4YBKaDlvxmMfoz_c5H2kuRqhyRvwMF23yRi9726_Q=
+-4TY4MCRnroSDP5ztuHLfApiMzf87pZyD6ZxqugG3NwnexmQM0lF0n0Ws1_zQnjf8heckE5lGvo=
+rmiuQJMU3wBG0ykmtJXyVFG3ARyaQy2jLuUgcmIanELK7RLcwYkrtLiiz9AiL1MgJG4SObonFYC=
+cYvxoAu6luPNPYlfqHbIK-oxjleulNli7lPcwSVPpJr48VtouJSOgr0HoZqSYZxEKHBo3OVdTc2=
+u7m1SQM_I4lh-n8QdbpXonptVszEPbvImF7hF1OYZBPrWTvVqativRE-Hb3KJqWOQp3tOULJ340=
+ZQJ019JEAajabFBRspLZOOzGGn9qJ00_MdfnJJF9Z43T0F-aktKxwK-zpeZEst6ETUaI3SNR74z=
+g9IDWU87wJNeKVGIZYB8f0pDTHiyo5JzLgYojzLbi4wg=20
+
+=E2=80=8C
+
+=E2=80=8C
+Restez en alerte face =C3=A0 la fraude !
+=E2=80=8C
+Pour surfer en toute s=C3=A9curit=C3=A9, ne communiquez jamais vos codes pe=
+rsonnels par email, par t=C3=A9l=C3=A9phone ou par SMS.
+
+Nous vous rappelons nos=20
+bonnes pratiques
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/LpdpSpZDM6kRuZMlkn9ruPOtRKAA_S=
+f2sh5vFUEhpOHYk_VOx316ihONx0HhW26MVLIFGBAsbJorYljgPhV_Q1SPh-yixT-GXJkGJbgIX=
+3YciEPD7IxTJuDZY7oMTwMgBBqg8IWmH39M4I5o5jQbrgPdAMXx8Khc189wvflgXqCFc4MNsGBc=
+bAaNwBIiBU3CSVi94ofgZpi1HyV2z1JxgEZ6NHRW0Cy4nYs0vxq4G8SEaUNNYEmJYQZKy8Fq-oZ=
+1oVXertbPVZAf5ee8pwph0-4OZx9WIZECp7b4N0dIJvCH7YOzUvBnP53IT_uDWXFPi0nLBGRSfL=
+v4-5kY_DU1zVTH3pg2h6Xs5cQTm4usXUCi4eX3oFY9Ucit1qExzrivMvVeydroPw89wsXL9_Gfr=
+DDkIaAL6iEsYOAqfJyG527Cjkatod5T3CB-uYncat9sspN_3KcHe7L6pqQEQ_-gFscXkfo87IHE=
+2Wf9HpIYu5pJupbyPzFLRhpOCiJiL9SzVf1nLoi_qeQUbRcQzQQ0Krvr-aGAYzpmuXcQ6_Tertx=
+vc-88zYZzxjsYe2PsHRdaE74F4FBhofOt785hr2x4t9qudPqbDXsoDbur5Y32ALWlv3MXg4nnL9=
+esbdhebPqHrjB8jKdMxoWOxwGjuIqgJMHPv8dbSXUfEF4r3JA=20
+ pour =C3=A9viter le piratage internet.
+=E2=80=8C
+
+
+=E2=80=8C
+
+=E2=80=8C
+=E2=80=8C
+
+
+Avant de saisir vos codes personnels, assurez-vous d=E2=80=99=C3=AAtre bien=
+ =C3=A0 l=E2=80=99origine de l=E2=80=99op=C3=A9ration en v=C3=A9rifiant ses=
+ caract=C3=A9ristiques.=E2=80=8C
+=E2=80=8C
+=E2=80=8C
+
+
+Par s=C3=A9curit=C3=A9 nous vous rappelons votre jour et mois de naissance =
+en haut de chaque email.=E2=80=8C
+=E2=80=8C
+=E2=80=8C
+
+
+Ne communiquez pas d'informations confidentielles par email, sur les r=C3=A9=
+seaux sociaux ou sur un site Internet non s=C3=A9curis=C3=A9.=E2=80=8C
+=E2=80=8C
+=E2=80=8C
+
+
+En cas de doute contactez-nous au 0143631515** 6j/7 de 8h =C3=A0 20h en sem=
+aine et de 8h =C3=A0 18h le samedi.=E2=80=8C
+=E2=80=8C
+=E2=80=8C
+
+* Abonnement =C3=A0 des services de banque =C3=A0 distance (internet, t=C3=A9=
+l=C3=A9phone fixe, SMS, etc.) : gratuit et illimit=C3=A9, hors co=C3=BBt de=
+ communication ou de fourniture d=E2=80=99acc=C3=A8s =C3=A0 internet.=20
+
+** Appel non surtax=C3=A9.
+
+Veuillez noter que cet email a =C3=A9t=C3=A9 envoy=C3=A9 =C3=A0 partir d'un=
+e adresse ne pouvant recevoir d'emails.
+
+Hellobank! est l'offre 100%digitale de BNPParibasSA
+BNP=C2=A0Paribas=C2=A0SA au capital de 2=C2=A0233=C2=A0569=C2=A0514=C2=A0=E2=
+=82=AC
+Si=C3=A8ge social : 16, boulevard des Italiens - 75009=C2=A0Paris
+Immatricul=C3=A9e sous le n=C2=B0662=C2=A0042=C2=A0449 RCS Paris
+ORIAS n=C2=B007=C2=A0022=C2=A0735=20
+www.orias.fr
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/dVt-_EosrfZ-okq2YsDLYp3m40Z6vK=
+VwwZmt4rZECPBBa-yYIaJyEiX1IwcPX_oZ739aD1K7ba23bHySoPpdMEcDy7HgwbnBp4xRQRL24=
+k08Z2o4MvVsA45QRq4B8yktqMnbtLVXbqqNpkuUZjI_AMuMuvPwB-6dOj2DvY-lIeITWOj44Qb7=
+LjYA91dK4dNt0FUxwp2PiHzpHco1GbEg4nDahewTTs9gNzQn3lzRaYDPl_fVenwMwvopkNi-6sH=
+yIKUjeUfuDdeyqH-brdHaoVUsPciJiEprV6qIM6Vx2AJ8MD3dzimDNGR0wxj9zp2oiKQKvtWoIn=
+B5hqUXryqIWI-01B7i67QnkigJEbOyeTV4x2CQ0WPxlwIcvuTUM89Di162xiGI5eqSEnoZj7kTk=
+AQ4v8iE8L1RPS8WUOnNjuuDAzEdjzeHa8SB1VAuT8tcGHhjaBth1kT9K22-NkRmHSeTKkJ8pvyM=
+V-TJN0mw0uzJXfH3Er9Bc_3Rj5GIhQkg9u3GC95fxSwO_NRRw57LAQM8QzANA4GwDmkBZ49u-mj=
+sGpkFBvlDVS_IE4-8RlGiKgT96Z4YpJYUJ24HX6YlWzS0aisC9sw7MEIsctgYJxd-WNW4Wwr1fH=
+fFKVSSS_NlCGhjZ56SNEmXuPU=20
+
+
+Hello bank! (Contestations/r=C3=A9clamations) : 01=C2=A043=C2=A063=C2=A015=C2=
+=A015 (Appel non surtax=C3=A9) -=20
+www.hellobank.fr
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/f0xvDUlt_C8WoWLSt-Doj4IPy0WtIB=
+4XD8ONCltU9hkuvFXQYDxKKkHionoyuOT2HpuRNTuQx_2RYetwcSPbOjer2oljzWhWPPQENoBg_=
+HKYC8kEBW82bVYBIPHzL0562iWHOYoIdirJYVLID4fY6Usb_WZGFXMTjBrK3b3pE4-c6W8rzPUP=
+jeHvZZIOPsGwRQ42l_pd01omUPAeS4HbkSvI3n5iNaaL4LGy3B1hKISlxZz5JbVSU4Vt-5LgxqP=
+8JygvSQl8epEC50GQ5aJJmiebfB1P1l7um72MI10IActZNxaNEAWR5P9eNKSZxjTU-T9YUnZbM6=
+fNCYJwnEtGpx1txtRqSAOLKFB0zRf9tksdUmB-xttzsuV20BE1b6rjCumbh_2M8fbeh_WKTNfB5=
+fP-9fBDfTGaTheFAGKS9yeC8xzwHJpUBfs6V8DLPlLeU9qEbe6cfkiqSa00F57d4e3brNmOU12x=
+_TCShL7Alj9-euSfsjjX5ZoTHoQymfhsbZMhrv9J-pjOmlckFMs0BCOjM4Ii6TPJlTKU5lBei0G=
+kcIvmtymbYUChhkfBDTLaJUnvjIm2uguyTsIzUeFkej1Ob1e9iQ6JL18rniFiE0K4Uz6twioz1X=
+YDdz32oO1426c_M-MpZjLgDMxdIQ=20
+ (Co=C3=BBt de connexion selon op=C3=A9rateur).
+
+Pour en savoir plus sur la politique de protection des donn=C3=A9es de BNP=C2=
+=A0Paribas, vous pouvez vous r=C3=A9f=C3=A9rer =C3=A0 la=20
+Notice de protection des donn=C3=A9es personnelles
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/KLdUft77JnQO8pI5UKQPV3Ff7vYs-e=
+yeb67V2OWlgBG4cADNVLfUoB6zvR5Cl8ZN-VmQOc0ajbElfyedcu4HNnAFL9rXd6_fFU_lMb9t5=
+CDSWRz3MMxuq0npTA4WShci_-2kekZLNCXGmliTqBCjVEFpNDOrthZowVSpfIGaBSpXlwGq-oHn=
+tkOJ5yLQQZ11MqLqWufRvlop6AAESvZ7Kmylcnd4TPr-8qplOBPUkraUINmIs9LV4iV6rw-18hm=
+o73-OxmgSUUnAcR49ZPKR1cp4JolnnrkCamDr_1AUHVuiRq7IxH_Rsh8yMDYd9Kz2uxrWFzF3Ur=
+80d9rShzYhtwky9C99iRujK9opiu6Ox3ZhQA0tNRuN6OJHvByh8Ovxz508cwQqjDdphyoJgA3Dx=
+c5gyt5Jq6fl05SKgx2kNoAF51gWDcNHD4WT2DBfNyfrVEqjXVnBEH3tRHRF-c97rMHDuMNCeGyW=
+elLcYMG8TuH_PRdcRWlT0yjpL6uvtZ9X_noe4j6Kkj3IWEKtZqFA5CiyHMVpvj3WmaGPA3lpkYA=
+OzTdgi9_UbpyWIwSrMT57uIwnSK3qb3V6yc1Ywr-JAPI_yZSfHSUX3ZVEJ6rtvjWyQwrs0stom4=
+StGB9pU_4uNKyozIZuEUnaM2ulpaKbP20YoWtSzC7S78VePS8Yxzly=20
+.=
+
+--=-OnMn+p0K7ARiaOFHgURSZA==
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.=
+w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns=3D"http://www.w3.=
+org/1999/xhtml" xmlns:v=3D"urn:schemas-microsoft-com:vml" xmlns:o=3D"urn:sc=
+hemas-microsoft-com:office:office" lang=3D"fr" xml:lang=3D"fr"><head><title=
+>Des messages importants vous attendent dans votre Espace Client</title><me=
+ta http-equiv=3D"Content-Type" content=3D"text/html; charset=3DUTF-8"/><met=
+a http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge"/><meta name=3D"viewp=
+ort" content=3D"width=3Ddevice-width, initial-scale=3D1.0"/><link href=3D"h=
+ttps://fonts.googleapis.com/css?family=3DOpen+Sans" rel=3D"stylesheet"/><!-=
+- Avoid image scaling for Outlook 2013 120dpi  --><!--[if mso]>
+    <xml xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:v=3D"urn:schemas-micr=
+osoft-com:vml" xmlns:o=3D"urn:schemas-microsoft-com:office:office">
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]--><!-- This part depend on the router solution and the langua=
+ge used in email --><!-- Compatibility with Windows Phones --><!-- Viewport=
+ initialisation --><!-- Google fonts css link --><!-- Email title should be=
+ email subject --><!-- Here comes all the responsive part --><style type=3D=
+"text/css">/* RESET CSS */ span.MsoHyperlink { mso-style-priority: 1; color=
+: inherit } span.MsoHyperlinkFollowed { mso-style-priority: 1; color: inher=
+it } body { -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; pad=
+ding: 0; color: #000000; margin: 0 auto } td { line-height: 100% } img { ou=
+tline: none; text-decoration: none } a img { border: none } u+* img+div { d=
+isplay: none } table td { border-collapse: collapse; mso-line-height-rule: =
+exactly } table { border-collapse: collapse; mso-table-lspace: 0pt; mso-tab=
+le-rspace: 0pt } table * { box-sizing: content-box } table { box-sizing: bo=
+rder-box } a { color: inherit; text-decoration: none; mso-line-height-rule:=
+ exactly } .appleLinks, .appleLinksWhite { text-decoration: none !important=
+ } a[x-apple-data-detectors] { color: inherit !important; text-decoration: =
+none !important; font-size: inherit !important; font-family: inherit !impor=
+tant; font-weight: inherit !important; line-height: inherit !important } ta=
+ble[class^=3D"ox"] sup { font-size: 0.7em; vertical-align: baseline; } sup =
+{ font-size: 0.8em; vertical-align: text-top; line-height: 1; height: 0; ms=
+o-text-raise: 24% } div>u+* table { zoom: 100% } .ms-outlook-linkify { colo=
+r: inherit !important } /* EO - RESET CSS */ *:not(#outlook).opensans { fon=
+t-family: 'Open Sans', Arial, Helvetica, sans-serif !important } /* Respons=
+ive breakpoint for tablet */ @media screen and (min-width: 451px) and (max-=
+width: 600px) { .t_w3p { width: 3% !important } .t_w10p { width: 10% !impor=
+tant } .t_w65p { width: 65% !important } .t_w87p { width: 87% !important } =
+.t_pr5px { padding-right: 5px !important } .t_pl5px { padding-left: 5px !im=
+portant } .t_w380px { width: 380px !important } .t_w40p { width: 40% !impor=
+tant } .t_w153px { width: 153px !important } .t_w107px { width: 107px !impo=
+rtant } .t_w35p { width: 35% !important } .t_w130px { width: 130px !importa=
+nt } .t_h30px { height: 30px !important } .t_w312px { width: 312px !importa=
+nt } .t_w367px { width: 367px !important } .t_w30p { width: 30% !important =
+} .t_w25p { width: 25% !important } .t_bgcffffff { background-color: #fffff=
+f !important } .t_w450px { width: 450px !important } .t_w33d33p { width: 33=
+.33% !important } .t_w32px { width: 32px !important } .t_w33d34p { width: 3=
+3.34% !important } .t_vamiddle { vertical-align: middle !important } .t_w15=
+p { width: 15% !important } .t_w47px { width: 47px !important } .t_hauto { =
+height: auto !important } .t_w75p { width: 75% !important } .t_pr30px { pad=
+ding-right: 30px !important } .t_w5p { width: 5% !important } .t_w90p { wid=
+th: 90% !important } .t_w100p { width: 100% !important } .t_pr20px { paddin=
+g-right: 20px !important } .t_pl20px { padding-left: 20px !important } .t_v=
+ { display: block !important; font-size: inherit !important; max-height: no=
+ne !important; max-width: none !important; overflow: visible !important; } =
+.t_dnone { display: none !important; } .t_opensans { font-family: 'Open San=
+s', Arial, Helvetica, sans-serif !important } } /* Responsive breakpoint fo=
+r mobile */ @media screen and (max-width: 450px) { .m_bdtlrs90px { border-t=
+op-left-radius: 90px !important } .m_bdtrrs90px { border-top-right-radius: =
+90px !important } .m_w35p { width: 35% !important } .m_w13p { width: 13% !i=
+mportant } .m_pt5px { padding-top: 5px !important } .m_w82p { width: 82% !i=
+mportant } .m_w45p { width: 45% !important } .m_pr5px { padding-right: 5px =
+!important } .m_pl5px { padding-left: 5px !important } .m_w85p { width: 85%=
+ !important } .m_w105p { width: 105% !important } .m_w30p { width: 30% !imp=
+ortant } .m_flnone { float: none !important } .m_mauto { margin: auto !impo=
+rtant } .m_w120p { width: 120% !important } .m_pl3px { padding-left: 3px !i=
+mportant } .m_w80p { width: 80% !important } .m_h25px { height: 25px !impor=
+tant } .m_w40p { width: 40% !important } .m_w25p { width: 25% !important } =
+.m_fz16px { font-size: 16px !important } .m_pt0px { padding-top: 0px !impor=
+tant } .m_pb0px { padding-bottom: 0px !important } .m_lh20px { line-height:=
+ 20px !important } .m_w33d33p { width: 33.33% !important } .m_w32px { width=
+: 32px !important } .m_w33d34p { width: 33.34% !important } .m_vamiddle { v=
+ertical-align: middle !important } .m_w20p { width: 20% !important } .m_w47=
+px { width: 47px !important } .m_hauto { height: auto !important } .m_w70p =
+{ width: 70% !important } .m_pr10px { padding-right: 10px !important } .m_w=
+5p { width: 5% !important } .m_w90p { width: 90% !important } .m_w100p { wi=
+dth: 100% !important } .m_pr20px { padding-right: 20px !important } .m_pl20=
+px { padding-left: 20px !important } .m_v { display: block !important; font=
+-size: inherit !important; max-height: none !important; max-width: none !im=
+portant; overflow: visible !important; } .m_dnone { display: none !importan=
+t; } .m_opensans { font-family: 'Open Sans', Arial, Helvetica, sans-serif !=
+important } } /* These classes are mandatory for Outlook mobile app in land=
+scape mode & for Outlook MacOs 13+ */ @media screen and (min-width: 600px),=
+ (orientation: landscape) and (min-width: 600px) { .d_center { float: none =
+!important; margin: auto !important; } .d_left { float: left !important; } =
+.d_right { float: right !important; } } /* Fix for Outlook app - allow floa=
+t inheritance from desktop to mobile */ #converted-body .d_center { float: =
+none; margin: auto; } #converted-body .d_left { float: left; } #converted-b=
+ody .d_right { float: right; } /* Customize focus style */ a:focus-visible =
+{ transition: box-shadow 0.3s ease; outline: none; box-shadow: 0 0 0 2px hs=
+la(288, 100%, 50%, 0.8); } /* Prevent Samsung auto-fit to break design */ @=
+media screen and (max-width: 384px) { .mail-message-content { width: 414px =
+!important; } }</style></head><body><table border=3D"0" cellpadding=3D"0" c=
+ellspacing=3D"0" width=3D"100%" style=3D"width: 100%; margin-top: -1px;" ro=
+le=3D"none"><!-- Force Gmail app to render desktop version of email --> <!-=
+- Dev note : This hack create a empty line at the top of the campaign, whic=
+h is canceled by mother table negative margin --><tbody><tr class=3D"t_dnon=
+e m_dnone" aria-hidden=3D"true"><td height=3D"1" style=3D"height: 1px; max-=
+height: 1px; font-size: 1px; line-height: 1px;"><span style=3D"display: blo=
+ck; width: 600px; min-width: 600px;">&nbsp;</span></td></tr><!-- Email cont=
+ent --><tr><td role=3D"main"><!-- SECTION / 1 - Pr=C3=A9header HB --><table=
+ align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"600" style=3D"margin: auto; background-color: #ffffff;" class=3D"
+                d_center
+                t_w100p m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / c402fe11-5453-4424-b704=
+-6b15b739fc90 --><td valign=3D"top" width=3D"100%" class=3D"t_w100p m_w100p=
+"><!-- spacer / c5599961-99f5-453e-aa48-416d0b727ffb --><table align=3D"cen=
+ter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D=
+"margin: auto; clear: both;" class=3D"d_center t_w100p m_w100p" aria-hidden=
+=3D"true"><tbody><tr><td height=3D"15" style=3D"height: 15px; font-size: 8p=
+x;" class=3D"">=E2=80=8C</td></tr></tbody></table><!-- EO - spacer - c55999=
+61-99f5-453e-aa48-416d0b727ffb --> <!-- text / 3b713e6c-a04b-4788-b036-5e02=
+5de1da0c --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspac=
+ing=3D"0" width=3D"100%" style=3D"margin: auto;" class=3D"d_center t_w100p =
+m_w100p" role=3D"none"><tbody><tr><td height=3D"20" style=3D"font-family: A=
+rial,Helvetica,sans-serif; color: #028eb0; text-align: center; font-size: 1=
+2px; padding-top: 0px; padding-bottom: 0px; vertical-align: middle; height:=
+ 20px;" class=3D"t_h20px m_h20px">Vous avez plusieurs nouveaux messages</td=
+></tr></tbody></table><!-- EO - text - 3b713e6c-a04b-4788-b036-5e025de1da0c=
+ --> <!-- text / d3679517-683a-476f-b51f-c683cec8f4f4 --><table align=3D"ce=
+nter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"margin: auto;" class=3D"d_center t_w100p m_w100p" role=3D"none"><tbody>=
+<tr><td style=3D"font-family: Arial,Helvetica,sans-serif; color: #696969; t=
+ext-align: center; font-size: 12px; padding-top: 0px; padding-bottom: 0px; =
+vertical-align: middle; line-height: 20px;"><a style=3D"color: #696969; lin=
+e-height: 20px; display: block; text-decoration: none; outline: none;" href=
+=3D"https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/jpRQR0uNwg7tm6Tgqc-XzNT2Gc=
+VL2vdz9O3jm6BFFrwQepQg3qGiOgA8MJnLTdFhs4rtVFWvfFvcz6Y6pZ3WRr6rpqBclJKxEAyYf=
+rlDzTuiYhMQizyPnCYyUFPe1EEIRZ0ZBrJC0n0R6eRULAk_0Cj4NflgddCTNcombtMc8MLpN-3y=
+OAWAPJwFCD1-9ku9Putaw4FyqYOew3sScTwEr9UaYv6_9k8GG9EicJtw_tbJCtFZ6MPLUKxZV1G=
+wxTKv5LxC4gImEFqLSSdnO86IqeWmLsmBjct3Li4nX9hIdsM-CNERtnCKGwnn_JBhxoPvdAg27g=
+MmgSDgA3k0Dc2EZO_uFwQN752RV0nQ3_wkeJTStpxjmNX2g6gbtw074HUrQtR9yFfo4VyUrsHSn=
+_Sh0JzELA4OcFGt3T7kV7YJbSNwdhJs-vEDY-uMJXkUSjrSyAef2EqSEopq3OMLVR76KL9ICeHp=
+6H_UPAqRHHTG3volxu4IHCMB1agl50sdr5vO75EHis78S1JTEN0ffc3DcfgScQ_nzDRrkcB3wgo=
+Aw0LKxhi6S6QDjY4IX2WU8KfI2Gcp-Jyhaa6HOwVHwJyE6ke5OsCuKiZKzlPi51vjRg" title=3D=
+"Version en ligne" target=3D"_blank"> <span style=3D"text-decoration: under=
+line;">Voir la version en ligne</span> </a></td></tr></tbody></table><!-- E=
+O - text - d3679517-683a-476f-b51f-c683cec8f4f4 --> <!-- text / 8475cb9b-42=
+4d-4568-b421-56ac946843ae --><table align=3D"center" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"margin: auto;" class=3D"=
+d_center t_w100p m_w100p" role=3D"none"><tbody><tr><td height=3D"20" style=3D=
+"font-family: Arial,Helvetica,sans-serif; color: #696969; text-align: cente=
+r; font-size: 12px; padding-top: 0px; padding-bottom: 10px; vertical-align:=
+ middle; height: 20px;" class=3D"t_h20px m_h20px">Informations personnelles=
+ de s=C3=A9curit=C3=A9 : 06/03</td></tr></tbody></table><!-- EO - text - 84=
+75cb9b-424d-4568-b421-56ac946843ae --></td></tr></tbody></table><!-- EO - S=
+ECTION / 1 - Pr=C3=A9header HB --> <!-- SECTION / 2 - Header + introduction=
+ --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"600" style=3D"margin: auto; background-color: #ffffff;" class=3D=
+"
+                d_center
+                t_w100p m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / c5b1eae2-08c1-447d-9511=
+-9beef239325a --><td valign=3D"top" width=3D"100%" class=3D"t_w100p m_w100p=
+"><!-- image / d0a7f25f-efc8-443b-914a-5017279d8a62 --><table align=3D"cent=
+er" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D=
+"margin: auto;" class=3D"d_center t_w100p m_w100p" role=3D"none" aria-hidde=
+n=3D"true"><tbody><tr><td><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"100%" class=3D"d_center " role=3D"none"><tbo=
+dy><tr><td style=3D"padding-top: 0px; text-align: center; vertical-align: m=
+iddle;"><img width=3D"600" style=3D"font-family: Arial,Helvetica,sans-serif=
+; font-size: 16px; color: #000000; line-height: 16px; display: block; borde=
+r: none;" class=3D"t_w100p m_w100p" src=3D"https://images.mailperformance.c=
+om/CIFA/02K/BNP/LAB01803/PART-HB/1.png" alt=3D"Hello bank! - Des messages v=
+ous attendent dans votre Espace Client"/></td></tr></tbody></table></td></t=
+r></tbody></table><!-- EO - image - d0a7f25f-efc8-443b-914a-5017279d8a62 --=
+> <!-- text / 09d7ef93-e3f2-4d75-b37a-a53711629b7a --><table align=3D"cente=
+r" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D=
+"margin: auto;" class=3D"d_center t_w100p m_w90p" role=3D"none"><tbody><tr>=
+<td style=3D"font-family: Arial,Helvetica,sans-serif; font-weight: bold; co=
+lor: #696969; text-align: center; font-size: 16px; background-color: #fffff=
+f; padding-top: 10px; vertical-align: middle; line-height: 22px;" class=3D"=
+ opensans">Hello Marylyne,</td></tr></tbody></table><!-- EO - text - 09d7ef=
+93-e3f2-4d75-b37a-a53711629b7a --> <!-- spacer / 18d35669-1c85-4c46-8d74-42=
+0b9ba3d2e1 --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellsp=
+acing=3D"0" width=3D"100%" style=3D"margin: auto; clear: both;" class=3D"d_=
+center " aria-hidden=3D"true"><tbody><tr><td height=3D"10" style=3D"height:=
+ 10px; font-size: 10px; line-height: 10px;" class=3D"">=E2=80=8C</td></tr><=
+/tbody></table><!-- EO - spacer - 18d35669-1c85-4c46-8d74-420b9ba3d2e1 --> =
+<!-- text / 34b9ad34-72f8-45f3-8393-9605c7f8f859 --><table align=3D"center"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"90%" style=3D"ma=
+rgin: auto;" class=3D"d_center t_w90p m_w90p" role=3D"none"><tbody><tr><td =
+style=3D"font-family: Arial,Helvetica,sans-serif; font-weight: bold; color:=
+ #11bad5; text-align: center; font-size: 16px; padding-top: 8px; padding-bo=
+ttom: 8px; vertical-align: middle; line-height: 24px;" class=3D" opensans">=
+Plusieurs messages vous attendent dans votre Espace&nbsp;Client.</td></tr><=
+/tbody></table><!-- EO - text - 34b9ad34-72f8-45f3-8393-9605c7f8f859 --> <!=
+-- spacer / 0b722622-d81c-451b-b735-f5d7d85ef9ac --><table align=3D"center"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"m=
+argin: auto; clear: both;" class=3D"d_center t_w90p" aria-hidden=3D"true"><=
+tbody><tr><td height=3D"15" style=3D"height: 15px; font-size: 8px;" class=3D=
+"">=E2=80=8C</td></tr></tbody></table><!-- EO - spacer - 0b722622-d81c-451b=
+-b735-f5d7d85ef9ac --></td></tr></tbody></table><!-- EO - SECTION / 2 - Hea=
+der + introduction --> <!-- SECTION / 3 - Bloc sujet notification --><table=
+ align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"600" style=3D"margin: auto; background-color: #ffffff;" class=3D"
+                d_center
+                t_w100p m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / cd70a61a-68d0-41d3-aa52=
+-e93f03021b65 --><td valign=3D"top" width=3D"100%" class=3D"t_w100p m_w100p=
+"><!-- WRAPPER / 998fd2a9-8d44-4d26-a760-c707b43ac16a --><table align=3D"ce=
+nter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"90%" style=3D=
+"margin: auto;" class=3D"
+                d_center
+                m_w100p
+           " role=3D"none"><tbody><tr><td><div style=3D"border-top-left-rad=
+ius: 30px; border-top-right-radius: 30px; overflow: hidden;"><table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-coll=
+apse: separate;" role=3D"none"><tbody><tr><!-- COLUMN / c4145408-e2dd-4c64-=
+8aae-27eb61f2330b --><td valign=3D"top" width=3D"100%" class=3D"t_w100p m_w=
+100p"><!-- image / a9dd856c-eb96-470a-a1be-7887a72a48c2 --><table align=3D"=
+center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"25%" styl=
+e=3D"margin: auto;" class=3D"d_center t_w30p m_w35p" role=3D"none"><tbody><=
+tr><td><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"100%" style=3D"border-collapse: separate; overflow: hidden;" c=
+lass=3D"d_center t_bdclseparate t_ovhidden m_bdclseparate m_ovhidden" role=3D=
+"none"><tbody><tr><td style=3D"text-align: center; vertical-align: middle; =
+border-top-left-radius: 120px; border-top-right-radius: 120px; border-colla=
+pse: separate; overflow: hidden;" class=3D"t_pr5px t_pl5px t_bdclseparate t=
+_ovhidden m_pr5px m_pl5px m_bdtlrs90px m_bdtrrs90px m_bdclseparate m_ovhidd=
+en"><img width=3D"135" style=3D"font-family: Arial,Helvetica,sans-serif; fo=
+nt-size: 16px; color: #000000; line-height: 16px; display: block; border: n=
+one;" class=3D"t_w100p m_w100p" src=3D"https://images.mailperformance.com/C=
+IFA/02K/BNP/LAB01803/PART-HB/2.png"/></td></tr></tbody></table></td></tr></=
+tbody></table><!-- EO - image - a9dd856c-eb96-470a-a1be-7887a72a48c2 --></t=
+d></tr></tbody></table></div></td></tr></tbody></table><!-- EO - WRAPPER / =
+998fd2a9-8d44-4d26-a760-c707b43ac16a --> <!-- WRAPPER / e8bd725d-d92a-40a4-=
+b103-9a27b61b72af --><table align=3D"center" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"90%" style=3D"margin: auto;" class=3D"
+                d_center
+                m_w100p
+           " role=3D"none"><tbody><tr><td><div style=3D"border-top-left-rad=
+ius: 30px; border-top-right-radius: 30px; overflow: hidden;"><table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-coll=
+apse: separate; background-color: #11bad5;" role=3D"none"><tbody><tr><!-- C=
+OLUMN / fd91d29d-d7f1-4800-ad46-9243ccf1fcc0 --><td valign=3D"top" width=3D=
+"100%" class=3D"t_w100p m_w100p"><!-- image / 9e2c7c54-1db5-469d-ad53-53c7f=
+adff468 --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"25%" style=3D"margin: auto;" class=3D"d_center t_w30p m_w=
+35p" role=3D"none"><tbody><tr><td><table align=3D"center" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-collapse: se=
+parate; overflow: hidden;" class=3D"d_center t_bdclseparate t_ovhidden m_bd=
+clseparate m_ovhidden" role=3D"none"><tbody><tr><td style=3D"padding-bottom=
+: 10px; text-align: center; vertical-align: middle; border-bottom-left-radi=
+us: 90px; border-bottom-right-radius: 90px; border-collapse: separate; over=
+flow: hidden;" class=3D"t_pr5px t_pl5px t_bdclseparate t_ovhidden m_pr5px m=
+_pl5px m_bdclseparate m_ovhidden"><img width=3D"135" style=3D"font-family: =
+Arial,Helvetica,sans-serif; font-size: 16px; color: #000000; line-height: 1=
+6px; display: block; border: none;" class=3D"t_w100p m_w100p" src=3D"https:=
+//images.mailperformance.com/CIFA/02K/BNP/LAB01803/PART-HB/3.png"/></td></t=
+r></tbody></table></td></tr></tbody></table><!-- EO - image - 9e2c7c54-1db5=
+-469d-ad53-53c7fadff468 --></td></tr></tbody></table></div></td></tr></tbod=
+y></table><!-- EO - WRAPPER / e8bd725d-d92a-40a4-b103-9a27b61b72af --> <!--=
+ WRAPPER / 58c33c22-417c-46e1-8db2-9193406451bb --><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"90%" style=3D"mar=
+gin: auto; background-color: #11bad5;" class=3D"
+                d_center
+                m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / 19d73e1a-dd6e-40d2-b028=
+-675010c6221f --><td valign=3D"top" width=3D"5%" class=3D"t_w3p m_w5p" aria=
+-hidden=3D"true"><span>=E2=80=8C</span></td><!-- COLUMN / e2bbb527-f325-458=
+a-9700-0c0df822ba2c --><td valign=3D"top" width=3D"8%" class=3D"t_w10p m_w1=
+3p"><!-- image / e6e8f9e6-8f84-471d-899f-61427764fa53 --><table align=3D"ce=
+nter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"75%" style=3D=
+"margin: auto;" class=3D"d_center t_w65p m_w70p" role=3D"none"><tbody><tr><=
+td><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0"=
+ width=3D"100%" class=3D"d_center " role=3D"none"><tbody><tr><td style=3D"p=
+adding-top: 10px; text-align: center; vertical-align: middle;" class=3D"m_p=
+t5px"><img width=3D"32" style=3D"font-family: Arial,Helvetica,sans-serif; f=
+ont-size: 16px; color: #000000; line-height: 16px; display: block; border: =
+none;" class=3D"t_w100p m_w100p" src=3D"https://images.mailperformance.com/=
+CIFA/02K/BNP/LAB01803/PART-HB/4.png"/></td></tr></tbody></table></td></tr><=
+/tbody></table><!-- EO - image - e6e8f9e6-8f84-471d-899f-61427764fa53 --></=
+td><!-- COLUMN / 150eebd9-9904-45c4-9ba9-b5d3ad0ee84a --><td valign=3D"top"=
+ width=3D"80%" class=3D"t_w87p m_w82p"><!-- text / 3874b11b-9aa3-4e9c-a682-=
+3ff205816bc5 --><table align=3D"center" border=3D"0" cellpadding=3D"0" cell=
+spacing=3D"0" width=3D"100%" style=3D"margin: auto;" class=3D"d_center t_w1=
+00p m_w100p" role=3D"none"><tbody><tr><td style=3D"font-family: Arial,Helve=
+tica,sans-serif; font-weight: normal; color: #ffffff; text-align: left; fon=
+t-size: 16px; vertical-align: middle; line-height: 24px; padding: 0px 40px =
+15px 5px;" class=3D"t_pr20px m_pr20px opensans">Information annuelle r=C3=A9=
+glementaire sur le Fonds de Garantie des D=C3=A9p=C3=B4ts et de R=C3=A9solu=
+tion.</td></tr></tbody></table><!-- EO - text - 3874b11b-9aa3-4e9c-a682-3ff=
+205816bc5 --></td></tr></tbody></table><!-- EO - WRAPPER / 58c33c22-417c-46=
+e1-8db2-9193406451bb --> <!-- WRAPPER / b6f15173-78da-4aa9-b729-95e460e9bd0=
+2 --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" width=3D"90%" style=3D"margin: auto;" class=3D"
+                d_center
+                m_w100p
+           " role=3D"none"><tbody><tr><td><div style=3D"border-bottom-left-=
+radius: 30px; border-bottom-right-radius: 30px; overflow: hidden;"><table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"bor=
+der-collapse: separate; background-color: #11bad5;" role=3D"none"><tbody><t=
+r><!-- COLUMN / e6118f2f-4129-4621-bb70-d63128522f62 --><td valign=3D"top" =
+width=3D"5%" class=3D"t_w3p m_w5p" aria-hidden=3D"true"><span>=E2=80=8C</sp=
+an></td><!-- COLUMN / 202b0098-726e-45bc-afd8-7062060d86b7 --><td valign=3D=
+"top" width=3D"8%" class=3D"t_w10p m_w13p"><!-- image / 6b711623-1b8a-454f-=
+b061-ca7d3a9c7d22 --><table align=3D"center" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"75%" style=3D"margin: auto;" class=3D"d_center =
+t_w65p m_w70p" role=3D"none"><tbody><tr><td><table align=3D"center" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"d_center " =
+role=3D"none"><tbody><tr><td style=3D"padding-top: 10px; text-align: center=
+; vertical-align: middle;" class=3D"m_pt5px"><img width=3D"32" style=3D"fon=
+t-family: Arial,Helvetica,sans-serif; font-size: 16px; color: #000000; line=
+-height: 16px; display: block; border: none;" class=3D"t_w100p m_w100p" src=
+=3D"https://images.mailperformance.com/CIFA/02K/BNP/LAB01803/PART-HB/4.png"=
+/></td></tr></tbody></table></td></tr></tbody></table><!-- EO - image - 6b7=
+11623-1b8a-454f-b061-ca7d3a9c7d22 --></td><!-- COLUMN / 811af161-384d-44e3-=
+9ef1-5660e8cce9c0 --><td valign=3D"top" width=3D"80%" class=3D"t_w87p m_w82=
+p"><!-- text / 38d2c174-1812-414a-8f07-e05233089650 --><table align=3D"cent=
+er" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D=
+"margin: auto;" class=3D"d_center t_w100p m_w100p" role=3D"none"><tbody><tr=
+><td style=3D"font-family: Arial,Helvetica,sans-serif; font-weight: normal;=
+ color: #ffffff; text-align: left; font-size: 16px; vertical-align: middle;=
+ line-height: 24px; padding: 0px 40px 25px 5px;" class=3D"t_pr20px m_pr20px=
+ opensans">=C3=89volution des conditions g=C3=A9n=C3=A9rales de votre Conve=
+ntion de compte au 1<sup style=3D"font-size: 12px;">er</sup>&nbsp;avril&nbs=
+p;2026.</td></tr></tbody></table><!-- EO - text - 38d2c174-1812-414a-8f07-e=
+05233089650 --></td></tr></tbody></table></div></td></tr></tbody></table><!=
+-- EO - WRAPPER / b6f15173-78da-4aa9-b729-95e460e9bd02 --> <!-- spacer / ac=
+b3c4aa-a337-46a8-9990-f8b0ef41355e --><table align=3D"center" border=3D"0" =
+cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"margin: auto; c=
+lear: both;" class=3D"d_center t_w100p m_w100p" aria-hidden=3D"true"><tbody=
+><tr><td height=3D"20" style=3D"height: 20px; font-size: 8px;" class=3D"">=E2=
+=80=8C</td></tr></tbody></table><!-- EO - spacer - acb3c4aa-a337-46a8-9990-=
+f8b0ef41355e --></td></tr></tbody></table><!-- EO - SECTION / 3 - Bloc suje=
+t notification --> <!-- SECTION / 4 - Bloc connexion app HB --><table align=
+=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" =
+style=3D"margin: auto; background-color: #ffffff;" class=3D"
+                d_center
+                t_w100p m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / a1b9e7be-2229-4602-a1df=
+-4383da373e96 --><td valign=3D"top" width=3D"100%" class=3D"t_w100p m_w100p=
+"><!-- WRAPPER / 88f3a96a-91d6-4a6a-972f-f4854f26c215 --><table align=3D"ce=
+nter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"90%" style=3D=
+"margin: auto;" class=3D"
+                d_center
+                m_w100p
+           " role=3D"none"><tbody><tr><td><div style=3D"border-top-left-rad=
+ius: 30px; border-top-right-radius: 30px; overflow: hidden;"><table border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"border-coll=
+apse: separate; background-color: #1c4155;" role=3D"none"><tbody><tr><!-- C=
+OLUMN / e5bc6bef-08e3-48b7-9c5c-5f93f8ce5532 --><td valign=3D"top" width=3D=
+"10%" class=3D"t_w33d33p m_w33d33p" aria-hidden=3D"true"><span>=E2=80=8C</s=
+pan></td><!-- COLUMN / 571b7d69-8fe4-4647-9c9c-4cab38777246 --><td valign=3D=
+"top" width=3D"80%" class=3D"t_w33d33p m_w33d33p"><!-- image / cc93f157-134=
+b-4fc1-9bf5-eea4be57f66b --><table align=3D"center" border=3D"0" cellpaddin=
+g=3D"0" cellspacing=3D"0" width=3D"10%" style=3D"margin: auto;" class=3D"d_=
+center t_w35p m_w45p" role=3D"none" aria-hidden=3D"true"><tbody><tr><td><ta=
+ble align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=
+=3D"100%" class=3D"d_center " role=3D"none"><tbody><tr><td style=3D"padding=
+-top: 20px; padding-bottom: 5px; text-align: center; vertical-align: middle=
+;" class=3D"t_pr5px t_pl5px m_pr5px m_pl5px"><img width=3D"43" style=3D"fon=
+t-family: Arial,Helvetica,sans-serif; font-size: 16px; color: #000000; line=
+-height: 16px; display: block; border: none;" class=3D"t_w100p m_w100p" src=
+=3D"https://images.mailperformance.com/CIFA/02K/BNP/LAB01803/PART-HB/5.png"=
+ alt=3D"1"/></td></tr></tbody></table></td></tr></tbody></table><!-- EO - i=
+mage - cc93f157-134b-4fc1-9bf5-eea4be57f66b --></td><!-- COLUMN / 714d1815-=
+682c-4b42-aafd-79efd7936ef8 --><td valign=3D"top" width=3D"10%" class=3D"t_=
+w33d34p m_w33d34p" aria-hidden=3D"true"><span>=E2=80=8C</span></td></tr></t=
+body></table></div></td></tr></tbody></table><!-- EO - WRAPPER / 88f3a96a-9=
+1d6-4a6a-972f-f4854f26c215 --> <!-- text / 74d51749-ad82-4ea4-9042-91071dc9=
+f0c4 --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"90%" style=3D"margin: auto;" class=3D"d_center t_w90p m_w100p"=
+ role=3D"none"><tbody><tr><td style=3D"font-family: Arial,Helvetica,sans-se=
+rif; font-weight: normal; color: #ffffff; text-align: center; font-size: 16=
+px; background-color: #1c4155; padding-top: 8px; padding-bottom: 8px; verti=
+cal-align: middle; line-height: 24px;" class=3D" opensans">Rendez-vous sur =
+votre <br/>application Hello bank!<sup style=3D"font-size: 12px;">*</sup></=
+td></tr></tbody></table><!-- EO - text - 74d51749-ad82-4ea4-9042-91071dc9f0=
+c4 --> <!-- WRAPPER / d83a937d-7a9f-4792-b2eb-5ae134f4eea8 --><table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"90%" sty=
+le=3D"margin: auto; background-color: #1c4155;" class=3D"
+                d_center
+                m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / bf77609b-aab9-4b5f-9beb=
+-0e0e162abbdc --><td valign=3D"top" width=3D"10%" class=3D"t_w33d33p m_w33d=
+33p" aria-hidden=3D"true"><span>=E2=80=8C</span></td><!-- COLUMN / fad16d3f=
+-8817-40aa-b5c5-ad4505118b52 --><td valign=3D"top" width=3D"80%" class=3D"t=
+_w33d33p m_w33d33p"><!-- image / ebfea937-92fa-49af-a168-5425336c169e --><t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"10%" style=3D"margin: auto;" class=3D"d_center t_w35p m_w45p" role=3D"=
+none" aria-hidden=3D"true"><tbody><tr><td><table align=3D"center" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"d_center " =
+role=3D"none"><tbody><tr><td style=3D"padding-top: 20px; padding-bottom: 5p=
+x; text-align: center; vertical-align: middle;" class=3D"t_pr5px t_pl5px m_=
+pr5px m_pl5px"><img width=3D"43" style=3D"font-family: Arial,Helvetica,sans=
+-serif; font-size: 16px; color: #000000; line-height: 16px; display: block;=
+ border: none;" class=3D"t_w100p m_w100p" src=3D"https://images.mailperform=
+ance.com/CIFA/02K/BNP/LAB01803/PART-HB/6.png" alt=3D"2"/></td></tr></tbody>=
+</table></td></tr></tbody></table><!-- EO - image - ebfea937-92fa-49af-a168=
+-5425336c169e --></td><!-- COLUMN / ad126497-1242-42e0-93ea-4b9abc7765eb --=
+><td valign=3D"top" width=3D"10%" class=3D"t_w33d34p m_w33d34p" aria-hidden=
+=3D"true"><span>=E2=80=8C</span></td></tr></tbody></table><!-- EO - WRAPPER=
+ / d83a937d-7a9f-4792-b2eb-5ae134f4eea8 --> <!-- WRAPPER / e3fa4379-1876-43=
+57-b0b7-ca9541e1abb3 --><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"90%" style=3D"margin: auto;" class=3D"
+                d_center
+                m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / 0ebe9527-98dd-405a-8bf2=
+-caf1a0a21dc3 --><td valign=3D"top" width=3D"100%" class=3D"t_w100p m_w100p=
+"><!-- text / b81319c9-a45e-49c7-9698-69ec18ab4a6e --><table align=3D"cente=
+r" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D=
+"margin: auto;" class=3D"d_center m_w100p" role=3D"none"><tbody><tr><td sty=
+le=3D"font-family: Arial,Helvetica,sans-serif; font-weight: normal; color: =
+#ffffff; text-align: center; font-size: 16px; background-color: #1c4155; ve=
+rtical-align: middle; line-height: 24px; padding: 8px 30px 8px 30px;" class=
+=3D"m_pr20px m_pl20px opensans">Depuis la une des Comptes, acc=C3=A9dez =C3=
+=A0 la rubrique =C2=AB&nbsp;Notifications&nbsp;=C2=BB via la cloche en haut=
+ =C3=A0 droite.</td></tr></tbody></table><!-- EO - text - b81319c9-a45e-49c=
+7-9698-69ec18ab4a6e --></td></tr></tbody></table><!-- EO - WRAPPER / e3fa43=
+79-1876-4357-b0b7-ca9541e1abb3 --> <!-- WRAPPER / fc143ab5-93ec-4550-9196-8=
+be19685788e --><table align=3D"center" border=3D"0" cellpadding=3D"0" cells=
+pacing=3D"0" width=3D"90%" style=3D"margin: auto; background-color: #1c4155=
+;" class=3D"
+                d_center
+                m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / 9e17bdd9-d3ad-4ffc-85a2=
+-fcdbe77c6fe4 --><td valign=3D"top" width=3D"10%" class=3D"t_w33d33p m_w33d=
+33p" aria-hidden=3D"true"><span>=E2=80=8C</span></td><!-- COLUMN / ea58e68d=
+-db23-4ee0-b6cd-a3b748ac6071 --><td valign=3D"top" width=3D"80%" class=3D"t=
+_w33d33p m_w33d33p"><!-- image / ca5b9728-d21a-463a-ad05-ab849cc3341e --><t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"10%" style=3D"margin: auto;" class=3D"d_center t_w35p m_w45p" role=3D"=
+none" aria-hidden=3D"true"><tbody><tr><td><table align=3D"center" border=3D=
+"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"d_center " =
+role=3D"none"><tbody><tr><td style=3D"padding-top: 20px; padding-bottom: 5p=
+x; text-align: center; vertical-align: middle;" class=3D"t_pr5px t_pl5px m_=
+pr5px m_pl5px"><img width=3D"43" style=3D"font-family: Arial,Helvetica,sans=
+-serif; font-size: 16px; color: #000000; line-height: 16px; display: block;=
+ border: none;" class=3D"t_w100p m_w100p" src=3D"https://images.mailperform=
+ance.com/CIFA/02K/BNP/LAB01803/PART-HB/7.png" alt=3D"3"/></td></tr></tbody>=
+</table></td></tr></tbody></table><!-- EO - image - ca5b9728-d21a-463a-ad05=
+-ab849cc3341e --></td><!-- COLUMN / e0e8abb0-6c75-487d-90d8-d7c1aaa0cf83 --=
+><td valign=3D"top" width=3D"10%" class=3D"t_w33d34p m_w33d34p" aria-hidden=
+=3D"true"><span>=E2=80=8C</span></td></tr></tbody></table><!-- EO - WRAPPER=
+ / fc143ab5-93ec-4550-9196-8be19685788e --> <!-- WRAPPER / 0a17982d-ac2a-42=
+67-bf61-4812f6d5ea6a --><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"90%" style=3D"margin: auto;" class=3D"
+                d_center
+                m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / d81d9d99-0e01-4902-b81b=
+-784a865f3645 --><td valign=3D"top" width=3D"100%" class=3D"t_w100p m_w100p=
+"><!-- text / ddad8712-e5c7-47c3-b180-439ba3388ca0 --><table align=3D"cente=
+r" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D=
+"margin: auto; border-collapse: separate;" class=3D"d_center m_w100p" role=3D=
+"none"><tbody><tr><td><div style=3D"border-bottom-left-radius: 30px; border=
+-bottom-right-radius: 30px; overflow: hidden;"><table border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"none"><tbody><tr><td sty=
+le=3D"font-family: Arial,Helvetica,sans-serif; font-weight: normal; color: =
+#ffffff; text-align: center; font-size: 16px; background-color: #1c4155; pa=
+dding-top: 8px; padding-bottom: 20px; vertical-align: middle; line-height: =
+24px;" class=3D" opensans">Et prenez connaissance de<br/>vos nouveaux messa=
+ges.</td></tr></tbody></table></div></td></tr></tbody></table><!-- EO - tex=
+t - ddad8712-e5c7-47c3-b180-439ba3388ca0 --></td></tr></tbody></table><!-- =
+EO - WRAPPER / 0a17982d-ac2a-4267-bf61-4812f6d5ea6a --> <!-- spacer / 3cd2a=
+ab8-fc71-491d-9e65-010c404aa905 --><table align=3D"center" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"margin: auto; clea=
+r: both;" class=3D"d_center t_w100p m_w100p" aria-hidden=3D"true"><tbody><t=
+r><td height=3D"20" style=3D"height: 20px; font-size: 8px;" class=3D"">=E2=80=
+=8C</td></tr></tbody></table><!-- EO - spacer - 3cd2aab8-fc71-491d-9e65-010=
+c404aa905 --></td></tr></tbody></table><!-- EO - SECTION / 4 - Bloc connexi=
+on app HB --> <!-- SECTION / 5 - Bloc connexion site HB --><table align=3D"=
+center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"600" styl=
+e=3D"margin: auto; background-color: #ffffff;" class=3D"
+                d_center
+                t_w100p m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / f3fd108a-182f-42ad-a7fc=
+-79c9e0a0b839 --><td valign=3D"top" width=3D"100%" class=3D"t_w100p m_w100p=
+"><!-- text / 68b9721a-67db-4355-90ee-4d05207d4304 --><table align=3D"cente=
+r" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"90%" style=3D"=
+margin: auto;" class=3D"d_center t_w90p m_w90p" role=3D"none"><tbody><tr><t=
+d style=3D"font-family: Arial,Helvetica,sans-serif; font-weight: normal; co=
+lor: #696969; text-align: center; font-size: 15px; padding-top: 10px; paddi=
+ng-bottom: 10px; vertical-align: middle; line-height: 24px;" class=3D" open=
+sans">Vous pouvez =C3=A9galement prendre connaissance de ces messages sur l=
+e site hellobank.fr<sup style=3D"font-size: 12px;">*</sup> en acc=C3=A9dant=
+ =C3=A0 votre Espace&nbsp;Client avec vos codes personnels.</td></tr></tbod=
+y></table><!-- EO - text - 68b9721a-67db-4355-90ee-4d05207d4304 --></td></t=
+r></tbody></table><!-- EO - SECTION / 5 - Bloc connexion site HB --> <!-- S=
+ECTION / 6 - Bloc contact --><table align=3D"center" border=3D"0" cellpaddi=
+ng=3D"0" cellspacing=3D"0" width=3D"600" style=3D"margin: auto; background-=
+color: #ffffff;" class=3D"
+                d_center
+                t_w100p m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / d229eb48-17b4-45c9-a759=
+-bd5446feb63d --><td valign=3D"top" width=3D"100%" class=3D"t_w100p m_w100p=
+"><!-- spacer / 67f8b5a5-bead-4af3-b1ef-f31fb38c8fa8 --><table align=3D"cen=
+ter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D=
+"margin: auto; clear: both;" class=3D"d_center t_w100p m_w100p" aria-hidden=
+=3D"true"><tbody><tr><td height=3D"20" style=3D"height: 20px; font-size: 8p=
+x;" class=3D"">=E2=80=8C</td></tr></tbody></table><!-- EO - spacer - 67f8b5=
+a5-bead-4af3-b1ef-f31fb38c8fa8 --> <!-- image / 95697fc4-9970-47e1-97e8-fa2=
+67cdda73a --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"380" style=3D"margin: auto;" class=3D"d_center t_w380px=
+ m_w100p" role=3D"none"><tbody><tr><td><table align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"d_center " rol=
+e=3D"none"><tbody><tr><td style=3D"text-align: center; vertical-align: midd=
+le;"><img width=3D"380" style=3D"font-family: Arial,Helvetica,sans-serif; f=
+ont-size: 16px; color: #000000; line-height: 16px; display: block; border: =
+none;" class=3D"t_w100p m_w100p" src=3D"https://images.mailperformance.com/=
+CIFA/02K/BNP/LAB01803/PART-HB/8.png"/></td></tr></tbody></table></td></tr><=
+/tbody></table><!-- EO - image - 95697fc4-9970-47e1-97e8-fa267cdda73a --> <=
+!-- spacer / 32c723d3-2366-4817-bc8d-1acf7446bbfb --><table align=3D"center=
+" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"=
+margin: auto; clear: both;" class=3D"d_center t_w100p m_w100p" aria-hidden=3D=
+"true"><tbody><tr><td height=3D"25" style=3D"height: 25px; font-size: 8px;"=
+ class=3D"">=E2=80=8C</td></tr></tbody></table><!-- EO - spacer - 32c723d3-=
+2366-4817-bc8d-1acf7446bbfb --> <!-- image / bdaab18e-b157-4b24-b603-98cb49=
+e56353 --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"367" style=3D"margin: auto;" class=3D"d_center t_w367px m_=
+w100p" role=3D"none" aria-hidden=3D"true"><tbody><tr><td><table align=3D"ce=
+nter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=
+=3D"d_center " role=3D"none"><tbody><tr><td style=3D"text-align: center; ve=
+rtical-align: middle;"><img height=3D"60" width=3D"367" style=3D"font-famil=
+y: Arial,Helvetica,sans-serif; font-size: 16px; height: 60px; color: #00000=
+0; line-height: 16px; display: block; border: none;" class=3D"t_w100p t_hau=
+to m_w100p m_hauto" src=3D"https://images.mailperformance.com/CIFA/02K/BNP/=
+LAB01803/PART-HB/9.png" alt=3D"Hello=C3=AFZ est l=C3=A0 pour r=C3=A9pondre =
+=C3=A0 vos questions&amp;nbsp;:"/></td></tr></tbody></table></td></tr></tbo=
+dy></table><!-- EO - image - bdaab18e-b157-4b24-b603-98cb49e56353 --> <!-- =
+spacer / e04afcc4-f8f9-403c-83b9-0c9a67ecf93c --><table align=3D"center" bo=
+rder=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"marg=
+in: auto; clear: both;" class=3D"d_center t_w100p m_w100p" aria-hidden=3D"t=
+rue"><tbody><tr><td height=3D"10" style=3D"height: 10px; font-size: 10px; l=
+ine-height: 10px;" class=3D"">=E2=80=8C</td></tr></tbody></table><!-- EO - =
+spacer - e04afcc4-f8f9-403c-83b9-0c9a67ecf93c --> <!-- WRAPPER / 334e4f33-0=
+a05-445a-89d0-cd0317d4f96e --><table align=3D"center" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"margin: auto;" class=3D=
+"
+                d_center
+                t_w100p m_w85p
+           " role=3D"none"><tbody><tr><!-- COLUMN / b2710b2f-069b-4722-9adf=
+-2b998b100014 --><td valign=3D"top" width=3D"39%" class=3D"t_w40p m_w40p m_=
+vamiddle"><!-- image / 77c0f70a-283d-47da-a3fa-c22916fff946 --><table align=
+=3D"right" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"188" c=
+lass=3D"d_right t_w153px m_flnone m_mauto m_w100p" role=3D"none"><tbody><tr=
+><td><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" width=3D"100%" class=3D"d_center " role=3D"none"><tbody><tr><td style=3D=
+"text-align: center; vertical-align: middle;"><a style=3D"color: #000000; o=
+utline: none; border: none; margin: auto; display: block;" href=3D"https://=
+tr.vous.hellobank.fr/hit/CIFA/02K/gz/EF_rSkjsW1OgNbCub93wkTroHrlojOvrPwbp1z=
+5rm94Lz04t1I3STzt-22zIkI7zpOFHS3SsF5F1LtKOtVnwE9t70pqm2FJeABHysuCey4GBREgAL=
+iEFnEj8N6zjbziVsVJeTMLUAdcX6H1hTKvUz7F6RfNhMJJ-pgypJAh8xwCrFgemslXq3TqEN127=
+3EJeKwTQ2TQMxX6F7eXHDaHA7sKo-ydQUzUvYjkoWmRnc80xhBaFrMf5T4itm42qxUoguOc-LsZ=
+0lWGMSudXXo07jjtqE05EjpYOWfztViHa9qxKQx-NV7I00nhH2TJovR_Jds3SrlAm_q7Uy8oRWS=
+3F2TU4fPOzDpwu576ynzBUJrUpmTHkwAOFxisfNcA6JRzKV9hxNhYRcRtjabYyUGvKyJyNQ-Hf2=
+sNk_C5Iw2C8UnPcvHpsFEvYTDrvkjDv2I1PgMTGDVwTKOITZUp1hKkwMEObg3X1Av8s7RCEsZZ6=
+fJrD53XDVqR1DkJ4xMnUxbRlUf61IqKNzNm3pMX9jJeDuIRqyDRdBuCvAysiLhFbTYutntHrbVj=
+pZjvcemnnpLB7p8K7trjHTutrVUgnITu2MtPqwAmMidNQxz1fyku7sHgQtC6otf0pfGoIFEBp8e=
+8Z2BSwR00qQjrIJYiOmNQ8jGaPwXZU" width=3D"100%" title=3D"Sur Messenger" targ=
+et=3D"_blank"> <img height=3D"38" width=3D"188" style=3D"font-family: Arial=
+,Helvetica,sans-serif; font-size: 16px; height: 38px; line-height: 16px; di=
+splay: block; border: none;" class=3D"t_h30px t_w100p m_h25px m_w100p" src=3D=
+"https://images.mailperformance.com/CIFA/02K/BNP/LAB01803/PART-HB/10.png" a=
+lt=3D"Sur Messenger"/> </a></td></tr></tbody></table></td></tr></tbody></ta=
+ble><!-- EO - image - 77c0f70a-283d-47da-a3fa-c22916fff946 --></td><!-- COL=
+UMN / ba5de04e-676a-4b50-8933-ec121658cf05 --><td valign=3D"top" width=3D"2=
+8%" class=3D"t_w25p m_w30p m_vamiddle"><!-- image / 440a1dde-cc5e-48d1-8cf6=
+-78b536eac0f4 --><table align=3D"center" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"132" style=3D"margin: auto;" class=3D"d_center t_w1=
+07px m_mauto m_w105p" role=3D"none"><tbody><tr><td><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"d_=
+center " role=3D"none"><tbody><tr><td style=3D"text-align: center; vertical=
+-align: middle;"><a style=3D"color: #000000; outline: none; border: none; m=
+argin: auto; display: block;" href=3D"https://tr.vous.hellobank.fr/hit/CIFA=
+/02K/gz/G3ZI2NtJq9NGD7LLdhfEkHS6lZMgmq0u42VN8VFCtk8QITBzc7cR4qHy4lbLv3oW_-j=
+DIjtTN9VqROmbCfbJOeoxadduAIHhQKnOKO77291UAPgcMfJiLpLklVGwHZ3CIMhq_YE3RmSfD0=
+HUydPv0PSt1r39CUCVopjMu6FK8vl2ngD972XJHabkpulWHK_kfPzqZbBcwVBKLKWTDYMOhuvKj=
+_oeXKrTcSr3SOIcdBEZkUAtZLpQcvUY9YmN2j2ynIpeF_rw8CkNubsVDq2k5EWTx2Dki2XL4WLZ=
+zeZIylpS3dsUbDO5PdGTj7qhDKUNZPLjSa8cc0X191q2KNd-yxXxM-WtnS_iUIBDsVYRQJ2v81l=
+Xy48bJ1jwbHoCuLf4WaI_3omoMXVnyUIZsw24INbRMcPAN-aPCglPT5ZiCEFytzaIywWrwZDpBe=
+pl-8lB4233vQMh7yXO4gGOHqT8GQ5DhxZ31Tmf-0mFCKJiOyuCIZV2NTCiXojrb_nMVOGKB4qqy=
+ZKKgRDBl6OaGMtRfR-jLOGllkitbJHYLgoZm4qA3Gz2T6H5RpycpQ1C7RHeZWd3UgjUPwWT44a_=
+WTXmmMXZpRm5J-Nsnd46YxqCFOfYtXzpFZGvDpgiLo29Pqi45oxf9PibhoEhoywwzEOT7Iv4BfT=
+a7xzQtEEBOPj6JaPY_R6oumuldVoNl9ATwYRD" width=3D"100%" title=3D"Via le chat"=
+ target=3D"_blank"> <img height=3D"38" width=3D"132" style=3D"font-family: =
+Arial,Helvetica,sans-serif; font-size: 16px; height: 38px; line-height: 16p=
+x; display: block; border: none;" class=3D"t_h30px t_w100p m_w100p m_hauto"=
+ src=3D"https://images.mailperformance.com/CIFA/02K/BNP/LAB01803/PART-HB/11=
+.png" alt=3D"Via le chat"/> </a></td></tr></tbody></table></td></tr></tbody=
+></table><!-- EO - image - 440a1dde-cc5e-48d1-8cf6-78b536eac0f4 --></td><!-=
+- COLUMN / 7d0e39d6-bf6e-4a39-9f1f-572ad82bed56 --><td valign=3D"top" width=
+=3D"33%" class=3D"t_w35p m_w30p m_vamiddle"><!-- image / 59fc4164-934d-4de5=
+-82fe-8bb5692b4a45 --><table align=3D"left" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" width=3D"160" class=3D"d_left t_w130px m_flnone m_mauto m=
+_w120p" role=3D"none"><tbody><tr><td><table align=3D"center" border=3D"0" c=
+ellpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"d_center " role=3D=
+"none"><tbody><tr><td style=3D"text-align: center; vertical-align: middle;"=
+ class=3D"m_pl3px"><a style=3D"color: #000000; outline: none; border: none;=
+ margin: auto; display: block;" href=3D"https://tr.vous.hellobank.fr/hit/CI=
+FA/02K/gz/frU1WUY6a3v02hhNwB0axBmt3a8bvcV3ShI8c7rDBM7SYPMEc_JOMDfdZKzzf8Fk1=
+_wOe08hlw2xbebOH_CQs2vlgXyIRCF3eo3geJNBQxDb5UsDaE55R9dHAYg5Pk5UAI1D8p3XEtnl=
+vPFZ5Vx1M23aOlxJU3fXJbFG5e9q1MLjghSGHjgDrdnm22XHiasKeVr5LHNYS0QuSTWAe8obWqc=
+YJ8-B746WK48aVXGg8GU9-eghKxERXuuFpE3nbn917V4zHzQBiB5mYmwUn7tdSg3G6ryXWHRlkL=
+jiDuDDda1evkISVerLR855rNmnK0cWcYFpROZMb5pESAr04mQtLG_J09uYynrfLyr2BPhMINRFG=
+6lavOhCwRH0k3qmQl96LcjOZLbVEyIDlTcGm2YtkABlKOXPCOBmL84LrFNpuCJKEQ08mKjXSKjc=
+nYufsW0hXh1X-kdOiF2hgDJviFt2c2T3cj6o0GEFqVvzMP5Lvz16xsUFc_vsaFeMbZE_A4XS_EN=
+b0-8EQxx5m9uQ-vQBtvdtCScTcy4wNbmPkyIn_xRDPFmHWjhEvfTylNcn_2WQ-SK_LOk-fVWacy=
+jK26BGrexnr5f9HT-8peoCtpapixgxoDfY2vPbgBMCm25GXV_Sdp5t7-nnSfzStH1TlHc9-FM" =
+width=3D"100%" title=3D"Sur X" target=3D"_blank"> <img height=3D"38" width=3D=
+"160" style=3D"font-family: Arial,Helvetica,sans-serif; font-size: 16px; he=
+ight: 38px; line-height: 16px; display: block; border: none;" class=3D"t_h3=
+0px t_w100p m_h25px m_w100p" src=3D"https://images.mailperformance.com/CIFA=
+/02K/BNP/LAB01803/PART-HB/12.png" alt=3D"Sur X"/> </a></td></tr></tbody></t=
+able></td></tr></tbody></table><!-- EO - image - 59fc4164-934d-4de5-82fe-8b=
+b5692b4a45 --></td></tr></tbody></table><!-- EO - WRAPPER / 334e4f33-0a05-4=
+45a-89d0-cd0317d4f96e --> <!-- spacer / 3f96f16f-db32-4949-bdf1-512a5f8f71a=
+d --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"=
+0" width=3D"480" style=3D"margin: auto; clear: both;" class=3D"d_center t_w=
+100p m_w100p" aria-hidden=3D"true"><tbody><tr><td height=3D"30" style=3D"he=
+ight: 30px; font-size: 8px;" class=3D"">=E2=80=8C</td></tr></tbody></table>=
+<!-- EO - spacer - 3f96f16f-db32-4949-bdf1-512a5f8f71ad --> <!-- spacer / c=
+8522113-fd73-4246-a28b-79e920a1c62e --><table align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"480" style=3D"margin: auto; c=
+lear: both;" class=3D"d_center t_w312px m_w80p" aria-hidden=3D"true"><tbody=
+><tr><td height=3D"1" style=3D"height: 1px; font-size: 1px; line-height: 1p=
+x; vertical-align: bottom;" class=3D""><!-- spacer inner border / c8522113-=
+fd73-4246-a28b-79e920a1c62e --><table align=3D"center" border=3D"0" cellpad=
+ding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"width: 100%; clear: bo=
+th;" class=3D"d_center"><tbody><tr><td style=3D"border-top: 1px solid #b9b9=
+b9; height: 0px; font-size: 0px; line-height: 0px;" class=3D"">=E2=80=8C</t=
+d></tr></tbody></table><!-- EO - spacer inner border / c8522113-fd73-4246-a=
+28b-79e920a1c62e --></td></tr></tbody></table><!-- EO - spacer - c8522113-f=
+d73-4246-a28b-79e920a1c62e --> <!-- spacer / 00368acb-62d7-4448-a2cb-a41b3b=
+b53ea1 --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacin=
+g=3D"0" width=3D"100%" style=3D"margin: auto; clear: both;" class=3D"d_cent=
+er t_w100p m_w100p" aria-hidden=3D"true"><tbody><tr><td height=3D"30" style=
+=3D"height: 30px; font-size: 8px;" class=3D"m_h25px">=E2=80=8C</td></tr></t=
+body></table><!-- EO - spacer - 00368acb-62d7-4448-a2cb-a41b3bb53ea1 --> <!=
+-- image / 8bd608d6-4c0b-4a69-b16c-994461d684e3 --><table align=3D"center" =
+border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"367" style=3D"mar=
+gin: auto;" class=3D"d_center t_w367px m_w90p" role=3D"none"><tbody><tr><td=
+><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%" class=3D"d_center " role=3D"none"><tbody><tr><td style=3D"tex=
+t-align: center; vertical-align: middle;"><a style=3D"color: #000000; outli=
+ne: none; border: none; margin: auto; display: block;" href=3D"https://tr.v=
+ous.hellobank.fr/hit/CIFA/02K/gz/OssyirLJxRBKZH4ZCdRQ_r5Xf_VlEzG4g91FRtgr10=
+SaRGAGnzoIfGoAaZD8XhAlWwEnsS66gVTaDP_oOiaxlBFp-7yrTuqo76TI9z85wXpllXpjE4CF4=
+bt6Gz_-wjZfguQ2M4YAdRFo8CwsbE1429cCEjo8DzY1RKTluFB_PJo7l1RreLJ0zzq8KhR0g6Lq=
+GvnuvN7_oSrmXOxBJID5IW8CjsdvfrTyIm_22q4mspRgBwhyZowzqlWR0eKgZIr52Jev-9m9CbG=
+Qd8B9g7GHeJevMGJDFLf4l4T9Hdm_gdknNG6zkpq2b2-5gnw-o7r_PtmvNCDZ1epmmAtEfXRomP=
+bLYx3PJxx_yRP-UHxUdIfEZC33XtRKkp33Nil7WZCICrQF66gO7dElSUOAaUNqhD4VPpG3j7Tob=
+laMbCldpYzugrSi8irbTYYgSl2-IoQ_1za0HqK3raC4W8iJAL3akCS1B76RCDBrpqAHvTCZykRy=
+Anxl2fTTbamEHjRM7TsqjRdp_ey8M9chd94ABqU25b8YPfwTO-h23tlUJ6clTWu8M5nGAh_LuAz=
+Q_zlIJLZfEf4IUyUFI0HK-vcrIjqNN6-61NUhRdLQrtjpGrtORu3LGRkqhtWrhyfmNza094hXqR=
+PTPnXhnbHr1BZlxpw1EdwkfRRh3bun1-zMOw" width=3D"100%" title=3D"Appli Hello b=
+ank!" target=3D"_blank"> <img width=3D"367" style=3D"font-family: Arial,Hel=
+vetica,sans-serif; font-size: 16px; line-height: 16px; display: block; bord=
+er: none;" class=3D"t_w100p m_w100p" src=3D"https://images.mailperformance.=
+com/CIFA/02K/BNP/LAB01803/PART-HB/13.png" alt=3D"G=C3=A9rez vos comptes en =
+mobilit=C3=A9 avec l'Appli Hello bank!"/> </a></td></tr></tbody></table></t=
+d></tr></tbody></table><!-- EO - image - 8bd608d6-4c0b-4a69-b16c-994461d684=
+e3 --> <!-- spacer / 86430bbe-8589-4a37-ac9c-283a2684693b --><table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" st=
+yle=3D"margin: auto; clear: both;" class=3D"d_center t_w100p m_w100p" aria-=
+hidden=3D"true"><tbody><tr><td height=3D"10" style=3D"height: 10px; font-si=
+ze: 10px; line-height: 10px;" class=3D"">=E2=80=8C</td></tr></tbody></table=
+><!-- EO - spacer - 86430bbe-8589-4a37-ac9c-283a2684693b --> <!-- WRAPPER /=
+ 6b90bc40-87f6-4dd7-83b0-afcaec7595b8 --><table align=3D"center" border=3D"=
+0" cellpadding=3D"0" cellspacing=3D"0" width=3D"30%" style=3D"margin: auto;=
+" class=3D"
+                d_center
+                t_w30p m_w40p
+           " role=3D"none"><tbody><tr><!-- COLUMN / ad641b9b-9ebb-4d5d-8719=
+-76c0066d9044 --><td valign=3D"top" width=3D"25%" class=3D"t_w25p m_w25p"><=
+!-- image / 8dabc574-faf2-4256-be0e-e44f60e5e0b3 --><table align=3D"center"=
+ border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"37" style=3D"mar=
+gin: auto;" class=3D"d_center t_w100p m_w100p" role=3D"none"><tbody><tr><td=
+><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" w=
+idth=3D"100%" class=3D"d_center " role=3D"none"><tbody><tr><td style=3D"tex=
+t-align: center; vertical-align: middle;"><a style=3D"color: #000000; outli=
+ne: none; border: none; margin: auto; display: block;" href=3D"https://tr.v=
+ous.hellobank.fr/hit/CIFA/02K/gz/aXpxdSCZ81BAPSOMWyVHmLI_EKW2hnDSV8IbVhegxX=
+lSBI1Of7CBvrtUVIhcDzC35o70Ezmlz820xXPtOSTdN_yhjqZFIQlVrlYA5KVY6jpOc_1mgBwSN=
+SacQjQBFxq8BsOqX31S3QLN9mcuWdHqyf4ZMU4kZSc6c1tP39neL1mm-ZmRurwPa2nQA-InFbvo=
+jB_Q56S-q_IdusezLyAOfkzWrI9lxspqqOmY-xIaOmyp3uFNLVNqMicE1_JAr4I-i63h-wkEQqa=
+tdhl9wTCFJCF4aQ4FH3esxvNqC1hGAFacirvxGrDwQv5u9E9bK27fRwWgt4skfWn_IqWe0NcD9T=
+PLe0oFObM9f62ZN2Z85EysMqw_Ze3VTGiVi03c1P7nJvCp9YCgYEKDOD7iUtYFmHMgwby7xZRt-=
+sQ_XmLqp9NAtmz6AJCrmqVz9fvQVZChoIfYkZM7puxBbeK9H6nhmII9MHw_5mPiqc7iKYlZDrgZ=
+l7BNtO85lKRIIkBLE5mkQP6UeympZNfL9atvq5JDd5TG9od5HGfriLIv-YPFKQGd5lMNmqAWJV4=
+AM1H0RlJIRMWcbzFfkgY_T76XFP_xFi9LPdEn_YKs14rIHOxN-4SCv3MXKVF3y6jYPeP2MyeI1_=
+WiumQs7v0G5ptjCKLeVMuHcWf7" width=3D"100%" title=3D"Facebook" target=3D"_bl=
+ank"> <img height=3D"37" width=3D"37" style=3D"font-family: Arial,Helvetica=
+,sans-serif; font-size: 16px; height: 37px; line-height: 16px; display: blo=
+ck; border: none;" class=3D"t_w100p t_hauto m_w100p m_hauto" src=3D"https:/=
+/images.mailperformance.com/CIFA/02K/BNP/LAB01803/PART-HB/14.png" alt=3D"Fa=
+cebook"/> </a></td></tr></tbody></table></td></tr></tbody></table><!-- EO -=
+ image - 8dabc574-faf2-4256-be0e-e44f60e5e0b3 --></td><!-- COLUMN / 92b69a7=
+2-adef-4377-811d-33e96f60c3f5 --><td valign=3D"top" width=3D"25%" class=3D"=
+t_w25p m_w25p"><!-- image / 8ac0b76c-5785-44ee-98a0-ed71572eda81 --><table =
+align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"=
+37" style=3D"margin: auto;" class=3D"d_center t_w100p m_w100p" role=3D"none=
+"><tbody><tr><td><table align=3D"center" border=3D"0" cellpadding=3D"0" cel=
+lspacing=3D"0" width=3D"100%" class=3D"d_center " role=3D"none"><tbody><tr>=
+<td style=3D"text-align: center; vertical-align: middle;"><a style=3D"color=
+: #000000; outline: none; border: none; margin: auto; display: block;" href=
+=3D"https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/FEWXy5iadFg4JgR0qNWEtXz_8_=
+LGme2AaiWkwXLXBJVfXcdGgjtWnD2ANPiC7XV-okEDndZhhKVsTA9ohGgRawr9_HLz_4jn9ZUKR=
+6cYqpVDeNVykkhoqgiOUMmtkfkkSMs-E8ixoGlqTivDyc5i9feoPOsHt4nNdjYdTej0rWakU3Wg=
+UzmCZ2hZ-tQmcXJ83K0psHt1AKomT5DQxxgW020VJhVlONGoJOySDX3ipcJrZg60wUzwZ52H8Bj=
+egvwyrEJBmuAxG-WNpCYoY45KDC2aydEsxtdOoQeW3sHxiJK-i8N48BGxkPkGGBX5oTPSPskgJb=
+MtkwHdB3DFQNokBrbdi88MQ8yVIz45psGmQgIKjpmzLEUbE6h3IByYLJp7wApsTQ_bQXwJqgB0c=
+9Wl38aSH4xcFct-EB8ErqDyi9OFGppi_amrcog2lha1uOioKripPZK3-rjeIGQnrh-veCj9KSdp=
+zFhm8nfa2iPjnoKy3UK7YTaftBIbjanQcDuAwux5kONAH6waILAeSD3PnhupvHuJJoqswIcPB7k=
+dY7eCq2yKf15rcM8opwAqsiXE_-s-mX5HSDAeFJlUz-J54p8GkjFb-O8pPHmvn_rOnm5-ZxT-rh=
+YGZWk2JuRpm5SR1G8g564zp-or42lTESArEIA" width=3D"100%" title=3D"X" target=3D=
+"_blank"> <img height=3D"37" width=3D"37" style=3D"font-family: Arial,Helve=
+tica,sans-serif; font-size: 16px; height: 37px; line-height: 16px; display:=
+ block; border: none;" class=3D"t_w100p t_hauto m_w100p m_hauto" src=3D"htt=
+ps://images.mailperformance.com/CIFA/02K/BNP/LAB01803/PART-HB/15.png" alt=3D=
+"X"/> </a></td></tr></tbody></table></td></tr></tbody></table><!-- EO - ima=
+ge - 8ac0b76c-5785-44ee-98a0-ed71572eda81 --></td><!-- COLUMN / 559fec4c-d0=
+a2-4b84-ac1d-191c74aef320 --><td valign=3D"top" width=3D"25%" class=3D"t_w2=
+5p m_w25p"><!-- image / 5946f225-db39-4a0d-b2a4-edb61e797471 --><table alig=
+n=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"37" =
+style=3D"margin: auto;" class=3D"d_center t_w100p m_w100p" role=3D"none"><t=
+body><tr><td><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspa=
+cing=3D"0" width=3D"100%" class=3D"d_center " role=3D"none"><tbody><tr><td =
+style=3D"text-align: center; vertical-align: middle;"><a style=3D"color: #0=
+00000; outline: none; border: none; margin: auto; display: block;" href=3D"=
+https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/GUSiV1UXPuA-ZevDBiuZ2PHOmZkTn3=
+4ZbxoZYqZcv9sWqN-9oXp2_Zc7gpkIXoQbNucBXxiO8qi0dmoWNwYxw3t5UfSPdEHu95G5Go2hT=
+b7AqpMwZbCyOddmWqvIlGzUg2ghILnRgs1spcX5To2wIHhHyCRQ9XtJLANKf_G42thI08N2PlcG=
+3NvhitN6pbs8DlFkn3mg-pTr2EfLQCwxa6JV7NiiDGesffR4U8vDBvONEInEpJpS4XGDhS1RSdh=
+0LonBpWCcT5JqKYC3NHCCoSG7T57HXgg82m3e7_wNIJXCWaed2QQj4GBB9zq6AUBxPL6bmvMG-C=
+jAagy_LeTwTwACwie4v-8DJxRbEzLOcokwv7GQnr9KVyHBtOYsGvNPNS3GBVsuB4FfjlC97tD4a=
+t5-Mt6QkbcgkwEQDe5oSQ8-Zl7Kc27Xv2IRU4Aoq849jLi98KOhxX6hwBBosAGawx2dRXVIkUOQ=
+7aYQz9p8dBX3h-DEbehaKHVnMp0Nxqj9--SoY6odJ1BOAFOMLZxMyQuaCX1C_OhDxvLTugnnwSz=
+7hcRd9kKJFdaA3QlcFIsTsL_GZIqD5DhR5BnqOMpt2HCDKXYhA6LAnk2MGJMm5E-Yj1E5SFa-Yb=
+z_4h2S7qQ1i2_CcVeT9eA06qDgelWU-F--A_4" width=3D"100%" title=3D"Instagram" t=
+arget=3D"_blank"> <img height=3D"37" width=3D"37" style=3D"font-family: Ari=
+al,Helvetica,sans-serif; font-size: 16px; height: 37px; line-height: 16px; =
+display: block; border: none;" class=3D"t_w100p t_hauto m_w100p m_hauto" sr=
+c=3D"https://images.mailperformance.com/CIFA/02K/BNP/LAB01803/PART-HB/16.pn=
+g" alt=3D"Instagram"/> </a></td></tr></tbody></table></td></tr></tbody></ta=
+ble><!-- EO - image - 5946f225-db39-4a0d-b2a4-edb61e797471 --></td><!-- COL=
+UMN / e19aeb23-df96-4e34-93d4-ebfb94252567 --><td valign=3D"top" width=3D"2=
+5%" class=3D"t_w25p m_w25p"><!-- image / 67fb27a9-3095-4f27-83d3-867ad7c599=
+3f --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"37" style=3D"margin: auto;" class=3D"d_center t_w100p m_w100p"=
+ role=3D"none"><tbody><tr><td><table align=3D"center" border=3D"0" cellpadd=
+ing=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"d_center " role=3D"none=
+"><tbody><tr><td style=3D"text-align: center; vertical-align: middle;"><a s=
+tyle=3D"color: #000000; outline: none; border: none; margin: auto; display:=
+ block;" href=3D"https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/OEdRrjc4UI8dj=
+sVM9HCAUGxa0KTPkmkF4ALWbC7UKxRVgFw7QHg5nFVFwdQ22lrEYAjRFmQcxm62aoh8wdPv00vC=
+90D8ZImdcl9pZl15WASFBlRMg8u8LbcCp6JQRrL-H5CQz17V868ijJTSvYVmp-1keXh2xAvHgYz=
+O5i-R7Cf6PgqYIcbGLJpYy32b3r9b9zh0MLXwQ8lY5rvqwDdGDbKpAj9ABpwIL2QW52gldprXAL=
+nvYDY8rT2PVOXRp5U3grkqHn36NoOImyzX-MUKl-SEcsYkoiYQrY8lMjrxIBVq7cdBbgBrqPuDF=
+d0oKnqOZI0i4NH8rzs63Mxe_UddxeSwKbZ0GusLBEYoQMvPaDV9LOeXC8Gv3oqO1GObuMyd1eC2=
+XeHdnmS9jIewTlFQE2WRgVY-wR7QZMhc_iRBgYCYXxhYaWEQZ6V2InZ0l0zk_o11D7zP2aK1Xex=
+RqD47LNlAe1PaQ262s_6oUEBh8b-Taxa51NfjqNubmqL5Fa3jKs9Ub8tJzstzOXzqY_bqnmLjsx=
+XlGG5qkg9leILwBtlCiielSyRTK7YUpukDkOcFKGbCJ491IwC2vaskjZvKoeYggPOUTL0H-THdQ=
+wxpZt07QeX_LLG73IkvNKn0CNaVc7Kpt5rbe9pp_ER4dtqY64763h0kPkfm_w" width=3D"100=
+%" title=3D"Youtube" target=3D"_blank"> <img height=3D"37" width=3D"37" sty=
+le=3D"font-family: Arial,Helvetica,sans-serif; font-size: 16px; height: 37p=
+x; line-height: 16px; display: block; border: none;" class=3D"t_w100p t_hau=
+to m_w100p m_hauto" src=3D"https://images.mailperformance.com/CIFA/02K/BNP/=
+LAB01803/PART-HB/17.png" alt=3D"Youtube"/> </a></td></tr></tbody></table></=
+td></tr></tbody></table><!-- EO - image - 67fb27a9-3095-4f27-83d3-867ad7c59=
+93f --></td></tr></tbody></table><!-- EO - WRAPPER / 6b90bc40-87f6-4dd7-83b=
+0-afcaec7595b8 --> <!-- spacer / fb7d8b4e-8980-4aeb-b8d3-c250e3c3feda --><t=
+able align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" style=3D"margin: auto; clear: both;" class=3D"d_center t_w100p m=
+_w100p" aria-hidden=3D"true"><tbody><tr><td height=3D"35" style=3D"height: =
+35px; font-size: 8px;" class=3D"">=E2=80=8C</td></tr></tbody></table><!-- E=
+O - spacer - fb7d8b4e-8980-4aeb-b8d3-c250e3c3feda --></td></tr></tbody></ta=
+ble><!-- EO - SECTION / 6 - Bloc contact --> <!-- SECTION / 7 - Bloc fraude=
+ footer --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"600" style=3D"margin: auto; background-color: #ffffff;" c=
+lass=3D"
+                d_center
+                t_bgcffffff t_w100p m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / e331559c-2d5d-413a-a0f0=
+-b2b9e8b12d4f --><td valign=3D"top" width=3D"100%" class=3D"t_w100p m_w100p=
+"><!-- spacer / 526c4762-7bc4-45d3-addb-bae4dc4ea708 --><table align=3D"cen=
+ter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"560" style=3D=
+"margin: auto; clear: both;" class=3D"d_center t_w90p m_w90p" aria-hidden=3D=
+"true"><tbody><tr><td height=3D"12" style=3D"height: 12px; background-color=
+: #ff5a64; font-size: 8px;" class=3D"">=E2=80=8C</td></tr></tbody></table><=
+!-- EO - spacer - 526c4762-7bc4-45d3-addb-bae4dc4ea708 --> <!-- text / c2e4=
+d6a0-9b32-44bd-89b1-a5a2e96e5b44 --><table align=3D"center" border=3D"0" ce=
+llpadding=3D"0" cellspacing=3D"0" width=3D"560" style=3D"margin: auto;" cla=
+ss=3D"d_center t_w90p m_w90p" role=3D"none"><tbody><tr><td style=3D"font-fa=
+mily: Arial,Helvetica,sans-serif; color: #ffffff; text-align: center; font-=
+size: 20px; background-color: #ff5a64; vertical-align: middle; font-weight:=
+ bold;" class=3D"m_fz16px m_pt0px m_pb0px m_lh20px" role=3D"heading" aria-l=
+evel=3D"2">Restez en alerte face =C3=A0 la fraude !</td></tr></tbody></tabl=
+e><!-- EO - text - c2e4d6a0-9b32-44bd-89b1-a5a2e96e5b44 --> <!-- spacer / a=
+8ce53b3-f920-4bf6-8bc5-e2dfa983b5cc --><table align=3D"center" border=3D"0"=
+ cellpadding=3D"0" cellspacing=3D"0" width=3D"560" style=3D"margin: auto; c=
+lear: both;" class=3D"d_center t_w90p m_w90p" aria-hidden=3D"true"><tbody><=
+tr><td height=3D"14" style=3D"height: 14px; background-color: #ff5a64; font=
+-size: 8px;" class=3D"">=E2=80=8C</td></tr></tbody></table><!-- EO - spacer=
+ - a8ce53b3-f920-4bf6-8bc5-e2dfa983b5cc --> <!-- text / 72bb5495-2e7e-4978-=
+b87b-aae31bb5d7f8 --><table align=3D"center" border=3D"0" cellpadding=3D"0"=
+ cellspacing=3D"0" width=3D"560" style=3D"margin: auto;" class=3D"d_center =
+t_w90p m_w90p" role=3D"none"><tbody><tr><td style=3D"font-family: Arial,Hel=
+vetica,sans-serif; color: #ffffff; text-align: center; font-size: 14px; bac=
+kground-color: #ff5a64; vertical-align: middle; line-height: 18px; padding:=
+ 0px 20px 0px 20px;"><span style=3D"font-weight: bold;">Pour surfer en tout=
+e s=C3=A9curit=C3=A9, ne communiquez jamais vos codes personnels par email,=
+ par t=C3=A9l=C3=A9phone ou par SMS.</span><br/><br/>Nous vous rappelons no=
+s <a style=3D"color: #ffffff; text-decoration: underline; font-weight: bold=
+;" href=3D"https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/rudfTvjQnhzcbpP1pQx=
+5GlqSR9h057c6yiSfciDvq4fGKrm5EdbOYolLFm2HuZ7l-rX_ncoQPu1rfYHDiQ2y-_iWh-4T5_=
+6fnk94dQS1OIMxkKnfIuvBGkwSduo-kTQrRKw7AJBk444zCc2aG4e5gWwoSyG4xmXvXrXw1qeyG=
+pD55EY-7wqwrPOaakhevcGMBjgPcxB5jninAnpgG5E_3ybq2YVDwmmsumz1DLX6clxSnL7R3QqM=
+bJigGVIWhMsgyjvO3APFkV_aZB8DJnpTvV6f8klbEr40SwwhMWCl1hr4Eov8CkLi5_OoW2FPywq=
+n2E6ml3vUUs7vbXpU95b2hDWaUxzr9QEazgY-EPmjXwgFJ_-neTDoTBY-MXjnBpY-PBhGQHujgS=
+Cu1oTNL7jc1sR7GOguWATsoF1_mvpQVrgvvClTd2-S8usFdy18Fk-Zh6KXBdEqTSH1cFfmAOAsP=
+pQFF1gC0rjf3xqhWe75qrDnl5QXSRiFbBBWl1w4cGEe1JOJdjyRNdj79HOsPSUlKY2H0rsMTl0Q=
+jANpeQeQi0bMjbzU70xQeFsZAppoxGXb2y_A7rlFQ5yaL-5E7QCtZj_fvFaD5OdjAWPYhIGKPJy=
+zA3dWBr8JymwhXB5ewd5ITXJKQIzZRaRB1ObT1TV8fNPScRasjMy0Hb0Xfy4">bonnes pratiq=
+ues</a> pour =C3=A9viter le piratage internet.</td></tr></tbody></table><!-=
+- EO - text - 72bb5495-2e7e-4978-b87b-aae31bb5d7f8 --> <!-- spacer / def1f1=
+02-8378-4b14-93d2-dcc09477face --><table align=3D"center" border=3D"0" cell=
+padding=3D"0" cellspacing=3D"0" width=3D"560" style=3D"margin: auto; clear:=
+ both;" class=3D"d_center t_w90p m_w90p" aria-hidden=3D"true"><tbody><tr><t=
+d height=3D"15" style=3D"height: 15px; background-color: #ff5a64; font-size=
+: 8px;" class=3D"">=E2=80=8C</td></tr></tbody></table><!-- EO - spacer - de=
+f1f102-8378-4b14-93d2-dcc09477face --></td></tr></tbody></table><!-- EO - S=
+ECTION / 7 - Bloc fraude footer --> <!-- SECTION / 8 - Bloc fraude footer 2=
+ --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0=
+" width=3D"600" style=3D"margin: auto; background-color: #ffffff;" class=3D=
+"
+                d_center
+                t_w100p m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / 4354af4c-c94f-4c92-ab1f=
+-7a20acadbe75 --><td valign=3D"top" width=3D"100%" class=3D"t_w100p m_w100p=
+"><!-- WRAPPER / 0b9aac3d-be90-4b25-ad0c-7c0abdbd1122 --><table align=3D"ce=
+nter" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"560" style=3D=
+"margin: auto; background-color: #f6f6f6;" class=3D"
+                d_center
+                t_w450px m_w90p
+           " role=3D"none"><tbody><tr><td height=3D"20" valign=3D"middle" s=
+tyle=3D"height: 20px;" class=3D"t_h20px m_h20px"><table border=3D"0" cellpa=
+dding=3D"0" cellspacing=3D"0" width=3D"100%" role=3D"none"><tbody><tr><!-- =
+COLUMN / 03c698b9-e14d-4a03-9b58-4bf0f9545747 --><td height=3D"20" valign=3D=
+"middle" width=3D"33.33%" style=3D"height: 20px;" class=3D"t_w33d33p t_vami=
+ddle m_w33d33p m_vamiddle" aria-hidden=3D"true"><span>=E2=80=8C</span></td>=
+<!-- COLUMN / 421c5dd2-c854-47b3-bc0f-15579a7c93dd --><td height=3D"20" val=
+ign=3D"middle" width=3D"33.33%" style=3D"height: 20px;" class=3D"t_w33d33p =
+t_vamiddle m_w33d33p m_vamiddle"><!-- image / 81b4c9e7-cc3b-45af-8949-fd7fb=
+711fc93 --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspaci=
+ng=3D"0" width=3D"32" style=3D"margin: auto;" class=3D"d_center t_w32px m_w=
+32px" role=3D"none"><tbody><tr><td><table align=3D"center" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"100%" class=3D"d_center " role=3D=
+"none"><tbody><tr><td style=3D"padding-top: 0px; padding-bottom: 15px; text=
+-align: center; vertical-align: middle;"><img height=3D"16" width=3D"32" st=
+yle=3D"font-family: Arial,Helvetica,sans-serif; font-size: 16px; height: 16=
+px; color: #000000; line-height: 16px; display: block; border: none;" class=
+=3D"t_w100p t_hauto m_w100p m_hauto" src=3D"https://images.mailperformance.=
+com/CIFA/02K/BNP/LAB01803/PART-HB/18.png"/></td></tr></tbody></table></td><=
+/tr></tbody></table><!-- EO - image - 81b4c9e7-cc3b-45af-8949-fd7fb711fc93 =
+--></td><!-- COLUMN / a29981b8-4f8e-4d71-a8fd-7faf01c83709 --><td height=3D=
+"20" valign=3D"middle" width=3D"33.34%" style=3D"height: 20px;" class=3D"t_=
+w33d34p t_vamiddle m_w33d34p m_vamiddle" aria-hidden=3D"true"><span>=E2=80=8C=
+</span></td></tr></tbody></table></td></tr></tbody></table><!-- EO - WRAPPE=
+R / 0b9aac3d-be90-4b25-ad0c-7c0abdbd1122 --> <!-- WRAPPER / f4f86a44-adb5-4=
+ce1-aaca-1f5ec49c691c --><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"560" style=3D"margin: auto; background-color=
+: #f6f6f6;" class=3D"
+                d_center
+                t_w90p m_w90p
+           " role=3D"none"><tbody><tr><!-- COLUMN / 2d52f844-aa4c-47da-99d7=
+-95948abc4f97 --><td valign=3D"top" width=3D"11%" class=3D"t_w5p m_w5p" ari=
+a-hidden=3D"true"><span>=E2=80=8C</span></td><!-- COLUMN / c79e7552-ada0-42=
+ce-9108-6e2be08500d3 --><td valign=3D"top" width=3D"9.5%" class=3D"t_w15p m=
+_w20p"><!-- image / e3cdb23f-45ba-4674-ac97-03fb6741b586 --><table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"47" styl=
+e=3D"margin: auto;" class=3D"d_center t_w47px m_w47px" role=3D"none"><tbody=
+><tr><td><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" class=3D"d_center " role=3D"none"><tbody><tr><td styl=
+e=3D"padding-top: 15px; padding-bottom: 15px; text-align: center; vertical-=
+align: middle;"><img height=3D"28" width=3D"47" style=3D"font-family: Arial=
+,Helvetica,sans-serif; font-size: 16px; height: 28px; color: #000000; line-=
+height: 16px; display: block; border: none;" class=3D"t_w100p t_hauto m_w10=
+0p m_hauto" src=3D"https://images.mailperformance.com/CIFA/02K/BNP/LAB01803=
+/PART-HB/19.png"/></td></tr></tbody></table></td></tr></tbody></table><!-- =
+EO - image - e3cdb23f-45ba-4674-ac97-03fb6741b586 --></td><!-- COLUMN / f04=
+3aca2-1fd2-4d94-8a27-ee49da5847cc --><td valign=3D"top" width=3D"70%" class=
+=3D"t_w75p m_w70p"><!-- text / dd13c771-8e4f-4ec7-af69-bc267d3cb3ee --><tab=
+le align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"margin: auto;" class=3D"d_center t_w100p m_w100p" role=3D"n=
+one"><tbody><tr><td style=3D"font-family: Arial,Helvetica,sans-serif; color=
+: #696969; text-align: left; font-size: 14px; padding-top: 10px; padding-bo=
+ttom: 10px; vertical-align: middle;" class=3D"t_pr30px m_pr10px">Avant de s=
+aisir vos codes personnels, <span style=3D"font-weight: bold;">assurez-vous=
+ d=E2=80=99=C3=AAtre bien =C3=A0 l=E2=80=99origine de l=E2=80=99op=C3=A9rat=
+ion</span> en v=C3=A9rifiant ses caract=C3=A9ristiques.</td></tr></tbody></=
+table><!-- EO - text - dd13c771-8e4f-4ec7-af69-bc267d3cb3ee --></td><!-- CO=
+LUMN / b0e23778-cb77-43b0-b1d9-7826693635d1 --><td valign=3D"top" width=3D"=
+9.5%" class=3D"t_w5p m_w5p" aria-hidden=3D"true"><span>=E2=80=8C</span></td=
+></tr></tbody></table><!-- EO - WRAPPER / f4f86a44-adb5-4ce1-aaca-1f5ec49c6=
+91c --> <!-- spacer / 176cae9d-646c-483a-bc68-0ed33c2b5f70 --><table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"560" sty=
+le=3D"margin: auto; clear: both;" class=3D"d_center t_w90p m_w90p" aria-hid=
+den=3D"true"><tbody><tr><td height=3D"10" style=3D"height: 10px; background=
+-color: #f6f6f6; font-size: 10px; line-height: 10px;" class=3D"">=E2=80=8C<=
+/td></tr></tbody></table><!-- EO - spacer - 176cae9d-646c-483a-bc68-0ed33c2=
+b5f70 --> <!-- WRAPPER / cc864cf6-ea4f-47e4-9ba9-5c2e4956c81b --><table ali=
+gn=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"560=
+" style=3D"margin: auto; background-color: #f6f6f6;" class=3D"
+                d_center
+                t_w90p m_w90p
+           " role=3D"none"><tbody><tr><!-- COLUMN / 39619e50-5c88-4b20-af10=
+-e153176829f2 --><td valign=3D"top" width=3D"11%" class=3D"t_w5p m_w5p" ari=
+a-hidden=3D"true"><span>=E2=80=8C</span></td><!-- COLUMN / fd01f2cb-3f7e-41=
+31-88f3-cb0251ecfb0a --><td valign=3D"top" width=3D"9.5%" class=3D"t_w15p m=
+_w20p"><!-- image / 8afb76de-7f72-4bcb-8eca-6b61ae9d2234 --><table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"47" styl=
+e=3D"margin: auto;" class=3D"d_center t_w47px m_w47px" role=3D"none"><tbody=
+><tr><td><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" class=3D"d_center " role=3D"none"><tbody><tr><td styl=
+e=3D"padding-top: 10px; padding-bottom: 10px; text-align: center; vertical-=
+align: middle;"><img height=3D"28" width=3D"47" style=3D"font-family: Arial=
+,Helvetica,sans-serif; font-size: 16px; height: 28px; color: #000000; line-=
+height: 16px; display: block; border: none;" class=3D"t_w100p t_hauto m_w10=
+0p m_hauto" src=3D"https://images.mailperformance.com/CIFA/02K/BNP/LAB01803=
+/PART-HB/20.png"/></td></tr></tbody></table></td></tr></tbody></table><!-- =
+EO - image - 8afb76de-7f72-4bcb-8eca-6b61ae9d2234 --></td><!-- COLUMN / 02d=
+4f247-5a34-4134-b4c3-f4a2d7a0bea5 --><td valign=3D"top" width=3D"70%" class=
+=3D"t_w75p m_w70p"><!-- text / 1979d7e7-ba4a-4dc9-bcb8-3870c8225623 --><tab=
+le align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"margin: auto;" class=3D"d_center t_w100p m_w100p" role=3D"n=
+one"><tbody><tr><td style=3D"font-family: Arial,Helvetica,sans-serif; color=
+: #696969; text-align: left; font-size: 14px; padding-top: 10px; padding-bo=
+ttom: 10px; vertical-align: middle;" class=3D"t_pr30px m_pr10px">Par s=C3=A9=
+curit=C3=A9 <span style=3D"font-weight: bold;">nous vous rappelons votre jo=
+ur et mois de naissance</span> en haut de chaque email.</td></tr></tbody></=
+table><!-- EO - text - 1979d7e7-ba4a-4dc9-bcb8-3870c8225623 --></td><!-- CO=
+LUMN / bb67d923-bf19-4b1b-8eb2-c7fdd0a17272 --><td valign=3D"top" width=3D"=
+9.5%" class=3D"t_w5p m_w5p" aria-hidden=3D"true"><span>=E2=80=8C</span></td=
+></tr></tbody></table><!-- EO - WRAPPER / cc864cf6-ea4f-47e4-9ba9-5c2e4956c=
+81b --> <!-- spacer / a3cd261b-1856-4090-95b7-8c8a92737aa3 --><table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"560" sty=
+le=3D"margin: auto; clear: both;" class=3D"d_center t_w90p m_w90p" aria-hid=
+den=3D"true"><tbody><tr><td height=3D"10" style=3D"height: 10px; background=
+-color: #f6f6f6; font-size: 10px; line-height: 10px;" class=3D"">=E2=80=8C<=
+/td></tr></tbody></table><!-- EO - spacer - a3cd261b-1856-4090-95b7-8c8a927=
+37aa3 --> <!-- WRAPPER / 5ce8fd74-84f6-40ee-88bc-3bcd97cb596e --><table ali=
+gn=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"560=
+" style=3D"margin: auto; background-color: #f6f6f6;" class=3D"
+                d_center
+                t_w90p m_w90p
+           " role=3D"none"><tbody><tr><!-- COLUMN / eb8d5de9-44a1-43b8-8d37=
+-4dc8d01d23da --><td valign=3D"top" width=3D"11%" class=3D"t_w5p m_w5p" ari=
+a-hidden=3D"true"><span>=E2=80=8C</span></td><!-- COLUMN / 69d7c4fa-19f3-4c=
+42-a913-2f5446d87edd --><td valign=3D"top" width=3D"9.5%" class=3D"t_w15p m=
+_w20p"><!-- image / 8bdb863c-c9c3-4f23-8b9d-42160ee91546 --><table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"47" styl=
+e=3D"margin: auto;" class=3D"d_center t_w47px m_w47px" role=3D"none"><tbody=
+><tr><td><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" class=3D"d_center " role=3D"none"><tbody><tr><td styl=
+e=3D"padding-top: 15px; padding-bottom: 15px; text-align: center; vertical-=
+align: middle;"><img height=3D"23" width=3D"47" style=3D"font-family: Arial=
+,Helvetica,sans-serif; font-size: 16px; height: 23px; color: #000000; line-=
+height: 16px; display: block; border: none;" class=3D"t_w100p t_hauto m_w10=
+0p m_hauto" src=3D"https://images.mailperformance.com/CIFA/02K/BNP/LAB01803=
+/PART-HB/21.png"/></td></tr></tbody></table></td></tr></tbody></table><!-- =
+EO - image - 8bdb863c-c9c3-4f23-8b9d-42160ee91546 --></td><!-- COLUMN / 03e=
+b7918-2df2-4bb8-a094-08c94cc0e3ad --><td valign=3D"top" width=3D"70%" class=
+=3D"t_w75p m_w70p"><!-- text / 007ef8a7-c8b1-483f-a220-115aff2b95cd --><tab=
+le align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D=
+"100%" style=3D"margin: auto;" class=3D"d_center t_w100p m_w100p" role=3D"n=
+one"><tbody><tr><td style=3D"font-family: Arial,Helvetica,sans-serif; color=
+: #696969; text-align: left; font-size: 14px; padding-top: 5px; padding-bot=
+tom: 5px; vertical-align: middle;" class=3D"t_pr30px m_pr10px"><span style=3D=
+"font-weight: bold;">Ne communiquez pas d'informations confidentielles</spa=
+n> par email, sur les r=C3=A9seaux sociaux ou sur un site Internet non s=C3=
+=A9curis=C3=A9.</td></tr></tbody></table><!-- EO - text - 007ef8a7-c8b1-483=
+f-a220-115aff2b95cd --></td><!-- COLUMN / e719af3a-59f9-4e05-b5d5-687a5b21a=
+410 --><td valign=3D"top" width=3D"9.5%" class=3D"t_w5p m_w5p" aria-hidden=3D=
+"true"><span>=E2=80=8C</span></td></tr></tbody></table><!-- EO - WRAPPER / =
+5ce8fd74-84f6-40ee-88bc-3bcd97cb596e --> <!-- spacer / 328e8077-84b0-48da-8=
+259-13a139cbd64a --><table align=3D"center" border=3D"0" cellpadding=3D"0" =
+cellspacing=3D"0" width=3D"560" style=3D"margin: auto; clear: both;" class=3D=
+"d_center t_w90p m_w90p" aria-hidden=3D"true"><tbody><tr><td height=3D"10" =
+style=3D"height: 10px; background-color: #f6f6f6; font-size: 10px; line-hei=
+ght: 10px;" class=3D"">=E2=80=8C</td></tr></tbody></table><!-- EO - spacer =
+- 328e8077-84b0-48da-8259-13a139cbd64a --> <!-- WRAPPER / 6c02e383-4a99-41a=
+0-927f-7cd6b1e9e4ef --><table align=3D"center" border=3D"0" cellpadding=3D"=
+0" cellspacing=3D"0" width=3D"560" style=3D"margin: auto; background-color:=
+ #f6f6f6;" class=3D"
+                d_center
+                t_w90p m_w90p
+           " role=3D"none"><tbody><tr><!-- COLUMN / 9dc5384f-df03-4981-b41c=
+-a9aaaefee8e9 --><td valign=3D"top" width=3D"11%" class=3D"t_w5p m_w5p" ari=
+a-hidden=3D"true"><span>=E2=80=8C</span></td><!-- COLUMN / d592f716-9546-49=
+cc-876b-1d7bca0d3d64 --><td valign=3D"top" width=3D"9.5%" class=3D"t_w15p m=
+_w20p"><!-- image / 6bdb8305-f5c2-4812-8730-a931d3975bf2 --><table align=3D=
+"center" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"47" styl=
+e=3D"margin: auto;" class=3D"d_center t_w47px m_w47px" role=3D"none"><tbody=
+><tr><td><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=
+=3D"0" width=3D"100%" class=3D"d_center " role=3D"none"><tbody><tr><td styl=
+e=3D"padding-top: 5px; text-align: center; vertical-align: middle;"><img he=
+ight=3D"33" width=3D"47" style=3D"font-family: Arial,Helvetica,sans-serif; =
+font-size: 16px; height: 33px; color: #000000; line-height: 16px; display: =
+block; border: none;" class=3D"t_w100p t_hauto m_w100p m_hauto" src=3D"http=
+s://images.mailperformance.com/CIFA/02K/BNP/LAB01803/PART-HB/22.png"/></td>=
+</tr></tbody></table></td></tr></tbody></table><!-- EO - image - 6bdb8305-f=
+5c2-4812-8730-a931d3975bf2 --></td><!-- COLUMN / e8134982-9ba0-48b9-9a8b-64=
+da9d44d79b --><td valign=3D"top" width=3D"70%" class=3D"t_w75p m_w70p"><!--=
+ text / 6d92dc5e-41c0-426b-9370-48373d25e64a --><table align=3D"center" bor=
+der=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=3D"margi=
+n: auto;" class=3D"d_center t_w100p m_w100p" role=3D"none"><tbody><tr><td s=
+tyle=3D"font-family: Arial,Helvetica,sans-serif; color: #696969; text-align=
+: left; font-size: 14px; padding-top: 10px; padding-bottom: 10px; vertical-=
+align: middle;" class=3D"t_pr30px m_pr10px">En cas de doute <span style=3D"=
+font-weight: bold;">contactez-nous</span> au <span style=3D"font-weight: bo=
+ld;">01</span>&nbsp;<span style=3D"font-weight: bold;">43</span>&nbsp;<span=
+ style=3D"font-weight: bold;">63</span>&nbsp;<span style=3D"font-weight: bo=
+ld;">15</span>&nbsp;<span style=3D"font-weight: bold;">15</span><sup style=3D=
+"font-weight: bold;">**</sup> 6j/7 de 8h =C3=A0 20h en semaine et de 8h =C3=
+=A0 18h le samedi.</td></tr></tbody></table><!-- EO - text - 6d92dc5e-41c0-=
+426b-9370-48373d25e64a --></td><!-- COLUMN / a73e39db-6945-47c1-b86e-d4a0fb=
+43c604 --><td valign=3D"top" width=3D"9.5%" class=3D"t_w5p m_w5p" aria-hidd=
+en=3D"true"><span>=E2=80=8C</span></td></tr></tbody></table><!-- EO - WRAPP=
+ER / 6c02e383-4a99-41a0-927f-7cd6b1e9e4ef --> <!-- spacer / 1a862231-4d9f-4=
+8ae-966d-1d5b7f6e7b69 --><table align=3D"center" border=3D"0" cellpadding=3D=
+"0" cellspacing=3D"0" width=3D"560" style=3D"margin: auto; clear: both;" cl=
+ass=3D"d_center t_w90p m_w90p" aria-hidden=3D"true"><tbody><tr><td height=3D=
+"20" style=3D"height: 20px; background-color: #f6f6f6; font-size: 8px;" cla=
+ss=3D"">=E2=80=8C</td></tr></tbody></table><!-- EO - spacer - 1a862231-4d9f=
+-48ae-966d-1d5b7f6e7b69 --> <!-- spacer / ebbb4fab-abf8-4428-b003-66ac74b42=
+06f --><table align=3D"center" border=3D"0" cellpadding=3D"0" cellspacing=3D=
+"0" width=3D"100%" style=3D"margin: auto; clear: both;" class=3D"d_center t=
+_w100p m_w100p" aria-hidden=3D"true"><tbody><tr><td height=3D"20" style=3D"=
+height: 20px; font-size: 8px;" class=3D"">=E2=80=8C</td></tr></tbody></tabl=
+e><!-- EO - spacer - ebbb4fab-abf8-4428-b003-66ac74b4206f --></td></tr></tb=
+ody></table><!-- EO - SECTION / 8 - Bloc fraude footer 2 --> <!-- SECTION /=
+ 9 - Bloc mentions l=C3=A9gales --><table align=3D"center" border=3D"0" cel=
+lpadding=3D"0" cellspacing=3D"0" width=3D"600" style=3D"margin: auto; backg=
+round-color: #ffffff;" class=3D"
+                d_center
+                t_w100p m_w100p
+           " role=3D"none"><tbody><tr><!-- COLUMN / fe8d4a17-b5b1-4c6b-8da6=
+-2ee0e74f71fe --><td valign=3D"top" width=3D"100%" class=3D"t_w100p m_w100p=
+"><!-- text / 7531cce5-5737-40f0-beac-f4a8308c8ef1 --><table align=3D"cente=
+r" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"560" style=3D"=
+margin: auto;" class=3D"d_center t_w100p m_w100p" role=3D"none"><tbody><tr>=
+<td style=3D"font-family: Arial,Helvetica,sans-serif; color: #696969; text-=
+align: left; font-size: 14px; padding-top: 10px; padding-bottom: 20px; vert=
+ical-align: middle;" class=3D"t_pr20px t_pl20px m_pr20px m_pl20px">* Abonne=
+ment =C3=A0 des services de banque =C3=A0 distance (internet, t=C3=A9l=C3=A9=
+phone fixe, SMS, etc.) : gratuit et illimit=C3=A9, hors co=C3=BBt de commun=
+ication ou de fourniture d=E2=80=99acc=C3=A8s =C3=A0 internet. <br/><br/>**=
+ Appel non surtax=C3=A9.<br/><br/>Veuillez noter que cet email a =C3=A9t=C3=
+=A9 envoy=C3=A9 =C3=A0 partir d'une adresse ne pouvant recevoir d'emails.<b=
+r/><br/><span style=3D"font-weight: bold;">Hello</span>&nbsp;<span style=3D=
+"font-weight: bold;">bank! est l'offre 100%</span>&nbsp;<span style=3D"font=
+-weight: bold;">digitale de BNP</span>&nbsp;<span style=3D"font-weight: bol=
+d;">Paribas</span>&nbsp;<span style=3D"font-weight: bold;">SA</span><br/>BN=
+P&nbsp;Paribas&nbsp;SA au capital de 2&nbsp;233&nbsp;569&nbsp;514&nbsp;=E2=82=
+=AC<br/>Si=C3=A8ge social : 16, boulevard des Italiens - 75009&nbsp;Paris<b=
+r/>Immatricul=C3=A9e sous le n=C2=B0662&nbsp;042&nbsp;449 RCS Paris<br/>ORI=
+AS n=C2=B007&nbsp;022&nbsp;735 <a style=3D"color: #696969; text-decoration:=
+ underline;" href=3D"https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/2bl_Xd_7C=
+oyMz-3VSrusVIf63pKlQIr52MI636q5Ch3kyDDCDD86-SCzoRtX_vF6iyBMHUX6lktRd9s0LKsv=
+_sSGFBGiabKGh6lESaA1m4o6SPomA_diQb83lGickulhMuOruKa1qFG-S2eAfLD4zwnU8bR3bG9=
+D6bj-osNl2dsMS2ORj_8Mz_VCC20XIvuikIRjvC4aZUenp0rO_YOyBatWNdJHdslIQzS8NluQmC=
+9b6mR2tSMdSRYHa97zdDKWTLAYSkdGXDZDGDqX6QI5tnA9Bbqv9wk2bQ4W0zSFaE8G4Ik6tbf1h=
+HATitdGNHTvytHZEjPJkpVHKI7YG--W3C-ENFo5MEf0C6GjcBngiwsMV484mD8iGNCI26JBYcf1=
+zPO7MSakmHoLiB_LzF__P40yYF9LtTQ1Lk_f51Fr6xMvOGq8_sfSeKlISyR6JLlgIlm3nUkktTk=
+yhyFTsYaLMrve2uk_jZbFN8qeueOxQpJzZ7p8OUHj5Gct61aD7ZEJf-cbZ0bbZ4SVz_pHNVwQ4w=
+4iCtgecgUhg0OXZbQbzLnHN8hAZCqFg_MQZfgFXgxtR_-duj2iaMTGqHT5bOyeO8XduYCI346hd=
+oCvtLwxSBTsWEjK4BNipRRlM6hFHa0eLRLLAjaOi1bnAg">www.orias.fr</a><br/><br/>He=
+llo bank! (Contestations/r=C3=A9clamations) : 01&nbsp;43&nbsp;63&nbsp;15&nb=
+sp;15 (Appel non surtax=C3=A9) - <a style=3D"color: #696969; text-decoratio=
+n: underline;" href=3D"https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/MdVOohq=
+DUit3pTgJvx5Y50Z_W0g_klXw3d3J_hcvavraJPk6lhBKHCAUBMptO-Uc_IoEOnnrfj0sTRMbs6=
+LBNUPA5Gc3cZe0PLZZ56UY2hTy8n8YxcrhEksSMegTiuTJAe0W66EjwYVoP5bzL_qTC5G3qzbiC=
+BeEinwz971Ao49217Xl48IKvBdUUhLAIUjAGveJYzvvE6tm4GyUq4mo-6ED0lYcG8-Z5EwfQqdE=
+k8j_AuF_pQvFaOo8vcyZaeMZD341wgKBkUwBCj2UV_aFRLPXKRGO4LEwyljIA8wkwP-ckPv-CK9=
+ckWU7-PIAsU5K7CejrZL79aWF1RXgWZ_8m8uIiD7HcoRM1i19BsRRweUjKlL1qU0RxWrpH52rT8=
+MKNpHNGmLVJPQGass1UFsbfsIG5EOtCgiicFcpdrhMmqvvgLCIfPlI7tt4uNZfooCF-u8-Bs0vC=
+qrfqrgWCfM1MmMsLiwe4Asy_vMhW7HiHrqDW17DeCzUgAROCw7vAzjZr2nkHFkvbco-G0_CNStq=
+zSPdVjTt7obsT5IKXdD8TJZ91yxFmoCyLKXxqVupBnLq792HBjooX0feGkA7FVperG5czibTr2n=
+b_C_romvlKV6tMpwJ-6fzKOyIAcIOoF6ma-4lZkpUWN9ofC62_g">www.hellobank.fr</a> (=
+Co=C3=BBt de connexion selon op=C3=A9rateur).<br/><br/>Pour en savoir plus =
+sur la politique de protection des donn=C3=A9es de BNP&nbsp;Paribas, vous p=
+ouvez vous r=C3=A9f=C3=A9rer =C3=A0 la <a style=3D"color: #696969; text-dec=
+oration: underline;" href=3D"https://tr.vous.hellobank.fr/hit/CIFA/02K/gz/U=
+ook_EDcTDPCLu-Pw1utqFS8spvD1BO_rhfJiPHxXuKxjoQ_ZrO6FyyZAO4E7w_1soQaBDdIInb1=
+FjrPIvaA6nQyrlCvxV5GTXurHraASsxFqe2kvgloEUP-9GdzZIe3jO1pJpmh7HbX69aORymfe35=
+bi-l_4_UBrHUJwtaN-BmL1r1EQEEqxLRB77NZQFcZ7RvARprAN1e79YXUKLW6GrX4vSdg_D3MMU=
+hMVOH_EfpvggS06YKTpJLB7m62rGsqjm1yYQyMjKdQzoJl6nS1nnjjwe8wjGFrE-Wg9zCoXoU1Q=
+BlF3YRWlee6cKCeMyTPTBROprvv_wXWtzVZuxIH5zIId1c9j_6ZRom9zr-mhC58uJ9jyJK2Kr0z=
+lFcSQ9GPfFMxtP5IYr7FjmXFHGD1C6yLFP7lg8UFdTfe10pJGDhSyFAuw8r7a_rZzV8Pxb_bB3E=
+ROwb5rxJffYsLNfwRJss5GXUu23FCYUkbo15flVwynhgE1CvrqLo0pgjwFx4BR3o3Z0tuLMFWit=
+coIZEPqrBK_8H7hYJedVa3WQ3wWk-Nmu-Dhnp3MGNosIUJenpLjlEzD5Urf5LQH2t2T1yBBvFd0=
+w_Sg-dZ8hEmeLtQRHtapT4mH_S2vqT9Ow9UostOoUfoHz4fB6krOKtp_8UbEIYsUPytVsuTvn12=
+qNMbdbG_">Notice de protection des donn=C3=A9es personnelles</a>.</td></tr>=
+</tbody></table><!-- EO - text - 7531cce5-5737-40f0-beac-f4a8308c8ef1 --></=
+td></tr></tbody></table><!-- EO - SECTION / 9 - Bloc mentions l=C3=A9gales =
+--></td></tr></tbody></table><img src=3D"https://tr.vous.hellobank.fr/hit/C=
+IFA/02K/gz/PLNlqKsINRQWEaZJ74wToOhVjwc7afKLUnSHfMQKx0jo-N3bkQSr90ahVuC1MLW_=
+zoOh90Bqn11oSmpiQPJQm4Ae2ouQ5VvCY4ryqHoIi9wnEVYUkGXTHkpsOnZcdKMRJ1Zspy2s7Rv=
+AJaaLHRqOt2utPEYwXpBDU2EjUg8UJVW9AsXkGFypJzFwul8dn-hd5T5gypzY1FW7qwDiaceY2J=
+1nkCD0STuT2AuUE9UOvfOuSis7PCETFJ6Jwqt70iuivD6Uokaw2ExavCFFm82FM-pamj80bHngP=
+Y07iUpYqF1z9jhfEgmpoOaeQu0B4ACX80TbyIeOdfgHyDRgU7M4vrvj8sJupOpAwWluxynctHiw=
+LioP5UytD04CjIMsNbv7Xfdx0KHzPeKtne6KDJAZ_bkxP5jesaD-OmuKiD1dR9Y6mVfnLQ8_onT=
+88b7PFitd5o9dYlUxLESrISiZuCQ6nK0UdpW19BXmxFiSUNOEolkgGgfmma1p09HCZAwoX4z41q=
+gKXvr3H5f67D1qPfkv-5axdcndplxSo7yS5UmXeULTPRghVNwZbfbR5I23vpxFN7NvGL5lMOYcg=
+MWjyfcSa3yXNQ" style=3D"visibility : hidden;" border=3D"0" width=3D"0" heig=
+ht=3D"0"/></body></html>=
+
+--=-OnMn+p0K7ARiaOFHgURSZA==--

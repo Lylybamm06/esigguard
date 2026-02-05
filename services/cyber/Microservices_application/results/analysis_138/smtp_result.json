@@ -1,22 +1,22 @@
 {
   "analysis_id": 138,
-  "explanation": "SMTP : IP source non identifiee",
+  "explanation": "SMTP : Réputation IP inconnue",
   "headers_status": "normal",
   "ip_geolocation": {
     "city": "Unknown",
     "country": "Unknown",
-    "ip": null,
+    "ip": "026.01.28.10",
     "region": "Unknown"
   },
   "ip_reputation": {
-    "ip": null,
+    "ip": "026.01.28.10",
     "malicious_reports": 0,
     "status": "unknown"
   },
   "list_unsubscribe_present": "unknown",
   "message_id_present": "unknown",
-  "origin_ip": null,
-  "score": 30,
+  "origin_ip": "026.01.28.10",
+  "score": 38,
   "service": "smtp",
   "timestamp_status": "ok"
 }

@@ -1,27 +1,27 @@
 {
   "ai_content_analysis": {
     "context_coherence": {
-      "reason": "corps de message vide",
-      "status": "suspect"
+      "reason": "Correspond à une communication officielle",
+      "status": "ok"
     },
-    "global_verdict": "suspect",
+    "global_verdict": "coherent",
     "language_quality": {
-      "reason": "formulation claire",
+      "reason": "Bonnes grammaire et orthographe",
       "status": "ok"
     },
     "phishing_indicators": {
-      "reason": "manque d'information",
-      "status": "suspect"
+      "reason": "Pas d'urgence ni de menace",
+      "status": "ok"
     }
   },
   "analysis_id": 138,
-  "explanation": "Content: Phishing: manque d'information | Coherence: corps de message vide",
+  "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est coherente avec une communication légitime. Le sujet et le contenu sont alignes et ne presentent aucun signe de phishing.",
   "keywords": {
     "count": 0,
     "keyword_score": 0,
     "keywords_found": []
   },
-  "score": 45,
+  "score": 0,
   "service": "content",
-  "subject": "Votre reçu de paiement est disponible"
+  "subject": " Intervention WiFirst – Redeploiement du WiFi Crous"
 }

@@ -1,44 +1,44 @@
 {
   "analysis_id": 126,
   "display_vs_domain": {
-    "display_name": "Club Developpez.com",
-    "from_domain": "redaction-developpez.com",
+    "display_name": "IT Support",
+    "from_domain": "company-it-helpdesk.com",
     "score": 40,
     "status": "incoherent"
   },
   "dkim": {
     "protocol": "DKIM",
-    "score": 0,
-    "status": "pass"
+    "score": 10,
+    "status": "unknown"
   },
   "dmarc": {
     "protocol": "DMARC",
-    "score": 0,
-    "status": "pass"
+    "score": 10,
+    "status": "unknown"
   },
   "domain_age": {
     "age_years": null,
     "created_date": null,
-    "domain": "redaction-developpez.com",
+    "domain": "company-it-helpdesk.com",
     "status": "unknown"
   },
-  "explanation": "Authentification : DisplayNameVsDomain: incoherent | AgeDomaine: inconnu",
+  "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent | AgeDomaine: inconnu",
   "from_vs_reply": {
-    "from_domain": "redaction-developpez.com",
+    "from_domain": "company-it-helpdesk.com",
     "reply_domain": null,
     "score": 0,
     "status": "coherent"
   },
   "from_vs_return": {
-    "from_domain": "redaction-developpez.com",
-    "return_domain": "redaction-developpez.com",
+    "from_domain": "company-it-helpdesk.com",
+    "return_domain": "company-it-helpdesk.com",
     "score": 0,
     "status": "coherent"
   },
-  "score": 25,
+  "score": 40,
   "spf": {
     "protocol": "SPF",
-    "score": 0,
-    "status": "pass"
+    "score": 10,
+    "status": "unknown"
   }
 }

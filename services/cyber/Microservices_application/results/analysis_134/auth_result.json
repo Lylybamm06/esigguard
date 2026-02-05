@@ -1,44 +1,44 @@
 {
   "analysis_id": 134,
   "display_vs_domain": {
-    "display_name": "",
-    "from_domain": "",
-    "score": 0,
-    "status": "coherent"
+    "display_name": "HR",
+    "from_domain": "company.com",
+    "score": 40,
+    "status": "incoherent"
   },
   "dkim": {
     "protocol": "DKIM",
-    "score": 0,
-    "status": "pass"
+    "score": 10,
+    "status": "unknown"
   },
   "dmarc": {
     "protocol": "DMARC",
-    "score": 0,
-    "status": "pass"
-  },
-  "domain_age": {
-    "age_years": null,
-    "created_date": null,
-    "domain": "",
+    "score": 10,
     "status": "unknown"
   },
-  "explanation": "Authentification : FromVsReturn: incoherent | AgeDomaine: inconnu",
+  "domain_age": {
+    "age_years": 31.6,
+    "created_date": "1994-07-07T23:00:00Z",
+    "domain": "company.com",
+    "status": "bon"
+  },
+  "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent",
   "from_vs_reply": {
-    "from_domain": "",
+    "from_domain": "company.com",
     "reply_domain": null,
     "score": 0,
     "status": "coherent"
   },
   "from_vs_return": {
-    "from_domain": "",
-    "return_domain": "example.com",
-    "score": 30,
-    "status": "incoherent"
+    "from_domain": "company.com",
+    "return_domain": "company.com",
+    "score": 0,
+    "status": "coherent"
   },
-  "score": 20,
+  "score": 35,
   "spf": {
     "protocol": "SPF",
-    "score": 0,
-    "status": "pass"
+    "score": 10,
+    "status": "unknown"
   }
 }

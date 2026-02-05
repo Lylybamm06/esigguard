@@ -1,0 +1,10 @@
+From: Admin <admin@secure-login-alert.com>
+To: user@example.com
+Subject: New Login Detected
+Date: Tue, 03 Feb 2026 15:30:00 +0000
+MIME-Version: 1.0
+Content-Type: text/plain; charset="UTF-8"
+
+A new login was detected.
+Confirm activity:
+http://secure-login-check.com

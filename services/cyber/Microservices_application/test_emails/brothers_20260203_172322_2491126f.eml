@@ -1,0 +1,639 @@
+Delivered-To: davzohoun@gmail.com
+Received: by 2002:a05:6504:4127:b0:2dc:e17c:88d5 with SMTP id u39csp1706725ltt;
+        Tue, 27 Jan 2026 06:17:25 -0800 (PST)
+X-Received: by 2002:a05:6000:2c01:b0:435:985d:1023 with SMTP id ffacd0b85a97d-435dd0b907emr2949468f8f.7.1769523444749;
+        Tue, 27 Jan 2026 06:17:24 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1769523444; cv=none;
+        d=google.com; s=arc-20240605;
+        b=imQCocsOSm8f6BD9QjI4FP5HYHaie1M0kfog3FKrRXxmeBgSnU60fC6AdypKyvescn
+         spHc5tpMacxsP70YzaK8b+L5Nlbvz+ILiGqVCOztL6zfkIAb6JElSHnu3YzOi5zsyZU5
+         C+QgiFFqiabVXp9YYSOFGG8FAHYbPI8TFNFVjl2rlsaS43/JHBvYX7IT+BVWxuxAPtVM
+         +iF7cumK4Gimm0SaqZX7NJzTThqMFHMPvIKt9bWNiarHXqooiYMLVGqvDaJt9onzrD3Y
+         MptjzygkK9MrIM+CoUp/WolvDm9UxnXgzQIlwsGZEOkfRJrQSiMF8HHyQSS+ZddD8Agk
+         XCbQ==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=mime-version:feedback-id:list-unsubscribe-post:list-unsubscribe
+         :date:subject:to:reply-to:from:message-id:dkim-signature
+         :dkim-signature;
+        bh=P5QoRlbqQ0mhDxVlQytu8g01IVH4gfWGPwlNAjpANr8=;
+        fh=Omre7JTaiJotSbHxrg/p6onTpE29l4kktUhLpq2pQfo=;
+        b=Ol1LwxJ64gig3G4R8SPVRTqtIt2qSd4dBrZ8hUV5BHJEITX26Hin/82K52V1ZcbPyX
+         Stf/+0sLKII8Dl6MdTGtdhrGyai+YMsBKHG2i+S5lKoBt8N/mtGHU39iwUY0e85ZWDxv
+         rRJPQZVjIUuHJjy47rP5/i0JWqLeqvO/ogWC0jXI5l8EdyagdHXVYXFzIpc2yeFVq56D
+         FX9E/jdlef8XTh7BK2CHjxddYWSZjemS2YxRHPHfnH55srdQTLKJQ72c2GcRZOmC+mIm
+         Yf/UR1UjynsFvQgffEgcS2tsy3ce4SEHJDRreW9dmCrbnYu4upwI/DoNYwvyOEoDMIJC
+         l5OA==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@lockimmo.com header.s=mailjet header.b=TCXVhdxL;
+       dkim=pass header.i=@bnc3.mailjet.com header.s=mailjet1 header.b=WzsN7VEq;
+       spf=pass (google.com: domain of c36db57a.caaaccootiwaaaaaaaaaao_-jcuaaaaaafuaaaaaaaxu3wbpemj0@a388831.bnc3.mailjet.com designates 185.250.237.105 as permitted sender) smtp.mailfrom=c36db57a.CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0@a388831.bnc3.mailjet.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=lockimmo.com
+Return-Path: <c36db57a.CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0@a388831.bnc3.mailjet.com>
+Received: from o105.p38.mailjet.com (o105.p38.mailjet.com. [185.250.237.105])
+        by mx.google.com with UTF8SMTPS id ffacd0b85a97d-435b1f97680si24977476f8f.462.2026.01.27.06.17.24
+        for <davzohoun@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_128_GCM_SHA256 bits=128/128);
+        Tue, 27 Jan 2026 06:17:24 -0800 (PST)
+Received-SPF: pass (google.com: domain of c36db57a.caaaccootiwaaaaaaaaaao_-jcuaaaaaafuaaaaaaaxu3wbpemj0@a388831.bnc3.mailjet.com designates 185.250.237.105 as permitted sender) client-ip=185.250.237.105;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@lockimmo.com header.s=mailjet header.b=TCXVhdxL;
+       dkim=pass header.i=@bnc3.mailjet.com header.s=mailjet1 header.b=WzsN7VEq;
+       spf=pass (google.com: domain of c36db57a.caaaccootiwaaaaaaaaaao_-jcuaaaaaafuaaaaaaaxu3wbpemj0@a388831.bnc3.mailjet.com designates 185.250.237.105 as permitted sender) smtp.mailfrom=c36db57a.CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0@a388831.bnc3.mailjet.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=lockimmo.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; q=dns/txt;
+  d=lockimmo.com; i=robotmail@lockimmo.com; s=mailjet; x=1769530644;
+  h=message-id:from:from:reply-to:to:to:subject:subject:date:date:list-unsubscribe:list-unsubscribe-post:
+  feedback-id:x-csa-complaints:x-mj-mid:x-report-abuse-to:mime-version:
+  content-type;
+  bh=DDh1Xcs5xWRVv3asVadjC9GzZoCPeAu6ONnCuDTicW0=;
+  b=TCXVhdxL/VPtqPEUAKtL9h5TG+Cgkeqy61onQbfpmckbyVJ405Evi5psG Bt0BQ7p3mVSO2p46DXNe6lZhX943PYwcAIZDFqtUTxLCNaeP5E4f6PijrEGR u8TtuU85F25a9fNUJ2Xs577WGtwGVPo0U8lEFBVye4fuIPULfmb8iw=
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/simple; q=dns/txt;
+  d=bnc3.mailjet.com; s=mailjet1; x=1769530644;
+  h=message-id:from:from:reply-to:to:to:subject:subject:date:date:list-unsubscribe:list-unsubscribe-post:
+  feedback-id:x-csa-complaints:x-mj-mid:x-report-abuse-to:mime-version:
+  content-type;
+  bh=DDh1Xcs5xWRVv3asVadjC9GzZoCPeAu6ONnCuDTicW0=;
+  b=WzsN7VEqdDbIZiD3h5IUm26ma8KEbwr1pn+3j68ARiufSBXaPtgdu4QUm W2HrROBzuQ9udbMvw4ozBLXM8+6L2DfG9kCqOtrRYuVB6Y26FCztp8zWtfIF j4JdGtMiNaY5wTqyOC3AiqQ/V2gD7mUsuRlDRk4zy7SAldKzSjlkv8=
+Return-Path: <c36db57a.CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0@a388831.bnc3.mailjet.com>
+Message-Id: <c36db57a.CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0@mailjet.com>
+From: robotmail@lockimmo.com
+Reply-To: gestion@strategimmo.fr
+To: davzohoun@gmail.com
+Subject: Avis d'échéance
+Date: Tue, 27 Jan 2026 14:17:24 +0000
+List-Unsubscribe: <mailto:unsub-c36db57a.z5xx.x0v222y0o2hj6@bnc3.mailjet.com>, <https://z5xx.mjt.lu/unsub2?m=CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o&b=c36db57a&e=5db28400&x=kcbnVoZ0kSUZA2kqFK8-H7HubltbGRSnqQ9l33IHHs8>
+List-Unsubscribe-Post: List-Unsubscribe=One-Click
+Feedback-Id: 25241.388831.372554:MJ
+X-CSA-Complaints: csa-complaints@eco.de
+X-MJ-Mid: CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o
+X-REPORT-ABUSE-TO: Message sent by Mailjet please report to abuse@mailjet.com with a copy of the message
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="=-7tYUroFO48LH0AlmEjYo"
+
+--=-7tYUroFO48LH0AlmEjYo
+Content-Type: multipart/alternative; boundary="=-+NYHO+zIBHu29eq1XPF4"
+
+--=-+NYHO+zIBHu29eq1XPF4
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+Avis d'=C3=A9ch=C3=A9ance
+
+Bonjour Monsieur David 1 ZOHOUN,
+Vous trouverez ci-joint votre avis d'=C3=A9ch=C3=A9ance.
+En vous en souhaitant bonne r=C3=A9ception.
+Bonne journ=C3=A9e,
+
+Le service Location / Gestion reste =C3=A0 votre =C3=A9coute pour toute dem=
+ande concernant votre logement par mail :=C2=A0gestion@strategimmo.fr=C2=A0=
+ou par t=C3=A9l=C3=A9phone : 02 52 56 93 11
+
+STRATEGiMMO
+Service Gestion locative=C2=A0
+02 35 56 93 11
+??1 rue Marcel LECHEVALLIER=C2=A0
+76300 Sotteville L=C3=A8s Rouen
+=09
+
+--=-+NYHO+zIBHu29eq1XPF4
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xht=
+ml1/DTD/xhtml1-transitional.dtd">
+<html xmlns=3D"http://www.w3.org/1999/xhtml" xmlns:o=3D"urn:schemas-microso=
+ft-com:office:office"
+  style=3D"font-family:arial, 'helvetica neue', helvetica, sans-serif">
+
+<head>
+  <meta charset=3D"UTF-8">
+  <meta content=3D"width=3Ddevice-width, initial-scale=3D1" name=3D"viewpor=
+t">
+  <meta name=3D"x-apple-disable-message-reformatting">
+  <meta http-equiv=3D"X-UA-Compatible" content=3D"IE=3Dedge">
+  <meta content=3D"telephone=3Dno" name=3D"format-detection">
+  <title>Template IO</title>
+  <!--[if (mso 16)]><style type=3D"text/css">     a {text-decoration: none;=
+}     </style><![endif]--><!--[if gte mso 9]><style>sup { font-size: 100% !=
+important; }</style><![endif]--><!--[if gte mso 9]><xml> <o:OfficeDocumentS=
+ettings> <o:AllowPNG></o:AllowPNG> <o:PixelsPerInch>96</o:PixelsPerInch> </=
+o:OfficeDocumentSettings> </xml><![endif]-->
+  <style type=3D"text/css">
+    #outlook a {
+      padding: 0;
+    }
+
+    .es-button {
+      mso-style-priority: 100 !important;
+      text-decoration: none !important;
+    }
+
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+
+    .es-desk-hidden {
+      display: none;
+      float: left;
+      overflow: hidden;
+      width: 0;
+      max-height: 0;
+      line-height: 0;
+      mso-hide: all;
+    }
+
+    [data-ogsb] .es-button {
+      border-width: 0 !important;
+      padding: 10px 20px 10px 20px !important;
+    }
+
+    @media only screen and (max-width:600px) {
+
+      p,
+      ul li,
+      ol li,
+      a {
+        line-height: 150% !important
+      }
+
+      h1,
+      h2,
+      h3,
+      h1 a,
+      h2 a,
+      h3 a {
+        line-height: 120%
+      }
+
+      h1 {
+        font-size: 30px !important;
+        text-align: left
+      }
+
+      h2 {
+        font-size: 24px !important;
+        text-align: left
+      }
+
+      h3 {
+        font-size: 20px !important;
+        text-align: left
+      }
+
+      .es-header-body h1 a,
+      .es-content-body h1 a,
+      .es-footer-body h1 a {
+        font-size: 30px !important;
+        text-align: left
+      }
+
+      .es-header-body h2 a,
+      .es-content-body h2 a,
+      .es-footer-body h2 a {
+        font-size: 24px !important;
+        text-align: left
+      }
+
+      .es-header-body h3 a,
+      .es-content-body h3 a,
+      .es-footer-body h3 a {
+        font-size: 20px !important;
+        text-align: left
+      }
+
+      .es-menu td a {
+        font-size: 14px !important
+      }
+
+      .es-header-body p,
+      .es-header-body ul li,
+      .es-header-body ol li,
+      .es-header-body a {
+        font-size: 14px !important
+      }
+
+      .es-content-body p,
+      .es-content-body ul li,
+      .es-content-body ol li,
+      .es-content-body a {
+        font-size: 14px !important
+      }
+
+      .es-footer-body p,
+      .es-footer-body ul li,
+      .es-footer-body ol li,
+      .es-footer-body a {
+        font-size: 14px !important
+      }
+
+      .es-infoblock p,
+      .es-infoblock ul li,
+      .es-infoblock ol li,
+      .es-infoblock a {
+        font-size: 12px !important
+      }
+
+      *[class=3D"gmail-fix"] {
+        display: none !important
+      }
+
+      .es-m-txt-c,
+      .es-m-txt-c h1,
+      .es-m-txt-c h2,
+      .es-m-txt-c h3 {
+        text-align: center !important
+      }
+
+      .es-m-txt-r,
+      .es-m-txt-r h1,
+      .es-m-txt-r h2,
+      .es-m-txt-r h3 {
+        text-align: right !important
+      }
+
+      .es-m-txt-l,
+      .es-m-txt-l h1,
+      .es-m-txt-l h2,
+      .es-m-txt-l h3 {
+        text-align: left !important
+      }
+
+      .es-m-txt-r img,
+      .es-m-txt-c img,
+      .es-m-txt-l img {
+        display: inline !important
+      }
+
+      .es-button-border {
+        display: inline-block !important
+      }
+
+      a.es-button,
+      button.es-button {
+        font-size: 18px !important;
+        display: inline-block !important
+      }
+
+      .es-adaptive table,
+      .es-left,
+      .es-right {
+        width: 100% !important
+      }
+
+      .es-content table,
+      .es-header table,
+      .es-footer table,
+      .es-content,
+      .es-footer,
+      .es-header {
+        width: 100% !important;
+        max-width: 600px !important
+      }
+
+      .es-adapt-td {
+        display: block !important;
+        width: 100% !important
+      }
+
+      .adapt-img {
+        width: 100% !important;
+        height: auto !important
+      }
+
+      .es-m-p0 {
+        padding: 0px !important
+      }
+
+      .es-m-p0r {
+        padding-right: 0px !important
+      }
+
+      .es-m-p0l {
+        padding-left: 0px !important
+      }
+
+      .es-m-p0t {
+        padding-top: 0px !important
+      }
+
+      .es-m-p0b {
+        padding-bottom: 0 !important
+      }
+
+      .es-m-p20b {
+        padding-bottom: 20px !important
+      }
+
+      .es-mobile-hidden,
+      .es-hidden {
+        display: none !important
+      }
+
+      tr.es-desk-hidden,
+      td.es-desk-hidden,
+      table.es-desk-hidden {
+        width: auto !important;
+        overflow: visible !important;
+        float: none !important;
+        max-height: inherit !important;
+        line-height: inherit !important
+      }
+
+      tr.es-desk-hidden {
+        display: table-row !important
+      }
+
+      table.es-desk-hidden {
+        display: table !important
+      }
+
+      td.es-desk-menu-hidden {
+        display: table-cell !important
+      }
+
+      .es-menu td {
+        width: 1% !important
+      }
+
+      table.es-table-not-adapt,
+      .esd-block-html table {
+        width: auto !important
+      }
+
+      table.es-social {
+        display: inline-block !important
+      }
+
+      table.es-social td {
+        display: inline-block !important
+      }
+
+      .es-desk-hidden {
+        display: table-row !important;
+        width: auto !important;
+        overflow: visible !important;
+        max-height: inherit !important
+      }
+    }
+  </style>
+</head>
+
+<body
+  style=3D"width:100%;font-family:arial, 'helvetica neue', helvetica, sans-=
+serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;padding:0;Mar=
+gin:0">
+  <div class=3D"es-wrapper-color" style=3D"background-color:#F6F6F6">
+    <!--[if gte mso 9]><v:background xmlns:v=3D"urn:schemas-microsoft-com:v=
+ml" fill=3D"t"> <v:fill type=3D"tile" color=3D"#f6f6f6"></v:fill> </v:backg=
+round><![endif]-->
+    <table class=3D"es-wrapper" width=3D"100%" cellspacing=3D"0" cellpaddin=
+g=3D"0"
+      style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-collapse:co=
+llapse;border-spacing:0px;padding:0;Margin:0;width:100%;height:100%;backgro=
+und-repeat:repeat;background-position:center top;background-color:#F6F6F6">
+      <tr>
+        <td valign=3D"top" style=3D"padding:0;Margin:0">
+          <table class=3D"es-content" cellspacing=3D"0" cellpadding=3D"0" a=
+lign=3D"center"
+            style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border-colla=
+pse:collapse;border-spacing:0px;table-layout:fixed !important;width:100%">
+            <tr>
+              <td align=3D"center" style=3D"padding:0;Margin:0">
+                <table class=3D"es-content-body" cellspacing=3D"0" cellpadd=
+ing=3D"0" bgcolor=3D"#ffffff" align=3D"center"
+                  style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;border=
+-collapse:collapse;border-spacing:0px;background-color:#FFFFFF;width:600px"=
+>
+                  <tr>
+                    <td align=3D"left" style=3D"padding:0;Margin:0;padding-=
+top:20px;padding-left:20px;padding-right:20px">
+                      <table width=3D"100%" cellspacing=3D"0" cellpadding=
+=3D"0"
+                        style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;=
+border-collapse:collapse;border-spacing:0px">
+                        <tr>
+                          <td valign=3D"top" align=3D"center" style=3D"padd=
+ing:0;Margin:0;width:560px">
+                            <table width=3D"100%" cellspacing=3D"0" cellpad=
+ding=3D"0" role=3D"presentation"
+                              style=3D"mso-table-lspace:0pt;mso-table-rspac=
+e:0pt;border-collapse:collapse;border-spacing:0px">
+                              <tr>
+                                <td align=3D"center" style=3D"padding:0;Mar=
+gin:0;font-size:0px"><a target=3D"_blank"
+                                    href=3D""
+                                    style=3D"-webkit-text-size-adjust:none;=
+-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:unde=
+rline;color:#2CB543;font-size:14px"><img
+                                      class=3D"adapt-img" src=3D"cid:wdcid2=
+" alt
+                                      style=3D"display:block;border:0;outli=
+ne:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                      width=3D"256"></a></td>
+                              </tr>
+                              <tr>
+                                <td align=3D"center" style=3D"padding:20px;=
+Margin:0;font-size:0">
+                                  <table border=3D"0" width=3D"100%" height=
+=3D"100%" cellpadding=3D"0" cellspacing=3D"0"
+                                    role=3D"presentation"
+                                    style=3D"mso-table-lspace:0pt;mso-table=
+-rspace:0pt;border-collapse:collapse;border-spacing:0px">
+                                    <tr>
+                                      <td
+                                        style=3D"padding:0;Margin:0;border-=
+bottom:1px solid #cccccc;background:unset;height:1px;width:100%;margin:0px"=
+>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align=3D"center" style=3D"padding:0;Mar=
+gin:0">
+                                  <p
+                                    style=3D"Margin:0;-webkit-text-size-adj=
+ust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family=
+:arial, 'helvetica neue', helvetica, sans-serif;line-height:24px;color:#333=
+333;font-size:16px">
+                                    <strong>Avis d'&eacute;ch&eacute;ance</=
+strong></p>
+                                  <p
+                                    style=3D"Margin:0;-webkit-text-size-adj=
+ust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family=
+:arial, 'helvetica neue', helvetica, sans-serif;line-height:24px;color:#333=
+333;font-size:16px">
+                                    <strong></strong><br></p>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td align=3D"center" style=3D"padding:0;Mar=
+gin:0">
+                                  <p
+                                    style=3D"Margin:0;-webkit-text-size-adj=
+ust:none;-ms-text-size-adjust:none;mso-line-height-rule:exactly;font-family=
+:arial, 'helvetica neue', helvetica, sans-serif;line-height:21px;color:#333=
+333;font-size:14px;text-align:left">
+                                    <p>Bonjour Monsieur David 1 ZOHOUN,</p>=
+<p>Vous trouverez ci-joint votre avis d'&eacute;ch&eacute;ance.</p><p>En vo=
+us en souhaitant bonne r&eacute;ception.</p><p>Bonne journ&eacute;e,</p><p>=
+<span style=3D"font-style: italic;"><br></span></p><p><span style=3D"font-s=
+tyle: italic;">Le service Location / Gestion reste &agrave; votre &eacute;c=
+oute pour toute demande concernant votre logement par mail :&nbsp;<span sty=
+le=3D"text-decoration-line: underline; font-weight: bold;">gestion@strategi=
+mmo.fr</span>&nbsp;ou par t&eacute;l&eacute;phone : 02 52 56 93 11</span><b=
+r></p><br/><p><b>STRATEGiMMO</b></p><p>Service Gestion locative&nbsp;</p><p=
+><b>02 35 56 93 11</b></p><p><span style=3D"font-weight: bold;">?<span styl=
+e=3D"font-weight: normal;">?1 rue Marcel LECHEVALLIER&nbsp;</span></span><b=
+r></p><p><span style=3D"font-weight: bold;"><span style=3D"font-weight: nor=
+mal;">76300 Sotteville L&egrave;s Rouen</span></span></p></p>
+                                </td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td align=3D"left" style=3D"padding:0;Margin:0;padding-=
+top:20px;padding-left:20px;padding-right:20px">
+                      <!--[if mso]><table style=3D"width:560px" cellpadding=
+=3D"0" cellspacing=3D"0"><tr><td style=3D"width:194px" valign=3D"top"><![en=
+dif]-->
+                      <table cellpadding=3D"0" cellspacing=3D"0" class=3D"e=
+s-left" align=3D"left"
+                        style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;=
+border-collapse:collapse;border-spacing:0px;float:left">
+                        <tr>
+                          <td class=3D"es-m-p0r es-m-p20b" align=3D"center"=
+ style=3D"padding:0;Margin:0;width:174px">
+                            <table cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" role=3D"presentation"
+                              style=3D"mso-table-lspace:0pt;mso-table-rspac=
+e:0pt;border-collapse:collapse;border-spacing:0px">
+                              <tr>
+                                <td align=3D"center" style=3D"padding:0;Mar=
+gin:0;font-size:0px"><a target=3D"_blank"
+                                    href=3D""
+                                    style=3D"-webkit-text-size-adjust:none;=
+-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:unde=
+rline;color:#2CB543;font-size:14px"><img
+                                      class=3D"adapt-img" src=3D"cid:wdcid4=
+" alt
+                                      style=3D"display:none;border:0;outlin=
+e:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                      width=3D"128"></a></td>
+                              </tr>
+                            </table>
+                          </td>
+                          <td class=3D"es-hidden" style=3D"padding:0;Margin=
+:0;width:20px"></td>
+                        </tr>
+                      </table><!--[if mso]></td><td style=3D"width:173px" v=
+align=3D"top"><![endif]-->
+                      <table cellpadding=3D"0" cellspacing=3D"0" class=3D"e=
+s-left" align=3D"left"
+                        style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;=
+border-collapse:collapse;border-spacing:0px;float:left">
+                        <tr>
+                          <td class=3D"es-m-p20b" align=3D"center" style=3D=
+"padding:0;Margin:0;width:173px">
+                            <table cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" role=3D"presentation"
+                              style=3D"mso-table-lspace:0pt;mso-table-rspac=
+e:0pt;border-collapse:collapse;border-spacing:0px">
+                              <tr>
+                                <td align=3D"center" style=3D"padding:0;Mar=
+gin:0;font-size:0px"><a target=3D"_blank"
+                                    href=3D""
+                                    style=3D"-webkit-text-size-adjust:none;=
+-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:unde=
+rline;color:#2CB543;font-size:14px"><img
+                                      class=3D"adapt-img" src=3D"cid:wdcid5=
+" alt
+                                      style=3D"display:none;border:0;outlin=
+e:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                      width=3D"128"></a></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      <!--[if mso]></td><td style=3D"width:20px"></td><td s=
+tyle=3D"width:173px" valign=3D"top"><![endif]-->
+                      <table cellpadding=3D"0" cellspacing=3D"0" class=3D"e=
+s-right" align=3D"right"
+                        style=3D"mso-table-lspace:0pt;mso-table-rspace:0pt;=
+border-collapse:collapse;border-spacing:0px;float:right">
+                        <tr>
+                          <td align=3D"center" style=3D"padding:0;Margin:0;=
+width:173px">
+                            <table cellpadding=3D"0" cellspacing=3D"0" widt=
+h=3D"100%" role=3D"presentation"
+                              style=3D"mso-table-lspace:0pt;mso-table-rspac=
+e:0pt;border-collapse:collapse;border-spacing:0px">
+                              <tr>
+                                <td align=3D"center" style=3D"padding:0;Mar=
+gin:0;font-size:0px"><a target=3D"_blank"
+                                    href=3D""
+                                    style=3D"-webkit-text-size-adjust:none;=
+-ms-text-size-adjust:none;mso-line-height-rule:exactly;text-decoration:unde=
+rline;color:#2CB543;font-size:14px"><img
+                                      class=3D"adapt-img" src=3D"cid:wdcid5=
+" alt
+                                      style=3D"display:none;border:0;outlin=
+e:none;text-decoration:none;-ms-interpolation-mode:bicubic"
+                                      width=3D"128"></a></td>
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                      </table><!--[if mso]></td></tr></table><![endif]-->
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+<br/><a style=3D"font-family: Arial, sans-serif;" href=3D"http://z5xx.mjt.l=
+u/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pln8XZm5TMGbFy-5d=
+kMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1Lw?b=3D1">&#820=
+3;</a><a style=3D"text-decoration: none; display: inline-block;" href=3D"ht=
+tp://z5xx.mjt.lu/lnk/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAAAXu3wBpeMj0Pl=
+n8XZm5TMGbFy-5dkMu_QAFr0o/0/Ynbvd4j0R5xyKzR3U51_Xw/aHR0cDovL3o1eHgubWp0Lmx1=
+Lw?b=3D3">
+<img src=3D"http://z5xx.mjt.lu/oo/CAAACCOOtIwAAAAAAAAAAO_-jCUAAAAAAfUAAAAAA=
+AXu3wBpeMj0Pln8XZm5TMGbFy-5dkMu_QAFr0o/40a81a17/e.gif" height=3D"1" width=
+=3D"1" alt=3D"" border=3D"0" style=3D"height:1px;width:1px;border:0;"/>
+</a></body>
+
+</html>
+
+--=-+NYHO+zIBHu29eq1XPF4--
+--=-7tYUroFO48LH0AlmEjYo
+Content-Type: application/pdf; charset=utf-8; name=APPEL-185-53148-16446-25241.pdf
+Content-Transfer-Encoding: base64
+Content-Disposition: attachment; filename=APPEL-185-53148-16446-25241.pdf
+
+
+--=-7tYUroFO48LH0AlmEjYo
+Content-Type: image/png; charset=utf-8; name=622-manchette.png
+Content-Transfer-Encoding: base64
+Content-Disposition: inline; filename=622-manchette.png
+Content-Id: <wdcid2>
+
+
+--=-7tYUroFO48LH0AlmEjYo--

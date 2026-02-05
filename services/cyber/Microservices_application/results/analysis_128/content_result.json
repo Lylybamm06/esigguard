@@ -1,27 +1,31 @@
 {
   "ai_content_analysis": {
     "context_coherence": {
-      "reason": "Analyse non disponible",
-      "status": "unknown"
+      "reason": "Lien suspect",
+      "status": "suspect"
     },
-    "global_verdict": "error",
+    "global_verdict": "suspect",
     "language_quality": {
-      "reason": "Analyse non disponible",
-      "status": "unknown"
+      "reason": "Formulation correcte",
+      "status": "ok"
     },
     "phishing_indicators": {
-      "reason": "Erreur IA: Error code: 429 - {'error': {'message': 'Rate limi",
-      "status": "error"
+      "reason": "Urgence et demande d'action",
+      "status": "suspect"
     }
   },
   "analysis_id": 128,
-  "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est cohérente avec une communication légitime. Le sujet et le contenu sont alignés et ne présentent aucun signe de phishing.",
+  "explanation": "Content: Phishing: Urgence et demande d'action | Coherence: Lien suspect | Mots-cles: urgent, verify, account",
   "keywords": {
-    "count": 0,
-    "keyword_score": 0,
-    "keywords_found": []
+    "count": 3,
+    "keyword_score": 45,
+    "keywords_found": [
+      "urgent",
+      "verify",
+      "account"
+    ]
   },
-  "score": 0,
+  "score": 75,
   "service": "content",
-  "subject": "Demande d'attestation d'assurance"
+  "subject": "Urgent Action Required – Verify Your Account"
 }

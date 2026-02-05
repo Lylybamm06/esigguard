@@ -1,0 +1,375 @@
+Delivered-To: davzohoun@gmail.com
+Received: by 2002:a05:6504:40cf:b0:2dc:e17c:88d5 with SMTP id w15csp187797ltg;
+        Wed, 28 Jan 2026 14:13:29 -0800 (PST)
+X-Received: by 2002:a05:6000:290c:b0:430:fbe1:3822 with SMTP id ffacd0b85a97d-435dd1ce36fmr11183250f8f.54.1769638409670;
+        Wed, 28 Jan 2026 14:13:29 -0800 (PST)
+ARC-Seal: i=1; a=rsa-sha256; t=1769638409; cv=none;
+        d=google.com; s=arc-20240605;
+        b=U/y7IW7AIFeeOGcDEKgZwSey9gTG6GCIlSX5gsfdicOHCF3cpkpW6c7xEBc+xeYyqt
+         /M7BjbFPHyE1a3JGkn6RTxSFbGfoxZZwzLqwt3fz3uldWKtosfQg5I3M8/vjzmC/iy3T
+         hy3RPpA8j0dSR4zHtk2UCBR2r0u3Si5M7EPQ0E8b5fGJUgylBGV94nHWdITtgVuwMwx6
+         l1hayBlYqUvWUVq5qzBCJCU4jQTCrhiMYVu36z/+0bwfuu9nX7P0ZN/hGM8p8C87a1i5
+         NlYtQVSibrPhf91ouEIxZQeCqa56kP4GuTsIzEqmvOyeoD/evFF40r+u1Rm1cXQ6gRKH
+         5O1g==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20240605;
+        h=date:message-id:subject:mime-version:from:to:dkim-signature;
+        bh=ADJSXMKHbQyePi+Fq2u6SJIJKScaJBVis0CFbS+0rmg=;
+        fh=Omre7JTaiJotSbHxrg/p6onTpE29l4kktUhLpq2pQfo=;
+        b=BhmuIsrs0gaJI3LDlpmWPU/xWCFwHtVopibGe0L4azAvrEkpVMba2AoQmsKEsOHEHx
+         iqJ6tcF0Vng7MVzjcixZSuu+BJtofhHJRlxnm/xxti6BuS0tcTSiCKxx6oUObqzJQMD2
+         aN6jzJiAfQ14/WG7aDdLW9Y/U/B58skFx0EjLpjnoZFn7esul5RS6m+M7xCn/QPUMVv+
+         +nDDz+NuMQ7dbF9/4grGPtxRJSEPCaTqsMTxnRYan1WdP9AG6RoKmDpyH3Oqkh0tZeGW
+         /rnkfxg86lz410aSTW6WSyrgX+/AbLELj3unTxlXH1FUiRhQeGBYFtH/BcQ73B+rYpRO
+         HPSg==;
+        dara=google.com
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@redaction-developpez.com header.s=normal header.b=gHthJyx1;
+       spf=pass (google.com: domain of retours@redaction-developpez.com designates 91.134.132.115 as permitted sender) smtp.mailfrom=retours@redaction-developpez.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=redaction-developpez.com
+Return-Path: <retours@redaction-developpez.com>
+Received: from s11.developpez.net (s11.developpez.net. [91.134.132.115])
+        by mx.google.com with ESMTPS id ffacd0b85a97d-435e1675843si6165392f8f.330.2026.01.28.14.13.29
+        for <davzohoun@gmail.com>
+        (version=TLS1_3 cipher=TLS_AES_256_GCM_SHA384 bits=256/256);
+        Wed, 28 Jan 2026 14:13:29 -0800 (PST)
+Received-SPF: pass (google.com: domain of retours@redaction-developpez.com designates 91.134.132.115 as permitted sender) client-ip=91.134.132.115;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@redaction-developpez.com header.s=normal header.b=gHthJyx1;
+       spf=pass (google.com: domain of retours@redaction-developpez.com designates 91.134.132.115 as permitted sender) smtp.mailfrom=retours@redaction-developpez.com;
+       dmarc=pass (p=QUARANTINE sp=QUARANTINE dis=NONE) header.from=redaction-developpez.com
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed; d=redaction-developpez.com; s=normal; h=Date:Message-Id:Subject:Content-Type: MIME-Version:From:To:Sender:Reply-To:Cc:Content-Transfer-Encoding:Content-ID: Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc :Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe: List-Subscribe:List-Post:List-Owner:List-Archive; bh=ADJSXMKHbQyePi+Fq2u6SJIJKScaJBVis0CFbS+0rmg=; b=gHthJyx1SQ2X5LfzLgHuldqgYM JZhFLiPaQwI6zQ4XAhTzSWXhIrhE23MsBtS+HjHf3NPg2Zt8NcVfT57CsqAyHnH6XBW5TQwrlwOUj /U4tpcMizQG/smdj2u/0XEKxKpbWAM915IId1PDpoo5WYGDBzwLSb4QimXR16y6J5Dq4=;
+Received: from root by s11.developpez.net with local (Exim 4.92) (envelope-from <retours@redaction-developpez.com>) id 1vlDmz-0004vV-Bz for davzohoun@gmail.com; Wed, 28 Jan 2026 23:13:29 +0100
+To: davzohoun@gmail.com
+From: "Club Developpez.com" <retours@redaction-developpez.com>
+MIME-Version: 1.0
+Content-Type: text/html; charset="utf-8"
+Subject: La newsletter des professionnels en informatique du 27/01/2026
+Message-Id: <E1vlDmz-0004vV-Bz@s11.developpez.net>
+Date: Wed, 28 Jan 2026 23:13:29 +0100
+
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Developpez.com :: Newsletter</title>
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<style type="text/css">
+		@media only screen and (max-width: 600px) {
+			.wrapper table {
+				width: 100% !important;
+			}
+
+			.wrapper .column {
+				width: 100% !important;
+				display: block !important;
+			}
+
+			#header, #footer { display: none; }
+		}
+</style>
+
+</head>
+<body>
+
+<center style="color: #888; font-size: 0.7em; padding: 1px 0">Si vous ne visualisez pas correctement cet email, <a href="https://www.developpez.com/newsletter/archives/27-01-2026" style="color: #888">cliquez ici</a>.</center>
+
+<center><table id="header" width="800">
+<!-- Logo -->
+
+<tr>
+<td colspan="3">
+	<table cellpadding="0" cellspacing="0" border="0">
+
+		<tr style="">
+
+				<!-- Logo + Text -->
+			<td style="width: 713px; ">
+				<a href="https://www.developpez.com" style="text-decoration:none;"><span style="font-size:10pt; color:#4A638F;"><img src="http://www.developpez.com/public/images/newsletter-hebdo.gif" alt="Newsletter hebdomadaire du club des développeurs et IT Pro"  title="Newsletter hebdomadaire du club des développeurs et IT Pro" border="0" /></span></a>
+			</td>
+
+			<!-- Week -->
+			<td style="width:87px; text-align: right; vertical-align: bottom; font-size: 0.75em; color: #AAA; letter-spacing: 1px; padding: 0 10px 5px 0;">
+				27/01/2026			</td>
+		</tr>
+	</table>
+</td>
+</tr>
+
+<!-- Menu -->
+
+<tr id="header">
+<td style="width: 794px; background-color: #67869a;" colspan="3">
+	<table>
+		<tr style="font-size: 0.8em;">
+				<td>&nbsp;</td>
+			<td><a href="http://www.developpez.com/"
+				style="text-decoration: none; color: #E1E1E2;">Accueil</a></td>
+			<td style="font-size:0.5em; color:#FFF;">&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;</td>
+
+			<td><a href="http://alm.developpez.com/"
+				style="text-decoration: none; color: #E1E1E2;">ALM</a></td>
+			<td style="font-size:0.5em; color:#FFF;">&nbsp;|&nbsp;</td>
+			<td><a href="http://java.developpez.com/"
+				style="text-decoration: none; color: #E1E1E2;">Java</a></td>
+			<td style="font-size:0.5em; color:#FFF;">&nbsp;|&nbsp;</td>
+			<td><a href="http://dotnet.developpez.com/"
+				style="text-decoration: none; color: #E1E1E2;">.NET</a></td>
+			<td style="font-size:0.5em; color:#FFF;">&nbsp;|&nbsp;</td>
+
+			<td><a href="http://web.developpez.com/"
+				style="text-decoration: none; color: #E1E1E2;">Dév. Web</a></td>
+			<td style="font-size:0.5em; color:#FFF;">&nbsp;|&nbsp;</td>
+			<td><a href="http://general.developpez.com/edi/"
+				style="text-decoration: none; color: #E1E1E2;">EDI</a></td>
+			<td style="font-size:0.5em; color:#FFF;">&nbsp;|&nbsp;</td>
+			<td><a href="http://general.developpez.com/langages/"
+				style="text-decoration: none; color: #E1E1E2;">Langages</a></td>
+			<td style="font-size:0.5em; color:#FFF;">&nbsp;|&nbsp;</td>
+
+			<td><a href="http://sgbd.developpez.com/"
+				style="text-decoration: none; color: #E1E1E2;">SGBD</a></td>
+			<td style="font-size:0.5em; color:#FFF;">&nbsp;|&nbsp;</td>
+			<td><a href="http://office.developpez.com/"
+				style="text-decoration: none; color: #E1E1E2;">Office</a></td>
+			<td style="font-size:0.5em; color:#FFF;">&nbsp;|&nbsp;</td>
+			<td><a href="http://solutions-entreprise.developpez.com/"
+				style="text-decoration: none; color: #E1E1E2;">Solutions d'entreprise</a></td>
+			<td style="font-size:0.5em; color:#FFF;">&nbsp;|&nbsp;</td>
+
+			<td><a href="http://applications.developpez.com/"
+				style="text-decoration: none; color: #E1E1E2;">Applications</a></td>
+			<td style="font-size:0.5em; color:#FFF;">&nbsp;|&nbsp;</td>
+			<td><a href="http://mobiles.developpez.com/"
+				style="text-decoration: none; color: #E1E1E2;">Mobiles</a></td>
+			<td style="font-size:0.5em; color:#FFF;">&nbsp;|&nbsp;</td>
+			<td><a href="http://systeme.developpez.com/"
+				style="text-decoration: none; color: #E1E1E2;">Systèmes</a></td>
+		</tr>
+	</table>
+</td>
+</tr>
+</table></center>
+
+<table width="100%">
+	<tr>
+		<td class="wrapper" width="800" align="center">
+			<table cellpadding="0" cellspacing="0">
+				<tr>
+					<td class="column" width="480" valign="top">
+						<table>
+							<tr>
+								<td align="left">
+									<h2 style="display:block;margin:0;padding:1px;text-align:center;text-transform:uppercase;font-size:8pt;letter-spacing:2px;background: #67869a; color: white;-webkit-border-top-right-radius: 15px;-webkit-border-top-left-radius: 15px;-moz-border-radius: 15px 15px 0px 0px;border-top-left-radius: 15px; border-top-right-radius: 15px;">Les principales actualités</h2>
+<div style="border: 1px solid #67869a;margin-bottom: 5px;">
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#F5F6F9;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://intelligence-artificielle.developpez.com/actu/379635/Jensen-Huang-met-en-garde-Vous-n-avez-aucune-idee-de-ce-qui-vous-attend-en-2026-Robots-penurie-de-main-d-oeuvre-et-automatisation-totale-le-futur-du-travail-selon-le-PDG-de-NVIDIA/" title="https://www.developpez.net/forums/d2152703-16/general-developpement/algorithme-mathematiques/intelligence-artificielle/jensen-huang-pdg-nvidia-met-garde-n-avez-aucune-idee-attend-2026/#post12112180">Jensen Huang met en garde : « Vous n'avez aucune idée de ce qui vous attend en 2026 ». Robots, pénurie de main-d'œuvre et automatisation totale, le futur du travail selon le PDG de NVIDIA</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">27/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#fff;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://droit.developpez.com/actu/379605/La-Chambre-des-lords-britannique-vote-en-faveur-de-l-extension-de-la-verification-de-l-age-aux-VPN-quand-la-protection-des-mineurs-devient-un-pretexte-a-la-mise-sous-tutelle-du-Web/" title="https://www.developpez.net/forums/d2108130-40/club-professionnels-informatique/actualites/chambre-lords-britannique-vote-faveur-l-extension-verification-l-age-aux-vpn/#post12112031">La Chambre des lords britannique vote en faveur de l'extension de la vérification de l'âge aux VPN<span style="font-weight: normal">, quand la protection des mineurs devient un prétexte à la mise sous tutelle du Web</span></a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">27/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#F5F6F9;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://windows.developpez.com/actu/379589/Le-cauchemar-du-Patch-Tuesday-de-Windows-11-empire-Microsoft-annonce-que-certains-PC-pourraient-ne-plus-demarrer-l-entreprise-a-publie-deux-mises-a-jour-en-une-semaine-pour-corriger-les-problemes-occasionnes/" title="https://www.developpez.net/forums/d2181568/systemes/windows/windows-11/cauchemar-patch-tuesday-windows-11-microsoft-annonce-certains-pc-pourraient-ne-plus-demarrer/#post12111945">Le cauchemar du Patch Tuesday Windows 11 empire : Microsoft annonce que certains PC pourraient ne plus démarrer, l'entreprise a publié deux mises à jour en une semaine pour corriger les problèmes occasionnés</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">27/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#fff;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://droit.developpez.com/actu/379600/L-Europe-se-prepare-a-un-scenario-catastrophique-dans-lequel-les-Etats-Unis-bloqueraient-l-acces-a-leurs-infrastructures-numeriques-elle-vise-la-souverainete-technologique-pour-prevenir-un-blackout-numerique/" title="https://www.developpez.net/forums/d2180268-2/logiciels/microsoft-office/l-europe-veut-eviter-blackout-numerique-cas-d-interruption-services-americains/#post12112002">L'Europe se prépare à un scénario catastrophique dans lequel les États-Unis bloqueraient l'accès à leurs infrastructures numériques, <span style="font-weight: normal">elle vise la souveraineté technologique pour prévenir un blackout numérique</span></a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">27/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#F5F6F9;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://droit.developpez.com/actu/379559/Meta-peut-acceder-a-toutes-les-conversations-WhatsApp-un-proces-accuse-l-entreprise-d-avoir-escroque-des-milliards-d-utilisateurs-grace-a-un-acces-backdoor-aux-communications-privees-chiffrees/" title="https://www.developpez.net/forums/d2181726/webmasters-developpement-web/general-conception-web/droit/meta-acceder-toutes-conversations-whatsapp-proces-accuse-l-entreprise-d-escroque/#post12111867">Meta peut accéder à toutes les conversations WhatsApp : un procès accuse l'entreprise d'avoir escroqué des milliards d'utilisateurs grâce à un accès backdoor aux communications privées chiffrées</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">26/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#fff;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://windows.developpez.com/actu/379547/Microsoft-confirme-qu-il-fournira-la-cle-de-chiffrement-BitLocker-de-votre-PC-Windows-aux-autorites-si-elles-en-font-la-demande-vous-pouvez-remercier-les-comptes-en-ligne-obligatoires-de-Windows-11-pour-cela/" title="https://www.developpez.net/forums/d1906434-19/systemes/windows/windows-10/microsoft-fournira-cle-chiffrement-bitlocker-pc-windows-aux-autorites-l-exigent/#post12111802">Microsoft confirme qu'il fournira la clé de chiffrement BitLocker de votre PC Windows aux autorités si elles en font la demande, vous pouvez remercier les comptes en ligne obligatoires de Windows 11 pour cela</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">26/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#F5F6F9;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://intelligence-artificielle.developpez.com/actu/379538/Microsoft-encourage-desormais-une-partie-significative-de-ses-equipes-internes-a-utiliser-Claude-Code-l-outil-de-programmation-IA-developpe-par-Anthropic/" title="https://www.developpez.net/forums/d2181708/club-professionnels-informatique/actualites/microsoft-encourage-desormais-partie-significative-equipes-internes-utiliser-claude-code/#post12111731">Microsoft encourage désormais une partie significative de ses équipes internes à utiliser Claude Code, l'outil de programmation IA développé par Anthropic</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">26/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#fff;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://intelligence-artificielle.developpez.com/actu/379465/-L-ere-ou-les-humains-ecrivaient-du-code-est-revolue-previent-Ryan-Dahl-createur-de-NodeJS-alors-que-les-outils-de-codage-bases-sur-l-IA-connaissent-une-croissance-fulgurante/" title="https://www.developpez.net/forums/d2175204-3/club-professionnels-informatique/actualites/l-ere-humains-ecrivaient-code-revolue-previent-ryan-dahl-createur-nodejs/#post12111388">« L'ère où les humains écrivaient du code est révolue », prévient Ryan Dahl, créateur de NodeJS, alors que les outils de codage basés sur l'IA connaissent une croissance fulgurante</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">26/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#F5F6F9;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://intelligence-artificielle.developpez.com/actu/379525/La-Coree-du-Sud-devient-le-premier-pays-a-promulguer-et-appliquer-une-loi-cadre-sur-l-intelligence-artificielle-mais-les-start-ups-mettent-en-garde-contre-les-contraintes-liees-a-leur-mise-en-conformite/" title="https://www.developpez.net/forums/d2181688/club-professionnels-informatique/actualites/coree-sud-devient-premier-pays-monde-se-doter-dune-loi-cadre-globale-lia/#post12111615">La Corée du Sud devient le premier pays à promulguer et appliquer une loi-cadre sur l'intelligence artificielle, mais les start-ups mettent en garde contre les contraintes liées à leur mise en conformité</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">26/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#fff;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://intelligence-artificielle.developpez.com/actu/379479/Les-documents-internes-d-OpenAI-prevoient-une-perte-de-14-milliards-de-en-2026-OpenAI-est-en-train-de-s-effondrer-Aucune-start-up-dans-l-histoire-n-a-jamais-fonctionne-avec-de-telles-pertes/" title="https://www.developpez.net/forums/d2180152-2/dotnet/general-dotnet/documents-internes-d-openai-prevoient-perte-14-milliards-dollars-2026/#post12111474">Les documents internes d'OpenAI prévoient une perte de 14 milliards de $ en 2026 : « OpenAI est en train de s'effondrer. Aucune start-up dans l'histoire n'a jamais fonctionné avec de telles pertes »</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">26/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#F5F6F9;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://jeux.developpez.com/actu/379533/Google-et-Epic-Games-auraient-conclu-un-nouvel-accord-concernant-Android-Unreal-Engine-et-une-sorte-de-developpement-de-produit-qui-restera-secret-pour-le-moment/" title="https://www.developpez.net/forums/d2088931-27/applications/developpement-2d-3d-jeux/google-perd-appel-proces-intente-epic-games-concernant-magasin-d-applications/#post12111657">Google et Epic Games auraient conclu un nouvel accord concernant Android, Unreal Engine et une sorte de « développement de produit », qui restera secret pour le moment</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">24/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#fff;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://intelligence-artificielle.developpez.com/actu/379524/Google-estime-que-l-IA-est-l-avenir-de-la-recherche-et-vous-offre-la-possibilite-d-activer-le-mode-IA-sur-vos-photos-et-vos-e-mails-pour-obtenir-des-reponses-plus-personnalisees/" title="https://www.developpez.net/forums/d2131720-2/webmasters-developpement-web/general-conception-web/google-search-point-subir-plus-grande-refonte-jour-mode-ia/#post12111594">Google estime que l'IA est l'avenir de la recherche et vous offre la possibilité d'activer le mode IA sur vos photos et vos e-mails pour obtenir des réponses plus personnalisées</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">23/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#F5F6F9;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://droit.developpez.com/actu/379509/TikTok-signe-un-accord-pour-ceder-son-entite-US-a-un-groupe-d-investisseurs-compose-du-geant-de-la-tech-Oracle-de-la-firme-de-capital-investissement-Silver-Lake-et-de-la-societe-d-investissement-emiratie-MGX/" title="https://www.developpez.net/forums/d2087274-34/club-professionnels-informatique/actualites/tiktok-signe-accord-ceder-entite-us-groupe-d-investisseurs-compose-d-oracle-silver-lake/#post12111565">TikTok signe un accord pour céder son entité US à un groupe d'investisseurs composé du géant de la tech Oracle, de la firme de capital-investissement Silver Lake et de la société d'investissement émiratie MGX</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">23/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#fff;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://emploi.developpez.com/actu/379498/Ruee-vers-l-or-de-l-IA-pour-Jensen-Huang-PDG-de-Nvidia-les-infrastructures-massives-des-centres-de-donnees-IA-transformeront-les-emplois-peu-remuneres-des-cols-bleus-en-carrieres-a-six-chiffres/" title="https://www.developpez.net/forums/d2146452-9/general-developpement/algorithme-mathematiques/intelligence-artificielle/goldman-sachs-avertit-25-toutes-heures-travail-pourraient-etre-automatisees-l-ia/#post12111498">Ruée vers l'or de l'IA : pour Jensen Huang, PDG de Nvidia, les infrastructures massives des centres de données IA transformeront les emplois peu rémunérés des « cols bleus » en carrières à six chiffres</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">23/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#F5F6F9;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://droit.developpez.com/actu/379476/La-FTC-annonce-qu-elle-fera-appel-de-la-decision-antitrust-concernant-Meta-et-continue-d-affirmer-que-Meta-de-Mark-Zuckerberg-a-illegalement-maintenu-un-monopole-dans-le-domaine-des-reseaux-sociaux/" title="https://www.developpez.net/forums/d1955537-3/club-professionnels-informatique/actualites/ftc-annonce-qu-fera-appel-decision-antitrust-concernant-meta/#post12111403">La FTC annonce qu'elle fera appel de la décision antitrust concernant Meta et continue d'affirmer que Meta de Mark Zuckerberg a « illégalement maintenu un monopole » dans le domaine des réseaux sociaux</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">23/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#fff;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://emploi.developpez.com/actu/379451/Le-cofondateur-de-Google-revele-que-des-tonnes-de-nouvelles-recrues-n-ont-pas-de-diplome-tandis-que-les-PDG-remettent-en-question-le-systeme-universitaire/" title="https://www.developpez.net/forums/d2160110/general-developpement/algorithme-mathematiques/intelligence-artificielle/diplomes-universitaires-perdront-importance-fur-mesure-montee-puissance-lia/#post12111324">Le cofondateur de Google révèle que « des tonnes » de nouvelles recrues n'ont pas de diplôme, tandis que les PDG remettent en question le système universitaire</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">22/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#F5F6F9;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://embarque.developpez.com/actu/379450/Les-autorites-federales-accordent-cinq-semaines-supplementaires-a-Tesla-pour-repondre-a-l-enquete-sur-le-systeme-FSD-d-Elon-Musk-pour-savoir-pourquoi-le-systeme-de-Tesla-ignore-les-feux-rouges/" title="https://www.developpez.net/forums/d2112837-9/club-professionnels-informatique/actualites/tesla-dispose-cinq-semaines-repondre-l-enquete-systeme-fsd-d-elon-musk/#post12111323">Les autorités fédérales accordent cinq semaines supplémentaires à Tesla pour répondre à l'enquête sur le système FSD d'Elon Musk<span style="font-weight: normal">, pour savoir pourquoi le système de Tesla ignore les feux rouges</span></a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">22/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#fff;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://intelligence-artificielle.developpez.com/actu/379422/Le-PDG-d-Anthropic-fustige-l-administration-Trump-pour-avoir-autorise-la-vente-de-puces-IA-Nvidia-H200-a-la-Chine-Je-pense-que-c-est-de-la-folie-C-est-comme-vendre-des-armes-nucleaires-a-la-Coree-du-Nord/" title="https://www.developpez.net/forums/d2091252-16/club-professionnels-informatique/actualites/president-donald-trump-menace-demanteler-nvidia-meme-savoir-quoi-s-agissait/#post12111196">Le PDG d'Anthropic fustige l'administration Trump pour avoir autorisé la vente de puces IA Nvidia H200 à la Chine : « Je pense que c'est de la folie. C'est comme vendre des armes nucléaires à la Corée du Nord »</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">21/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#F5F6F9;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://intelligence-artificielle.developpez.com/actu/379344/OpenAI-introduit-officiellement-les-publicites-dans-ChatGPT-et-annonce-un-abonnement-Go-moins-cher-dans-le-monde-entier-les-publicites-ne-devraient-avoir-aucune-incidence-sur-les-reponses-du-chatbot/" title="https://www.developpez.net/forums/d2143323-51/club-professionnels-informatique/actualites/openai-introduit-officiellement-publicites-chatgpt-annonce-abonnement-go-cher/#post12110923">OpenAI introduit officiellement les publicités dans ChatGPT et annonce un abonnement « Go » moins cher dans le monde entier<span style="font-weight: normal">, les publicités ne devraient avoir aucune incidence sur les réponses du chatbot</span></a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">21/01</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#fff;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://linux.developpez.com/actu/379390/Linux-et-macOS-gagnent-un-argument-de-poids-face-a-Windows-Wine-11-0-permet-desormais-de-faire-vivre-et-evoluer-les-applications-Windows-en-dehors-de-l-ecosysteme-Microsoft/" title="https://www.developpez.net/forums/d2181613/club-professionnels-informatique/actualites/linux-macos-gagnent-argument-poids-face-windows-grace-wine-110/#post12111087">Linux et macOS gagnent un argument de poids face à Windows : Wine 11.0 permet désormais de faire vivre et évoluer les applications Windows en dehors de l'écosystème Microsoft</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">21/01</span>
+	</td></tr></table></div>
+</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+					<td class="column" width="320" valign="top">
+						<table>
+							<tr>
+								<td align="left">
+									<h2 style="display:block;margin:0;padding:1px;text-align:center;text-transform:uppercase;font-size:8pt;letter-spacing:2px;background: #67869a; color: white;-webkit-border-top-right-radius: 15px;-webkit-border-top-left-radius: 15px;-moz-border-radius: 15px 15px 0px 0px;border-top-left-radius: 15px; border-top-right-radius: 15px;">Publications</h2>
+
+<div style="border: 1px solid #67869a;margin-bottom: 5px;"><div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#E5E5FF;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="http://www.developpez.com/index/redirect/111104/Le-tribalisme-de-l-IA-par-Nolan-Lawson/" title="http://www.developpez.net/forums/showthread.php?t=2181743#post12112005">Le tribalisme de l'IA, par Nolan Lawson</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">
+
+			<div class="infosPost">
+				<time itemprop="dateCreated" datetime="27/01/2026" class="fontColorDate">
+					26/1				</time>	
+			</div>
+
+<br/>27/01</span>
+	</td></tr></table></div>
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#F5F5FF;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="http://www.developpez.com/index/redirect/110762/Seuls-trois-types-de-produits-d-IA-fonctionnent-reellement-par-Sean-Goedecke/" title="http://www.developpez.net/forums/showthread.php?t=2181102#post12107944">Seuls trois types de produits d'IA fonctionnent réellement<span style="font-weight: normal">, par Sean Goedecke</span></a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">
+
+			<div class="infosPost">
+				<time itemprop="dateCreated" datetime="23/01/2026" class="fontColorDate">
+					26/1				</time>	
+			</div>
+
+<br/>23/01</span>
+	</td></tr></table></div>
+</div>
+<h2 style="display:block;margin:0;padding:1px;text-align:center;text-transform:uppercase;font-size:8pt;letter-spacing:2px;background: #67869a; color: white;-webkit-border-top-right-radius: 15px;-webkit-border-top-left-radius: 15px;-moz-border-radius: 15px 15px 0px 0px;border-top-left-radius: 15px; border-top-right-radius: 15px;">A lire aussi</h2>
+<div style="border: 1px solid #67869a;margin-bottom: 5px;">
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#F5F6F9;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://web.developpez.com/actu/378624/Meilleur-serveur-dedie-quel-hebergeur-web-choisir-PlanetHoster-presente-ces-offres-de-serveur-dedie-pour-vous-aider-a-choisir/" title="https://web.developpez.com/actu/378624/Meilleur-serveur-dedie-quel-hebergeur-web-choisir-PlanetHoster-presente-ces-offres-de-serveur-dedie-pour-vous-aider-a-choisir/">Meilleur serveur dédié : quel hébergeur web choisir ? PlanetHoster présente ces offres de serveur dédié pour vous aider à choisir</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">22/12</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#fff;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://onlyoffice.developpez.com/actu/377796/Le-plugin-Codemirror-arrive-dans-la-plateforme-collaborative-ONLYOFFICE-DocSpace-permettant-l-edition-de-fichiers-de-code-directement-dans-l-espace-de-travail/" title="https://onlyoffice.developpez.com/actu/377796/Le-plugin-Codemirror-arrive-dans-la-plateforme-collaborative-ONLYOFFICE-DocSpace-permettant-l-edition-de-fichiers-de-code-directement-dans-l-espace-de-travail/">Le plugin Codemirror arrive dans la plateforme collaborative ONLYOFFICE DocSpace, permettant l'édition de fichiers de code directement dans l'espace de travail</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">20/11</span>
+	</td></tr></table></div>
+
+<div style=" padding:5px; vertical-align:middle; border-bottom:1px dashed #ddd; padding-right: 5px; padding-left: 5px; font-size: 8pt; text-align:left; font-family:Verdana,sans-serif;" style="background-color:#F5F6F9;padding:4px 5px 2px 4px"><table><tr>
+	<td>
+		<a style="color:#000000;text-decoration:none;" style="   text-decoration : none; color:#000; font-size: 8pt;" href="https://onlyoffice.developpez.com/actu/377670/ONLYOFFICE-annonce-un-nouveau-plugin-ZipArchives-pour-sa-plateforme-collaborative-ONLYOFFICE-DocSpace-permettant-d-ouvrir-et-d-extraire-des-fichiers-ZIP/" title="https://onlyoffice.developpez.com/actu/377670/ONLYOFFICE-annonce-un-nouveau-plugin-ZipArchives-pour-sa-plateforme-collaborative-ONLYOFFICE-DocSpace-permettant-d-ouvrir-et-d-extraire-des-fichiers-ZIP/">ONLYOFFICE annonce un nouveau plugin ZipArchives pour sa plateforme collaborative ONLYOFFICE DocSpace, permettant d'ouvrir et d'extraire des fichiers ZIP</a>
+		<span style="   font-style: italic; color: #84afd4; text-align: right; font-size: 7pt; float: right; margin-top: 3px; margin-left: 20px;">14/11</span>
+	</td></tr></table></div>
+</div>
+								</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+
+<center><table id="footer" width="800">
+<!-- Footer -->
+<tr id="footer">
+	<td style="width: 794px; height: 25px; background-color: #67869a; font-size: 0.8em" colspan="3">
+			<a href="http://www.developpez.com/newsletter/#archives" style="text-decoration: none; color: #E1E1E2;">Archives Newsletter</a>
+		&nbsp;|&nbsp;
+		<a href="http://club.developpez.com/contacts/" style="text-decoration: none; color: #E1E1E2;">Contacts</a>
+		&nbsp;|&nbsp;
+		<a href="http://www.developpez.com/hebergement/" style="text-decoration: none; color: #E1E1E2;">Hébergement</a>
+		&nbsp;|&nbsp;
+		<a href="http://club.developpez.com/redaction/" style="text-decoration: none; color: #E1E1E2;">Participez</a>
+	</td>
+</tr>
+</table></center>
+
+<center style="font-size: 0.7em; color: #888; padding-top: 5px">
+	Vous recevez cet email parce que vous êtes inscrit(e) au site Developpez.com.<br />
+	Pour vous désabonner de cette newsletter, cliquez <a href="https://desabonnement.developpez.com/davzohoun/gmail.com/7f45da2e66a66deb0758f40b52497a6d/">ici</a><br />
+	Veuillez noter que cet e-mail a été envoyé à partir d'une adresse ne pouvant recevoir d'e-mails.<br />
+	<a href="https://www.developpez.com/newsletter/email">Nous contacter</a>.<br />
+	Copyright © 2000-2026 www.developpez.com -
+	<a href="https://www.developpez.com/legal/" style="color: #888">Legal informations</a><img src="https://emailing.developpez.com/traceur-833" alt="">.
+</center>
+
+</body></html>
+

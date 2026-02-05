@@ -1,44 +1,44 @@
 {
   "analysis_id": 101,
   "display_vs_domain": {
-    "display_name": "",
-    "from_domain": "lockimmo.com",
-    "score": 0,
-    "status": "coherent"
+    "display_name": "Online Store",
+    "from_domain": "shop.com",
+    "score": 40,
+    "status": "incoherent"
   },
   "dkim": {
     "protocol": "DKIM",
-    "score": 0,
-    "status": "pass"
+    "score": 10,
+    "status": "unknown"
   },
   "dmarc": {
     "protocol": "DMARC",
-    "score": 0,
-    "status": "pass"
-  },
-  "domain_age": {
-    "age_years": null,
-    "created_date": null,
-    "domain": "lockimmo.com",
+    "score": 10,
     "status": "unknown"
   },
-  "explanation": "Authentification : FromVsReturn: incoherent | FromVsReply: incoherent | AgeDomaine: inconnu",
+  "domain_age": {
+    "age_years": 31.7,
+    "created_date": "1994-06-02T04:00:00Z",
+    "domain": "shop.com",
+    "status": "bon"
+  },
+  "explanation": "Authentification : SPF:unknown | DKIM:unknown | DMARC:unknown | DisplayNameVsDomain: incoherent",
   "from_vs_reply": {
-    "from_domain": "lockimmo.com",
-    "reply_domain": "strategimmo.fr",
-    "score": 30,
-    "status": "incoherent"
+    "from_domain": "shop.com",
+    "reply_domain": null,
+    "score": 0,
+    "status": "coherent"
   },
   "from_vs_return": {
-    "from_domain": "lockimmo.com",
-    "return_domain": "a388831.bnc3.mailjet.com",
-    "score": 30,
-    "status": "incoherent"
+    "from_domain": "shop.com",
+    "return_domain": "shop.com",
+    "score": 0,
+    "status": "coherent"
   },
   "score": 35,
   "spf": {
     "protocol": "SPF",
-    "score": 0,
-    "status": "pass"
+    "score": 10,
+    "status": "unknown"
   }
 }

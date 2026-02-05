@@ -1,0 +1,28 @@
+{
+  "analysis_id": 99,
+  "explanation": "Lien : 1 URL(s) analysee(s), aucune suspecte",
+  "score": 40.0,
+  "service": "lien",
+  "suspicious_count": 0,
+  "url_count": 1,
+  "urls_analyzed": [
+    {
+      "ai_analysis": {
+        "reason": "Le domaine ne correspond pas à un domaine officiel de DHL et semble être un faux site pour une arnaque de paiement",
+        "status": "suspect"
+      },
+      "display_text": "http://dhl-reschedule-payment.com",
+      "domain": "dhl-reschedule-payment.com",
+      "domain_age": {
+        "status": "unknown"
+      },
+      "raw_url": "http://dhl-reschedule-payment.com",
+      "reputation": {
+        "domain": "dhl-reschedule-payment.com",
+        "malicious_reports": 0,
+        "status": "reliable"
+      },
+      "score": 40
+    }
+  ]
+}

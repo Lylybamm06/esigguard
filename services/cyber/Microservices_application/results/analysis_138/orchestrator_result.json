@@ -1,35 +1,35 @@
 {
   "analysis_id": 138,
-  "score_cyber": 20.0,
-  "explanation_cyber": "Authentification : DisplayNameVsDomain: incoherent | AgeDomaine: inconnu | SMTP : IP source non identifiee | Lien : Aucune URL detectee | Aucune pièce jointe | Content: Phishing: manque d'information | Coherence: corps de message vide",
+  "score_cyber": 16.6,
+  "explanation_cyber": "Authentification : DisplayNameVsDomain: incoherent | SMTP : Réputation IP inconnue | Lien : 1 URL(s) analysee(s), aucune suspecte | 1 fichier(s) analysés, aucun suspect | Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est coherente avec une communication légitime. Le sujet et le contenu sont alignes et ne presentent aucun signe de phishing.",
   "details": {
     "smtp": {
       "analysis_id": 138,
-      "explanation": "SMTP : IP source non identifiee",
+      "explanation": "SMTP : Réputation IP inconnue",
       "headers_status": "normal",
       "ip_geolocation": {
         "city": "Unknown",
         "country": "Unknown",
-        "ip": null,
+        "ip": "026.01.28.10",
         "region": "Unknown"
       },
       "ip_reputation": {
-        "ip": null,
+        "ip": "026.01.28.10",
         "malicious_reports": 0,
         "status": "unknown"
       },
       "list_unsubscribe_present": "unknown",
       "message_id_present": "unknown",
-      "origin_ip": null,
-      "score": 30,
+      "origin_ip": "026.01.28.10",
+      "score": 38,
       "service": "smtp",
       "timestamp_status": "ok"
     },
     "auth": {
       "analysis_id": 138,
       "display_vs_domain": {
-        "display_name": "Service Facturation",
-        "from_domain": "exemple.com",
+        "display_name": "Muriel BENARD",
+        "from_domain": "crous-normandie.fr",
         "score": 40,
         "status": "incoherent"
       },
@@ -44,25 +44,25 @@
         "status": "pass"
       },
       "domain_age": {
-        "age_years": null,
-        "created_date": null,
-        "domain": "exemple.com",
-        "status": "unknown"
+        "age_years": 9.67,
+        "created_date": "2016-06-07T11:43:47Z",
+        "domain": "crous-normandie.fr",
+        "status": "bon"
       },
-      "explanation": "Authentification : DisplayNameVsDomain: incoherent | AgeDomaine: inconnu",
+      "explanation": "Authentification : DisplayNameVsDomain: incoherent",
       "from_vs_reply": {
-        "from_domain": "exemple.com",
+        "from_domain": "crous-normandie.fr",
         "reply_domain": null,
         "score": 0,
         "status": "coherent"
       },
       "from_vs_return": {
-        "from_domain": "exemple.com",
-        "return_domain": "exemple.com",
+        "from_domain": "crous-normandie.fr",
+        "return_domain": "crous-normandie.fr",
         "score": 0,
         "status": "coherent"
       },
-      "score": 25,
+      "score": 20,
       "spf": {
         "protocol": "SPF",
         "score": 0,
@@ -71,47 +71,88 @@
     },
     "lien": {
       "analysis_id": 138,
-      "explanation": "Lien : Aucune URL detectee",
-      "score": 0,
+      "explanation": "Lien : 1 URL(s) analysee(s), aucune suspecte",
+      "score": 0.0,
       "service": "lien",
-      "url_count": 0,
-      "urls_analyzed": []
+      "suspicious_count": 0,
+      "url_count": 1,
+      "urls_analyzed": [
+        {
+          "ai_analysis": {
+            "reason": "Le texte affiche et l'URL reelle sont identiques, et le domaine semble etre officiel et legitime",
+            "status": "coherent"
+          },
+          "display_text": "https://www.crous-normandie.fr/",
+          "domain": "www.crous-normandie.fr",
+          "domain_age": {
+            "age_years": 9.67,
+            "created": "2016-06-07T11:43:47Z",
+            "status": "bon"
+          },
+          "raw_url": "https://www.crous-normandie.fr/",
+          "reputation": {
+            "domain": "www.crous-normandie.fr",
+            "malicious_reports": 0,
+            "status": "unknown"
+          },
+          "score": 0
+        }
+      ]
     },
     "file": {
       "analysis_id": 138,
-      "attachment_count": 0,
-      "attachments_analysis": [],
-      "explanation": "Aucune pièce jointe",
-      "score": 0,
+      "attachment_count": 1,
+      "attachments_analysis": [
+        {
+          "ai_analysis": {
+            "reason": "Le nom du fichier contient \"dosftidl\" qui ressemble à une faute de frappe ou un mot généré aléatoirement, ce qui peut être un indicateur de phishing ou de malware",
+            "status": "suspect"
+          },
+          "extension": ".png",
+          "filename": "Outlook-dosftidl.png",
+          "is_dangerous": false,
+          "mime_type": "image/png",
+          "mime_verdict": {
+            "extension": ".png",
+            "mime": "image/png",
+            "reason": "Extension cohérente",
+            "status": "coherent"
+          },
+          "score": 25,
+          "size": 341127
+        }
+      ],
+      "explanation": "1 fichier(s) analysés, aucun suspect",
+      "score": 25.0,
       "service": "file",
       "suspicious_count": 0
     },
     "content": {
       "ai_content_analysis": {
         "context_coherence": {
-          "reason": "corps de message vide",
-          "status": "suspect"
+          "reason": "Correspond à une communication officielle",
+          "status": "ok"
         },
-        "global_verdict": "suspect",
+        "global_verdict": "coherent",
         "language_quality": {
-          "reason": "formulation claire",
+          "reason": "Bonnes grammaire et orthographe",
           "status": "ok"
         },
         "phishing_indicators": {
-          "reason": "manque d'information",
-          "status": "suspect"
+          "reason": "Pas d'urgence ni de menace",
+          "status": "ok"
         }
       },
       "analysis_id": 138,
-      "explanation": "Content: Phishing: manque d'information | Coherence: corps de message vide",
+      "explanation": "Content: Aucun indicateur suspect.Le message ne contient ni demande inhabituelle, ni urgence artificielle, et la formulation est coherente avec une communication légitime. Le sujet et le contenu sont alignes et ne presentent aucun signe de phishing.",
       "keywords": {
         "count": 0,
         "keyword_score": 0,
         "keywords_found": []
       },
-      "score": 45,
+      "score": 0,
       "service": "content",
-      "subject": "Votre reçu de paiement est disponible"
+      "subject": " Intervention WiFirst – Redeploiement du WiFi Crous"
     }
   }
 }

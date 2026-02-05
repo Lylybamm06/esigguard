@@ -1,0 +1,27 @@
+{
+  "ai_content_analysis": {
+    "context_coherence": {
+      "reason": "contexte peu clair",
+      "status": "suspect"
+    },
+    "global_verdict": "suspect",
+    "language_quality": {
+      "reason": "anglais correct",
+      "status": "ok"
+    },
+    "phishing_indicators": {
+      "reason": "lien suspect",
+      "status": "suspect"
+    }
+  },
+  "analysis_id": 132,
+  "explanation": "Content: Phishing: lien suspect | Coherence: contexte peu clair",
+  "keywords": {
+    "count": 0,
+    "keyword_score": 0,
+    "keywords_found": []
+  },
+  "score": 45,
+  "service": "content",
+  "subject": "Password Reset Required"
+}
