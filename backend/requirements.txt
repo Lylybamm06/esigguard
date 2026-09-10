@@ -1,0 +1,15 @@
+fastapi==0.141.1
+uvicorn[standard]==0.52.4
+python-dotenv==1.2.3
+bcrypt==5.0.0
+pydantic[email]==2.13.5
+paramiko==5.0.0
+python-multipart==0.0.32
+pyjwt==2.13.0
+
+# Scoring ML (voir app/services/ml_scoring.py et data-ml/)
+# Versions figées : doivent rester alignées avec celles utilisées pour
+# entraîner le modèle (data-ml/train_model.py), sous peine d'avertissement
+# ou d'incompatibilité au chargement des fichiers .joblib.
+scikit-learn==1.9.0
+joblib==1.6.0

@@ -1,0 +1,21 @@
+:root{
+  --bg:#070B14;
+  --bg2:#0B1222;
+  --panel: rgba(255,255,255,.06);
+  --panel2: rgba(255,255,255,.09);
+  --stroke: rgba(255,255,255,.10);
+
+  --text: rgba(255,255,255,.92);
+  --muted: rgba(255,255,255,.68);
+
+  --good:#28d17c;
+  --warn:#f7c948;
+  --bad:#ff4d4d;
+  --info:#4da3ff;
+
+  --shadow: 0 12px 40px rgba(0,0,0,.35);
+  --r12: 12px;
+  --r16: 16px;
+  --r20: 20px;
+  --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial;
+}
