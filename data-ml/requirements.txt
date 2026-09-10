@@ -1,0 +1,6 @@
+# Dépendances pour re-générer le dataset et ré-entraîner le modèle.
+# (Le backend, lui, n'a besoin que de scikit-learn + joblib au runtime — voir backend/requirements.txt)
+# Versions alignées avec celles utilisées pour produire le modèle actuellement dans backend/app/ml_models/.
+pandas==3.0.5
+scikit-learn==1.9.0
+joblib==1.6.0
